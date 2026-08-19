@@ -1,0 +1,60 @@
+# Credentials / secrets
+.env
+*.pem
+*.key
+*_secret*
+*_credentials*
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+dist/
+build/
+*.whl
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+
+# Data — large generated files (regenerate with pipeline)
+data/raw/
+data/staging/
+data/validated/
+data/processed/
+data/quarantine/
+data/external/*.csv
+data/external/*.parquet
+data/external/*.json
+!data/external/.gitkeep
+
+# Pipeline artifacts
+logs/runs/
+models/*.joblib
+models/*.pkl
+models/*.onnx
+
+# Node (web app)
+web/node_modules/
+web/dist/
+web/.vite/
+
+# Power BI generated dataset
+dashboard/dataset/
+
+# PostgreSQL portable
+tools/postgresql/data/
+
+# Temp
+*.tmp
+*.bak
+*.log
+!logs/.gitkeep

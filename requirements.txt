@@ -1,0 +1,37 @@
+# AI Job Market & Workforce Intelligence Platform — dependencies
+# Install: python -m pip install -r requirements.txt
+
+# Core data
+numpy>=2.0
+pandas>=2.0
+pyarrow>=17.0
+
+# Database
+psycopg2-binary>=2.9
+sqlalchemy>=2.0
+
+# HTTP / API consumers
+requests>=2.31
+httpx>=0.28
+python-dotenv>=1.0
+
+# Config / schemas
+pydantic>=2.0
+pyyaml>=6.0
+
+# NLP
+spacy>=3.8
+nltk>=3.9
+rapidfuzz>=3.0
+
+# ML
+scikit-learn>=1.4
+
+# API / Web
+fastapi>=0.110
+uvicorn>=0.30
+pydantic>=2.0
+
+# Testing / quality
+pytest>=8.0
+ruff>=0.5

@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "canonical_fields": {
+    "job_id": {"type": "string", "required": false, "notes": "Internal surrogate; auto-generated"},
+    "source_id": {"type": "string", "required": true, "notes": "FK to job_sources"},
+    "source_job_id": {"type": "string", "required": true, "notes": "Original ID from source"},
+    "job_title": {"type": "string", "required": true},
+    "normalized_title": {"type": "string", "required": false, "notes": "Derived by normalization pipeline"},
+    "role_category": {"type": "string", "required": false, "notes": "Derived by normalization pipeline"},
+    "seniority": {"type": "string", "required": false, "notes": "Derived by normalization pipeline"},
+    "company_name": {"type": "string", "required": true},
+    "company_name_raw": {"type": "string", "required": true},
+    "location": {"type": "string", "required": false},
+    "city": {"type": "string", "required": false},
+    "region": {"type": "string", "required": false},
+    "country": {"type": "string", "required": true},
+    "salary_min": {"type": "float", "required": false},
+    "salary_max": {"type": "float", "required": false},
+    "salary_currency": {"type": "string", "required": false},
+    "salary_period": {"type": "string", "required": false, "notes": "annual|monthly|hourly"},
+    "employment_type": {"type": "string", "required": false},
+    "work_mode": {"type": "string", "required": false, "notes": "on_site|hybrid|remote"},
+    "experience_level": {"type": "string", "required": false},
+    "industry": {"type": "string", "required": false},
+    "education_requirement": {"type": "string", "required": false},
+    "description": {"type": "string", "required": true},
+    "posting_date": {"type": "date", "required": false},
+    "closing_date": {"type": "date", "required": false},
+    "job_url": {"type": "string", "required": false},
+    "collected_at": {"type": "datetime", "required": true},
+    "updated_at": {"type": "datetime", "required": false},
+    "is_active": {"type": "boolean", "required": false},
+    "dq_score": {"type": "float", "required": false, "notes": "Data quality score 0-100"}
+  },
+  "source_overrides": {
+    "adzuna_uk": {
+      "field_map": {
+        "title": "job_title",
+        "description": "description",
+        "company_display_name": "company_name",
+        "location_display_name": "location",
+        "salary_min": "salary_min",
+        "salary_max": "salary_max",
+        "contract_type": "employment_type",
+        "created": "posting_date",
+        "redirect_url": "job_url",
+        "category_label": "industry",
+        "adref": "source_job_id"
+      },
+      "required_fields": ["title", "description", "company_display_name", "adref"],
+      "country_default": "gb"
+    },
+    "kaggle_rozee_pk": {
+      "field_map": {
+        "Job Title": "job_title",
+        "Company": "company_name",
+        "Location": "location",
+        "Salary": "salary_raw",
+        "Industry": "industry",
+        "Job Description": "description",
+        "Date Posted": "posting_date"
+      },
+      "required_fields": ["Job Title", "Company"],
+      "country_default": "pk"
+    }
+  },
+  "quality_thresholds": {
+    "pass_threshold": 70,
+    "review_threshold": 40,
+    "severity_weights": {
+      "critical": -40,
+      "major": -15,
+      "minor": -3
+    }
+  }
+}

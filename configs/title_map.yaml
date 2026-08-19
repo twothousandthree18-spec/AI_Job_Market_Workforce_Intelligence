@@ -1,0 +1,115 @@
+# Job Title Normalization Map
+# Maps common job title variants → normalized title + role category + seniority
+# Original titles are always preserved; this produces the normalized fields.
+
+role_categories:
+  data_analyst:
+    keywords: [data analyst, business analyst, reporting analyst, analytics analyst, data reporting]
+    aliases:
+      - "data analyst"
+      - "junior data analyst"
+      - "senior data analyst"
+      - "lead data analyst"
+      - "business analyst"
+      - "reporting analyst"
+      - "analytics analyst"
+      - "data reporting analyst"
+      - "bi analyst"
+      - "business intelligence analyst"
+      - "bi analyst"
+      - "business intelligence analyst"
+      - "intelligence analyst"
+      - "data & analytics analyst"
+      - "analytical analyst"
+      - "insight analyst"
+
+  analytics_engineer:
+    keywords: [analytics engineer, data engineer]
+    aliases:
+      - "analytics engineer"
+      - "data engineer"
+      - "senior data engineer"
+      - "junior data engineer"
+      - "bi engineer"
+      - "business intelligence engineer"
+      - "data platform engineer"
+
+  data_scientist:
+    keywords: [data scientist, ml engineer, machine learning engineer]
+    aliases:
+      - "data scientist"
+      - "junior data scientist"
+      - "senior data scientist"
+      - "lead data scientist"
+      - "machine learning engineer"
+      - "ml engineer"
+      - "applied scientist"
+      - "research scientist"
+      - "ai engineer"
+      - "artificial intelligence engineer"
+
+  data_architect:
+    keywords: [data architect, solution architect]
+    aliases:
+      - "data architect"
+      - "senior data architect"
+      - "data solution architect"
+      - "enterprise data architect"
+      - "solution architect"
+
+  bi_developer:
+    keywords: [bi developer, power bi developer, tableau developer]
+    aliases:
+      - "bi developer"
+      - "power bi developer"
+      - "tableau developer"
+      - "bi/reporting developer"
+      - "reporting developer"
+
+  statistician:
+    keywords: [statistician, statistical analyst, quantitative analyst]
+    aliases:
+      - "statistician"
+      - "statistical analyst"
+      - "quantitative analyst"
+      - "quant analyst"
+      - "research analyst"
+
+  product_analyst:
+    keywords: [product analyst, product data analyst]
+    aliases:
+      - "product analyst"
+      - "product data analyst"
+      - "product analytics"
+
+  marketing_analyst:
+    keywords: [marketing analyst, digital analyst, web analyst]
+    aliases:
+      - "marketing analyst"
+      - "digital marketing analyst"
+      - "web analyst"
+      - "growth analyst"
+      - "marketing data analyst"
+      - "performance analyst"
+
+  financial_analyst:
+    keywords: [financial analyst, finance analyst, fp&a]
+    aliases:
+      - "financial analyst"
+      - "finance analyst"
+      - "fp&a analyst"
+      - "senior financial analyst"
+      - "junior financial analyst"
+
+  operations_analyst:
+    keywords: [operations analyst, ops analyst, business operations analyst]
+    aliases:
+      - "operations analyst"
+      - "ops analyst"
+      - "business operations analyst"
+      - "process analyst"
+
+seniority_levels:
+  junior: [junior, entry, entry level, intern, trainee, associate, graduate, apprentice]
+  mid: [mid, intermediate, regular, standard]
+  senior: [senior, sr, lead, principal, head, manager, director, vp, vice president, chief]

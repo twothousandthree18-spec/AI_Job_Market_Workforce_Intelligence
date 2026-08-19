@@ -1,0 +1,180 @@
+# Skill Lexicon — curated keywords for job-description extraction
+# Organized by category. Each skill has:
+#   canonical: canonical name
+#   aliases: variant spellings / abbreviations
+#   category: technical | analytical | ai_ml | business_soft | tool | certification | education
+
+categories:
+  technical:
+    - canonical: Python
+      aliases: [python, python3, python3.x]
+    - canonical: SQL
+      aliases: [sql, mysql, postgresql, plsql, t-sql, pl/sql, sql server]
+    - canonical: R
+      aliases: [r, r programming, r language]
+    - canonical: Java
+      aliases: [java, java se, java ee]
+    - canonical: JavaScript
+      aliases: [javascript, js, es6, es2015, ecmascript]
+    - canonical: TypeScript
+      aliases: [typescript, ts]
+    - canonical: SAS
+      aliases: [sas, sas enterprise guide, sas base]
+    - canonical: VBA
+      aliases: [vba, visual basic for applications]
+    - canonical: HTML
+      aliases: [html, html5]
+    - canonical: CSS
+      aliases: [css, css3]
+    - canonical: Scala
+      aliases: [scala]
+    - canonical: Go
+      aliases: [go, golang]
+    - canonical: C#
+      aliases: [c#, csharp, c sharp, .net]
+    - canonical: PHP
+      aliases: [php]
+
+  analytical:
+    - canonical: Statistics
+      aliases: [statistics, statistical analysis, inferential statistics, hypothesis testing]
+    - canonical: Data Modelling
+      aliases: [data modelling, data modeling, data model, dimensional modelling, star schema]
+    - canonical: ETL
+      aliases: [etl, extract transform load, data pipeline, data integration]
+    - canonical: Data Cleaning
+      aliases: [data cleaning, data wrangling, data preprocessing, data preparation]
+    - canonical: Exploratory Data Analysis
+      aliases: [eda, exploratory data analysis, data exploration]
+    - canonical: A/B Testing
+      aliases: [a/b testing, ab testing, split testing, experimentation]
+    - canonical: Business Intelligence
+      aliases: [business intelligence, bi, business analytics]
+    - canonical: Reporting
+      aliases: [reporting, report generation, automated reporting, report building]
+    - canonical: Dashboarding
+      aliases: [dashboarding, dashboards, visual dashboards, executive dashboards]
+    - canonical: Data Governance
+      aliases: [data governance, data quality, data stewardship, data management]
+    - canonical: Forecasting
+      aliases: [forecasting, demand forecasting, time series forecasting, predictive forecasting]
+    - canonical: Statistical Analysis
+      aliases: [statistical analysis, statistical modelling, regression analysis]
+    - canonical: Financial Analysis
+      aliases: [financial analysis, financial modelling, budgeting, forecasting]
+    - canonical: Market Research
+      aliases: [market research, competitive analysis, market analysis, competitor analysis]
+
+  ai_ml:
+    - canonical: Machine Learning
+      aliases: [machine learning, ml, supervised learning, unsupervised learning, predictive modelling]
+    - canonical: Deep Learning
+      aliases: [deep learning, neural networks, cnn, rnn, lstm]
+    - canonical: NLP
+      aliases: [nlp, natural language processing, text mining, text analytics]
+    - canonical: Generative AI
+      aliases: [generative ai, gen ai, generative models, ai-generated, chatgpt, gpt, llm]
+    - canonical: LLMs
+      aliases: [llm, large language models, language models, transformers]
+    - canonical: Computer Vision
+      aliases: [computer vision, image recognition, object detection, image processing]
+    - canonical: Reinforcement Learning
+      aliases: [reinforcement learning, rl, reward learning]
+    - canonical: Feature Engineering
+      aliases: [feature engineering, feature selection, feature extraction, feature creation]
+    - canonical: Model Deployment
+      aliases: [model deployment, model serving, mlops, model monitoring, model production]
+    - canonical: Prompt Engineering
+      aliases: [prompt engineering, prompt design, prompt crafting, ai prompting]
+    - canonical: Data Mining
+      aliases: [data mining, pattern recognition, knowledge discovery]
+    - canonical: Neural Networks
+      aliases: [neural networks, neural nets, ann, artificial neural networks]
+
+  tool:
+    - canonical: Excel
+      aliases: [excel, microsoft excel, excel vba, pivot tables, vlookup, spreadsheets]
+    - canonical: Power BI
+      aliases: [powerbi, power bi, microsoft power bi, pbi]
+    - canonical: Tableau
+      aliases: [tableau, tableau desktop, tableau server, tableau public]
+    - canonical: Google Sheets
+      aliases: [google sheets, gsheet, google spreadsheet]
+    - canonical: PostgreSQL
+      aliases: [postgresql, postgres, pg, pgsql]
+    - canonical: MySQL
+      aliases: [mysql, mariadb]
+    - canonical: MongoDB
+      aliases: [mongodb, mongo, nosql]
+    - canonical: BigQuery
+      aliases: [bigquery, google bigquery, gbq]
+    - canonical: Snowflake
+      aliases: [snowflake, snowflake data cloud]
+    - canonical: Redshift
+      aliases: [redshift, amazon redshift]
+    - canonical: Databricks
+      aliases: [databricks, databricks lakehouse, delta lake]
+    - canonical: Apache Spark
+      aliases: [spark, apache spark, pyspark, spark sql]
+    - canonical: Hadoop
+      aliases: [hadoop, hadoop ecosystem, hdfs]
+    - canonical: AWS
+      aliases: [aws, amazon web services, s3, ec2, lambda, athena]
+    - canonical: Azure
+      aliases: [azure, microsoft azure, azure data factory, azure synapse]
+    - canonical: Google Cloud
+      aliases: [gcp, google cloud platform, google cloud]
+    - canonical: Git
+      aliases: [git, github, gitlab, version control]
+    - canonical: Docker
+      aliases: [docker, containerization, containers]
+    - canonical: Looker
+      aliases: [looker, google looker, lookml]
+    - canonical: Jupyter
+      aliases: [jupyter, jupyter notebook, jupyterlab, ipython]
+    - canonical: Airflow
+      aliases: [airflow, apache airflow, workflow orchestration]
+    - canonical: dbt
+      aliases: [dbt, data build tool]
+
+  business_soft:
+    - canonical: Communication
+      aliases: [communication, verbal communication, written communication, presentation skills]
+    - canonical: Stakeholder Management
+      aliases: [stakeholder management, stakeholder engagement, stakeholder communication]
+    - canonical: Problem Solving
+      aliases: [problem solving, analytical thinking, critical thinking, analytical skills]
+    - canonical: Business Analysis
+      aliases: [business analysis, business requirements, requirements gathering, business acumen]
+    - canonical: Teamwork
+      aliases: [teamwork, team collaboration, collaborative, cross-functional collaboration]
+    - canonical: Leadership
+      aliases: [leadership, team lead, mentoring, coaching, people management]
+    - canonical: Time Management
+      aliases: [time management, prioritisation, prioritization, multitasking]
+    - canonical: Project Management
+      aliases: [project management, agile, scrum, kanban, sprint, project delivery]
+    - canonical: Attention to Detail
+      aliases: [attention to detail, detail-oriented, meticulous, accuracy]
+
+  certification:
+    - canonical: AWS Certified
+      aliases: [aws certified, aws certification, aws solutions architect, aws data analytics]
+    - canonical: Google Data Analytics Certificate
+      aliases: [google data analytics, google data analytics certificate]
+    - canonical: Microsoft Certified
+      aliases: [microsoft certified, mcsa, mcta, azure certification]
+    - canonical: PMP
+      aliases: [pmp, project management professional]
+    - canonical: Scrum Master
+      aliases: [csm, certified scrum master, scrum certification]
+
+  education:
+    - canonical: Bachelor's Degree
+      aliases: [bachelor, bsc, ba, undergraduate, bachelor's degree, bachelor degree]
+    - canonical: Master's Degree
+      aliases: [master, msc, ma, postgraduate, master's degree, master degree, mba]
+    - canonical: PhD
+      aliases: [phd, doctorate, doctoral, ph.d.]
+    - canonical: Diploma
+      aliases: [diploma, higher national diploma, hnd]

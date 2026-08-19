@@ -1,0 +1,72 @@
+# Data source configuration
+# Each source defines how to fetch and normalize job data.
+
+sources:
+  adzuna_uk:
+    name: Adzuna UK
+    country: gb
+    type: api
+    api_base: https://api.adzuna.com/v1/api/jobs/gb/search
+    api_version: 1
+    auth_type: api_key
+    rate_limit_per_second: 2
+    max_results_per_page: 50
+    max_pages: 20
+    search_terms:
+      - data analyst
+      - business intelligence analyst
+      - data scientist
+      - reporting analyst
+      - analytics engineer
+      - data engineer
+      - junior data analyst
+      - entry level data analyst
+    location: london
+    description_fields:
+      - title
+      - description
+      - location
+      - company
+      - salary_min
+      - salary_max
+      - contract_type
+      - created
+      - redirect_url
+      - category_label
+      - latitude
+      - longitude
+    notes: >
+      Register for free key at https://developer.adzuna.com/.
+      UK jobs only (gb country code). Salary data available.
+      Historical salary and regional endpoints also available.
+
+  kaggle_rozee_pk:
+    name: Pakistan Job Market Dataset (Rozee.pk)
+    country: pk
+    type: dataset
+    format: csv
+    source_url: https://www.kaggle.com/datasets/zincly/pakistan-job-market-dataset-rozee-pk
+    expected_filename: pakjobs_clean.csv
+    notes: >
+      Kaggle dataset by zincly (Syed Wajdan Zeerak & Syeda Zainish Fatima Abbas).
+      Historical 2024 Rozee.pk listings. Manual download required.
+      Place CSV in data/external/.
+
+  findwork_tech:
+    name: Findwork.dev
+    country: global
+    type: api
+    api_base: https://findwork.dev/api/jobs/
+    auth_type: api_key
+    notes: >
+      Tech/remote jobs aggregator. Optional supplemental source.
+      API key required (free).
+      Less relevant for Pakistan/UK comparison but useful for tech roles.
+
+  reference:
+    name: Reference Data
+    country: global
+    type: manual
+    notes: >
+      Hand-built lookup tables: skill lexicon, title normalization,
+      salary benchmarks, location mappings. Stored in configs/.
