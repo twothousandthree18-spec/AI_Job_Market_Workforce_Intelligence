@@ -1,10 +1,14 @@
 """Quick verification that the pipeline framework and configs load correctly."""
 import sys
+
 sys.path.insert(0, "src")
 
 from pipeline.config import (
-    RunManifest, load_source_config, load_skill_lexicon,
-    load_title_map, load_schema_manifest, PROJECT_ROOT
+    RunManifest,
+    load_schema_manifest,
+    load_skill_lexicon,
+    load_source_config,
+    load_title_map,
 )
 
 m = RunManifest(run_type="test", source="framework_check")

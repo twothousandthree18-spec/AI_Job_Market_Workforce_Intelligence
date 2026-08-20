@@ -77,6 +77,9 @@ class StagingConverter:
 
         df = pd.DataFrame(all_records)
 
+        # Populate source column from directory name
+        df["source"] = source_name
+
         # Ensure all canonical columns exist
         for col in CANONICAL_COLUMNS:
             if col not in df.columns:
