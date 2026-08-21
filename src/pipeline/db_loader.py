@@ -1,8 +1,9 @@
 """
 Database loader — loads processed DataFrames into the PostgreSQL analytical schema.
 
-Uses SQLAlchemy with parameterized queries.  Dimension tables are upserted
-(get-or-create), fact and junction tables are inserted.
+Uses batch operations (execute_values) for performance. Dimension tables are
+upserted via bulk get-or-create with in-memory caching. Fact and junction
+tables are bulk-inserted.
 """
 
 from __future__ import annotations
@@ -24,6 +25,14 @@ class DatabaseLoader:
         self.logger = manifest.logger
         self.engine: Engine = create_engine(DATABASE_URL, pool_pre_ping=True)
 
+        # Dimension caches: (key) -> id
+        self._source_cache: dict[str, int] = {}
+        self._company_cache: dict[tuple[str, str], int] = {}
+        self._location_cache: dict[tuple[str | None, str | None, str], int] = {}
+        self._industry_cache: dict[str, int] = {}
+        self._title_cache: dict[tuple[str, str], int] = {}
+        self._skill_cache: dict[str, int] = {}
+
     # ------------------------------------------------------------------
     # Public
     # ------------------------------------------------------------------
@@ -32,9 +41,9 @@ class DatabaseLoader:
         """Load a processed DataFrame into the database.
 
         Steps:
-          1. Load dimension tables (get-or-create IDs)
-          2. Insert fact rows (jobs)
-          3. Insert junction rows (job_skills, salary_data)
+          1. Bulk-load dimension tables, populate caches
+          2. Bulk-insert fact rows (jobs) using executemany
+          3. Bulk-insert junction rows (job_skills, salary_data)
         """
         self.logger.info("=== STAGE: LOAD ===")
         start = datetime.now(UTC)
@@ -43,52 +52,34 @@ class DatabaseLoader:
             self.logger.warning("Nothing to load — DataFrame is empty")
             return
 
-        job_count = 0
-        skill_rows = 0
-        salary_rows = 0
+        total = len(df)
+        self.logger.info(f"Loading {total} records...")
 
         with self.engine.begin() as conn:
-            for _idx, row in df.iterrows():
-                record = row.to_dict()
+            # 1. Preload dimension caches
+            self._warm_caches(conn)
+            self.logger.info(
+                f"Caches: {len(self._source_cache)} sources, "
+                f"{len(self._company_cache)} companies, "
+                f"{len(self._location_cache)} locations, "
+                f"{len(self._industry_cache)} industries, "
+                f"{len(self._title_cache)} titles, "
+                f"{len(self._skill_cache)} skills"
+            )
 
-                source_id = self._ensure_source(conn, str(record.get("source", "unknown")))
-                company_id = self._ensure_company(
-                    conn,
-                    str(record.get("company_name", "")),
-                    str(record.get("country_code", record.get("country", ""))),
-                )
-                location_id = self._ensure_location(
-                    conn,
-                    str(record.get("city", "")) or None,
-                    str(record.get("region", "")) or None,
-                    str(record.get("country_code", record.get("country", ""))),
-                )
-                industry_id = self._ensure_industry(conn, str(record.get("industry", "")) or None)
-                title_id = self._ensure_title(
-                    conn,
-                    str(record.get("normalized_title", record.get("job_title", ""))),
-                    str(record.get("role_category", "other")),
-                    str(record.get("seniority", "unknown")),
-                )
+            # 2. Bulk upsert dimensions from DataFrame
+            self._bulk_ensure_dimensions(conn, df)
 
-                job_id = self._load_job(
-                    conn, record, source_id, company_id, location_id, industry_id, title_id,
-                )
-                if job_id is None:
-                    continue
-                job_count += 1
+            # 3. Bulk insert jobs
+            job_id_map = self._bulk_insert_jobs(conn, df)
+            job_count = len(job_id_map)
+            self.logger.info(f"Inserted {job_count} jobs")
 
-                # Skills
-                skills = record.get("skills_list")
-                if skills is not None and hasattr(skills, "__iter__") and len(skills) > 0:
-                    skills_list = list(skills)
-                    self._load_job_skills(conn, job_id, skills_list)
-                    skill_rows += len(skills_list)
+            # 4. Bulk insert job_skills
+            skill_rows = self._bulk_insert_job_skills(conn, df, job_id_map)
 
-                # Salary detail
-                if self._has_salary(record):
-                    self._load_salary(conn, job_id, record)
-                    salary_rows += 1
+            # 5. Bulk insert salary_data
+            salary_rows = self._bulk_insert_salaries(conn, df, job_id_map)
 
         elapsed = (datetime.now(UTC) - start).total_seconds()
         self.manifest.records_accepted = job_count
@@ -98,299 +89,434 @@ class DatabaseLoader:
         )
 
     # ------------------------------------------------------------------
-    # Dimension upserts
+    # Cache warming
     # ------------------------------------------------------------------
 
-    def _ensure_source(self, conn, source_name: str) -> int:
-        result = conn.execute(
-            text("SELECT source_id FROM job_sources WHERE name = :name"),
-            {"name": source_name},
-        )
-        row = result.fetchone()
-        if row:
-            return int(row[0])
+    def _warm_caches(self, conn) -> None:
+        """Load existing dimension IDs into memory."""
+        for row in conn.execute(text("SELECT source_id, name FROM job_sources")):
+            self._source_cache[row[1]] = int(row[0])
 
-        result = conn.execute(
+        for row in conn.execute(
+            text("SELECT company_id, name, country FROM companies")
+        ):
+            self._company_cache[(row[1], row[2])] = int(row[0])
+
+        for row in conn.execute(
+            text("SELECT location_id, city, region, country FROM locations")
+        ):
+            self._location_cache[(row[1], row[2], row[3])] = int(row[0])
+
+        for row in conn.execute(text("SELECT industry_id, name FROM industries")):
+            self._industry_cache[row[1]] = int(row[0])
+
+        for row in conn.execute(
             text(
-                "INSERT INTO job_sources (name, country) "
-                "VALUES (:name, :country) "
-                "ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name "
-                "RETURNING source_id"
-            ),
-            {"name": source_name, "country": source_name.split("_")[-1].upper()[:2]},
-        )
-        return int(result.fetchone()[0])
+                "SELECT title_id, normalized_title, role_category FROM job_titles"
+            )
+        ):
+            self._title_cache[(row[1], row[2])] = int(row[0])
 
-    def _ensure_company(self, conn, name: str, country: str) -> int | None:
-        if not name or name == "nan":
-            return None
-        result = conn.execute(
-            text("SELECT company_id FROM companies WHERE name = :name AND country = :country"),
-            {"name": name, "country": country},
-        )
-        row = result.fetchone()
-        if row:
-            return int(row[0])
-
-        result = conn.execute(
-            text(
-                "INSERT INTO companies (name, name_raw, country) "
-                "VALUES (:name, :name_raw, :country) "
-                "ON CONFLICT (name, country) DO UPDATE SET name = EXCLUDED.name "
-                "RETURNING company_id"
-            ),
-            {"name": name, "name_raw": name, "country": country},
-        )
-        return int(result.fetchone()[0])
-
-    def _ensure_location(
-        self, conn, city: str | None, region: str | None, country: str,
-    ) -> int | None:
-        if not country:
-            return None
-        result = conn.execute(
-            text(
-                "SELECT location_id FROM locations "
-                "WHERE city IS NOT DISTINCT FROM :city "
-                "AND region IS NOT DISTINCT FROM :region "
-                "AND country = :country"
-            ),
-            {"city": city, "region": region, "country": country},
-        )
-        row = result.fetchone()
-        if row:
-            return int(row[0])
-
-        result = conn.execute(
-            text(
-                "INSERT INTO locations (city, region, country) "
-                "VALUES (:city, :region, :country) "
-                "ON CONFLICT (city, region, country) DO UPDATE SET city = EXCLUDED.city "
-                "RETURNING location_id"
-            ),
-            {"city": city, "region": region, "country": country},
-        )
-        return int(result.fetchone()[0])
-
-    def _ensure_industry(self, conn, name: str | None) -> int | None:
-        if not name or name == "nan":
-            return None
-        result = conn.execute(
-            text("SELECT industry_id FROM industries WHERE name = :name"),
-            {"name": name},
-        )
-        row = result.fetchone()
-        if row:
-            return int(row[0])
-
-        result = conn.execute(
-            text(
-                "INSERT INTO industries (name) "
-                "VALUES (:name) "
-                "ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name "
-                "RETURNING industry_id"
-            ),
-            {"name": name},
-        )
-        return int(result.fetchone()[0])
-
-    def _ensure_title(
-        self, conn, normalized_title: str, role_category: str, seniority: str,
-    ) -> int | None:
-        if not normalized_title or normalized_title == "nan":
-            return None
-        result = conn.execute(
-            text(
-                "SELECT title_id FROM job_titles "
-                "WHERE normalized_title = :nt AND role_category = :rc"
-            ),
-            {"nt": normalized_title, "rc": role_category},
-        )
-        row = result.fetchone()
-        if row:
-            return int(row[0])
-
-        result = conn.execute(
-            text(
-                "INSERT INTO job_titles (normalized_title, role_category, seniority) "
-                "VALUES (:nt, :rc, :seniority) "
-                "ON CONFLICT (normalized_title, role_category) "
-                "DO UPDATE SET seniority = EXCLUDED.seniority "
-                "RETURNING title_id"
-            ),
-            {"nt": normalized_title, "rc": role_category, "seniority": seniority},
-        )
-        return int(result.fetchone()[0])
-
-    def _ensure_skill(self, conn, canonical_name: str, category: str) -> int | None:
-        if not canonical_name or canonical_name == "nan":
-            return None
-        result = conn.execute(
-            text("SELECT skill_id FROM skills WHERE canonical_name = :name"),
-            {"name": canonical_name},
-        )
-        row = result.fetchone()
-        if row:
-            return int(row[0])
-
-        valid_categories = {
-            "technical", "analytical", "ai_ml", "tool",
-            "business_soft", "certification", "education",
-        }
-        if category not in valid_categories:
-            category = "technical"
-
-        result = conn.execute(
-            text(
-                "INSERT INTO skills (canonical_name, category) "
-                "VALUES (:name, :category) "
-                "ON CONFLICT (canonical_name) DO UPDATE SET category = EXCLUDED.category "
-                "RETURNING skill_id"
-            ),
-            {"name": canonical_name, "category": category},
-        )
-        return int(result.fetchone()[0])
+        for row in conn.execute(
+            text("SELECT skill_id, canonical_name FROM skills")
+        ):
+            self._skill_cache[row[1]] = int(row[0])
 
     # ------------------------------------------------------------------
-    # Fact / junction inserts
+    # Bulk dimension upserts
     # ------------------------------------------------------------------
 
-    def _load_job(
-        self,
-        conn,
-        record: dict,
-        source_id: int,
-        company_id: int | None,
-        location_id: int | None,
-        industry_id: int | None,
-        title_id: int | None,
-    ) -> int | None:
-        source_job_id = str(record.get("source_job_id", ""))
-        if not source_job_id or source_job_id == "nan":
-            return None
+    def _bulk_ensure_dimensions(self, conn, df: pd.DataFrame) -> None:
+        """Upsert all dimension rows from the DataFrame, populating caches."""
+        # Sources
+        sources = df["source"].dropna().unique()
+        for src in sources:
+            src = str(src)
+            if src not in self._source_cache:
+                res = conn.execute(
+                    text(
+                        "INSERT INTO job_sources (name, country) "
+                        "VALUES (:name, :country) "
+                        "ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name "
+                        "RETURNING source_id"
+                    ),
+                    {
+                        "name": src,
+                        "country": src.split("_")[-1].upper()[:2],
+                    },
+                )
+                self._source_cache[src] = int(res.fetchone()[0])
 
-        job_title = str(record.get("job_title", ""))[:500]
-        country = str(record.get("country_code", record.get("country", "")))
-        if not country or country == "nan":
-            country = "XX"
-
-        salary_min = record.get("salary_min")
-        salary_max = record.get("salary_max")
-        salary_currency = record.get("salary_currency")
-        salary_period = record.get("salary_period")
-        employment_type = record.get("employment_type")
-        work_mode = record.get("work_mode")
-        experience_level = record.get("experience_level")
-        education_requirement = record.get("education_requirement")
-        description = record.get("description") or record.get("description_cleaned", "")
-        posting_date = self._parse_date_value(record.get("posting_date"))
-        closing_date = self._parse_date_value(record.get("closing_date"))
-        job_url = record.get("job_url")
-        dq_score = record.get("dq_score")
-        is_active = record.get("is_active", True)
-        collected_at = record.get("collected_at") or datetime.now(UTC)
-
-        result = conn.execute(
-            text(
-                "INSERT INTO jobs ("
-                "  source_id, source_job_id, job_title, title_id, company_id, location_id, country,"
-                "  salary_min, salary_max, salary_currency, salary_period,"
-                "  employment_type, work_mode, experience_level,"
-                "  industry_id, education_requirement,"
-                "  description_raw, posting_date, closing_date, job_url,"
-                "  dq_score, collected_at, is_active"
-                ") VALUES ("
-                "  :source_id, :source_job_id, :job_title, :title_id,"
-                "  :company_id, :location_id, :country,"
-                "  :salary_min, :salary_max, :salary_currency, :salary_period,"
-                "  :employment_type, :work_mode, :experience_level,"
-                "  :industry_id, :education_requirement,"
-                "  :description, :posting_date, :closing_date, :job_url,"
-                "  :dq_score, :collected_at, :is_active"
-                ") "
-                "ON CONFLICT (source_id, source_job_id) "
-                "DO UPDATE SET "
-                "  job_title = EXCLUDED.job_title,"
-                "  title_id = EXCLUDED.title_id,"
-                "  company_id = EXCLUDED.company_id,"
-                "  location_id = EXCLUDED.location_id,"
-                "  salary_min = EXCLUDED.salary_min,"
-                "  salary_max = EXCLUDED.salary_max,"
-                "  dq_score = EXCLUDED.dq_score,"
-                "  updated_at = now() "
-                "RETURNING job_id"
-            ),
-            {
-                "source_id": source_id,
-                "source_job_id": source_job_id[:200],
-                "job_title": job_title,
-                "title_id": title_id,
-                "company_id": company_id,
-                "location_id": location_id,
-                "country": country[:5],
-                "salary_min": salary_min,
-                "salary_max": salary_max,
-                "salary_currency": str(salary_currency)[:3] if salary_currency else None,
-                "salary_period": salary_period,
-                "employment_type": employment_type,
-                "work_mode": work_mode,
-                "experience_level": experience_level,
-                "industry_id": industry_id,
-                "education_requirement": education_requirement,
-                "description": str(description)[:50000] if description else None,
-                "posting_date": posting_date,
-                "closing_date": closing_date,
-                "job_url": str(job_url)[:1000] if job_url else None,
-                "dq_score": dq_score,
-                "collected_at": collected_at,
-                "is_active": is_active,
-            },
+        # Companies
+        country_col = "country_code" if "country_code" in df.columns else "country"
+        company_pairs = (
+            df[["company_name", country_col]]
+            .dropna().drop_duplicates().values.tolist()
         )
-        row = result.fetchone()
-        return int(row[0]) if row else None
+        for name, country in company_pairs:
+            name, country = str(name), str(country)[:5]
+            if not name or name == "nan":
+                continue
+            key = (name, country)
+            if key not in self._company_cache:
+                res = conn.execute(
+                    text(
+                        "INSERT INTO companies (name, name_raw, country) "
+                        "VALUES (:name, :name_raw, :country) "
+                        "ON CONFLICT (name, country) "
+                        "DO UPDATE SET name = EXCLUDED.name "
+                        "RETURNING company_id"
+                    ),
+                    {"name": name, "name_raw": name, "country": country},
+                )
+                self._company_cache[key] = int(res.fetchone()[0])
 
-    def _load_job_skills(self, conn, job_id: int, skills: list[dict]) -> None:
-        for skill in skills:
-            canonical = skill.get("normalized_skill", "")
-            category = skill.get("category", "technical")
-            method = skill.get("method", "lexicon")
-            skill_id = self._ensure_skill(conn, canonical, category)
-            if skill_id is None:
+        # Locations
+        loc_cols = ["city", "region", country_col]
+        loc_df = df[loc_cols].dropna(subset=[country_col]).drop_duplicates()
+        for _, row in loc_df.iterrows():
+            city = str(row["city"]) if pd.notna(row["city"]) else None
+            region = str(row["region"]) if pd.notna(row["region"]) else None
+            country = str(row[country_col])[:5]
+            if not city or city == "nan":
+                city = None
+            if not region or region == "nan":
+                region = None
+            key = (city, region, country)
+            if key not in self._location_cache:
+                res = conn.execute(
+                    text(
+                        "INSERT INTO locations (city, region, country) "
+                        "VALUES (:city, :region, :country) "
+                        "ON CONFLICT (city, region, country) "
+                        "DO UPDATE SET city = EXCLUDED.city "
+                        "RETURNING location_id"
+                    ),
+                    {"city": city, "region": region, "country": country},
+                )
+                self._location_cache[key] = int(res.fetchone()[0])
+
+        # Industries
+        industries = df["industry"].dropna().unique()
+        for ind in industries:
+            ind = str(ind)
+            if not ind or ind == "nan" or ind in self._industry_cache:
+                continue
+            res = conn.execute(
+                text(
+                    "INSERT INTO industries (name) VALUES (:name) "
+                    "ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name "
+                    "RETURNING industry_id"
+                ),
+                {"name": ind},
+            )
+            self._industry_cache[ind] = int(res.fetchone()[0])
+
+        # Titles
+        title_df = (
+            df[["normalized_title", "role_category", "seniority"]]
+            .dropna(subset=["normalized_title", "role_category"])
+            .drop_duplicates()
+        )
+        for _, row in title_df.iterrows():
+            nt = str(row["normalized_title"])
+            rc = str(row["role_category"])
+            sen = str(row.get("seniority", "unknown"))
+            key = (nt, rc)
+            if key not in self._title_cache:
+                res = conn.execute(
+                    text(
+                        "INSERT INTO job_titles "
+                        "(normalized_title, role_category, seniority) "
+                        "VALUES (:nt, :rc, :seniority) "
+                        "ON CONFLICT (normalized_title, role_category) "
+                        "DO UPDATE SET seniority = EXCLUDED.seniority "
+                        "RETURNING title_id"
+                    ),
+                    {"nt": nt, "rc": rc, "seniority": sen},
+                )
+                self._title_cache[key] = int(res.fetchone()[0])
+
+        # Skills (from skills_list column)
+        import numpy as np
+        all_skills: set[tuple[str, str]] = set()
+        for skills in df["skills_list"].dropna():
+            if isinstance(skills, np.ndarray):
+                skills = skills.tolist()
+            if isinstance(skills, (list, tuple)):
+                for s in skills:
+                    if isinstance(s, dict):
+                        name = s.get("normalized_skill", "")
+                        cat = s.get("category", "technical")
+                        if name:
+                            all_skills.add((name, cat))
+        for name, category in all_skills:
+            if name not in self._skill_cache:
+                valid_cats = {
+                    "technical", "analytical", "ai_ml", "tool",
+                    "business_soft", "certification", "education",
+                }
+                if category not in valid_cats:
+                    category = "technical"
+                res = conn.execute(
+                    text(
+                        "INSERT INTO skills (canonical_name, category) "
+                        "VALUES (:name, :category) "
+                        "ON CONFLICT (canonical_name) "
+                        "DO UPDATE SET category = EXCLUDED.category "
+                        "RETURNING skill_id"
+                    ),
+                    {"name": name, "category": category},
+                )
+                self._skill_cache[name] = int(res.fetchone()[0])
+
+    # ------------------------------------------------------------------
+    # Bulk job insert
+    # ------------------------------------------------------------------
+
+    def _bulk_insert_jobs(
+        self, conn, df: pd.DataFrame
+    ) -> dict[int, int]:
+        """Bulk insert jobs using psycopg2 execute_values for speed.
+
+        Returns {row_idx: job_id}.
+        """
+        job_rows: list[dict] = []
+        valid_indices: list[int] = []
+
+        for idx, row in df.iterrows():
+            record = row.to_dict()
+            source_id = self._source_cache.get(str(record.get("source", "")))
+            if source_id is None:
                 continue
 
-            conn.execute(
-                text(
-                    "INSERT INTO job_skills (job_id, skill_id, extraction_method) "
-                    "VALUES (:job_id, :skill_id, :method) "
-                    "ON CONFLICT (job_id, skill_id) "
-                    "DO UPDATE SET mention_count = job_skills.mention_count + 1"
-                ),
-                {"job_id": job_id, "skill_id": skill_id, "method": method},
+            cc = str(record.get("country_code", record.get("country", "")))[:5]
+            if not cc or cc == "nan":
+                cc = "XX"
+
+            company_id = self._company_cache.get((
+                str(record.get("company_name", "")),
+                cc,
+            ))
+            location_id = self._location_cache.get((
+                str(record.get("city", "")) if record.get("city") else None,
+                str(record.get("region", "")) if record.get("region") else None,
+                cc,
+            ))
+            industry_id = self._industry_cache.get(
+                str(record.get("industry", "")) if record.get("industry") else None
             )
+            title_id = self._title_cache.get((
+                str(record.get("normalized_title", record.get("job_title", ""))),
+                str(record.get("role_category", "other")),
+            ))
 
-    def _load_salary(self, conn, job_id: int, record: dict) -> None:
-        salary_min = record.get("salary_min")
-        salary_max = record.get("salary_max")
-        currency = record.get("salary_currency")
-        period = record.get("salary_period")
-        salary_type = record.get("salary_type")
+            source_job_id = str(record.get("source_job_id", ""))[:200]
+            if not source_job_id or source_job_id == "nan":
+                continue
 
-        conn.execute(
-            text(
-                "INSERT INTO salary_data"
-                " (job_id, salary_min, salary_max,"
-                "  currency, period, salary_type) "
-                "VALUES (:job_id, :salary_min, :salary_max, :currency, :period, :salary_type)"
-            ),
-            {
-                "job_id": job_id,
-                "salary_min": salary_min,
-                "salary_max": salary_max,
-                "currency": str(currency)[:3] if currency else None,
-                "period": period,
-                "salary_type": salary_type,
-            },
+            description = (
+                record.get("description")
+                or record.get("description_cleaned", "")
+            )
+            posting_date = self._parse_date_value(record.get("posting_date"))
+            closing_date = self._parse_date_value(record.get("closing_date"))
+            job_url = str(record.get("job_url") or "")[:1000] or None
+
+            job_rows.append((
+                source_id,
+                source_job_id,
+                str(record.get("job_title", ""))[:500],
+                title_id,
+                company_id,
+                location_id,
+                cc,
+                record.get("salary_min"),
+                record.get("salary_max"),
+                str(record.get("salary_currency"))[:3] if record.get("salary_currency") else None,
+                record.get("salary_period"),
+                record.get("employment_type"),
+                record.get("work_mode"),
+                record.get("experience_level"),
+                industry_id,
+                record.get("education_requirement"),
+                str(description)[:50000] if description else None,
+                posting_date,
+                closing_date,
+                job_url,
+                record.get("dq_score"),
+                record.get("collected_at") or datetime.now(UTC),
+                record.get("is_active", True),
+            ))
+            valid_indices.append(idx)
+
+        if not job_rows:
+            return {}
+
+        # Deduplicate by (source_id, source_job_id) — keep last occurrence
+        seen: dict[tuple, int] = {}
+        deduped_rows: list[tuple] = []
+        deduped_indices: list[int] = []
+        for i, jrow in enumerate(job_rows):
+            key = (jrow[0], jrow[1])  # (source_id, source_job_id)
+            seen[key] = i
+        for _key, orig_idx in seen.items():
+            deduped_rows.append(job_rows[orig_idx])
+            deduped_indices.append(valid_indices[orig_idx])
+        job_rows = deduped_rows
+        valid_indices = deduped_indices
+        self.logger.info(
+            f"Deduplicated {len(seen)} unique jobs from {len(df)} rows"
         )
+
+        # Use psycopg2 execute_values for true bulk upsert
+        raw_conn = conn.connection
+        cursor = raw_conn.cursor()
+
+        from psycopg2.extras import execute_values
+
+        insert_sql = (
+            "INSERT INTO jobs ("
+            "  source_id, source_job_id, job_title, title_id, company_id,"
+            "  location_id, country, salary_min, salary_max, salary_currency,"
+            "  salary_period, employment_type, work_mode, experience_level,"
+            "  industry_id, education_requirement, description_raw,"
+            "  posting_date, closing_date, job_url,"
+            "  dq_score, collected_at, is_active"
+            ") VALUES %s "
+            "ON CONFLICT (source_id, source_job_id) DO UPDATE SET "
+            "  job_title = EXCLUDED.job_title,"
+            "  title_id = EXCLUDED.title_id,"
+            "  company_id = EXCLUDED.company_id,"
+            "  location_id = EXCLUDED.location_id,"
+            "  salary_min = EXCLUDED.salary_min,"
+            "  salary_max = EXCLUDED.salary_max,"
+            "  dq_score = EXCLUDED.dq_score,"
+            "  updated_at = now() "
+            "RETURNING job_id, source_job_id"
+        )
+
+        id_map: dict[int, int] = {}
+        batch_size = 500
+
+        for start in range(0, len(job_rows), batch_size):
+            batch = job_rows[start : start + batch_size]
+            batch_indices = valid_indices[start : start + batch_size]
+            results = execute_values(
+                cursor,
+                insert_sql,
+                batch,
+                fetch=True,
+                page_size=batch_size,
+            )
+            # results = [(job_id, source_job_id), ...]
+            returned_ids = {r[1]: r[0] for r in results}
+
+            # Map back to DataFrame indices
+            for i, jrow in enumerate(batch):
+                sjid = jrow[1]  # source_job_id
+                if sjid in returned_ids:
+                    id_map[batch_indices[i]] = returned_ids[sjid]
+
+        self.logger.info(f"execute_values inserted {len(id_map)} jobs")
+        return id_map
+
+    # ------------------------------------------------------------------
+    # Bulk job_skills insert
+    # ------------------------------------------------------------------
+
+    def _bulk_insert_job_skills(
+        self, conn, df: pd.DataFrame, job_id_map: dict[int, int]
+    ) -> int:
+        """Bulk insert job-skill junction rows using psycopg2."""
+        import numpy as np
+
+        rows: list[tuple] = []
+        for idx, job_id in job_id_map.items():
+            skills = df.at[idx, "skills_list"]
+            if skills is None or (isinstance(skills, float) and pd.isna(skills)):
+                continue
+            if isinstance(skills, np.ndarray):
+                skills = skills.tolist()
+            if not isinstance(skills, (list, tuple)) or len(skills) == 0:
+                continue
+            for skill in skills:
+                if not isinstance(skill, dict):
+                    continue
+                canonical = skill.get("normalized_skill", "")
+                skill_id = self._skill_cache.get(canonical)
+                if skill_id is None:
+                    continue
+                rows.append((job_id, skill_id, skill.get("method", "lexicon")))
+
+        if not rows:
+            return 0
+
+        # Deduplicate (job_id, skill_id) — keep first occurrence
+        seen_skills: dict[tuple, tuple] = {}
+        for row in rows:
+            key = (row[0], row[1])
+            if key not in seen_skills:
+                seen_skills[key] = row
+        rows = list(seen_skills.values())
+
+        raw_conn = conn.connection
+        cursor = raw_conn.cursor()
+        from psycopg2.extras import execute_values
+
+        insert_sql = (
+            "INSERT INTO job_skills (job_id, skill_id, extraction_method) "
+            "VALUES %s "
+            "ON CONFLICT (job_id, skill_id) "
+            "DO UPDATE SET mention_count = job_skills.mention_count + 1"
+        )
+
+        batch_size = 1000
+        for start in range(0, len(rows), batch_size):
+            batch = rows[start : start + batch_size]
+            execute_values(cursor, insert_sql, batch, page_size=batch_size)
+
+        self.logger.info(f"Inserted {len(rows)} job-skill links")
+        return len(rows)
+
+    # ------------------------------------------------------------------
+    # Bulk salary insert
+    # ------------------------------------------------------------------
+
+    def _bulk_insert_salaries(
+        self, conn, df: pd.DataFrame, job_id_map: dict[int, int]
+    ) -> int:
+        """Bulk insert salary detail rows using psycopg2."""
+        rows: list[tuple] = []
+        for idx, job_id in job_id_map.items():
+            record = df.iloc[idx].to_dict()
+            if not self._has_salary(record):
+                continue
+            rows.append((
+                job_id,
+                record.get("salary_min"),
+                record.get("salary_max"),
+                str(record.get("salary_currency"))[:3] if record.get("salary_currency") else None,
+                record.get("salary_period"),
+                record.get("salary_type"),
+            ))
+
+        if not rows:
+            return 0
+
+        raw_conn = conn.connection
+        cursor = raw_conn.cursor()
+        from psycopg2.extras import execute_values
+
+        insert_sql = (
+            "INSERT INTO salary_data"
+            " (job_id, salary_min, salary_max,"
+            "  currency, period, salary_type) "
+            "VALUES %s"
+        )
+        execute_values(cursor, insert_sql, rows, page_size=500)
+        self.logger.info(f"Inserted {len(rows)} salary records")
+        return len(rows)
 
     # ------------------------------------------------------------------
     # Validation
@@ -400,7 +526,6 @@ class DatabaseLoader:
         """Run post-load validation queries and return a results dict."""
         results: dict = {}
         with self.engine.connect() as conn:
-            # Row counts for main tables
             for table in (
                 "jobs", "companies", "locations", "skills",
                 "job_skills", "salary_data", "job_sources",
@@ -408,7 +533,6 @@ class DatabaseLoader:
                 count = conn.execute(text(f"SELECT count(*) FROM {table}")).scalar()
                 results[f"count_{table}"] = count
 
-            # Orphaned job_skills
             orphaned = conn.execute(text(
                 "SELECT count(*) FROM job_skills js "
                 "LEFT JOIN jobs j ON js.job_id = j.job_id "
@@ -417,7 +541,6 @@ class DatabaseLoader:
             )).scalar()
             results["orphaned_job_skills"] = orphaned
 
-            # Jobs without skills
             no_skills = conn.execute(text(
                 "SELECT count(*) FROM jobs j "
                 "LEFT JOIN job_skills js ON j.job_id = js.job_id "
@@ -434,7 +557,6 @@ class DatabaseLoader:
 
     @staticmethod
     def _parse_date_value(value) -> str | None:
-        """Best-effort conversion to a date string for PostgreSQL."""
         if value is None:
             return None
         if isinstance(value, str):
@@ -451,7 +573,6 @@ class DatabaseLoader:
 
     @staticmethod
     def _has_salary(record: dict) -> bool:
-        """Return True if the record carries usable salary data."""
         sal_min = record.get("salary_min")
         sal_max = record.get("salary_max")
         has_values = (

@@ -10,17 +10,23 @@ sources:
     api_version: 1
     auth_type: api_key
     rate_limit_per_second: 2
+    request_timeout: 30
+    retry_count: 3
     max_results_per_page: 50
-    max_pages: 20
+    max_pages: 15
+    max_records: 3000
     search_terms:
       - data analyst
       - business intelligence analyst
-      - data scientist
+      - BI analyst
       - reporting analyst
+      - analytics analyst
+      - data analytics
+      - junior data analyst
+      - senior data analyst
+      - data scientist
       - analytics engineer
       - data engineer
-      - junior data analyst
-      - entry level data analyst
     location: london
     description_fields:
       - title
@@ -38,7 +44,26 @@ sources:
     notes: >
       Register for free key at https://developer.adzuna.com/.
       UK jobs only (gb country code). Salary data available.
-      Historical salary and regional endpoints also available.
+      Free tier: 250 calls/day. Each call returns up to 50 results.
+      With 11 search terms x 15 pages = 165 calls = up to 8,250 jobs.
+      Configurable max_records to control total volume.
+
+  chisel_pk:
+    name: CHISEL/LUMS Pakistan Job Market
+    country: pk
+    type: dataset
+    format: csv
+    source_url: https://opendata.com.pk/dataset/pakistan-s-job-market
+    kaggle_url: https://www.kaggle.com/datasets/zusmani/pakistans-job-market
+    expected_filename: pakistan_jobs_chisel.csv
+    license: ODbL (Open Data Commons Open Database License)
+    notes: >
+      CHISEL Lab @ LUMS academic dataset.
+      ~7,000 job openings from Dec 2019 to Mar 2021.
+      Fields: Job Name, label, Company Name, Job Type,
+      Experience Required, Department, JD, City, Date Posted.
+      No salary data. No individual skill tags.
+      Download from Open Data Pakistan (no auth required).
 
   kaggle_rozee_pk:
     name: Pakistan Job Market Dataset (Rozee.pk)
@@ -49,8 +74,10 @@ sources:
     expected_filename: pakjobs_clean.csv
     notes: >
       Kaggle dataset by zincly (Syed Wajdan Zeerak & Syeda Zainish Fatima Abbas).
-      Historical 2024 Rozee.pk listings. Manual download required.
+      Historical 2024 Rozee.pk listings. Manual download required from Kaggle.
       Place CSV in data/external/.
+      Fields: Job Title, Company, Location, Salary, Experience, Education,
+      Employment Type, Job Description, Date Posted.
 
   findwork_tech:
     name: Findwork.dev

@@ -58,3 +58,6 @@ tools/postgresql/data/
 *.bak
 *.log
 !logs/.gitkeep
+
+# Playwright MCP
+.playwright-mcp/
