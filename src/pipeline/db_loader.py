@@ -353,16 +353,23 @@ class DatabaseLoader:
         if not job_rows:
             return {}
 
-        # Deduplicate by (source_id, source_job_id) — keep last occurrence
+        # Deduplicate by (source_id, source_job_id) — keep last occurrence for
+        # job-level fields but MERGE skills from ALL rows of the same job.
         seen: dict[tuple, int] = {}
         deduped_rows: list[tuple] = []
         deduped_indices: list[int] = []
+        # Track ALL row indices for each unique job so we can merge skills
+        job_all_indices: dict[tuple, list[int]] = {}
         for i, jrow in enumerate(job_rows):
             key = (jrow[0], jrow[1])  # (source_id, source_job_id)
-            seen[key] = i
-        for _key, orig_idx in seen.items():
-            deduped_rows.append(job_rows[orig_idx])
-            deduped_indices.append(valid_indices[orig_idx])
+            job_all_indices.setdefault(key, []).append(i)
+        for _key, indices in job_all_indices.items():
+            last_idx = indices[-1]
+            deduped_rows.append(job_rows[last_idx])
+            deduped_indices.append(valid_indices[last_idx])
+        # Store mapping so _bulk_insert_job_skills can use all rows
+        self._job_key_to_all_indices = job_all_indices
+        self._deduped_valid_indices = valid_indices
         job_rows = deduped_rows
         valid_indices = deduped_indices
         self.logger.info(
@@ -428,11 +435,52 @@ class DatabaseLoader:
     def _bulk_insert_job_skills(
         self, conn, df: pd.DataFrame, job_id_map: dict[int, int]
     ) -> int:
-        """Bulk insert job-skill junction rows using psycopg2."""
+        """Bulk insert job-skill junction rows using psycopg2.
+
+        When multiple DataFrame rows map to the same (source_id, source_job_id),
+        skills from ALL rows are merged (deduped by skill name).
+        """
         import numpy as np
 
+        # Build complete mapping: ALL original DataFrame indices -> job_id
+        # by re-doing the source_id lookup for each row
+        all_idx_to_job: dict[int, int] = {}
+        for idx in df.index:
+            source_name = str(df.at[idx, "source"]) if "source" in df.columns else ""
+            source_id = self._source_cache.get(source_name)
+            if source_id is None:
+                continue
+            sjid = str(df.at[idx, "source_job_id"])[:200] if "source_job_id" in df.columns else ""
+            if not sjid or sjid == "nan":
+                continue
+            # Find job_id by querying what was inserted
+            key = (source_id, sjid)
+            # Use the deduped job_id_map: iterate to find matching job
+            # Actually, we need a direct lookup. Build it from job_rows would be
+            # complex. Instead, just query the DB for existing job_ids.
+            # For efficiency, we build a cache here.
+            all_idx_to_job[idx] = key  # store key, resolve below
+
+        # Resolve keys to job_ids by querying the DB once
+        if all_idx_to_job:
+            raw_conn = conn.connection
+            cursor = raw_conn.cursor()
+            cursor.execute(
+                "SELECT job_id, source_id, source_job_id FROM jobs"
+            )
+            db_map: dict[tuple[int, str], int] = {}
+            for row in cursor.fetchall():
+                db_map[(row[1], row[2])] = row[0]
+
+            resolved: dict[int, int] = {}
+            for idx, key in all_idx_to_job.items():
+                jid = db_map.get(key)
+                if jid is not None:
+                    resolved[idx] = jid
+            all_idx_to_job = resolved
+
         rows: list[tuple] = []
-        for idx, job_id in job_id_map.items():
+        for idx, job_id in all_idx_to_job.items():
             skills = df.at[idx, "skills_list"]
             if skills is None or (isinstance(skills, float) and pd.isna(skills)):
                 continue
