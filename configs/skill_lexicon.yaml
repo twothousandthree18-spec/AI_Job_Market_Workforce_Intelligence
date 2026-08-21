@@ -32,6 +32,8 @@ categories:
       aliases: [go, golang]
     - canonical: C#
       aliases: [c#, csharp, c sharp, .net]
+    - canonical: C++
+      aliases: [c++, c plus plus, cpp]
     - canonical: PHP
       aliases: [php]
 

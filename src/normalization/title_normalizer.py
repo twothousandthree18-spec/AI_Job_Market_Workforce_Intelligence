@@ -1,11 +1,17 @@
 from __future__ import annotations
 
+import re
 from pathlib import Path
 
 import pandas as pd
 import yaml
 
 _TITLE_MAP_PATH = Path(__file__).resolve().parents[2] / "configs" / "title_map.yaml"
+
+_CHISEL_PREFIX = re.compile(
+    r"^(?:online\s+)?(?:full\s+time|part\s+time|remote)\s+", re.IGNORECASE
+)
+_CHISEL_SUFFIX = re.compile(r"\s+jobs?\s+in\s+pakistan$", re.IGNORECASE)
 
 
 class TitleNormalizer:
@@ -16,9 +22,7 @@ class TitleNormalizer:
         with open(path, encoding="utf-8") as f:
             data = yaml.safe_load(f)
 
-        # alias (lower) -> (normalized_title, role_category)
         self._alias_map: dict[str, tuple[str, str]] = {}
-        # role_category -> list of keywords (lower)
         self._keyword_map: dict[str, list[str]] = {}
 
         for category, cfg in data.get("role_categories", {}).items():
@@ -32,11 +36,16 @@ class TitleNormalizer:
             for level, keywords in seniority.items()
         }
 
-    def normalize(self, raw_title: str, experience_level: str | None = None) -> dict[str, str]:
-        """Return normalized_title, role_category, and seniority for a raw title."""
-        lower = raw_title.lower().strip()
+    def _clean_title(self, raw_title: str) -> str:
+        cleaned = _CHISEL_PREFIX.sub("", raw_title.strip())
+        cleaned = _CHISEL_SUFFIX.sub("", cleaned)
+        return cleaned.strip()
 
-        # --- role category ---
+    def normalize(self, raw_title: str, experience_level: str | None = None) -> dict[str, str]:
+        lower = raw_title.lower().strip()
+        cleaned = self._clean_title(raw_title)
+        cleaned_lower = cleaned.lower()
+
         normalized_title = raw_title
         role_category = "other"
 
@@ -44,13 +53,16 @@ class TitleNormalizer:
         if exact:
             normalized_title, role_category = exact
         else:
-            for category, keywords in self._keyword_map.items():
-                if any(kw in lower for kw in keywords):
-                    role_category = category
-                    break
+            exact_cleaned = self._alias_map.get(cleaned_lower)
+            if exact_cleaned:
+                normalized_title, role_category = exact_cleaned
+            else:
+                for category, keywords in self._keyword_map.items():
+                    if any(kw in cleaned_lower for kw in keywords):
+                        role_category = category
+                        break
 
-        # --- seniority ---
-        seniority = self._detect_seniority(lower, experience_level)
+        seniority = self._detect_seniority(cleaned_lower, experience_level)
 
         return {
             "normalized_title": normalized_title,
@@ -72,7 +84,6 @@ class TitleNormalizer:
         return "unknown"
 
     def normalize_batch(self, df: pd.DataFrame) -> pd.DataFrame:
-        """Add normalized_title, role_category, seniority columns to *df*."""
         df = df.copy()
 
         results = df.apply(
