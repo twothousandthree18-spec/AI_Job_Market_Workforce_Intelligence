@@ -32,6 +32,11 @@ class DuplicateDetector:
     def detect_content_duplicates(
         self, df: pd.DataFrame, threshold: int = 85
     ) -> list[tuple[int, int, float]]:
+        """Content similarity with blocking to avoid O(n^2) on large datasets.
+
+        Blocks by (company_name, city) to only compare records likely to be
+        duplicates. Falls back to city-only blocking if company is missing.
+        """
         text_cols = ["company_name", "job_title", "city"]
         present = [c for c in text_cols if c in df.columns]
         if not present:
@@ -43,15 +48,45 @@ class DuplicateDetector:
 
         texts = df.apply(_build_text, axis=1).tolist()
         indices = df.index.tolist()
-        pairs: list[tuple[int, int, float]] = []
 
-        for i in range(len(texts)):
-            for j in range(i + 1, len(texts)):
-                score = fuzz.token_sort_ratio(texts[i], texts[j])
-                if score >= threshold:
-                    pairs.append((indices[i], indices[j], score))
+        # Build blocks by (company_name, city) for blocking
+        block_col = None
+        for bc in ["company_name", "city"]:
+            if bc in df.columns:
+                block_col = bc
+                break
 
-        return pairs
+        if block_col and len(df) > 500:
+            blocks: dict[str, list[int]] = {}
+            for i, idx in enumerate(indices):
+                val = df.at[idx, block_col]
+                block_key = (
+                    str(val).lower() if pd.notna(val) else "_none_"
+                )
+                if block_key not in blocks:
+                    blocks[block_key] = []
+                blocks[block_key].append(i)
+
+            pairs: list[tuple[int, int, float]] = []
+            for _block_key, block_indices in blocks.items():
+                if len(block_indices) < 2:
+                    continue
+                for bi in range(len(block_indices)):
+                    for bj in range(bi + 1, len(block_indices)):
+                        ii = block_indices[bi]
+                        ij = block_indices[bj]
+                        score = fuzz.token_sort_ratio(texts[ii], texts[ij])
+                        if score >= threshold:
+                            pairs.append((indices[ii], indices[ij], score))
+            return pairs
+        else:
+            pairs: list[tuple[int, int, float]] = []
+            for i in range(len(texts)):
+                for j in range(i + 1, len(texts)):
+                    score = fuzz.token_sort_ratio(texts[i], texts[j])
+                    if score >= threshold:
+                        pairs.append((indices[i], indices[j], score))
+            return pairs
 
     def mark_duplicates(self, df: pd.DataFrame) -> pd.DataFrame:
         df = df.copy()
