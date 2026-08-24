@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI-Powered Job Market &amp; Workforce Intelligence Platform</title>
+  <meta name="description" content="End-to-end workforce analytics platform analyzing 8,256 UK and Pakistan job postings with NLP skill extraction, PostgreSQL analytics, and Power BI reporting.">
+  <meta property="og:title" content="AI-Powered Job Market &amp; Workforce Intelligence Platform">
+  <meta property="og:description" content="Production-style workforce analytics: data engineering, NLP, SQL analytics, Power BI. 8,256 jobs, 77 skills, 13 analytical datasets.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#050505">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ========== NAVIGATION ========== -->
+<nav aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-brand">Workforce Intelligence</a>
+    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#data-sources">Data</a></li>
+      <li><a href="#pipeline">Pipeline</a></li>
+      <li><a href="#nlp">NLP</a></li>
+      <li><a href="#analytics">Analytics</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#salary">Salary</a></li>
+      <li><a href="#powerbi">Power BI</a></li>
+      <li><a href="#tech">Tech</a></li>
+      <li><a href="#github">GitHub</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ========== HERO ========== -->
+<section class="hero" id="hero">
+  <div class="container hero-content">
+    <div class="section-label">Portfolio Case Study</div>
+    <h1>AI-Powered Job Market &amp;<br><span>Workforce Intelligence</span> Platform</h1>
+    <p class="hero-sub">A production-style workforce analytics platform that transforms real UK and Pakistan job-posting data into structured skills, salary, market-demand, and career intelligence through NLP, SQL, and Power BI.</p>
+
+    <div class="hero-metrics">
+      <div class="metric">
+        <div class="metric-value" data-count="8256">0</div>
+        <div class="metric-label">Jobs Analyzed</div>
+      </div>
+      <div class="metric">
+        <div class="metric-value" data-count="3029">0</div>
+        <div class="metric-label">Recent UK Postings</div>
+      </div>
+      <div class="metric">
+        <div class="metric-value" data-count="77">0</div>
+        <div class="metric-label">Normalized Skills</div>
+      </div>
+      <div class="metric">
+        <div class="metric-value" data-count="13">0</div>
+        <div class="metric-label">Analytical Datasets</div>
+      </div>
+      <div class="metric">
+        <div class="metric-value" data-count="127">0</div>
+        <div class="metric-label">Automated Tests</div>
+      </div>
+    </div>
+
+    <div class="hero-cta">
+      <a href="#analytics" class="btn btn-primary">View Analytics</a>
+      <a href="#powerbi" class="btn btn-outline">Explore Power BI</a>
+      <a href="https://github.com/twothousandthree18-spec/AI_Job_Market_Workforce_Intelligence" class="btn btn-outline" target="_blank" rel="noopener">View GitHub</a>
+    </div>
+
+    <div class="scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <span>&darr;</span>
+    </div>
+  </div>
+</section>
+
+<!-- ========== WHAT I BUILT ========== -->
+<section id="overview">
+  <div class="container">
+    <div class="section-label reveal">Project Overview</div>
+    <h2 class="section-title reveal">What I Built</h2>
+    <p class="section-desc reveal">An end-to-end analytics pipeline that ingests raw job postings from multiple sources, engineers structured intelligence through NLP, stores results in PostgreSQL, and produces analytical outputs for Power BI and Python visualization.</p>
+
+    <div class="card-grid card-grid-3">
+      <div class="card reveal">
+        <div class="card-icon" aria-hidden="true">&#9881;</div>
+        <h4>Data Engineering</h4>
+        <p>Multi-source ingestion, validation, deduplication, and cleaning of 8,256 job postings from Adzuna UK and CHISEL/LUMS Pakistan.</p>
+      </div>
+      <div class="card reveal reveal-delay-1">
+        <div class="card-icon" aria-hidden="true">&#128269;</div>
+        <h4>NLP &amp; Skill Extraction</h4>
+        <p>Lexicon-based skill extraction with contextual disambiguation, reducing false positives by 75% through pattern analysis and validation.</p>
+      </div>
+      <div class="card reveal reveal-delay-2">
+        <div class="card-icon" aria-hidden="true">&#128202;</div>
+        <h4>Analytics &amp; BI</h4>
+        <p>13 SQL analytical views, Python statistical analysis, and a 10-page Power BI dashboard specification for workforce intelligence.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== BUSINESS PROBLEM ========== -->
+<section id="problem">
+  <div class="container">
+    <div class="section-label reveal">Business Problem</div>
+    <h2 class="section-title reveal">Why This Matters</h2>
+    <p class="section-desc reveal">Job postings contain fragmented information about skills, salaries, roles, seniority, locations, and work modes. Raw postings are difficult to compare directly across sources, companies, and countries.</p>
+
+    <div class="card-grid card-grid-2">
+      <div class="card reveal">
+        <h4>The Problem</h4>
+        <p>Workforce data is scattered across job boards, each with different formats, taxonomies, and coverage. A data analyst targeting the UK market needs structured intelligence, not raw postings.</p>
+      </div>
+      <div class="card reveal reveal-delay-1">
+        <h4>The Solution</h4>
+        <p>This platform transforms raw, unstructured job postings into a normalized analytical model: skills extracted via NLP, roles classified, salaries standardized, and market patterns surfaced through SQL and statistical analysis.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== DATA SOURCES ========== -->
+<section id="data-sources">
+  <div class="container">
+    <div class="section-label reveal">Data Foundation</div>
+    <h2 class="section-title reveal">Data Sources</h2>
+    <p class="section-desc reveal">Two primary datasets with fundamentally different temporal coverage, plus a small supplementary source.</p>
+
+    <div class="source-grid">
+      <div class="source-card uk reveal">
+        <div class="source-name">Adzuna UK</div>
+        <div class="source-meta">
+          <strong>3,029</strong> job postings<br>
+          <strong>Period:</strong> September 2023 &ndash; August 2026<br>
+          <strong>Coverage:</strong> Recent UK data roles<br>
+          <strong>Salary:</strong> Full salary information available<br>
+          <strong>Companies:</strong> 999 unique employers<br>
+          <strong>Locations:</strong> 107 cities (76% London)
+        </div>
+      </div>
+      <div class="source-card pk reveal reveal-delay-1">
+        <div class="source-name">CHISEL / LUMS Pakistan</div>
+        <div class="source-meta">
+          <strong>5,211</strong> job postings<br>
+          <strong>Period:</strong> December 2019 &ndash; May 2024<br>
+          <strong>Coverage:</strong> Historical Pakistan job market<br>
+          <strong>Salary:</strong> No comparable salary data<br>
+          <strong>Companies:</strong> 2,874 unique employers<br>
+          <strong>Locations:</strong> 86 cities
+        </div>
+      </div>
+      <div class="source-card reveal reveal-delay-2">
+        <div class="source-name">Kaggle / Rozee.pk</div>
+        <div class="source-meta">
+          <strong>16</strong> supplementary postings<br>
+          <strong>Period:</strong> Various<br>
+          <strong>Coverage:</strong> Small Pakistan sample<br>
+          <strong>Note:</strong> Insufficient for independent analysis
+        </div>
+      </div>
+    </div>
+
+    <div class="temporal-warning reveal">
+      <strong>Important:</strong> The UK dataset contains recent postings (2023&ndash;2026). The Pakistan dataset is historical (2019&ndash;2024). These are <em>not</em> temporally equivalent and should not be interpreted as a current 2026 Pakistan-vs-UK labor market comparison.
+    </div>
+  </div>
+</section>
+
+<!-- ========== DATA ENGINEERING PIPELINE ========== -->
+<section id="pipeline">
+  <div class="container">
+    <div class="section-label reveal">Architecture</div>
+    <h2 class="section-title reveal">Data Engineering Pipeline</h2>
+    <p class="section-desc reveal">Each stage adds structure, quality, and analytical value to the raw postings.</p>
+
+    <div class="pipeline reveal">
+      <div class="pipeline-step">
+        <div class="step-num">Step 1</div>
+        <div class="step-name">Ingestion</div>
+        <div class="step-desc">API + CSV sources</div>
+      </div>
+      <div class="pipeline-arrow" aria-hidden="true">&rarr;</div>
+      <div class="pipeline-step">
+        <div class="step-num">Step 2</div>
+        <div class="step-name">Staging</div>
+        <div class="step-desc">Schema normalization</div>
+      </div>
+      <div class="pipeline-arrow" aria-hidden="true">&rarr;</div>
+      <div class="pipeline-step">
+        <div class="step-num">Step 3</div>
+        <div class="step-name">Validation</div>
+        <div class="step-desc">DQ rules + dedup</div>
+      </div>
+      <div class="pipeline-arrow" aria-hidden="true">&rarr;</div>
+      <div class="pipeline-step">
+        <div class="step-num">Step 4</div>
+        <div class="step-name">Cleaning</div>
+        <div class="step-desc">Text normalization</div>
+      </div>
+      <div class="pipeline-arrow" aria-hidden="true">&rarr;</div>
+      <div class="pipeline-step">
+        <div class="step-num">Step 5</div>
+        <div class="step-name">NLP</div>
+        <div class="step-desc">Skill extraction</div>
+      </div>
+      <div class="pipeline-arrow" aria-hidden="true">&rarr;</div>
+      <div class="pipeline-step">
+        <div class="step-num">Step 6</div>
+        <div class="step-name">PostgreSQL</div>
+        <div class="step-desc">Analytical schema</div>
+      </div>
+      <div class="pipeline-arrow" aria-hidden="true">&rarr;</div>
+      <div class="pipeline-step">
+        <div class="step-num">Step 7</div>
+        <div class="step-name">Analytics</div>
+        <div class="step-desc">SQL + Python</div>
+      </div>
+      <div class="pipeline-arrow" aria-hidden="true">&rarr;</div>
+      <div class="pipeline-step">
+        <div class="step-num">Step 8</div>
+        <div class="step-name">Power BI</div>
+        <div class="step-desc">Dashboard + DAX</div>
+      </div>
+    </div>
+
+    <div class="card-grid card-grid-4" style="margin-top:32px">
+      <div class="card reveal">
+        <h4>Ingestion</h4>
+        <p>Adzuna REST API for UK; Kaggle CSV for Pakistan. 11 search terms, 100 results each. Run manifests track every execution.</p>
+      </div>
+      <div class="card reveal reveal-delay-1">
+        <h4>Validation</h4>
+        <p>Schema enforcement, duplicate detection across sources, missing-field reporting, and quarantine pipeline for rejected records.</p>
+      </div>
+      <div class="card reveal reveal-delay-2">
+        <h4>NLP</h4>
+        <p>78 canonical skills with alias matching, contextual disambiguation, word-boundary enforcement, and confidence scoring.</p>
+      </div>
+      <div class="card reveal reveal-delay-3">
+        <h4>PostgreSQL</h4>
+        <p>14 normalized tables, 13 analytical views. Star schema with fact_jobs as the central table. DAX-ready CSV exports.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== NLP & SKILL INTELLIGENCE ========== -->
+<section id="nlp">
+  <div class="container">
+    <div class="section-label reveal">NLP Engineering</div>
+    <h2 class="section-title reveal">Skill Extraction &amp; Remediation</h2>
+    <p class="section-desc reveal">The NLP layer extracts, normalizes, and validates skills from unstructured job descriptions using a lexicon of 78 canonical skills with contextual disambiguation.</p>
+
+    <div class="card-grid card-grid-2" style="margin-bottom:40px">
+      <div class="card reveal">
+        <h4>How It Works</h4>
+        <p><strong>Lexicon matching:</strong> 78 skills with 200+ aliases mapped to canonical names.<br>
+        <strong>Word boundaries:</strong> Prevents false matches (e.g., "R" in "SQL" or "senior").<br>
+        <strong>Contextual rules:</strong> Positive/negative context patterns disambiguate skills like R, Go, Scala, SAS, C#.<br>
+        <strong>Provenance:</strong> Each extraction records confidence, source field, and extraction method.</p>
+      </div>
+      <div class="card reveal reveal-delay-1">
+        <h4>Results</h4>
+        <p><strong>Before remediation:</strong> 28,972 total skill mentions (many false positives).<br>
+        <strong>After remediation:</strong> 7,256 validated skill mentions.<br>
+        <strong>False positive reduction:</strong> 75% of invalid matches eliminated.<br>
+        <strong>Validation:</strong> 25 dedicated false-positive prevention tests confirm accuracy.</p>
+      </div>
+    </div>
+
+    <h3 class="reveal" style="margin-bottom:20px">Before &amp; After: False Positive Remediation</h3>
+
+    <div class="remediation reveal">
+      <div class="before-card">
+        <div class="remed-label before">Before Remediation</div>
+        <div class="remed-item"><span class="remed-skill">R (language)</span><span class="remed-val">16,433 matches</span></div>
+        <div class="remed-item"><span class="remed-skill">Go (language)</span><span class="remed-val">2,476 matches</span></div>
+        <div class="remed-item"><span class="remed-skill">Scala</span><span class="remed-val">265 matches</span></div>
+        <div class="remed-item"><span class="remed-skill">Total Mentions</span><span class="remed-val">28,972</span></div>
+      </div>
+      <div class="remediation-arrow" aria-hidden="true">&rarr;</div>
+      <div class="after-card">
+        <div class="remed-label after">After Remediation</div>
+        <div class="remed-item"><span class="remed-skill">R (language)</span><span class="remed-val">12 validated</span></div>
+        <div class="remed-item"><span class="remed-skill">Go (language)</span><span class="remed-val">66 validated</span></div>
+        <div class="remed-item"><span class="remed-skill">Scala</span><span class="remed-val">6 validated</span></div>
+        <div class="remed-item"><span class="remed-skill">Total Mentions</span><span class="remed-val">7,256</span></div>
+      </div>
+    </div>
+
+    <div class="stats-row reveal">
+      <div class="stat-box">
+        <div class="val">99.9%</div>
+        <div class="lbl">R false positive reduction</div>
+      </div>
+      <div class="stat-box">
+        <div class="val">97.3%</div>
+        <div class="lbl">Go false positive reduction</div>
+      </div>
+      <div class="stat-box">
+        <div class="val">97.7%</div>
+        <div class="lbl">Scala false positive reduction</div>
+      </div>
+      <div class="stat-box">
+        <div class="val">75%</div>
+        <div class="lbl">Total mentions eliminated</div>
+      </div>
+    </div>
+
+    <div class="card reveal" style="margin-top:24px">
+      <h4>Why This Matters</h4>
+      <p>This was not achieved by simply deleting frequent skills. The system identified ambiguous pattern matches (e.g., "R" appearing in "SQL", "senior", "data") and applied contextual rules with positive and negative context patterns. Each extraction carries provenance metadata including confidence level, source field, and extraction method.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== DATA QUALITY ========== -->
+<section id="quality">
+  <div class="container">
+    <div class="section-label reveal">Quality Engineering</div>
+    <h2 class="section-title reveal">Data Quality &amp; Validation</h2>
+    <p class="section-desc reveal">Every pipeline stage includes validation rules. The system detects duplicates, enforces schemas, quarantines invalid records, and cross-validates SQL against Python outputs.</p>
+
+    <div class="card-grid card-grid-3">
+      <div class="card reveal">
+        <h4>Automated Testing</h4>
+        <p>127 tests across 8 test modules covering pipeline E2E, skill extraction, normalization, analytics, data quality reporting, duplicate detection, text cleaning, and validation.</p>
+      </div>
+      <div class="card reveal reveal-delay-1">
+        <h4>Validation Layers</h4>
+        <p>Schema validation, referential integrity checks, salary normalization validation, deduplication across sources, and NLP false-positive prevention tests (25 dedicated tests).</p>
+      </div>
+      <div class="card reveal reveal-delay-2">
+        <h4>Cross-Validation</h4>
+        <p>SQL analytical views are cross-validated against Python analytics engine outputs. Statistical tests (Chi-square, Mann-Whitney U) confirm analytical integrity.</p>
+      </div>
+    </div>
+
+    <div class="stats-row reveal">
+      <div class="stat-box">
+        <div class="val">127</div>
+        <div class="lbl">Automated Tests</div>
+      </div>
+      <div class="stat-box">
+        <div class="val">8</div>
+        <div class="lbl">Test Modules</div>
+      </div>
+      <div class="stat-box">
+        <div class="val">13</div>
+        <div class="lbl">SQL Views Validated</div>
+      </div>
+      <div class="stat-box">
+        <div class="val">0</div>
+        <div class="lbl">Lint Errors (ruff)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== WORKFORCE ANALYTICS ========== -->
+<section id="analytics">
+  <div class="container">
+    <div class="section-label reveal">Analytical Insights</div>
+    <h2 class="section-title reveal">Workforce Analytics</h2>
+    <p class="section-desc reveal">Key findings from 8,256 job postings across two markets, analyzed through 13 SQL views and a Python analytics engine.</p>
+
+    <div class="source-grid reveal">
+      <div class="source-card uk">
+        <div class="source-name">UK Market (Recent 2023&ndash;2026)</div>
+        <div class="source-meta">
+          <strong>3,029</strong> postings from Adzuna API<br>
+          <strong>Top skills:</strong> Reporting (10.9%), Machine Learning (7.6%), Leadership (4.6%)<br>
+          <strong>Role mix:</strong> Data Analyst 24.4%, Data Scientist 12.6%, Analytics Engineer 9.5%<br>
+          <strong>London:</strong> 76% of UK postings (2,312 jobs)<br>
+          <strong>Median salary:</strong> &pound;63,394
+        </div>
+      </div>
+      <div class="source-card pk reveal reveal-delay-1">
+        <div class="source-name">Pakistan Market (Historical 2019&ndash;2024)</div>
+        <div class="source-meta">
+          <strong>5,227</strong> postings from CHISEL/LUMS + Rozee<br>
+          <strong>Top skills:</strong> PHP (7.4%), Communication (5.1%), JavaScript (3.9%)<br>
+          <strong>Cities:</strong> Lahore 32%, Islamabad 29%, Karachi 25%<br>
+          <strong>Role classification:</strong> 99% &ldquo;other&rdquo; (CHISEL taxonomy limitation)<br>
+          <strong>Salary:</strong> Not comparable (different period, no data)
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-figure reveal">
+      <img src="images/01_skill_comparison_top20.png" alt="Top 20 Skills: UK vs Pakistan market comparison showing penetration percentages for each market" loading="eager">
+      <figcaption>Top 20 Skills: UK (recent 2023&ndash;2026) vs Pakistan (historical 2019&ndash;2024). UK emphasizes reporting, machine learning, and leadership. Pakistan emphasizes PHP, communication, and JavaScript.</figcaption>
+    </div>
+  </div>
+</section>
+
+<!-- ========== LONDON INTELLIGENCE ========== -->
+<section id="london">
+  <div class="container">
+    <div class="section-label reveal">Geographic Intelligence</div>
+    <h2 class="section-title reveal">London Job Market</h2>
+    <p class="section-desc reveal">Within the collected UK postings, London represents a significant concentration of data and analytics roles.</p>
+
+    <div class="stats-row reveal">
+      <div class="stat-box">
+        <div class="val">2,312</div>
+        <div class="lbl">London City Jobs</div>
+      </div>
+      <div class="stat-box">
+        <div class="val">513</div>
+        <div class="lbl">Greater London Ring</div>
+      </div>
+      <div class="stat-box">
+        <div class="val">76.3%</div>
+        <div class="lbl">London Share of UK</div>
+      </div>
+      <div class="stat-box">
+        <div class="val">204</div>
+        <div class="lbl">UK Other Locations</div>
+      </div>
+    </div>
+
+    <div class="chart-figure reveal">
+      <img src="images/03_london_intelligence.png" alt="London intelligence dashboard showing job distribution, role breakdown, work mode, and salary across London, Greater London, and UK Other" loading="eager">
+      <figcaption>London Intelligence: job volume, data role distribution, work mode preferences, and salary comparison across London, Greater London, and UK Other locations.</figcaption>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SKILLS INTELLIGENCE ========== -->
+<section id="skills">
+  <div class="container">
+    <div class="section-label reveal">Skills Intelligence</div>
+    <h2 class="section-title reveal">Skill Demand &amp; Categories</h2>
+    <p class="section-desc reveal">77 normalized skills extracted across both markets, organized into technical, analytical, AI/ML, tool, and business-soft categories.</p>
+
+    <div class="chart-figure reveal">
+      <img src="images/05_skill_categories.png" alt="Skill mentions by category showing the distribution of technical, analytical, AI/ML, tool, and business-soft skills across both markets" loading="eager">
+      <figcaption>Skill mentions by category across both markets. Technical skills dominate, followed by analytical and AI/ML categories.</figcaption>
+    </div>
+
+    <div class="chart-figure reveal">
+      <img src="images/08_career_progression.png" alt="Career progression showing top 10 skills for Data Analyst, Analytics Engineer, and Data Scientist roles in the UK market" loading="eager">
+      <figcaption>UK Career Intelligence: top skills by role progression from Data Analyst through Analytics Engineer to Data Scientist.</figcaption>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SALARY INTELLIGENCE ========== -->
+<section id="salary">
+  <div class="container">
+    <div class="section-label reveal">Compensation Analysis</div>
+    <h2 class="section-title reveal">Salary Intelligence</h2>
+    <p class="section-desc reveal">Salary analysis is available for UK postings only. The Pakistan dataset does not contain comparable salary information.</p>
+
+    <div class="stats-row reveal">
+      <div class="stat-box">
+        <div class="val">&pound;63,394</div>
+        <div class="lbl">UK Median Salary</div>
+      </div>
+      <div class="stat-box">
+        <div class="val">&pound;67,942</div>
+        <div class="lbl">UK Mean Salary</div>
+      </div>
+      <div class="stat-box">
+        <div class="val">3,017</div>
+        <div class="lbl">Jobs with Salary Data</div>
+      </div>
+      <div class="stat-box">
+        <div class="val">99.6%</div>
+        <div class="lbl">UK Salary Coverage</div>
+      </div>
+    </div>
+
+    <div class="chart-figure reveal">
+      <img src="images/04_salary_distribution.png" alt="UK salary distribution histogram showing the concentration of advertised salaries between 40k and 80k GBP" loading="eager">
+      <figcaption>UK Salary Distribution: advertised salaries concentrate in the &pound;40k&ndash;&pound;80k range, with a median of &pound;63,394.</figcaption>
+    </div>
+
+    <div class="chart-figure reveal">
+      <img src="images/09_skill_salary.png" alt="Scatter plot showing the association between skill frequency and median salary in UK job postings" loading="eager">
+      <figcaption>Skill-Salary Association: relationship between the number of jobs requiring a skill and the median salary offered. Larger bubbles indicate more job postings.</figcaption>
+    </div>
+  </div>
+</section>
+
+<!-- ========== POWER BI ========== -->
+<section id="powerbi">
+  <div class="container">
+    <div class="section-label reveal">Business Intelligence</div>
+    <h2 class="section-title reveal">Interactive Power BI Dashboard</h2>
+    <p class="section-desc reveal">A 10-page Power BI dashboard specification with 50+ DAX measures, star schema model, and complete design system. Built for recruiter-facing workforce intelligence exploration.</p>
+
+    <div class="card-grid card-grid-2" style="margin-bottom:32px">
+      <div class="card reveal">
+        <h4>Dashboard Pages</h4>
+        <p>Executive Overview, UK Market, London Intelligence, Pakistan Historical, Skills Intelligence, Skill Comparison, Salary Intelligence, Role &amp; Seniority, Career Intelligence, Data Quality &amp; Methodology.</p>
+      </div>
+      <div class="card reveal reveal-delay-1">
+        <h4>Technical Specifications</h4>
+        <p>Star schema semantic model with fact_jobs as central table. 50+ DAX measures. 10 aggregate tables. Complete data dictionary and page-by-page specification.</p>
+      </div>
+    </div>
+
+    <div class="card-grid card-grid-3">
+      <div class="card reveal">
+        <h4>Data Model</h4>
+        <p>Central fact table (8,256 rows) with dimension tables for role, seniority, country, and work mode. 10 pre-aggregated summary tables for specific dashboard pages.</p>
+      </div>
+      <div class="card reveal reveal-delay-1">
+        <h4>DAX Measures</h4>
+        <p>Core job counts, role/seniority breakdowns, salary aggregations (UK only), percentage calculations, work mode analysis, and skill penetration metrics.</p>
+      </div>
+      <div class="card reveal reveal-delay-2">
+        <h4>Design System</h4>
+        <p>Black + gold + ivory palette. Consistent typography. Restrained animations. Professional BI aesthetics with clear data labeling.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:32px" class="reveal">
+      <a href="https://github.com/twothousandthree18-spec/AI_Job_Market_Workforce_Intelligence/tree/main/docs" class="btn btn-outline btn-sm" target="_blank" rel="noopener">View Power BI Documentation &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PYTHON / MATPLOTLIB ========== -->
+<section id="matplotlib">
+  <div class="container">
+    <div class="section-label reveal">Python Analytics</div>
+    <h2 class="section-title reveal">Python &amp; Matplotlib Visualization</h2>
+    <p class="section-desc reveal">Python was used for exploratory analysis, statistical validation, and analytical visualization. Power BI was used for interactive business intelligence and executive presentation.</p>
+
+    <div class="chart-figure reveal">
+      <img src="images/02_role_distribution.png" alt="Role distribution comparison showing UK and Pakistan job posting breakdown by role category" loading="eager">
+      <figcaption>Role Distribution: UK shows a meaningful data-role taxonomy (24.4% Data Analyst, 12.6% Data Scientist), while Pakistan's CHISEL dataset classifies 99% as &ldquo;other&rdquo;.</figcaption>
+    </div>
+
+    <div class="chart-figure reveal">
+      <img src="images/07_temporal_trends.png" alt="Temporal trends showing monthly job posting volumes for UK (2023-2026) and Pakistan (2019-2024)" loading="eager">
+      <figcaption>Temporal Trends: UK postings span September 2023 to August 2026. Pakistan postings span December 2019 to May 2024. The datasets are not temporally equivalent.</figcaption>
+    </div>
+
+    <div class="chart-figure reveal">
+      <img src="images/10_employers_top15.png" alt="Top 15 UK employers by job posting volume in data and analytics roles" loading="eager">
+      <figcaption>Top UK Employers: Harnham (data recruitment specialist) leads with 164 postings, followed by Wise (95), Amazon (45), and JPMorganChase (40).</figcaption>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CAREER INTELLIGENCE ========== -->
+<section id="career">
+  <div class="container">
+    <div class="section-label reveal">Career Intelligence</div>
+    <h2 class="section-title reveal">Market-Derived Career Intelligence</h2>
+    <p class="section-desc reveal">The analytical layer identifies skill demand patterns across career stages in the UK data profession. This is market intelligence, not a personalized recommendation engine.</p>
+
+    <div class="card-grid card-grid-3">
+      <div class="card reveal">
+        <h4>Data Analyst</h4>
+        <p><strong>UK demand:</strong> 738 postings (24.4%)<br>
+        <strong>Top skills:</strong> SQL, Python, Reporting, Excel, Tableau<br>
+        <strong>Seniority:</strong> Senior 50%, Junior 9%<br>
+        <strong>London concentration:</strong> 76%</p>
+      </div>
+      <div class="card reveal reveal-delay-1">
+        <h4>Analytics Engineer</h4>
+        <p><strong>UK demand:</strong> 289 postings (9.5%)<br>
+        <strong>Top skills:</strong> SQL, Python, dbt, Airflow, Data Modeling<br>
+        <strong>Seniority:</strong> Senior-heavy<br>
+        <strong>Emerging role:</strong> Bridge between analytics and engineering</p>
+      </div>
+      <div class="card reveal reveal-delay-2">
+        <h4>Data Scientist</h4>
+        <p><strong>UK demand:</strong> 382 postings (12.6%)<br>
+        <strong>Top skills:</strong> Python, Machine Learning, SQL, TensorFlow, Statistics<br>
+        <strong>Seniority:</strong> Mixed<br>
+        <strong>Highest technical depth</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== KEY FINDINGS ========== -->
+<section id="findings">
+  <div class="container">
+    <div class="section-label reveal">Key Findings</div>
+    <h2 class="section-title reveal">What the Data Shows</h2>
+    <p class="section-desc reveal">Evidence-based findings from the analytical layer. Each finding is supported by the validated Phase 5 outputs.</p>
+
+    <div class="finding-grid">
+      <div class="finding-card reveal">
+        <div class="cat">Market</div>
+        <h4>UK Data Roles Are Well-Structured</h4>
+        <p>46.5% of UK postings are classified as Data Analyst, Data Scientist, or Analytics Engineer. The remaining 48% are &ldquo;other&rdquo; roles that require data-adjacent skills.</p>
+      </div>
+      <div class="finding-card reveal reveal-delay-1">
+        <div class="cat">Skills</div>
+        <h4>UK and PK Skill Profiles Are Fundamentally Different</h4>
+        <p>UK emphasizes reporting, ML, and BI tools. Pakistan emphasizes PHP, communication, and web technologies. The gap reflects both different market structures and different dataset periods.</p>
+      </div>
+      <div class="finding-card reveal reveal-delay-2">
+        <div class="cat">London</div>
+        <h4>London Dominates UK Data Roles</h4>
+        <p>76.3% of UK postings are in London. Greater London adds another 16.9%. Only 6.7% of UK data roles are outside the London cluster.</p>
+      </div>
+      <div class="finding-card reveal">
+        <div class="cat">Salary</div>
+        <h4>UK Median Data Salary: &pound;63,394</h4>
+        <p>99.6% of UK postings include salary data. The median advertised salary across all data roles is &pound;63,394. Statistical tests show no significant salary difference between senior and junior roles (Mann-Whitney U, p=0.07).</p>
+      </div>
+      <div class="finding-card reveal reveal-delay-1">
+        <div class="cat">Career</div>
+        <h4>SQL and Python Are Universal Requirements</h4>
+        <p>SQL and Python appear across all three target roles (Data Analyst, Analytics Engineer, Data Scientist). They are the baseline technical skills for UK data careers.</p>
+      </div>
+      <div class="finding-card reveal reveal-delay-2">
+        <div class="cat">Quality</div>
+        <h4>NLP False Positives Were Systematic</h4>
+        <p>Without remediation, the skill extractor would have reported 28,972 skill mentions. Contextual disambiguation reduced this to 7,256 validated mentions &mdash; a 75% reduction in invalid data.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== TECHNICAL ARCHITECTURE ========== -->
+<section id="tech">
+  <div class="container">
+    <div class="section-label reveal">Technology</div>
+    <h2 class="section-title reveal">Technical Architecture</h2>
+    <p class="section-desc reveal">Every technology listed is actively used in the pipeline. No decorative dependencies.</p>
+
+    <div class="tech-grid">
+      <div class="tech-item reveal">
+        <div class="tech-name">Python 3.14</div>
+        <div class="tech-role">Core language</div>
+      </div>
+      <div class="tech-item reveal reveal-delay-1">
+        <div class="tech-name">PostgreSQL 17</div>
+        <div class="tech-role">Analytical database</div>
+      </div>
+      <div class="tech-item reveal reveal-delay-2">
+        <div class="tech-name">SQL</div>
+        <div class="tech-role">13 analytical views</div>
+      </div>
+      <div class="tech-item reveal">
+        <div class="tech-name">Pandas</div>
+        <div class="tech-role">Data engineering</div>
+      </div>
+      <div class="tech-item reveal reveal-delay-1">
+        <div class="tech-name">NumPy</div>
+        <div class="tech-role">Numerical analysis</div>
+      </div>
+      <div class="tech-item reveal reveal-delay-2">
+        <div class="tech-name">Matplotlib</div>
+        <div class="tech-role">Analytical charts</div>
+      </div>
+      <div class="tech-item reveal">
+        <div class="tech-name">SciPy</div>
+        <div class="tech-role">Statistical tests</div>
+      </div>
+      <div class="tech-item reveal reveal-delay-1">
+        <div class="tech-name">Power BI</div>
+        <div class="tech-role">Interactive dashboard</div>
+      </div>
+      <div class="tech-item reveal reveal-delay-2">
+        <div class="tech-name">DAX</div>
+        <div class="tech-role">50+ measures</div>
+      </div>
+      <div class="tech-item reveal">
+        <div class="tech-name">pytest</div>
+        <div class="tech-role">127 automated tests</div>
+      </div>
+      <div class="tech-item reveal reveal-delay-1">
+        <div class="tech-name">ruff</div>
+        <div class="tech-role">Code quality</div>
+      </div>
+      <div class="tech-item reveal reveal-delay-2">
+        <div class="tech-name">Git</div>
+        <div class="tech-role">Version control</div>
+      </div>
+      <div class="tech-item reveal">
+        <div class="tech-name">Adzuna API</div>
+        <div class="tech-role">UK job data source</div>
+      </div>
+      <div class="tech-item reveal reveal-delay-1">
+        <div class="tech-name">Regex / NLP</div>
+        <div class="tech-role">Skill extraction</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ENGINEERING HIGHLIGHTS ========== -->
+<section id="highlights">
+  <div class="container">
+    <div class="section-label reveal">Engineering</div>
+    <h2 class="section-title reveal">Engineering Highlights</h2>
+
+    <div class="stats-row reveal">
+      <div class="stat-box">
+        <div class="val">8,256</div>
+        <div class="lbl">Unique Jobs Processed</div>
+      </div>
+      <div class="stat-box">
+        <div class="val">3,886</div>
+        <div class="lbl">Unique Companies</div>
+      </div>
+      <div class="stat-box">
+        <div class="val">193</div>
+        <div class="lbl">Unique Locations</div>
+      </div>
+      <div class="stat-box">
+        <div class="val">77</div>
+        <div class="lbl">Normalized Skills</div>
+      </div>
+      <div class="stat-box">
+        <div class="val">7,256</div>
+        <div class="lbl">Validated Skill Links</div>
+      </div>
+      <div class="stat-box">
+        <div class="val">3,017</div>
+        <div class="lbl">Salary Records (UK)</div>
+      </div>
+    </div>
+
+    <div class="card-grid card-grid-2" style="margin-top:24px">
+      <div class="card reveal">
+        <h4>Multi-Source Ingestion</h4>
+        <p>REST API integration with Adzuna for UK data. CSV ingestion for Pakistan CHISEL/LUMS and Kaggle Rozee datasets. Run manifests track every execution with timestamps, row counts, and quality scores.</p>
+      </div>
+      <div class="card reveal reveal-delay-1">
+        <h4>PostgreSQL Analytical Model</h4>
+        <p>14 normalized production tables with foreign key relationships. 13 analytical views with documented grain. Star schema optimized for Power BI import. All views cross-validated against Python outputs.</p>
+      </div>
+      <div class="card reveal reveal-delay-2">
+        <h4>NLP with Provenance</h4>
+        <p>Every skill extraction records: confidence level (high/medium/low), source field (title/description), extraction method (lexicon/contextual), and context window. Enables downstream quality filtering.</p>
+      </div>
+      <div class="card reveal reveal-delay-3">
+        <h4>Statistical Validation</h4>
+        <p>Chi-square test confirms skill distribution differs significantly between UK and PK (p&asymp;0). Mann-Whitney U test on salary by seniority shows no significant difference (p=0.07). All tests documented with limitations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== LIMITATIONS ========== -->
+<section id="limitations">
+  <div class="container">
+    <div class="section-label reveal">Transparency</div>
+    <h2 class="section-title reveal">Limitations</h2>
+    <p class="section-desc reveal">Analytical credibility requires acknowledging what the data cannot tell us.</p>
+
+    <ul class="limitation-list reveal">
+      <li>UK and Pakistan datasets are not temporally equivalent. UK data is recent (2023&ndash;2026); Pakistan data is historical (2019&ndash;2024). Direct comparison reflects dataset period, not necessarily current market conditions.</li>
+      <li>Job postings represent employer demand, not the complete labor market. Self-employed, internal hires, and word-of-mouth placements are underrepresented.</li>
+      <li>The CHISEL/LUMS Pakistan dataset classifies 99% of roles as &ldquo;other&rdquo; due to its original taxonomy, limiting role-specific analysis for Pakistan.</li>
+      <li>Salary analysis is UK-only. The Pakistan dataset does not contain comparable salary information.</li>
+      <li>Skill extraction is limited to 78 canonical skills. Domain-specific or emerging skills not in the lexicon are not captured.</li>
+      <li>London concentration (76%) reflects Adzuna&rsquo;s UK coverage, not necessarily the entire UK data labor market.</li>
+      <li>Sample sizes for some breakdowns (e.g., Analytics Engineer salary by seniority) are small and should be interpreted cautiously.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========== PROJECT OUTCOME ========== -->
+<section id="outcome">
+  <div class="container">
+    <div class="section-label reveal">Outcome</div>
+    <h2 class="section-title reveal">What This Project Demonstrates</h2>
+    <p class="section-desc reveal">An end-to-end workflow from raw data to career intelligence, demonstrating skills across the full data analytics stack.</p>
+
+    <div class="card-grid card-grid-2">
+      <div class="card reveal">
+        <h4>Data Engineering</h4>
+        <p>Multi-source ingestion, schema normalization, validation, deduplication, and PostgreSQL storage with referential integrity.</p>
+      </div>
+      <div class="card reveal reveal-delay-1">
+        <h4>NLP &amp; Text Analytics</h4>
+        <p>Lexicon-based extraction, contextual disambiguation, false-positive remediation, and extraction provenance tracking.</p>
+      </div>
+      <div class="card reveal reveal-delay-2">
+        <h4>Analytical SQL</h4>
+        <p>13 analytical views with documented grain, star schema design, and cross-validation against Python outputs.</p>
+      </div>
+      <div class="card reveal reveal-delay-3">
+        <h4>Business Intelligence</h4>
+        <p>Power BI dashboard specification with 50+ DAX measures, semantic model design, and 10-page layout.</p>
+      </div>
+      <div class="card reveal">
+        <h4>Statistical Analysis</h4>
+        <p>Chi-square tests, Mann-Whitney U tests, skill-salary association analysis, and validated analytical outputs.</p>
+      </div>
+      <div class="card reveal reveal-delay-1">
+        <h4>Quality Engineering</h4>
+        <p>127 automated tests, ruff lint compliance, E2E pipeline testing, and cross-source validation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== GITHUB ========== -->
+<section id="github">
+  <div class="container" style="text-align:center">
+    <div class="section-label reveal">Open Source</div>
+    <h2 class="section-title reveal">Explore the Repository</h2>
+    <p class="section-desc reveal" style="margin-left:auto;margin-right:auto">The full project is available on GitHub with complete documentation, tests, and analytical outputs.</p>
+
+    <div class="reveal" style="margin:32px 0">
+      <a href="https://github.com/twothousandthree18-spec/AI_Job_Market_Workforce_Intelligence" class="btn btn-primary" target="_blank" rel="noopener" style="font-size:1.05rem;padding:16px 36px">
+        View on GitHub &rarr;
+      </a>
+    </div>
+
+    <div class="card-grid card-grid-3" style="text-align:left;margin-top:40px">
+      <div class="card reveal">
+        <h4>7 Commits</h4>
+        <p>Phase 1 through Phase 7 with descriptive commit messages documenting each stage of development.</p>
+      </div>
+      <div class="card reveal reveal-delay-1">
+        <h4>127 Tests</h4>
+        <p>Comprehensive test suite covering pipeline E2E, NLP extraction, normalization, analytics, and data quality.</p>
+      </div>
+      <div class="card reveal reveal-delay-2">
+        <h4>Full Documentation</h4>
+        <p>README, analytics documentation, Power BI data dictionary, dashboard specification, and data model documentation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer>
+  <div class="container">
+    <p style="margin-bottom:8px">
+      <strong style="color:var(--gold)">AI-Powered Job Market &amp; Workforce Intelligence Platform</strong>
+    </p>
+    <p>Built with Python, PostgreSQL, SQL, NLP, Power BI, and Matplotlib.</p>
+    <p style="margin-top:12px">
+      <a href="https://github.com/twothousandthree18-spec/AI_Job_Market_Workforce_Intelligence" target="_blank" rel="noopener">GitHub Repository</a>
+    </p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
