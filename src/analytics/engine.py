@@ -372,6 +372,18 @@ def step21_powerbi_outputs(engine) -> list[Path]:
         "11_employer_analysis": "SELECT * FROM v_employer_analysis LIMIT 100",
         "12_temporal_analysis": "SELECT * FROM v_temporal_analysis",
         "13_analytical_jobs": "SELECT * FROM v_analytical_jobs",
+        # Phase 6: Power BI bridge fact (same job_skills rows, BI-shaped).
+        # Grain: 1 row = 1 distinct job x skill link (no new logic).
+        "14_job_skills_bridge": """
+            SELECT j.job_id,
+                   sk.canonical_name AS skill_name,
+                   sk.category       AS skill_category,
+                   j.country         AS country_code
+            FROM job_skills jsk
+            JOIN skills sk ON jsk.skill_id = sk.skill_id
+            JOIN jobs j    ON jsk.job_id   = j.job_id
+            ORDER BY j.job_id, sk.canonical_name
+        """,
     }
 
     for name, query in views.items():

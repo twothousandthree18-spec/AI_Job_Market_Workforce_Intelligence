@@ -1,0 +1,6676 @@
+{
+  "profile": {
+    "total_rows": 16437,
+    "unique_jobs": 8256,
+    "by_source": {
+      "chisel_pk": 13360,
+      "adzuna_uk": 3029,
+      "kaggle_rozee_pk": 48
+    },
+    "by_country": {
+      "Pakistan": 13408,
+      "United Kingdom": 3029
+    },
+    "salary_coverage": {
+      "has_salary": 6142,
+      "pct": 18.7
+    },
+    "work_mode": {
+      "on_site": 15794,
+      "hybrid": 461,
+      "remote": 182
+    },
+    "employment_type": {
+      "full_time": 13360,
+      "": 1839,
+      "permanent": 670,
+      "contract": 520,
+      "Full-time": 48
+    },
+    "seniority": {
+      "junior": 10550,
+      "mid": 2687,
+      "unknown": 1686,
+      "senior": 1514
+    },
+    "role_category": {
+      "other": 14713,
+      "data_analyst": 795,
+      "data_scientist": 413,
+      "analytics_engineer": 304,
+      "financial_analyst": 48,
+      "data_architect": 43,
+      "product_analyst": 39,
+      "operations_analyst": 30,
+      "marketing_analyst": 24,
+      "statistician": 24,
+      "bi_developer": 4
+    },
+    "skills_extracted": 7233,
+    "unique_skills": 77
+  },
+  "market_overview": [
+    {
+      "country_code": "PK",
+      "source_name": "chisel_pk",
+      "dataset_period": "Historical PK (2019-2021)",
+      "total_jobs": 5211,
+      "jobs_with_salary": 5211,
+      "salary_coverage_pct": 100.0,
+      "remote_jobs": 0,
+      "hybrid_jobs": 0,
+      "on_site_jobs": 5211,
+      "unique_companies": 2874,
+      "unique_cities": 86,
+      "avg_dq_score": 97.5
+    },
+    {
+      "country_code": "GB",
+      "source_name": "adzuna_uk",
+      "dataset_period": "Recent UK (2023-2026)",
+      "total_jobs": 3029,
+      "jobs_with_salary": 3029,
+      "salary_coverage_pct": 100.0,
+      "remote_jobs": 182,
+      "hybrid_jobs": 461,
+      "on_site_jobs": 2386,
+      "unique_companies": 999,
+      "unique_cities": 107,
+      "avg_dq_score": 100.0
+    },
+    {
+      "country_code": "PK",
+      "source_name": "kaggle_rozee_pk",
+      "dataset_period": "Supplementary PK",
+      "total_jobs": 16,
+      "jobs_with_salary": 16,
+      "salary_coverage_pct": 100.0,
+      "remote_jobs": 0,
+      "hybrid_jobs": 0,
+      "on_site_jobs": 16,
+      "unique_companies": 16,
+      "unique_cities": 3,
+      "avg_dq_score": 100.0
+    }
+  ],
+  "skill_demand": [
+    {
+      "skill_name": "Reporting",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 329,
+      "penetration_pct": 10.9
+    },
+    {
+      "skill_name": "Machine Learning",
+      "skill_category": "ai_ml",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 231,
+      "penetration_pct": 7.6
+    },
+    {
+      "skill_name": "Leadership",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 140,
+      "penetration_pct": 4.6
+    },
+    {
+      "skill_name": "Business Intelligence",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 119,
+      "penetration_pct": 3.9
+    },
+    {
+      "skill_name": "Data Governance",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 105,
+      "penetration_pct": 3.5
+    },
+    {
+      "skill_name": "Python",
+      "skill_category": "technical",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 74,
+      "penetration_pct": 2.4
+    },
+    {
+      "skill_name": "SQL",
+      "skill_category": "technical",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 70,
+      "penetration_pct": 2.3
+    },
+    {
+      "skill_name": "Teamwork",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 61,
+      "penetration_pct": 2.0
+    },
+    {
+      "skill_name": "Attention to Detail",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 55,
+      "penetration_pct": 1.8
+    },
+    {
+      "skill_name": "A/B Testing",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 49,
+      "penetration_pct": 1.6
+    },
+    {
+      "skill_name": "Financial Analysis",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 41,
+      "penetration_pct": 1.4
+    },
+    {
+      "skill_name": "Dashboarding",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 41,
+      "penetration_pct": 1.4
+    },
+    {
+      "skill_name": "Databricks",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 40,
+      "penetration_pct": 1.3
+    },
+    {
+      "skill_name": "Generative AI",
+      "skill_category": "ai_ml",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 38,
+      "penetration_pct": 1.3
+    },
+    {
+      "skill_name": "AWS",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 37,
+      "penetration_pct": 1.2
+    },
+    {
+      "skill_name": "Azure",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 36,
+      "penetration_pct": 1.2
+    },
+    {
+      "skill_name": "Snowflake",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 33,
+      "penetration_pct": 1.1
+    },
+    {
+      "skill_name": "Project Management",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 32,
+      "penetration_pct": 1.1
+    },
+    {
+      "skill_name": "Power BI",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 30,
+      "penetration_pct": 1.0
+    },
+    {
+      "skill_name": "Communication",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 28,
+      "penetration_pct": 0.9
+    },
+    {
+      "skill_name": "Business Analysis",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 28,
+      "penetration_pct": 0.9
+    },
+    {
+      "skill_name": "Data Modelling",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 25,
+      "penetration_pct": 0.8
+    },
+    {
+      "skill_name": "Stakeholder Management",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 23,
+      "penetration_pct": 0.8
+    },
+    {
+      "skill_name": "Master's Degree",
+      "skill_category": "education",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 21,
+      "penetration_pct": 0.7
+    },
+    {
+      "skill_name": "Excel",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 20,
+      "penetration_pct": 0.7
+    },
+    {
+      "skill_name": "Statistics",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 18,
+      "penetration_pct": 0.6
+    },
+    {
+      "skill_name": "ETL",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 18,
+      "penetration_pct": 0.6
+    },
+    {
+      "skill_name": "Tableau",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 15,
+      "penetration_pct": 0.5
+    },
+    {
+      "skill_name": "LLMs",
+      "skill_category": "ai_ml",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 15,
+      "penetration_pct": 0.5
+    },
+    {
+      "skill_name": "Google Cloud",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 15,
+      "penetration_pct": 0.5
+    },
+    {
+      "skill_name": "Bachelor's Degree",
+      "skill_category": "education",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 15,
+      "penetration_pct": 0.5
+    },
+    {
+      "skill_name": "Statistical Analysis",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 15,
+      "penetration_pct": 0.5
+    },
+    {
+      "skill_name": "Problem Solving",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 13,
+      "penetration_pct": 0.4
+    },
+    {
+      "skill_name": "Go",
+      "skill_category": "technical",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 13,
+      "penetration_pct": 0.4
+    },
+    {
+      "skill_name": "NLP",
+      "skill_category": "ai_ml",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 12,
+      "penetration_pct": 0.4
+    },
+    {
+      "skill_name": "PhD",
+      "skill_category": "education",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 12,
+      "penetration_pct": 0.4
+    },
+    {
+      "skill_name": "Apache Spark",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 10,
+      "penetration_pct": 0.3
+    },
+    {
+      "skill_name": "C#",
+      "skill_category": "technical",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 9,
+      "penetration_pct": 0.3
+    },
+    {
+      "skill_name": "Market Research",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 8,
+      "penetration_pct": 0.3
+    },
+    {
+      "skill_name": "Java",
+      "skill_category": "technical",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 8,
+      "penetration_pct": 0.3
+    },
+    {
+      "skill_name": "Model Deployment",
+      "skill_category": "ai_ml",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 8,
+      "penetration_pct": 0.3
+    },
+    {
+      "skill_name": "C++",
+      "skill_category": "technical",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 7,
+      "penetration_pct": 0.2
+    },
+    {
+      "skill_name": "R",
+      "skill_category": "technical",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 7,
+      "penetration_pct": 0.2
+    },
+    {
+      "skill_name": "Scala",
+      "skill_category": "technical",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 6,
+      "penetration_pct": 0.2
+    },
+    {
+      "skill_name": "Computer Vision",
+      "skill_category": "ai_ml",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 6,
+      "penetration_pct": 0.2
+    },
+    {
+      "skill_name": "JavaScript",
+      "skill_category": "technical",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 6,
+      "penetration_pct": 0.2
+    },
+    {
+      "skill_name": "dbt",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 5,
+      "penetration_pct": 0.2
+    },
+    {
+      "skill_name": "Llms",
+      "skill_category": "ai_ml",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 5,
+      "penetration_pct": 0.2
+    },
+    {
+      "skill_name": "Git",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 5,
+      "penetration_pct": 0.2
+    },
+    {
+      "skill_name": "Data Mining",
+      "skill_category": "ai_ml",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 5,
+      "penetration_pct": 0.2
+    },
+    {
+      "skill_name": "Looker",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 5,
+      "penetration_pct": 0.2
+    },
+    {
+      "skill_name": "Time Management",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 5,
+      "penetration_pct": 0.2
+    },
+    {
+      "skill_name": "Docker",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 4,
+      "penetration_pct": 0.1
+    },
+    {
+      "skill_name": "TypeScript",
+      "skill_category": "technical",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 3,
+      "penetration_pct": 0.1
+    },
+    {
+      "skill_name": "MongoDB",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 3,
+      "penetration_pct": 0.1
+    },
+    {
+      "skill_name": "HTML",
+      "skill_category": "technical",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 3,
+      "penetration_pct": 0.1
+    },
+    {
+      "skill_name": "BigQuery",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 3,
+      "penetration_pct": 0.1
+    },
+    {
+      "skill_name": "Forecasting",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 2,
+      "penetration_pct": 0.1
+    },
+    {
+      "skill_name": "SAS",
+      "skill_category": "technical",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 2,
+      "penetration_pct": 0.1
+    },
+    {
+      "skill_name": "CSS",
+      "skill_category": "technical",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 2,
+      "penetration_pct": 0.1
+    },
+    {
+      "skill_name": "Prompt Engineering",
+      "skill_category": "ai_ml",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 2,
+      "penetration_pct": 0.1
+    },
+    {
+      "skill_name": "PostgreSQL",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 1,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "Redshift",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 1,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "Scrum Master",
+      "skill_category": "certification",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 1,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "Feature Engineering",
+      "skill_category": "ai_ml",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 1,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "Neural Networks",
+      "skill_category": "ai_ml",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 1,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "Deep Learning",
+      "skill_category": "ai_ml",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 1,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "Hadoop",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 1,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "Exploratory Data Analysis",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 1,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "Airflow",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "job_count": 1,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "PHP",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 386,
+      "penetration_pct": 7.4
+    },
+    {
+      "skill_name": "Communication",
+      "skill_category": "business_soft",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 261,
+      "penetration_pct": 5.0
+    },
+    {
+      "skill_name": "JavaScript",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 203,
+      "penetration_pct": 3.9
+    },
+    {
+      "skill_name": "HTML",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 121,
+      "penetration_pct": 2.3
+    },
+    {
+      "skill_name": "C#",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 117,
+      "penetration_pct": 2.2
+    },
+    {
+      "skill_name": "CSS",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 108,
+      "penetration_pct": 2.1
+    },
+    {
+      "skill_name": "Java",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 59,
+      "penetration_pct": 1.1
+    },
+    {
+      "skill_name": "Master's Degree",
+      "skill_category": "education",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 59,
+      "penetration_pct": 1.1
+    },
+    {
+      "skill_name": "MySQL",
+      "skill_category": "tool",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 56,
+      "penetration_pct": 1.1
+    },
+    {
+      "skill_name": "Reporting",
+      "skill_category": "analytical",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 56,
+      "penetration_pct": 1.1
+    },
+    {
+      "skill_name": "Bachelor's Degree",
+      "skill_category": "education",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 52,
+      "penetration_pct": 1.0
+    },
+    {
+      "skill_name": "SQL",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 52,
+      "penetration_pct": 1.0
+    },
+    {
+      "skill_name": "Excel",
+      "skill_category": "tool",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 47,
+      "penetration_pct": 0.9
+    },
+    {
+      "skill_name": "Leadership",
+      "skill_category": "business_soft",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 38,
+      "penetration_pct": 0.7
+    },
+    {
+      "skill_name": "Project Management",
+      "skill_category": "business_soft",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 37,
+      "penetration_pct": 0.7
+    },
+    {
+      "skill_name": "Python",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 27,
+      "penetration_pct": 0.5
+    },
+    {
+      "skill_name": "AWS",
+      "skill_category": "tool",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 24,
+      "penetration_pct": 0.5
+    },
+    {
+      "skill_name": "Attention to Detail",
+      "skill_category": "business_soft",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 24,
+      "penetration_pct": 0.5
+    },
+    {
+      "skill_name": "Market Research",
+      "skill_category": "analytical",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 16,
+      "penetration_pct": 0.3
+    },
+    {
+      "skill_name": "Teamwork",
+      "skill_category": "business_soft",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 16,
+      "penetration_pct": 0.3
+    },
+    {
+      "skill_name": "Problem Solving",
+      "skill_category": "business_soft",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 14,
+      "penetration_pct": 0.3
+    },
+    {
+      "skill_name": "SQL",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "job_count": 13,
+      "penetration_pct": 0.2
+    },
+    {
+      "skill_name": "Python",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "job_count": 12,
+      "penetration_pct": 0.2
+    },
+    {
+      "skill_name": "C++",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 12,
+      "penetration_pct": 0.2
+    },
+    {
+      "skill_name": "MongoDB",
+      "skill_category": "tool",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 11,
+      "penetration_pct": 0.2
+    },
+    {
+      "skill_name": "Business Intelligence",
+      "skill_category": "analytical",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 11,
+      "penetration_pct": 0.2
+    },
+    {
+      "skill_name": "Go",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 11,
+      "penetration_pct": 0.2
+    },
+    {
+      "skill_name": "Bachelor's Degree",
+      "skill_category": "education",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "job_count": 11,
+      "penetration_pct": 0.2
+    },
+    {
+      "skill_name": "Excel",
+      "skill_category": "tool",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "job_count": 10,
+      "penetration_pct": 0.2
+    },
+    {
+      "skill_name": "Git",
+      "skill_category": "tool",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 10,
+      "penetration_pct": 0.2
+    },
+    {
+      "skill_name": "TypeScript",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 10,
+      "penetration_pct": 0.2
+    },
+    {
+      "skill_name": "Diploma",
+      "skill_category": "education",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 9,
+      "penetration_pct": 0.2
+    },
+    {
+      "skill_name": "Machine Learning",
+      "skill_category": "ai_ml",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 8,
+      "penetration_pct": 0.2
+    },
+    {
+      "skill_name": "Time Management",
+      "skill_category": "business_soft",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 8,
+      "penetration_pct": 0.2
+    },
+    {
+      "skill_name": "Azure",
+      "skill_category": "tool",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 8,
+      "penetration_pct": 0.2
+    },
+    {
+      "skill_name": "Business Analysis",
+      "skill_category": "business_soft",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 8,
+      "penetration_pct": 0.2
+    },
+    {
+      "skill_name": "PostgreSQL",
+      "skill_category": "tool",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 6,
+      "penetration_pct": 0.1
+    },
+    {
+      "skill_name": "Data Governance",
+      "skill_category": "analytical",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 6,
+      "penetration_pct": 0.1
+    },
+    {
+      "skill_name": "Apache Spark",
+      "skill_category": "tool",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 6,
+      "penetration_pct": 0.1
+    },
+    {
+      "skill_name": "Dashboarding",
+      "skill_category": "analytical",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 6,
+      "penetration_pct": 0.1
+    },
+    {
+      "skill_name": "Master's Degree",
+      "skill_category": "education",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "job_count": 5,
+      "penetration_pct": 0.1
+    },
+    {
+      "skill_name": "Power BI",
+      "skill_category": "tool",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "job_count": 5,
+      "penetration_pct": 0.1
+    },
+    {
+      "skill_name": "Business Intelligence",
+      "skill_category": "analytical",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "job_count": 5,
+      "penetration_pct": 0.1
+    },
+    {
+      "skill_name": "Computer Vision",
+      "skill_category": "ai_ml",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 5,
+      "penetration_pct": 0.1
+    },
+    {
+      "skill_name": "Communication",
+      "skill_category": "business_soft",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "job_count": 4,
+      "penetration_pct": 0.1
+    },
+    {
+      "skill_name": "Docker",
+      "skill_category": "tool",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 4,
+      "penetration_pct": 0.1
+    },
+    {
+      "skill_name": "Problem Solving",
+      "skill_category": "business_soft",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "job_count": 4,
+      "penetration_pct": 0.1
+    },
+    {
+      "skill_name": "Docker",
+      "skill_category": "tool",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "job_count": 4,
+      "penetration_pct": 0.1
+    },
+    {
+      "skill_name": "Financial Analysis",
+      "skill_category": "analytical",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 4,
+      "penetration_pct": 0.1
+    },
+    {
+      "skill_name": "VBA",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 4,
+      "penetration_pct": 0.1
+    },
+    {
+      "skill_name": "Data Modelling",
+      "skill_category": "analytical",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "job_count": 3,
+      "penetration_pct": 0.1
+    },
+    {
+      "skill_name": "NLP",
+      "skill_category": "ai_ml",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "job_count": 3,
+      "penetration_pct": 0.1
+    },
+    {
+      "skill_name": "Machine Learning",
+      "skill_category": "ai_ml",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "job_count": 3,
+      "penetration_pct": 0.1
+    },
+    {
+      "skill_name": "Attention to Detail",
+      "skill_category": "business_soft",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "job_count": 3,
+      "penetration_pct": 0.1
+    },
+    {
+      "skill_name": "AWS",
+      "skill_category": "tool",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "job_count": 3,
+      "penetration_pct": 0.1
+    },
+    {
+      "skill_name": "Deep Learning",
+      "skill_category": "ai_ml",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "job_count": 3,
+      "penetration_pct": 0.1
+    },
+    {
+      "skill_name": "Statistics",
+      "skill_category": "analytical",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "job_count": 3,
+      "penetration_pct": 0.1
+    },
+    {
+      "skill_name": "ETL",
+      "skill_category": "analytical",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "job_count": 2,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "NLP",
+      "skill_category": "ai_ml",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 2,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "Reporting",
+      "skill_category": "analytical",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "job_count": 2,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "A/B Testing",
+      "skill_category": "analytical",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 2,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "Financial Analysis",
+      "skill_category": "analytical",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "job_count": 2,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "ETL",
+      "skill_category": "analytical",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 2,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "Stakeholder Management",
+      "skill_category": "business_soft",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "job_count": 2,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "Dashboarding",
+      "skill_category": "analytical",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "job_count": 1,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "Apache Spark",
+      "skill_category": "tool",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "job_count": 1,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "Microsoft Certified",
+      "skill_category": "certification",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 1,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "Prompt Engineering",
+      "skill_category": "ai_ml",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "job_count": 1,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "A/B Testing",
+      "skill_category": "analytical",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "job_count": 1,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "Data Cleaning",
+      "skill_category": "analytical",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "job_count": 1,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "R",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 1,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "R",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "job_count": 1,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "Market Research",
+      "skill_category": "analytical",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "job_count": 1,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "SAS",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 1,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "Business Analysis",
+      "skill_category": "business_soft",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "job_count": 1,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "Scrum Master",
+      "skill_category": "certification",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 1,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "Statistical Analysis",
+      "skill_category": "analytical",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 1,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "Statistics",
+      "skill_category": "analytical",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 1,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "VBA",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "job_count": 1,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "Tableau",
+      "skill_category": "tool",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "job_count": 1,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "Teamwork",
+      "skill_category": "business_soft",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "job_count": 1,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "MySQL",
+      "skill_category": "tool",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "job_count": 1,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "Airflow",
+      "skill_category": "tool",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "job_count": 1,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "Exploratory Data Analysis",
+      "skill_category": "analytical",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 1,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "Hadoop",
+      "skill_category": "tool",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 1,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "AWS Certified",
+      "skill_category": "certification",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "job_count": 1,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "Generative AI",
+      "skill_category": "ai_ml",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "job_count": 1,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "LLMs",
+      "skill_category": "ai_ml",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "job_count": 1,
+      "penetration_pct": 0.0
+    },
+    {
+      "skill_name": "PostgreSQL",
+      "skill_category": "tool",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "job_count": 1,
+      "penetration_pct": 0.0
+    }
+  ],
+  "skill_comparison": [
+    {
+      "skill_name": "Reporting",
+      "skill_category": "analytical",
+      "uk_job_count": 329,
+      "uk_penetration_pct": 10.9,
+      "pk_job_count": 58,
+      "pk_penetration_pct": 1.1,
+      "penetration_diff": 9.8,
+      "emphasis": "UK-emphasized"
+    },
+    {
+      "skill_name": "PHP",
+      "skill_category": "unknown",
+      "uk_job_count": 0,
+      "uk_penetration_pct": 0.0,
+      "pk_job_count": 386,
+      "pk_penetration_pct": 7.4,
+      "penetration_diff": -7.4,
+      "emphasis": "Equal"
+    },
+    {
+      "skill_name": "Communication",
+      "skill_category": "business_soft",
+      "uk_job_count": 28,
+      "uk_penetration_pct": 0.9,
+      "pk_job_count": 265,
+      "pk_penetration_pct": 5.1,
+      "penetration_diff": -4.2,
+      "emphasis": "PK-emphasized"
+    },
+    {
+      "skill_name": "Machine Learning",
+      "skill_category": "ai_ml",
+      "uk_job_count": 231,
+      "uk_penetration_pct": 7.6,
+      "pk_job_count": 11,
+      "pk_penetration_pct": 0.2,
+      "penetration_diff": 7.4,
+      "emphasis": "UK-emphasized"
+    },
+    {
+      "skill_name": "JavaScript",
+      "skill_category": "technical",
+      "uk_job_count": 6,
+      "uk_penetration_pct": 0.2,
+      "pk_job_count": 203,
+      "pk_penetration_pct": 3.9,
+      "penetration_diff": -3.7,
+      "emphasis": "PK-emphasized"
+    },
+    {
+      "skill_name": "Leadership",
+      "skill_category": "business_soft",
+      "uk_job_count": 140,
+      "uk_penetration_pct": 4.6,
+      "pk_job_count": 38,
+      "pk_penetration_pct": 0.7,
+      "penetration_diff": 3.9,
+      "emphasis": "UK-emphasized"
+    },
+    {
+      "skill_name": "SQL",
+      "skill_category": "technical",
+      "uk_job_count": 70,
+      "uk_penetration_pct": 2.3,
+      "pk_job_count": 65,
+      "pk_penetration_pct": 1.2,
+      "penetration_diff": 1.1,
+      "emphasis": "UK-emphasized"
+    },
+    {
+      "skill_name": "Business Intelligence",
+      "skill_category": "analytical",
+      "uk_job_count": 119,
+      "uk_penetration_pct": 3.9,
+      "pk_job_count": 16,
+      "pk_penetration_pct": 0.3,
+      "penetration_diff": 3.6,
+      "emphasis": "UK-emphasized"
+    },
+    {
+      "skill_name": "C#",
+      "skill_category": "technical",
+      "uk_job_count": 9,
+      "uk_penetration_pct": 0.3,
+      "pk_job_count": 117,
+      "pk_penetration_pct": 2.2,
+      "penetration_diff": -1.9,
+      "emphasis": "PK-emphasized"
+    },
+    {
+      "skill_name": "HTML",
+      "skill_category": "technical",
+      "uk_job_count": 3,
+      "uk_penetration_pct": 0.1,
+      "pk_job_count": 121,
+      "pk_penetration_pct": 2.3,
+      "penetration_diff": -2.2,
+      "emphasis": "PK-emphasized"
+    },
+    {
+      "skill_name": "Python",
+      "skill_category": "technical",
+      "uk_job_count": 74,
+      "uk_penetration_pct": 2.4,
+      "pk_job_count": 39,
+      "pk_penetration_pct": 0.7,
+      "penetration_diff": 1.7,
+      "emphasis": "UK-emphasized"
+    },
+    {
+      "skill_name": "Data Governance",
+      "skill_category": "analytical",
+      "uk_job_count": 105,
+      "uk_penetration_pct": 3.5,
+      "pk_job_count": 6,
+      "pk_penetration_pct": 0.1,
+      "penetration_diff": 3.4,
+      "emphasis": "UK-emphasized"
+    },
+    {
+      "skill_name": "CSS",
+      "skill_category": "technical",
+      "uk_job_count": 2,
+      "uk_penetration_pct": 0.1,
+      "pk_job_count": 108,
+      "pk_penetration_pct": 2.1,
+      "penetration_diff": -2.0,
+      "emphasis": "PK-emphasized"
+    },
+    {
+      "skill_name": "Master's Degree",
+      "skill_category": "education",
+      "uk_job_count": 21,
+      "uk_penetration_pct": 0.7,
+      "pk_job_count": 64,
+      "pk_penetration_pct": 1.2,
+      "penetration_diff": -0.5,
+      "emphasis": "PK-emphasized"
+    },
+    {
+      "skill_name": "Attention to Detail",
+      "skill_category": "business_soft",
+      "uk_job_count": 55,
+      "uk_penetration_pct": 1.8,
+      "pk_job_count": 27,
+      "pk_penetration_pct": 0.5,
+      "penetration_diff": 1.3,
+      "emphasis": "UK-emphasized"
+    },
+    {
+      "skill_name": "Bachelor's Degree",
+      "skill_category": "education",
+      "uk_job_count": 15,
+      "uk_penetration_pct": 0.5,
+      "pk_job_count": 63,
+      "pk_penetration_pct": 1.2,
+      "penetration_diff": -0.7,
+      "emphasis": "PK-emphasized"
+    },
+    {
+      "skill_name": "Teamwork",
+      "skill_category": "business_soft",
+      "uk_job_count": 61,
+      "uk_penetration_pct": 2.0,
+      "pk_job_count": 17,
+      "pk_penetration_pct": 0.3,
+      "penetration_diff": 1.7,
+      "emphasis": "UK-emphasized"
+    },
+    {
+      "skill_name": "Excel",
+      "skill_category": "tool",
+      "uk_job_count": 20,
+      "uk_penetration_pct": 0.7,
+      "pk_job_count": 57,
+      "pk_penetration_pct": 1.1,
+      "penetration_diff": -0.4,
+      "emphasis": "PK-emphasized"
+    },
+    {
+      "skill_name": "Project Management",
+      "skill_category": "business_soft",
+      "uk_job_count": 32,
+      "uk_penetration_pct": 1.1,
+      "pk_job_count": 37,
+      "pk_penetration_pct": 0.7,
+      "penetration_diff": 0.4,
+      "emphasis": "UK-emphasized"
+    },
+    {
+      "skill_name": "Java",
+      "skill_category": "technical",
+      "uk_job_count": 8,
+      "uk_penetration_pct": 0.3,
+      "pk_job_count": 59,
+      "pk_penetration_pct": 1.1,
+      "penetration_diff": -0.8,
+      "emphasis": "PK-emphasized"
+    },
+    {
+      "skill_name": "AWS",
+      "skill_category": "tool",
+      "uk_job_count": 37,
+      "uk_penetration_pct": 1.2,
+      "pk_job_count": 27,
+      "pk_penetration_pct": 0.5,
+      "penetration_diff": 0.7,
+      "emphasis": "UK-emphasized"
+    },
+    {
+      "skill_name": "MySQL",
+      "skill_category": "unknown",
+      "uk_job_count": 0,
+      "uk_penetration_pct": 0.0,
+      "pk_job_count": 57,
+      "pk_penetration_pct": 1.1,
+      "penetration_diff": -1.1,
+      "emphasis": "Equal"
+    },
+    {
+      "skill_name": "A/B Testing",
+      "skill_category": "analytical",
+      "uk_job_count": 49,
+      "uk_penetration_pct": 1.6,
+      "pk_job_count": 3,
+      "pk_penetration_pct": 0.1,
+      "penetration_diff": 1.5,
+      "emphasis": "UK-emphasized"
+    },
+    {
+      "skill_name": "Dashboarding",
+      "skill_category": "analytical",
+      "uk_job_count": 41,
+      "uk_penetration_pct": 1.4,
+      "pk_job_count": 7,
+      "pk_penetration_pct": 0.1,
+      "penetration_diff": 1.3,
+      "emphasis": "UK-emphasized"
+    },
+    {
+      "skill_name": "Financial Analysis",
+      "skill_category": "analytical",
+      "uk_job_count": 41,
+      "uk_penetration_pct": 1.4,
+      "pk_job_count": 6,
+      "pk_penetration_pct": 0.1,
+      "penetration_diff": 1.3,
+      "emphasis": "UK-emphasized"
+    },
+    {
+      "skill_name": "Azure",
+      "skill_category": "tool",
+      "uk_job_count": 36,
+      "uk_penetration_pct": 1.2,
+      "pk_job_count": 8,
+      "pk_penetration_pct": 0.2,
+      "penetration_diff": 1.0,
+      "emphasis": "UK-emphasized"
+    },
+    {
+      "skill_name": "Databricks",
+      "skill_category": "tool",
+      "uk_job_count": 40,
+      "uk_penetration_pct": 1.3,
+      "pk_job_count": 0,
+      "pk_penetration_pct": 0.0,
+      "penetration_diff": 1.3,
+      "emphasis": "Equal"
+    },
+    {
+      "skill_name": "Generative AI",
+      "skill_category": "ai_ml",
+      "uk_job_count": 38,
+      "uk_penetration_pct": 1.3,
+      "pk_job_count": 1,
+      "pk_penetration_pct": 0.0,
+      "penetration_diff": 1.3,
+      "emphasis": "UK-emphasized"
+    },
+    {
+      "skill_name": "Business Analysis",
+      "skill_category": "business_soft",
+      "uk_job_count": 28,
+      "uk_penetration_pct": 0.9,
+      "pk_job_count": 9,
+      "pk_penetration_pct": 0.2,
+      "penetration_diff": 0.7,
+      "emphasis": "UK-emphasized"
+    },
+    {
+      "skill_name": "Power BI",
+      "skill_category": "tool",
+      "uk_job_count": 30,
+      "uk_penetration_pct": 1.0,
+      "pk_job_count": 5,
+      "pk_penetration_pct": 0.1,
+      "penetration_diff": 0.9,
+      "emphasis": "UK-emphasized"
+    },
+    {
+      "skill_name": "Snowflake",
+      "skill_category": "tool",
+      "uk_job_count": 33,
+      "uk_penetration_pct": 1.1,
+      "pk_job_count": 0,
+      "pk_penetration_pct": 0.0,
+      "penetration_diff": 1.1,
+      "emphasis": "Equal"
+    },
+    {
+      "skill_name": "Problem Solving",
+      "skill_category": "business_soft",
+      "uk_job_count": 13,
+      "uk_penetration_pct": 0.4,
+      "pk_job_count": 18,
+      "pk_penetration_pct": 0.3,
+      "penetration_diff": 0.1,
+      "emphasis": "UK-emphasized"
+    },
+    {
+      "skill_name": "Data Modelling",
+      "skill_category": "analytical",
+      "uk_job_count": 25,
+      "uk_penetration_pct": 0.8,
+      "pk_job_count": 3,
+      "pk_penetration_pct": 0.1,
+      "penetration_diff": 0.7,
+      "emphasis": "UK-emphasized"
+    },
+    {
+      "skill_name": "Stakeholder Management",
+      "skill_category": "business_soft",
+      "uk_job_count": 23,
+      "uk_penetration_pct": 0.8,
+      "pk_job_count": 2,
+      "pk_penetration_pct": 0.0,
+      "penetration_diff": 0.8,
+      "emphasis": "UK-emphasized"
+    },
+    {
+      "skill_name": "Market Research",
+      "skill_category": "analytical",
+      "uk_job_count": 8,
+      "uk_penetration_pct": 0.3,
+      "pk_job_count": 17,
+      "pk_penetration_pct": 0.3,
+      "penetration_diff": 0.0,
+      "emphasis": "Equal"
+    },
+    {
+      "skill_name": "Go",
+      "skill_category": "technical",
+      "uk_job_count": 13,
+      "uk_penetration_pct": 0.4,
+      "pk_job_count": 11,
+      "pk_penetration_pct": 0.2,
+      "penetration_diff": 0.2,
+      "emphasis": "UK-emphasized"
+    },
+    {
+      "skill_name": "ETL",
+      "skill_category": "analytical",
+      "uk_job_count": 18,
+      "uk_penetration_pct": 0.6,
+      "pk_job_count": 4,
+      "pk_penetration_pct": 0.1,
+      "penetration_diff": 0.5,
+      "emphasis": "UK-emphasized"
+    },
+    {
+      "skill_name": "Statistics",
+      "skill_category": "analytical",
+      "uk_job_count": 18,
+      "uk_penetration_pct": 0.6,
+      "pk_job_count": 4,
+      "pk_penetration_pct": 0.1,
+      "penetration_diff": 0.5,
+      "emphasis": "UK-emphasized"
+    },
+    {
+      "skill_name": "C++",
+      "skill_category": "technical",
+      "uk_job_count": 7,
+      "uk_penetration_pct": 0.2,
+      "pk_job_count": 12,
+      "pk_penetration_pct": 0.2,
+      "penetration_diff": 0.0,
+      "emphasis": "Equal"
+    },
+    {
+      "skill_name": "Apache Spark",
+      "skill_category": "tool",
+      "uk_job_count": 10,
+      "uk_penetration_pct": 0.3,
+      "pk_job_count": 7,
+      "pk_penetration_pct": 0.1,
+      "penetration_diff": 0.2,
+      "emphasis": "UK-emphasized"
+    },
+    {
+      "skill_name": "NLP",
+      "skill_category": "ai_ml",
+      "uk_job_count": 12,
+      "uk_penetration_pct": 0.4,
+      "pk_job_count": 5,
+      "pk_penetration_pct": 0.1,
+      "penetration_diff": 0.3,
+      "emphasis": "UK-emphasized"
+    },
+    {
+      "skill_name": "LLMs",
+      "skill_category": "ai_ml",
+      "uk_job_count": 15,
+      "uk_penetration_pct": 0.5,
+      "pk_job_count": 1,
+      "pk_penetration_pct": 0.0,
+      "penetration_diff": 0.5,
+      "emphasis": "UK-emphasized"
+    },
+    {
+      "skill_name": "Statistical Analysis",
+      "skill_category": "analytical",
+      "uk_job_count": 15,
+      "uk_penetration_pct": 0.5,
+      "pk_job_count": 1,
+      "pk_penetration_pct": 0.0,
+      "penetration_diff": 0.5,
+      "emphasis": "UK-emphasized"
+    },
+    {
+      "skill_name": "Tableau",
+      "skill_category": "tool",
+      "uk_job_count": 15,
+      "uk_penetration_pct": 0.5,
+      "pk_job_count": 1,
+      "pk_penetration_pct": 0.0,
+      "penetration_diff": 0.5,
+      "emphasis": "UK-emphasized"
+    },
+    {
+      "skill_name": "Google Cloud",
+      "skill_category": "tool",
+      "uk_job_count": 15,
+      "uk_penetration_pct": 0.5,
+      "pk_job_count": 0,
+      "pk_penetration_pct": 0.0,
+      "penetration_diff": 0.5,
+      "emphasis": "Equal"
+    },
+    {
+      "skill_name": "Git",
+      "skill_category": "tool",
+      "uk_job_count": 5,
+      "uk_penetration_pct": 0.2,
+      "pk_job_count": 10,
+      "pk_penetration_pct": 0.2,
+      "penetration_diff": 0.0,
+      "emphasis": "Equal"
+    },
+    {
+      "skill_name": "MongoDB",
+      "skill_category": "tool",
+      "uk_job_count": 3,
+      "uk_penetration_pct": 0.1,
+      "pk_job_count": 11,
+      "pk_penetration_pct": 0.2,
+      "penetration_diff": -0.1,
+      "emphasis": "PK-emphasized"
+    },
+    {
+      "skill_name": "TypeScript",
+      "skill_category": "technical",
+      "uk_job_count": 3,
+      "uk_penetration_pct": 0.1,
+      "pk_job_count": 10,
+      "pk_penetration_pct": 0.2,
+      "penetration_diff": -0.1,
+      "emphasis": "PK-emphasized"
+    },
+    {
+      "skill_name": "Time Management",
+      "skill_category": "business_soft",
+      "uk_job_count": 5,
+      "uk_penetration_pct": 0.2,
+      "pk_job_count": 8,
+      "pk_penetration_pct": 0.2,
+      "penetration_diff": 0.0,
+      "emphasis": "Equal"
+    },
+    {
+      "skill_name": "Docker",
+      "skill_category": "tool",
+      "uk_job_count": 4,
+      "uk_penetration_pct": 0.1,
+      "pk_job_count": 8,
+      "pk_penetration_pct": 0.2,
+      "penetration_diff": -0.1,
+      "emphasis": "PK-emphasized"
+    },
+    {
+      "skill_name": "PhD",
+      "skill_category": "education",
+      "uk_job_count": 12,
+      "uk_penetration_pct": 0.4,
+      "pk_job_count": 0,
+      "pk_penetration_pct": 0.0,
+      "penetration_diff": 0.4,
+      "emphasis": "Equal"
+    },
+    {
+      "skill_name": "Computer Vision",
+      "skill_category": "ai_ml",
+      "uk_job_count": 6,
+      "uk_penetration_pct": 0.2,
+      "pk_job_count": 5,
+      "pk_penetration_pct": 0.1,
+      "penetration_diff": 0.1,
+      "emphasis": "UK-emphasized"
+    },
+    {
+      "skill_name": "Diploma",
+      "skill_category": "unknown",
+      "uk_job_count": 0,
+      "uk_penetration_pct": 0.0,
+      "pk_job_count": 9,
+      "pk_penetration_pct": 0.2,
+      "penetration_diff": -0.2,
+      "emphasis": "Equal"
+    },
+    {
+      "skill_name": "R",
+      "skill_category": "technical",
+      "uk_job_count": 7,
+      "uk_penetration_pct": 0.2,
+      "pk_job_count": 2,
+      "pk_penetration_pct": 0.0,
+      "penetration_diff": 0.2,
+      "emphasis": "UK-emphasized"
+    },
+    {
+      "skill_name": "PostgreSQL",
+      "skill_category": "tool",
+      "uk_job_count": 1,
+      "uk_penetration_pct": 0.0,
+      "pk_job_count": 7,
+      "pk_penetration_pct": 0.1,
+      "penetration_diff": -0.1,
+      "emphasis": "PK-emphasized"
+    },
+    {
+      "skill_name": "Model Deployment",
+      "skill_category": "ai_ml",
+      "uk_job_count": 8,
+      "uk_penetration_pct": 0.3,
+      "pk_job_count": 0,
+      "pk_penetration_pct": 0.0,
+      "penetration_diff": 0.3,
+      "emphasis": "Equal"
+    },
+    {
+      "skill_name": "Scala",
+      "skill_category": "technical",
+      "uk_job_count": 6,
+      "uk_penetration_pct": 0.2,
+      "pk_job_count": 0,
+      "pk_penetration_pct": 0.0,
+      "penetration_diff": 0.2,
+      "emphasis": "Equal"
+    },
+    {
+      "skill_name": "VBA",
+      "skill_category": "unknown",
+      "uk_job_count": 0,
+      "uk_penetration_pct": 0.0,
+      "pk_job_count": 5,
+      "pk_penetration_pct": 0.1,
+      "penetration_diff": -0.1,
+      "emphasis": "Equal"
+    },
+    {
+      "skill_name": "Looker",
+      "skill_category": "tool",
+      "uk_job_count": 5,
+      "uk_penetration_pct": 0.2,
+      "pk_job_count": 0,
+      "pk_penetration_pct": 0.0,
+      "penetration_diff": 0.2,
+      "emphasis": "Equal"
+    },
+    {
+      "skill_name": "Llms",
+      "skill_category": "ai_ml",
+      "uk_job_count": 5,
+      "uk_penetration_pct": 0.2,
+      "pk_job_count": 0,
+      "pk_penetration_pct": 0.0,
+      "penetration_diff": 0.2,
+      "emphasis": "Equal"
+    },
+    {
+      "skill_name": "Data Mining",
+      "skill_category": "ai_ml",
+      "uk_job_count": 5,
+      "uk_penetration_pct": 0.2,
+      "pk_job_count": 0,
+      "pk_penetration_pct": 0.0,
+      "penetration_diff": 0.2,
+      "emphasis": "Equal"
+    },
+    {
+      "skill_name": "dbt",
+      "skill_category": "tool",
+      "uk_job_count": 5,
+      "uk_penetration_pct": 0.2,
+      "pk_job_count": 0,
+      "pk_penetration_pct": 0.0,
+      "penetration_diff": 0.2,
+      "emphasis": "Equal"
+    }
+  ],
+  "cocurrence": [
+    {
+      "skill_a": "CSS",
+      "skill_b": "HTML",
+      "country_code": "PK",
+      "co_occurrence_count": 99,
+      "co_occurrence_pct": 1.9
+    },
+    {
+      "skill_a": "JavaScript",
+      "skill_b": "HTML",
+      "country_code": "PK",
+      "co_occurrence_count": 66,
+      "co_occurrence_pct": 1.3
+    },
+    {
+      "skill_a": "JavaScript",
+      "skill_b": "CSS",
+      "country_code": "PK",
+      "co_occurrence_count": 65,
+      "co_occurrence_pct": 1.2
+    },
+    {
+      "skill_a": "JavaScript",
+      "skill_b": "PHP",
+      "country_code": "PK",
+      "co_occurrence_count": 61,
+      "co_occurrence_pct": 1.2
+    },
+    {
+      "skill_a": "MySQL",
+      "skill_b": "PHP",
+      "country_code": "PK",
+      "co_occurrence_count": 51,
+      "co_occurrence_pct": 1.0
+    },
+    {
+      "skill_a": "PHP",
+      "skill_b": "CSS",
+      "country_code": "PK",
+      "co_occurrence_count": 50,
+      "co_occurrence_pct": 1.0
+    },
+    {
+      "skill_a": "Reporting",
+      "skill_b": "Business Intelligence",
+      "country_code": "GB",
+      "co_occurrence_count": 50,
+      "co_occurrence_pct": 1.7
+    },
+    {
+      "skill_a": "PHP",
+      "skill_b": "HTML",
+      "country_code": "PK",
+      "co_occurrence_count": 49,
+      "co_occurrence_pct": 0.9
+    },
+    {
+      "skill_a": "Business Intelligence",
+      "skill_b": "Power BI",
+      "country_code": "GB",
+      "co_occurrence_count": 29,
+      "co_occurrence_pct": 1.0
+    },
+    {
+      "skill_a": "SQL",
+      "skill_b": "Python",
+      "country_code": "GB",
+      "co_occurrence_count": 28,
+      "co_occurrence_pct": 0.9
+    },
+    {
+      "skill_a": "SQL",
+      "skill_b": "C#",
+      "country_code": "PK",
+      "co_occurrence_count": 27,
+      "co_occurrence_pct": 0.5
+    },
+    {
+      "skill_a": "Reporting",
+      "skill_b": "Dashboarding",
+      "country_code": "GB",
+      "co_occurrence_count": 27,
+      "co_occurrence_pct": 0.9
+    },
+    {
+      "skill_a": "Reporting",
+      "skill_b": "Data Governance",
+      "country_code": "GB",
+      "co_occurrence_count": 26,
+      "co_occurrence_pct": 0.9
+    },
+    {
+      "skill_a": "Reporting",
+      "skill_b": "Power BI",
+      "country_code": "GB",
+      "co_occurrence_count": 21,
+      "co_occurrence_pct": 0.7
+    },
+    {
+      "skill_a": "Leadership",
+      "skill_b": "Reporting",
+      "country_code": "GB",
+      "co_occurrence_count": 21,
+      "co_occurrence_pct": 0.7
+    },
+    {
+      "skill_a": "SQL",
+      "skill_b": "Reporting",
+      "country_code": "GB",
+      "co_occurrence_count": 18,
+      "co_occurrence_pct": 0.6
+    },
+    {
+      "skill_a": "MySQL",
+      "skill_b": "JavaScript",
+      "country_code": "PK",
+      "co_occurrence_count": 17,
+      "co_occurrence_pct": 0.3
+    },
+    {
+      "skill_a": "Dashboarding",
+      "skill_b": "Business Intelligence",
+      "country_code": "GB",
+      "co_occurrence_count": 16,
+      "co_occurrence_pct": 0.5
+    },
+    {
+      "skill_a": "MySQL",
+      "skill_b": "CSS",
+      "country_code": "PK",
+      "co_occurrence_count": 16,
+      "co_occurrence_pct": 0.3
+    },
+    {
+      "skill_a": "SQL",
+      "skill_b": "Azure",
+      "country_code": "GB",
+      "co_occurrence_count": 16,
+      "co_occurrence_pct": 0.5
+    },
+    {
+      "skill_a": "SQL",
+      "skill_b": "Business Intelligence",
+      "country_code": "GB",
+      "co_occurrence_count": 15,
+      "co_occurrence_pct": 0.5
+    },
+    {
+      "skill_a": "Machine Learning",
+      "skill_b": "Python",
+      "country_code": "GB",
+      "co_occurrence_count": 15,
+      "co_occurrence_pct": 0.5
+    },
+    {
+      "skill_a": "MySQL",
+      "skill_b": "HTML",
+      "country_code": "PK",
+      "co_occurrence_count": 14,
+      "co_occurrence_pct": 0.3
+    },
+    {
+      "skill_a": "Communication",
+      "skill_b": "PHP",
+      "country_code": "PK",
+      "co_occurrence_count": 13,
+      "co_occurrence_pct": 0.2
+    },
+    {
+      "skill_a": "Machine Learning",
+      "skill_b": "Generative AI",
+      "country_code": "GB",
+      "co_occurrence_count": 13,
+      "co_occurrence_pct": 0.4
+    },
+    {
+      "skill_a": "SQL",
+      "skill_b": "PHP",
+      "country_code": "PK",
+      "co_occurrence_count": 13,
+      "co_occurrence_pct": 0.2
+    },
+    {
+      "skill_a": "Business Intelligence",
+      "skill_b": "Tableau",
+      "country_code": "GB",
+      "co_occurrence_count": 13,
+      "co_occurrence_pct": 0.4
+    },
+    {
+      "skill_a": "Reporting",
+      "skill_b": "Attention to Detail",
+      "country_code": "GB",
+      "co_occurrence_count": 13,
+      "co_occurrence_pct": 0.4
+    },
+    {
+      "skill_a": "Reporting",
+      "skill_b": "Business Analysis",
+      "country_code": "GB",
+      "co_occurrence_count": 12,
+      "co_occurrence_pct": 0.4
+    },
+    {
+      "skill_a": "Machine Learning",
+      "skill_b": "LLMs",
+      "country_code": "GB",
+      "co_occurrence_count": 12,
+      "co_occurrence_pct": 0.4
+    },
+    {
+      "skill_a": "Azure",
+      "skill_b": "Databricks",
+      "country_code": "GB",
+      "co_occurrence_count": 12,
+      "co_occurrence_pct": 0.4
+    },
+    {
+      "skill_a": "Bachelor's Degree",
+      "skill_b": "SQL",
+      "country_code": "PK",
+      "co_occurrence_count": 12,
+      "co_occurrence_pct": 0.2
+    },
+    {
+      "skill_a": "SQL",
+      "skill_b": "Databricks",
+      "country_code": "GB",
+      "co_occurrence_count": 12,
+      "co_occurrence_pct": 0.4
+    },
+    {
+      "skill_a": "Machine Learning",
+      "skill_b": "A/B Testing",
+      "country_code": "GB",
+      "co_occurrence_count": 12,
+      "co_occurrence_pct": 0.4
+    },
+    {
+      "skill_a": "SQL",
+      "skill_b": "Power BI",
+      "country_code": "GB",
+      "co_occurrence_count": 11,
+      "co_occurrence_pct": 0.4
+    },
+    {
+      "skill_a": "Python",
+      "skill_b": "Databricks",
+      "country_code": "GB",
+      "co_occurrence_count": 11,
+      "co_occurrence_pct": 0.4
+    },
+    {
+      "skill_a": "C#",
+      "skill_b": "JavaScript",
+      "country_code": "PK",
+      "co_occurrence_count": 11,
+      "co_occurrence_pct": 0.2
+    },
+    {
+      "skill_a": "PHP",
+      "skill_b": "Java",
+      "country_code": "PK",
+      "co_occurrence_count": 11,
+      "co_occurrence_pct": 0.2
+    },
+    {
+      "skill_a": "Reporting",
+      "skill_b": "Financial Analysis",
+      "country_code": "GB",
+      "co_occurrence_count": 11,
+      "co_occurrence_pct": 0.4
+    },
+    {
+      "skill_a": "Statistics",
+      "skill_b": "Master's Degree",
+      "country_code": "GB",
+      "co_occurrence_count": 10,
+      "co_occurrence_pct": 0.3
+    },
+    {
+      "skill_a": "SQL",
+      "skill_b": "Snowflake",
+      "country_code": "GB",
+      "co_occurrence_count": 10,
+      "co_occurrence_pct": 0.3
+    },
+    {
+      "skill_a": "Leadership",
+      "skill_b": "Machine Learning",
+      "country_code": "GB",
+      "co_occurrence_count": 10,
+      "co_occurrence_pct": 0.3
+    },
+    {
+      "skill_a": "Attention to Detail",
+      "skill_b": "Data Governance",
+      "country_code": "GB",
+      "co_occurrence_count": 10,
+      "co_occurrence_pct": 0.3
+    },
+    {
+      "skill_a": "Leadership",
+      "skill_b": "Business Intelligence",
+      "country_code": "GB",
+      "co_occurrence_count": 10,
+      "co_occurrence_pct": 0.3
+    },
+    {
+      "skill_a": "SQL",
+      "skill_b": "Excel",
+      "country_code": "PK",
+      "co_occurrence_count": 10,
+      "co_occurrence_pct": 0.2
+    },
+    {
+      "skill_a": "Business Intelligence",
+      "skill_b": "Data Governance",
+      "country_code": "GB",
+      "co_occurrence_count": 10,
+      "co_occurrence_pct": 0.3
+    },
+    {
+      "skill_a": "Bachelor's Degree",
+      "skill_b": "Excel",
+      "country_code": "PK",
+      "co_occurrence_count": 10,
+      "co_occurrence_pct": 0.2
+    },
+    {
+      "skill_a": "SQL",
+      "skill_b": "Python",
+      "country_code": "PK",
+      "co_occurrence_count": 10,
+      "co_occurrence_pct": 0.2
+    },
+    {
+      "skill_a": "Reporting",
+      "skill_b": "Tableau",
+      "country_code": "GB",
+      "co_occurrence_count": 9,
+      "co_occurrence_pct": 0.3
+    },
+    {
+      "skill_a": "Business Intelligence",
+      "skill_b": "Data Modelling",
+      "country_code": "GB",
+      "co_occurrence_count": 9,
+      "co_occurrence_pct": 0.3
+    },
+    {
+      "skill_a": "Reporting",
+      "skill_b": "Data Modelling",
+      "country_code": "GB",
+      "co_occurrence_count": 9,
+      "co_occurrence_pct": 0.3
+    },
+    {
+      "skill_a": "SQL",
+      "skill_b": "JavaScript",
+      "country_code": "PK",
+      "co_occurrence_count": 9,
+      "co_occurrence_pct": 0.2
+    },
+    {
+      "skill_a": "Business Analysis",
+      "skill_b": "Business Intelligence",
+      "country_code": "GB",
+      "co_occurrence_count": 9,
+      "co_occurrence_pct": 0.3
+    },
+    {
+      "skill_a": "Python",
+      "skill_b": "Apache Spark",
+      "country_code": "GB",
+      "co_occurrence_count": 9,
+      "co_occurrence_pct": 0.3
+    },
+    {
+      "skill_a": "Bachelor's Degree",
+      "skill_b": "Communication",
+      "country_code": "PK",
+      "co_occurrence_count": 9,
+      "co_occurrence_pct": 0.2
+    },
+    {
+      "skill_a": "Azure",
+      "skill_b": "Apache Spark",
+      "country_code": "GB",
+      "co_occurrence_count": 9,
+      "co_occurrence_pct": 0.3
+    },
+    {
+      "skill_a": "SQL",
+      "skill_b": "HTML",
+      "country_code": "PK",
+      "co_occurrence_count": 8,
+      "co_occurrence_pct": 0.2
+    },
+    {
+      "skill_a": "Apache Spark",
+      "skill_b": "Databricks",
+      "country_code": "GB",
+      "co_occurrence_count": 8,
+      "co_occurrence_pct": 0.3
+    },
+    {
+      "skill_a": "Azure",
+      "skill_b": "Python",
+      "country_code": "GB",
+      "co_occurrence_count": 8,
+      "co_occurrence_pct": 0.3
+    },
+    {
+      "skill_a": "Communication",
+      "skill_b": "JavaScript",
+      "country_code": "PK",
+      "co_occurrence_count": 8,
+      "co_occurrence_pct": 0.2
+    },
+    {
+      "skill_a": "HTML",
+      "skill_b": "Java",
+      "country_code": "PK",
+      "co_occurrence_count": 8,
+      "co_occurrence_pct": 0.2
+    },
+    {
+      "skill_a": "Machine Learning",
+      "skill_b": "Model Deployment",
+      "country_code": "GB",
+      "co_occurrence_count": 8,
+      "co_occurrence_pct": 0.3
+    },
+    {
+      "skill_a": "Machine Learning",
+      "skill_b": "NLP",
+      "country_code": "GB",
+      "co_occurrence_count": 8,
+      "co_occurrence_pct": 0.3
+    },
+    {
+      "skill_a": "Project Management",
+      "skill_b": "PHP",
+      "country_code": "PK",
+      "co_occurrence_count": 8,
+      "co_occurrence_pct": 0.2
+    },
+    {
+      "skill_a": "SQL",
+      "skill_b": "Apache Spark",
+      "country_code": "GB",
+      "co_occurrence_count": 8,
+      "co_occurrence_pct": 0.3
+    },
+    {
+      "skill_a": "SQL",
+      "skill_b": "CSS",
+      "country_code": "PK",
+      "co_occurrence_count": 8,
+      "co_occurrence_pct": 0.2
+    },
+    {
+      "skill_a": "Python",
+      "skill_b": "R",
+      "country_code": "GB",
+      "co_occurrence_count": 7,
+      "co_occurrence_pct": 0.2
+    },
+    {
+      "skill_a": "Python",
+      "skill_b": "Excel",
+      "country_code": "PK",
+      "co_occurrence_count": 7,
+      "co_occurrence_pct": 0.1
+    },
+    {
+      "skill_a": "Leadership",
+      "skill_b": "Data Governance",
+      "country_code": "GB",
+      "co_occurrence_count": 7,
+      "co_occurrence_pct": 0.2
+    },
+    {
+      "skill_a": "MongoDB",
+      "skill_b": "JavaScript",
+      "country_code": "PK",
+      "co_occurrence_count": 7,
+      "co_occurrence_pct": 0.1
+    },
+    {
+      "skill_a": "JavaScript",
+      "skill_b": "TypeScript",
+      "country_code": "PK",
+      "co_occurrence_count": 7,
+      "co_occurrence_pct": 0.1
+    },
+    {
+      "skill_a": "Machine Learning",
+      "skill_b": "Business Intelligence",
+      "country_code": "GB",
+      "co_occurrence_count": 7,
+      "co_occurrence_pct": 0.2
+    },
+    {
+      "skill_a": "Bachelor's Degree",
+      "skill_b": "Python",
+      "country_code": "PK",
+      "co_occurrence_count": 7,
+      "co_occurrence_pct": 0.1
+    },
+    {
+      "skill_a": "AWS",
+      "skill_b": "Java",
+      "country_code": "PK",
+      "co_occurrence_count": 7,
+      "co_occurrence_pct": 0.1
+    },
+    {
+      "skill_a": "AWS",
+      "skill_b": "Python",
+      "country_code": "GB",
+      "co_occurrence_count": 7,
+      "co_occurrence_pct": 0.2
+    },
+    {
+      "skill_a": "Business Analysis",
+      "skill_b": "Power BI",
+      "country_code": "GB",
+      "co_occurrence_count": 7,
+      "co_occurrence_pct": 0.2
+    },
+    {
+      "skill_a": "Statistics",
+      "skill_b": "Python",
+      "country_code": "GB",
+      "co_occurrence_count": 7,
+      "co_occurrence_pct": 0.2
+    },
+    {
+      "skill_a": "Reporting",
+      "skill_b": "Stakeholder Management",
+      "country_code": "GB",
+      "co_occurrence_count": 7,
+      "co_occurrence_pct": 0.2
+    },
+    {
+      "skill_a": "Data Modelling",
+      "skill_b": "Power BI",
+      "country_code": "GB",
+      "co_occurrence_count": 7,
+      "co_occurrence_pct": 0.2
+    },
+    {
+      "skill_a": "CSS",
+      "skill_b": "Java",
+      "country_code": "PK",
+      "co_occurrence_count": 7,
+      "co_occurrence_pct": 0.1
+    },
+    {
+      "skill_a": "Communication",
+      "skill_b": "Excel",
+      "country_code": "PK",
+      "co_occurrence_count": 7,
+      "co_occurrence_pct": 0.1
+    },
+    {
+      "skill_a": "Dashboarding",
+      "skill_b": "Power BI",
+      "country_code": "GB",
+      "co_occurrence_count": 7,
+      "co_occurrence_pct": 0.2
+    },
+    {
+      "skill_a": "Dashboarding",
+      "skill_b": "Tableau",
+      "country_code": "GB",
+      "co_occurrence_count": 7,
+      "co_occurrence_pct": 0.2
+    },
+    {
+      "skill_a": "Leadership",
+      "skill_b": "Python",
+      "country_code": "GB",
+      "co_occurrence_count": 6,
+      "co_occurrence_pct": 0.2
+    },
+    {
+      "skill_a": "Excel",
+      "skill_b": "Power BI",
+      "country_code": "GB",
+      "co_occurrence_count": 6,
+      "co_occurrence_pct": 0.2
+    },
+    {
+      "skill_a": "Python",
+      "skill_b": "Java",
+      "country_code": "GB",
+      "co_occurrence_count": 6,
+      "co_occurrence_pct": 0.2
+    },
+    {
+      "skill_a": "Python",
+      "skill_b": "PHP",
+      "country_code": "PK",
+      "co_occurrence_count": 6,
+      "co_occurrence_pct": 0.1
+    },
+    {
+      "skill_a": "Python",
+      "skill_b": "Statistical Analysis",
+      "country_code": "GB",
+      "co_occurrence_count": 6,
+      "co_occurrence_pct": 0.2
+    },
+    {
+      "skill_a": "Dashboarding",
+      "skill_b": "Data Modelling",
+      "country_code": "GB",
+      "co_occurrence_count": 6,
+      "co_occurrence_pct": 0.2
+    },
+    {
+      "skill_a": "Communication",
+      "skill_b": "Stakeholder Management",
+      "country_code": "GB",
+      "co_occurrence_count": 6,
+      "co_occurrence_pct": 0.2
+    },
+    {
+      "skill_a": "Reporting",
+      "skill_b": "ETL",
+      "country_code": "GB",
+      "co_occurrence_count": 6,
+      "co_occurrence_pct": 0.2
+    },
+    {
+      "skill_a": "Reporting",
+      "skill_b": "Excel",
+      "country_code": "GB",
+      "co_occurrence_count": 6,
+      "co_occurrence_pct": 0.2
+    },
+    {
+      "skill_a": "C#",
+      "skill_b": "PHP",
+      "country_code": "PK",
+      "co_occurrence_count": 6,
+      "co_occurrence_pct": 0.1
+    },
+    {
+      "skill_a": "C#",
+      "skill_b": "HTML",
+      "country_code": "PK",
+      "co_occurrence_count": 6,
+      "co_occurrence_pct": 0.1
+    },
+    {
+      "skill_a": "Reporting",
+      "skill_b": "Python",
+      "country_code": "GB",
+      "co_occurrence_count": 6,
+      "co_occurrence_pct": 0.2
+    },
+    {
+      "skill_a": "C#",
+      "skill_b": "CSS",
+      "country_code": "PK",
+      "co_occurrence_count": 6,
+      "co_occurrence_pct": 0.1
+    },
+    {
+      "skill_a": "C#",
+      "skill_b": "Azure",
+      "country_code": "GB",
+      "co_occurrence_count": 6,
+      "co_occurrence_pct": 0.2
+    },
+    {
+      "skill_a": "Business Intelligence",
+      "skill_b": "Stakeholder Management",
+      "country_code": "GB",
+      "co_occurrence_count": 6,
+      "co_occurrence_pct": 0.2
+    },
+    {
+      "skill_a": "SQL",
+      "skill_b": "Business Intelligence",
+      "country_code": "PK",
+      "co_occurrence_count": 6,
+      "co_occurrence_pct": 0.1
+    },
+    {
+      "skill_a": "Statistics",
+      "skill_b": "Statistical Analysis",
+      "country_code": "GB",
+      "co_occurrence_count": 6,
+      "co_occurrence_pct": 0.2
+    }
+  ],
+  "role_skills": [
+    {
+      "role_category": "analytics_engineer",
+      "skill_name": "SQL",
+      "skill_category": "technical",
+      "country_code": "GB",
+      "job_count": 25,
+      "penetration_pct": 8.7
+    },
+    {
+      "role_category": "analytics_engineer",
+      "skill_name": "Databricks",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "job_count": 22,
+      "penetration_pct": 7.6
+    },
+    {
+      "role_category": "analytics_engineer",
+      "skill_name": "Python",
+      "skill_category": "technical",
+      "country_code": "GB",
+      "job_count": 22,
+      "penetration_pct": 7.6
+    },
+    {
+      "role_category": "analytics_engineer",
+      "skill_name": "Reporting",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 21,
+      "penetration_pct": 7.3
+    },
+    {
+      "role_category": "analytics_engineer",
+      "skill_name": "Azure",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "job_count": 17,
+      "penetration_pct": 5.9
+    },
+    {
+      "role_category": "analytics_engineer",
+      "skill_name": "Snowflake",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "job_count": 14,
+      "penetration_pct": 4.8
+    },
+    {
+      "role_category": "analytics_engineer",
+      "skill_name": "AWS",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "job_count": 13,
+      "penetration_pct": 4.5
+    },
+    {
+      "role_category": "analytics_engineer",
+      "skill_name": "Leadership",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "job_count": 9,
+      "penetration_pct": 3.1
+    },
+    {
+      "role_category": "analytics_engineer",
+      "skill_name": "Apache Spark",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "job_count": 9,
+      "penetration_pct": 3.1
+    },
+    {
+      "role_category": "analytics_engineer",
+      "skill_name": "Business Intelligence",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 8,
+      "penetration_pct": 2.8
+    },
+    {
+      "role_category": "analytics_engineer",
+      "skill_name": "Machine Learning",
+      "skill_category": "ai_ml",
+      "country_code": "GB",
+      "job_count": 7,
+      "penetration_pct": 2.4
+    },
+    {
+      "role_category": "analytics_engineer",
+      "skill_name": "Teamwork",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "job_count": 6,
+      "penetration_pct": 2.1
+    },
+    {
+      "role_category": "analytics_engineer",
+      "skill_name": "Looker",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "job_count": 5,
+      "penetration_pct": 1.7
+    },
+    {
+      "role_category": "analytics_engineer",
+      "skill_name": "ETL",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 5,
+      "penetration_pct": 1.7
+    },
+    {
+      "role_category": "analytics_engineer",
+      "skill_name": "Project Management",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "job_count": 5,
+      "penetration_pct": 1.7
+    },
+    {
+      "role_category": "analytics_engineer",
+      "skill_name": "Data Governance",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 4,
+      "penetration_pct": 1.4
+    },
+    {
+      "role_category": "analytics_engineer",
+      "skill_name": "Scala",
+      "skill_category": "technical",
+      "country_code": "GB",
+      "job_count": 4,
+      "penetration_pct": 1.4
+    },
+    {
+      "role_category": "analytics_engineer",
+      "skill_name": "A/B Testing",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 3,
+      "penetration_pct": 1.0
+    },
+    {
+      "role_category": "analytics_engineer",
+      "skill_name": "Communication",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "job_count": 3,
+      "penetration_pct": 1.0
+    },
+    {
+      "role_category": "analytics_engineer",
+      "skill_name": "Financial Analysis",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 3,
+      "penetration_pct": 1.0
+    },
+    {
+      "role_category": "analytics_engineer",
+      "skill_name": "Google Cloud",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "job_count": 3,
+      "penetration_pct": 1.0
+    },
+    {
+      "role_category": "analytics_engineer",
+      "skill_name": "Power BI",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "job_count": 3,
+      "penetration_pct": 1.0
+    },
+    {
+      "role_category": "bi_developer",
+      "skill_name": "Business Intelligence",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 4,
+      "penetration_pct": 100.0
+    },
+    {
+      "role_category": "data_analyst",
+      "skill_name": "Reporting",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 151,
+      "penetration_pct": 20.5
+    },
+    {
+      "role_category": "data_analyst",
+      "skill_name": "Data Governance",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 81,
+      "penetration_pct": 11.0
+    },
+    {
+      "role_category": "data_analyst",
+      "skill_name": "Business Intelligence",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 46,
+      "penetration_pct": 6.2
+    },
+    {
+      "role_category": "data_analyst",
+      "skill_name": "Attention to Detail",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "job_count": 34,
+      "penetration_pct": 4.6
+    },
+    {
+      "role_category": "data_analyst",
+      "skill_name": "Dashboarding",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 23,
+      "penetration_pct": 3.1
+    },
+    {
+      "role_category": "data_analyst",
+      "skill_name": "SQL",
+      "skill_category": "technical",
+      "country_code": "GB",
+      "job_count": 17,
+      "penetration_pct": 2.3
+    },
+    {
+      "role_category": "data_analyst",
+      "skill_name": "Leadership",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "job_count": 15,
+      "penetration_pct": 2.0
+    },
+    {
+      "role_category": "data_analyst",
+      "skill_name": "Power BI",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "job_count": 15,
+      "penetration_pct": 2.0
+    },
+    {
+      "role_category": "data_analyst",
+      "skill_name": "Business Analysis",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "job_count": 15,
+      "penetration_pct": 2.0
+    },
+    {
+      "role_category": "data_analyst",
+      "skill_name": "Excel",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "job_count": 11,
+      "penetration_pct": 1.5
+    },
+    {
+      "role_category": "data_analyst",
+      "skill_name": "Generative AI",
+      "skill_category": "ai_ml",
+      "country_code": "GB",
+      "job_count": 10,
+      "penetration_pct": 1.4
+    },
+    {
+      "role_category": "data_analyst",
+      "skill_name": "Teamwork",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "job_count": 10,
+      "penetration_pct": 1.4
+    },
+    {
+      "role_category": "data_analyst",
+      "skill_name": "Machine Learning",
+      "skill_category": "ai_ml",
+      "country_code": "GB",
+      "job_count": 9,
+      "penetration_pct": 1.2
+    },
+    {
+      "role_category": "data_analyst",
+      "skill_name": "Stakeholder Management",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "job_count": 8,
+      "penetration_pct": 1.1
+    },
+    {
+      "role_category": "data_analyst",
+      "skill_name": "Excel",
+      "skill_category": "tool",
+      "country_code": "PK",
+      "job_count": 8,
+      "penetration_pct": 38.1
+    },
+    {
+      "role_category": "data_analyst",
+      "skill_name": "A/B Testing",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 8,
+      "penetration_pct": 1.1
+    },
+    {
+      "role_category": "data_analyst",
+      "skill_name": "Data Modelling",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 8,
+      "penetration_pct": 1.1
+    },
+    {
+      "role_category": "data_analyst",
+      "skill_name": "Bachelor's Degree",
+      "skill_category": "education",
+      "country_code": "PK",
+      "job_count": 7,
+      "penetration_pct": 33.3
+    },
+    {
+      "role_category": "data_analyst",
+      "skill_name": "SQL",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "job_count": 7,
+      "penetration_pct": 33.3
+    },
+    {
+      "role_category": "data_analyst",
+      "skill_name": "Communication",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "job_count": 7,
+      "penetration_pct": 0.9
+    },
+    {
+      "role_category": "data_analyst",
+      "skill_name": "Financial Analysis",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 6,
+      "penetration_pct": 0.8
+    },
+    {
+      "role_category": "data_analyst",
+      "skill_name": "Business Intelligence",
+      "skill_category": "analytical",
+      "country_code": "PK",
+      "job_count": 6,
+      "penetration_pct": 28.6
+    },
+    {
+      "role_category": "data_analyst",
+      "skill_name": "Project Management",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "job_count": 6,
+      "penetration_pct": 0.8
+    },
+    {
+      "role_category": "data_analyst",
+      "skill_name": "Power BI",
+      "skill_category": "tool",
+      "country_code": "PK",
+      "job_count": 5,
+      "penetration_pct": 23.8
+    },
+    {
+      "role_category": "data_analyst",
+      "skill_name": "Bachelor's Degree",
+      "skill_category": "education",
+      "country_code": "GB",
+      "job_count": 5,
+      "penetration_pct": 0.7
+    },
+    {
+      "role_category": "data_analyst",
+      "skill_name": "Tableau",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "job_count": 4,
+      "penetration_pct": 0.5
+    },
+    {
+      "role_category": "data_analyst",
+      "skill_name": "Python",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "job_count": 4,
+      "penetration_pct": 19.0
+    },
+    {
+      "role_category": "data_analyst",
+      "skill_name": "Python",
+      "skill_category": "technical",
+      "country_code": "GB",
+      "job_count": 3,
+      "penetration_pct": 0.4
+    },
+    {
+      "role_category": "data_analyst",
+      "skill_name": "Data Modelling",
+      "skill_category": "analytical",
+      "country_code": "PK",
+      "job_count": 3,
+      "penetration_pct": 14.3
+    },
+    {
+      "role_category": "data_analyst",
+      "skill_name": "Communication",
+      "skill_category": "business_soft",
+      "country_code": "PK",
+      "job_count": 3,
+      "penetration_pct": 14.3
+    },
+    {
+      "role_category": "data_analyst",
+      "skill_name": "Business Analysis",
+      "skill_category": "business_soft",
+      "country_code": "PK",
+      "job_count": 3,
+      "penetration_pct": 14.3
+    },
+    {
+      "role_category": "data_analyst",
+      "skill_name": "MongoDB",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "job_count": 3,
+      "penetration_pct": 0.4
+    },
+    {
+      "role_category": "data_analyst",
+      "skill_name": "Attention to Detail",
+      "skill_category": "business_soft",
+      "country_code": "PK",
+      "job_count": 3,
+      "penetration_pct": 14.3
+    },
+    {
+      "role_category": "data_analyst",
+      "skill_name": "ETL",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 3,
+      "penetration_pct": 0.4
+    },
+    {
+      "role_category": "data_analyst",
+      "skill_name": "Problem Solving",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "job_count": 3,
+      "penetration_pct": 0.4
+    },
+    {
+      "role_category": "data_analyst",
+      "skill_name": "Azure",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "job_count": 3,
+      "penetration_pct": 0.4
+    },
+    {
+      "role_category": "data_architect",
+      "skill_name": "AWS",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "job_count": 6,
+      "penetration_pct": 15.4
+    },
+    {
+      "role_category": "data_architect",
+      "skill_name": "Snowflake",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "job_count": 5,
+      "penetration_pct": 12.8
+    },
+    {
+      "role_category": "data_architect",
+      "skill_name": "Azure",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "job_count": 4,
+      "penetration_pct": 10.3
+    },
+    {
+      "role_category": "data_architect",
+      "skill_name": "Reporting",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 3,
+      "penetration_pct": 7.7
+    },
+    {
+      "role_category": "data_scientist",
+      "skill_name": "Machine Learning",
+      "skill_category": "ai_ml",
+      "country_code": "GB",
+      "job_count": 107,
+      "penetration_pct": 28.0
+    },
+    {
+      "role_category": "data_scientist",
+      "skill_name": "A/B Testing",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 16,
+      "penetration_pct": 4.2
+    },
+    {
+      "role_category": "data_scientist",
+      "skill_name": "Generative AI",
+      "skill_category": "ai_ml",
+      "country_code": "GB",
+      "job_count": 14,
+      "penetration_pct": 3.7
+    },
+    {
+      "role_category": "data_scientist",
+      "skill_name": "Python",
+      "skill_category": "technical",
+      "country_code": "GB",
+      "job_count": 11,
+      "penetration_pct": 2.9
+    },
+    {
+      "role_category": "data_scientist",
+      "skill_name": "Leadership",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "job_count": 9,
+      "penetration_pct": 2.4
+    },
+    {
+      "role_category": "data_scientist",
+      "skill_name": "Financial Analysis",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 7,
+      "penetration_pct": 1.8
+    },
+    {
+      "role_category": "data_scientist",
+      "skill_name": "NLP",
+      "skill_category": "ai_ml",
+      "country_code": "GB",
+      "job_count": 7,
+      "penetration_pct": 1.8
+    },
+    {
+      "role_category": "data_scientist",
+      "skill_name": "Teamwork",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "job_count": 6,
+      "penetration_pct": 1.6
+    },
+    {
+      "role_category": "data_scientist",
+      "skill_name": "Machine Learning",
+      "skill_category": "ai_ml",
+      "country_code": "PK",
+      "job_count": 6,
+      "penetration_pct": 66.7
+    },
+    {
+      "role_category": "data_scientist",
+      "skill_name": "Reporting",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 6,
+      "penetration_pct": 1.6
+    },
+    {
+      "role_category": "data_scientist",
+      "skill_name": "LLMs",
+      "skill_category": "ai_ml",
+      "country_code": "GB",
+      "job_count": 6,
+      "penetration_pct": 1.6
+    },
+    {
+      "role_category": "data_scientist",
+      "skill_name": "Go",
+      "skill_category": "technical",
+      "country_code": "GB",
+      "job_count": 5,
+      "penetration_pct": 1.3
+    },
+    {
+      "role_category": "data_scientist",
+      "skill_name": "SQL",
+      "skill_category": "technical",
+      "country_code": "GB",
+      "job_count": 5,
+      "penetration_pct": 1.3
+    },
+    {
+      "role_category": "data_scientist",
+      "skill_name": "NLP",
+      "skill_category": "ai_ml",
+      "country_code": "PK",
+      "job_count": 4,
+      "penetration_pct": 44.4
+    },
+    {
+      "role_category": "data_scientist",
+      "skill_name": "Statistical Analysis",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 4,
+      "penetration_pct": 1.0
+    },
+    {
+      "role_category": "data_scientist",
+      "skill_name": "Model Deployment",
+      "skill_category": "ai_ml",
+      "country_code": "GB",
+      "job_count": 3,
+      "penetration_pct": 0.8
+    },
+    {
+      "role_category": "data_scientist",
+      "skill_name": "Python",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "job_count": 3,
+      "penetration_pct": 33.3
+    },
+    {
+      "role_category": "data_scientist",
+      "skill_name": "Master's Degree",
+      "skill_category": "education",
+      "country_code": "PK",
+      "job_count": 3,
+      "penetration_pct": 33.3
+    },
+    {
+      "role_category": "data_scientist",
+      "skill_name": "Deep Learning",
+      "skill_category": "ai_ml",
+      "country_code": "PK",
+      "job_count": 3,
+      "penetration_pct": 33.3
+    },
+    {
+      "role_category": "data_scientist",
+      "skill_name": "Statistics",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 3,
+      "penetration_pct": 0.8
+    },
+    {
+      "role_category": "data_scientist",
+      "skill_name": "Computer Vision",
+      "skill_category": "ai_ml",
+      "country_code": "GB",
+      "job_count": 3,
+      "penetration_pct": 0.8
+    },
+    {
+      "role_category": "data_scientist",
+      "skill_name": "Project Management",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "job_count": 3,
+      "penetration_pct": 0.8
+    },
+    {
+      "role_category": "financial_analyst",
+      "skill_name": "Reporting",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 11,
+      "penetration_pct": 31.4
+    },
+    {
+      "role_category": "financial_analyst",
+      "skill_name": "Financial Analysis",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 3,
+      "penetration_pct": 8.6
+    },
+    {
+      "role_category": "operations_analyst",
+      "skill_name": "Business Intelligence",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 15,
+      "penetration_pct": 55.6
+    },
+    {
+      "role_category": "operations_analyst",
+      "skill_name": "Reporting",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 6,
+      "penetration_pct": 22.2
+    },
+    {
+      "role_category": "operations_analyst",
+      "skill_name": "Excel",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "job_count": 4,
+      "penetration_pct": 14.8
+    },
+    {
+      "role_category": "operations_analyst",
+      "skill_name": "Power BI",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "job_count": 4,
+      "penetration_pct": 14.8
+    },
+    {
+      "role_category": "operations_analyst",
+      "skill_name": "SQL",
+      "skill_category": "technical",
+      "country_code": "GB",
+      "job_count": 4,
+      "penetration_pct": 14.8
+    },
+    {
+      "role_category": "operations_analyst",
+      "skill_name": "Python",
+      "skill_category": "technical",
+      "country_code": "GB",
+      "job_count": 4,
+      "penetration_pct": 14.8
+    },
+    {
+      "role_category": "operations_analyst",
+      "skill_name": "Business Analysis",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "job_count": 4,
+      "penetration_pct": 14.8
+    },
+    {
+      "role_category": "other",
+      "skill_name": "PHP",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "job_count": 386,
+      "penetration_pct": 7.5
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Communication",
+      "skill_category": "business_soft",
+      "country_code": "PK",
+      "job_count": 261,
+      "penetration_pct": 5.0
+    },
+    {
+      "role_category": "other",
+      "skill_name": "JavaScript",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "job_count": 203,
+      "penetration_pct": 3.9
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Reporting",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 127,
+      "penetration_pct": 8.7
+    },
+    {
+      "role_category": "other",
+      "skill_name": "HTML",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "job_count": 121,
+      "penetration_pct": 2.3
+    },
+    {
+      "role_category": "other",
+      "skill_name": "C#",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "job_count": 117,
+      "penetration_pct": 2.3
+    },
+    {
+      "role_category": "other",
+      "skill_name": "CSS",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "job_count": 108,
+      "penetration_pct": 2.1
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Leadership",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "job_count": 105,
+      "penetration_pct": 7.2
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Machine Learning",
+      "skill_category": "ai_ml",
+      "country_code": "GB",
+      "job_count": 98,
+      "penetration_pct": 6.7
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Java",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "job_count": 59,
+      "penetration_pct": 1.1
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Master's Degree",
+      "skill_category": "education",
+      "country_code": "PK",
+      "job_count": 59,
+      "penetration_pct": 1.1
+    },
+    {
+      "role_category": "other",
+      "skill_name": "MySQL",
+      "skill_category": "tool",
+      "country_code": "PK",
+      "job_count": 57,
+      "penetration_pct": 1.1
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Reporting",
+      "skill_category": "analytical",
+      "country_code": "PK",
+      "job_count": 56,
+      "penetration_pct": 1.1
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Bachelor's Degree",
+      "skill_category": "education",
+      "country_code": "PK",
+      "job_count": 53,
+      "penetration_pct": 1.0
+    },
+    {
+      "role_category": "other",
+      "skill_name": "SQL",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "job_count": 53,
+      "penetration_pct": 1.0
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Excel",
+      "skill_category": "tool",
+      "country_code": "PK",
+      "job_count": 46,
+      "penetration_pct": 0.9
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Business Intelligence",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 43,
+      "penetration_pct": 3.0
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Project Management",
+      "skill_category": "business_soft",
+      "country_code": "PK",
+      "job_count": 37,
+      "penetration_pct": 0.7
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Leadership",
+      "skill_category": "business_soft",
+      "country_code": "PK",
+      "job_count": 37,
+      "penetration_pct": 0.7
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Teamwork",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "job_count": 37,
+      "penetration_pct": 2.5
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Python",
+      "skill_category": "technical",
+      "country_code": "GB",
+      "job_count": 34,
+      "penetration_pct": 2.3
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Python",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "job_count": 27,
+      "penetration_pct": 0.5
+    },
+    {
+      "role_category": "other",
+      "skill_name": "AWS",
+      "skill_category": "tool",
+      "country_code": "PK",
+      "job_count": 24,
+      "penetration_pct": 0.5
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Attention to Detail",
+      "skill_category": "business_soft",
+      "country_code": "PK",
+      "job_count": 23,
+      "penetration_pct": 0.4
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Financial Analysis",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 22,
+      "penetration_pct": 1.5
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Master's Degree",
+      "skill_category": "education",
+      "country_code": "GB",
+      "job_count": 18,
+      "penetration_pct": 1.2
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Project Management",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "job_count": 18,
+      "penetration_pct": 1.2
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Communication",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "job_count": 18,
+      "penetration_pct": 1.2
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Attention to Detail",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "job_count": 17,
+      "penetration_pct": 1.2
+    },
+    {
+      "role_category": "other",
+      "skill_name": "A/B Testing",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 16,
+      "penetration_pct": 1.1
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Teamwork",
+      "skill_category": "business_soft",
+      "country_code": "PK",
+      "job_count": 16,
+      "penetration_pct": 0.3
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Market Research",
+      "skill_category": "analytical",
+      "country_code": "PK",
+      "job_count": 16,
+      "penetration_pct": 0.3
+    },
+    {
+      "role_category": "other",
+      "skill_name": "SQL",
+      "skill_category": "technical",
+      "country_code": "GB",
+      "job_count": 16,
+      "penetration_pct": 1.1
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Dashboarding",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 16,
+      "penetration_pct": 1.1
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Databricks",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "job_count": 16,
+      "penetration_pct": 1.1
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Data Governance",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 16,
+      "penetration_pct": 1.1
+    },
+    {
+      "role_category": "other",
+      "skill_name": "AWS",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "job_count": 15,
+      "penetration_pct": 1.0
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Statistics",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 15,
+      "penetration_pct": 1.0
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Stakeholder Management",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "job_count": 15,
+      "penetration_pct": 1.0
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Problem Solving",
+      "skill_category": "business_soft",
+      "country_code": "PK",
+      "job_count": 14,
+      "penetration_pct": 0.3
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Generative AI",
+      "skill_category": "ai_ml",
+      "country_code": "GB",
+      "job_count": 13,
+      "penetration_pct": 0.9
+    },
+    {
+      "role_category": "other",
+      "skill_name": "C++",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "job_count": 12,
+      "penetration_pct": 0.2
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Snowflake",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "job_count": 12,
+      "penetration_pct": 0.8
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Google Cloud",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "job_count": 11,
+      "penetration_pct": 0.8
+    },
+    {
+      "role_category": "other",
+      "skill_name": "MongoDB",
+      "skill_category": "tool",
+      "country_code": "PK",
+      "job_count": 11,
+      "penetration_pct": 0.2
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Go",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "job_count": 11,
+      "penetration_pct": 0.2
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Azure",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "job_count": 10,
+      "penetration_pct": 0.7
+    },
+    {
+      "role_category": "other",
+      "skill_name": "TypeScript",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "job_count": 10,
+      "penetration_pct": 0.2
+    },
+    {
+      "role_category": "other",
+      "skill_name": "PhD",
+      "skill_category": "education",
+      "country_code": "GB",
+      "job_count": 10,
+      "penetration_pct": 0.7
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Git",
+      "skill_category": "tool",
+      "country_code": "PK",
+      "job_count": 10,
+      "penetration_pct": 0.2
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Business Intelligence",
+      "skill_category": "analytical",
+      "country_code": "PK",
+      "job_count": 10,
+      "penetration_pct": 0.2
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Data Modelling",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 10,
+      "penetration_pct": 0.7
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Problem Solving",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "job_count": 9,
+      "penetration_pct": 0.6
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Diploma",
+      "skill_category": "education",
+      "country_code": "PK",
+      "job_count": 9,
+      "penetration_pct": 0.2
+    },
+    {
+      "role_category": "other",
+      "skill_name": "ETL",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 9,
+      "penetration_pct": 0.6
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Time Management",
+      "skill_category": "business_soft",
+      "country_code": "PK",
+      "job_count": 8,
+      "penetration_pct": 0.2
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Azure",
+      "skill_category": "tool",
+      "country_code": "PK",
+      "job_count": 8,
+      "penetration_pct": 0.2
+    },
+    {
+      "role_category": "other",
+      "skill_name": "LLMs",
+      "skill_category": "ai_ml",
+      "country_code": "GB",
+      "job_count": 8,
+      "penetration_pct": 0.6
+    },
+    {
+      "role_category": "other",
+      "skill_name": "C#",
+      "skill_category": "technical",
+      "country_code": "GB",
+      "job_count": 8,
+      "penetration_pct": 0.6
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Bachelor's Degree",
+      "skill_category": "education",
+      "country_code": "GB",
+      "job_count": 8,
+      "penetration_pct": 0.6
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Statistical Analysis",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 7,
+      "penetration_pct": 0.5
+    },
+    {
+      "role_category": "other",
+      "skill_name": "PostgreSQL",
+      "skill_category": "tool",
+      "country_code": "PK",
+      "job_count": 7,
+      "penetration_pct": 0.1
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Market Research",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 7,
+      "penetration_pct": 0.5
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Business Analysis",
+      "skill_category": "business_soft",
+      "country_code": "PK",
+      "job_count": 6,
+      "penetration_pct": 0.1
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Tableau",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "job_count": 6,
+      "penetration_pct": 0.4
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Apache Spark",
+      "skill_category": "tool",
+      "country_code": "PK",
+      "job_count": 6,
+      "penetration_pct": 0.1
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Business Analysis",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "job_count": 6,
+      "penetration_pct": 0.4
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Power BI",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "job_count": 6,
+      "penetration_pct": 0.4
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Dashboarding",
+      "skill_category": "analytical",
+      "country_code": "PK",
+      "job_count": 6,
+      "penetration_pct": 0.1
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Java",
+      "skill_category": "technical",
+      "country_code": "GB",
+      "job_count": 5,
+      "penetration_pct": 0.3
+    },
+    {
+      "role_category": "other",
+      "skill_name": "C++",
+      "skill_category": "technical",
+      "country_code": "GB",
+      "job_count": 5,
+      "penetration_pct": 0.3
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Model Deployment",
+      "skill_category": "ai_ml",
+      "country_code": "GB",
+      "job_count": 5,
+      "penetration_pct": 0.3
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Computer Vision",
+      "skill_category": "ai_ml",
+      "country_code": "PK",
+      "job_count": 5,
+      "penetration_pct": 0.1
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Machine Learning",
+      "skill_category": "ai_ml",
+      "country_code": "PK",
+      "job_count": 5,
+      "penetration_pct": 0.1
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Data Governance",
+      "skill_category": "analytical",
+      "country_code": "PK",
+      "job_count": 5,
+      "penetration_pct": 0.1
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Docker",
+      "skill_category": "tool",
+      "country_code": "PK",
+      "job_count": 5,
+      "penetration_pct": 0.1
+    },
+    {
+      "role_category": "other",
+      "skill_name": "R",
+      "skill_category": "technical",
+      "country_code": "GB",
+      "job_count": 4,
+      "penetration_pct": 0.3
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Financial Analysis",
+      "skill_category": "analytical",
+      "country_code": "PK",
+      "job_count": 4,
+      "penetration_pct": 0.1
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Docker",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "job_count": 4,
+      "penetration_pct": 0.3
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Llms",
+      "skill_category": "ai_ml",
+      "country_code": "GB",
+      "job_count": 4,
+      "penetration_pct": 0.3
+    },
+    {
+      "role_category": "other",
+      "skill_name": "JavaScript",
+      "skill_category": "technical",
+      "country_code": "GB",
+      "job_count": 4,
+      "penetration_pct": 0.3
+    },
+    {
+      "role_category": "other",
+      "skill_name": "NLP",
+      "skill_category": "ai_ml",
+      "country_code": "GB",
+      "job_count": 4,
+      "penetration_pct": 0.3
+    },
+    {
+      "role_category": "other",
+      "skill_name": "VBA",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "job_count": 4,
+      "penetration_pct": 0.1
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Data Mining",
+      "skill_category": "ai_ml",
+      "country_code": "GB",
+      "job_count": 3,
+      "penetration_pct": 0.2
+    },
+    {
+      "role_category": "other",
+      "skill_name": "TypeScript",
+      "skill_category": "technical",
+      "country_code": "GB",
+      "job_count": 3,
+      "penetration_pct": 0.2
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Git",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "job_count": 3,
+      "penetration_pct": 0.2
+    },
+    {
+      "role_category": "other",
+      "skill_name": "dbt",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "job_count": 3,
+      "penetration_pct": 0.2
+    },
+    {
+      "role_category": "other",
+      "skill_name": "Computer Vision",
+      "skill_category": "ai_ml",
+      "country_code": "GB",
+      "job_count": 3,
+      "penetration_pct": 0.2
+    },
+    {
+      "role_category": "product_analyst",
+      "skill_name": "Machine Learning",
+      "skill_category": "ai_ml",
+      "country_code": "GB",
+      "job_count": 6,
+      "penetration_pct": 18.2
+    },
+    {
+      "role_category": "product_analyst",
+      "skill_name": "A/B Testing",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 5,
+      "penetration_pct": 15.2
+    }
+  ],
+  "london": [
+    {
+      "location_group": "Greater London",
+      "total_jobs": 513,
+      "data_analyst_jobs": 178,
+      "data_scientist_jobs": 45,
+      "analytics_engineer_jobs": 48,
+      "jobs_with_salary": 513,
+      "avg_salary_midpoint": NaN,
+      "remote_jobs": 25,
+      "hybrid_jobs": 116,
+      "on_site_jobs": 372,
+      "junior_count": 76,
+      "senior_count": 226
+    },
+    {
+      "location_group": "London",
+      "total_jobs": 2312,
+      "data_analyst_jobs": 488,
+      "data_scientist_jobs": 320,
+      "analytics_engineer_jobs": 218,
+      "jobs_with_salary": 2312,
+      "avg_salary_midpoint": NaN,
+      "remote_jobs": 149,
+      "hybrid_jobs": 316,
+      "on_site_jobs": 1847,
+      "junior_count": 165,
+      "senior_count": 1218
+    },
+    {
+      "location_group": "UK Other",
+      "total_jobs": 204,
+      "data_analyst_jobs": 72,
+      "data_scientist_jobs": 17,
+      "analytics_engineer_jobs": 23,
+      "jobs_with_salary": 204,
+      "avg_salary_midpoint": NaN,
+      "remote_jobs": 8,
+      "hybrid_jobs": 29,
+      "on_site_jobs": 167,
+      "junior_count": 29,
+      "senior_count": 71
+    }
+  ],
+  "salary": [
+    {
+      "role_category": "other",
+      "seniority": "senior",
+      "country_code": "GB",
+      "job_count": 851,
+      "avg_salary": NaN,
+      "median_salary": 70000.0,
+      "q25": 58306.0,
+      "q75": 85000.0,
+      "min_salary": 85.0,
+      "max_salary": NaN
+    },
+    {
+      "role_category": "other",
+      "seniority": "unknown",
+      "country_code": "GB",
+      "job_count": 447,
+      "avg_salary": NaN,
+      "median_salary": 57485.0,
+      "q25": 46732.0,
+      "q75": 75393.0,
+      "min_salary": 85.0,
+      "max_salary": NaN
+    },
+    {
+      "role_category": "data_analyst",
+      "seniority": "unknown",
+      "country_code": "GB",
+      "job_count": 380,
+      "avg_salary": NaN,
+      "median_salary": 52676.0,
+      "q25": 45004.0,
+      "q75": 68867.0,
+      "min_salary": 395.0,
+      "max_salary": NaN
+    },
+    {
+      "role_category": "data_analyst",
+      "seniority": "senior",
+      "country_code": "GB",
+      "job_count": 284,
+      "avg_salary": 64094.0,
+      "median_salary": 59974.0,
+      "q25": 50702.0,
+      "q75": 70000.0,
+      "min_salary": 31995.0,
+      "max_salary": 165750.0
+    },
+    {
+      "role_category": "data_scientist",
+      "seniority": "senior",
+      "country_code": "GB",
+      "job_count": 198,
+      "avg_salary": 73497.0,
+      "median_salary": 68826.0,
+      "q25": 59780.0,
+      "q75": 84914.0,
+      "min_salary": 35179.0,
+      "max_salary": 163000.0
+    },
+    {
+      "role_category": "data_scientist",
+      "seniority": "unknown",
+      "country_code": "GB",
+      "job_count": 168,
+      "avg_salary": NaN,
+      "median_salary": 62130.0,
+      "q25": 51284.0,
+      "q75": 75575.0,
+      "min_salary": 26551.0,
+      "max_salary": NaN
+    },
+    {
+      "role_category": "other",
+      "seniority": "junior",
+      "country_code": "GB",
+      "job_count": 150,
+      "avg_salary": 55430.0,
+      "median_salary": 55396.0,
+      "q25": 37662.0,
+      "q75": 65400.0,
+      "min_salary": 23132.0,
+      "max_salary": 120000.0
+    },
+    {
+      "role_category": "analytics_engineer",
+      "seniority": "unknown",
+      "country_code": "GB",
+      "job_count": 143,
+      "avg_salary": NaN,
+      "median_salary": 67685.0,
+      "q25": 55037.0,
+      "q75": 81765.0,
+      "min_salary": 32815.0,
+      "max_salary": NaN
+    },
+    {
+      "role_category": "analytics_engineer",
+      "seniority": "senior",
+      "country_code": "GB",
+      "job_count": 123,
+      "avg_salary": NaN,
+      "median_salary": 70112.0,
+      "q25": 64776.0,
+      "q75": 78275.0,
+      "min_salary": 95.0,
+      "max_salary": NaN
+    },
+    {
+      "role_category": "data_analyst",
+      "seniority": "junior",
+      "country_code": "GB",
+      "job_count": 74,
+      "avg_salary": 38547.0,
+      "median_salary": 40000.0,
+      "q25": 39194.0,
+      "q75": 40000.0,
+      "min_salary": 24500.0,
+      "max_salary": 65000.0
+    },
+    {
+      "role_category": "data_architect",
+      "seniority": "unknown",
+      "country_code": "GB",
+      "job_count": 27,
+      "avg_salary": 117663.0,
+      "median_salary": 87000.0,
+      "q25": 67602.0,
+      "q75": 114801.0,
+      "min_salary": 45257.0,
+      "max_salary": 325000.0
+    },
+    {
+      "role_category": "product_analyst",
+      "seniority": "senior",
+      "country_code": "GB",
+      "job_count": 26,
+      "avg_salary": 67548.0,
+      "median_salary": 67500.0,
+      "q25": 63517.0,
+      "q75": 74463.0,
+      "min_salary": 41151.0,
+      "max_salary": 117000.0
+    },
+    {
+      "role_category": "analytics_engineer",
+      "seniority": "junior",
+      "country_code": "GB",
+      "job_count": 22,
+      "avg_salary": 44966.0,
+      "median_salary": 41250.0,
+      "q25": 40000.0,
+      "q75": 50000.0,
+      "min_salary": 22750.0,
+      "max_salary": 64062.0
+    },
+    {
+      "role_category": "financial_analyst",
+      "seniority": "unknown",
+      "country_code": "GB",
+      "job_count": 22,
+      "avg_salary": NaN,
+      "median_salary": 51852.0,
+      "q25": 47500.0,
+      "q75": 71250.0,
+      "min_salary": 30859.0,
+      "max_salary": NaN
+    },
+    {
+      "role_category": "operations_analyst",
+      "seniority": "unknown",
+      "country_code": "GB",
+      "job_count": 20,
+      "avg_salary": 57887.0,
+      "median_salary": 59050.0,
+      "q25": 50115.0,
+      "q75": 61037.0,
+      "min_salary": 37171.0,
+      "max_salary": 76365.0
+    },
+    {
+      "role_category": "statistician",
+      "seniority": "unknown",
+      "country_code": "GB",
+      "job_count": 16,
+      "avg_salary": 68754.0,
+      "median_salary": 70244.0,
+      "q25": 56036.0,
+      "q75": 77556.0,
+      "min_salary": 35214.0,
+      "max_salary": 120000.0
+    },
+    {
+      "role_category": "data_scientist",
+      "seniority": "junior",
+      "country_code": "GB",
+      "job_count": 16,
+      "avg_salary": 48774.0,
+      "median_salary": 48301.0,
+      "q25": 28962.0,
+      "q75": 55121.0,
+      "min_salary": 26500.0,
+      "max_salary": 102337.0
+    },
+    {
+      "role_category": "financial_analyst",
+      "seniority": "senior",
+      "country_code": "GB",
+      "job_count": 9,
+      "avg_salary": 70028.0,
+      "median_salary": 74447.0,
+      "q25": 57188.0,
+      "q75": 84584.0,
+      "min_salary": 50560.0,
+      "max_salary": 86126.0
+    },
+    {
+      "role_category": "data_architect",
+      "seniority": "senior",
+      "country_code": "GB",
+      "job_count": 9,
+      "avg_salary": 85758.0,
+      "median_salary": 88282.0,
+      "q25": 78765.0,
+      "q75": 91690.0,
+      "min_salary": 72703.0,
+      "max_salary": 95000.0
+    },
+    {
+      "role_category": "operations_analyst",
+      "seniority": "senior",
+      "country_code": "GB",
+      "job_count": 7,
+      "avg_salary": 57439.0,
+      "median_salary": 55000.0,
+      "q25": 54498.0,
+      "q75": 58231.0,
+      "min_salary": 53996.0,
+      "max_salary": 67617.0
+    },
+    {
+      "role_category": "marketing_analyst",
+      "seniority": "senior",
+      "country_code": "GB",
+      "job_count": 7,
+      "avg_salary": 85893.0,
+      "median_salary": 79917.0,
+      "q25": 51996.0,
+      "q75": 111458.0,
+      "min_salary": 51430.0,
+      "max_salary": 143000.0
+    },
+    {
+      "role_category": "product_analyst",
+      "seniority": "unknown",
+      "country_code": "GB",
+      "job_count": 7,
+      "avg_salary": 58185.0,
+      "median_salary": 62557.0,
+      "q25": 39379.0,
+      "q75": 67988.0,
+      "min_salary": 4.0,
+      "max_salary": 130000.0
+    },
+    {
+      "role_category": "other",
+      "seniority": "mid",
+      "country_code": "GB",
+      "job_count": 6,
+      "avg_salary": 45600.0,
+      "median_salary": 46249.0,
+      "q25": 44343.0,
+      "q75": 51367.0,
+      "min_salary": 28346.0,
+      "max_salary": 55973.0
+    },
+    {
+      "role_category": "financial_analyst",
+      "seniority": "junior",
+      "country_code": "GB",
+      "job_count": 4,
+      "avg_salary": 69932.0,
+      "median_salary": 64020.0,
+      "q25": 59115.0,
+      "q75": 74837.0,
+      "min_salary": 46277.0,
+      "max_salary": 105409.0
+    },
+    {
+      "role_category": "marketing_analyst",
+      "seniority": "unknown",
+      "country_code": "GB",
+      "job_count": 4,
+      "avg_salary": 57988.0,
+      "median_salary": 57570.0,
+      "q25": 46078.0,
+      "q75": 69479.0,
+      "min_salary": 41811.0,
+      "max_salary": 75000.0
+    },
+    {
+      "role_category": "bi_developer",
+      "seniority": "unknown",
+      "country_code": "GB",
+      "job_count": 3,
+      "avg_salary": 85017.0,
+      "median_salary": 75000.0,
+      "q25": 65775.0,
+      "q75": 99250.0,
+      "min_salary": 56550.0,
+      "max_salary": 123500.0
+    },
+    {
+      "role_category": "data_architect",
+      "seniority": "junior",
+      "country_code": "GB",
+      "job_count": 3,
+      "avg_salary": 117639.0,
+      "median_salary": 122094.0,
+      "q25": 110391.0,
+      "q75": 127115.0,
+      "min_salary": 98689.0,
+      "max_salary": 132136.0
+    },
+    {
+      "role_category": "other",
+      "seniority": "junior",
+      "country_code": "PK",
+      "job_count": 3927,
+      "avg_salary": NaN,
+      "median_salary": NaN,
+      "q25": NaN,
+      "q75": NaN,
+      "min_salary": NaN,
+      "max_salary": NaN
+    },
+    {
+      "role_category": "other",
+      "seniority": "mid",
+      "country_code": "PK",
+      "job_count": 1103,
+      "avg_salary": NaN,
+      "median_salary": NaN,
+      "q25": NaN,
+      "q75": NaN,
+      "min_salary": NaN,
+      "max_salary": NaN
+    },
+    {
+      "role_category": "other",
+      "seniority": "unknown",
+      "country_code": "PK",
+      "job_count": 84,
+      "avg_salary": NaN,
+      "median_salary": NaN,
+      "q25": NaN,
+      "q75": NaN,
+      "min_salary": NaN,
+      "max_salary": NaN
+    },
+    {
+      "role_category": "other",
+      "seniority": "senior",
+      "country_code": "PK",
+      "job_count": 63,
+      "avg_salary": NaN,
+      "median_salary": NaN,
+      "q25": NaN,
+      "q75": NaN,
+      "min_salary": 145000.0,
+      "max_salary": NaN
+    },
+    {
+      "role_category": "data_analyst",
+      "seniority": "unknown",
+      "country_code": "PK",
+      "job_count": 11,
+      "avg_salary": NaN,
+      "median_salary": 130000.0,
+      "q25": 114500.0,
+      "q75": NaN,
+      "min_salary": 100000.0,
+      "max_salary": NaN
+    },
+    {
+      "role_category": "data_analyst",
+      "seniority": "junior",
+      "country_code": "PK",
+      "job_count": 8,
+      "avg_salary": NaN,
+      "median_salary": NaN,
+      "q25": NaN,
+      "q75": NaN,
+      "min_salary": 65000.0,
+      "max_salary": NaN
+    },
+    {
+      "role_category": "marketing_analyst",
+      "seniority": "mid",
+      "country_code": "PK",
+      "job_count": 4,
+      "avg_salary": NaN,
+      "median_salary": NaN,
+      "q25": NaN,
+      "q75": NaN,
+      "min_salary": 110000.0,
+      "max_salary": NaN
+    },
+    {
+      "role_category": "data_scientist",
+      "seniority": "unknown",
+      "country_code": "PK",
+      "job_count": 4,
+      "avg_salary": NaN,
+      "median_salary": NaN,
+      "q25": 276250.0,
+      "q75": NaN,
+      "min_salary": 250000.0,
+      "max_salary": NaN
+    },
+    {
+      "role_category": "financial_analyst",
+      "seniority": "mid",
+      "country_code": "PK",
+      "job_count": 3,
+      "avg_salary": NaN,
+      "median_salary": NaN,
+      "q25": NaN,
+      "q75": NaN,
+      "min_salary": 135000.0,
+      "max_salary": NaN
+    },
+    {
+      "role_category": "analytics_engineer",
+      "seniority": "junior",
+      "country_code": "PK",
+      "job_count": 3,
+      "avg_salary": NaN,
+      "median_salary": NaN,
+      "q25": NaN,
+      "q75": NaN,
+      "min_salary": NaN,
+      "max_salary": NaN
+    }
+  ],
+  "skill_salary": [
+    {
+      "skill_name": "PHP",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "job_count": 386,
+      "avg_salary_midpoint": NaN,
+      "median_salary": NaN,
+      "q25_salary": NaN,
+      "q75_salary": NaN
+    },
+    {
+      "skill_name": "Reporting",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 329,
+      "avg_salary_midpoint": NaN,
+      "median_salary": 63394.0,
+      "q25_salary": 51690.0,
+      "q75_salary": 83803.0
+    },
+    {
+      "skill_name": "Communication",
+      "skill_category": "business_soft",
+      "country_code": "PK",
+      "job_count": 265,
+      "avg_salary_midpoint": NaN,
+      "median_salary": NaN,
+      "q25_salary": NaN,
+      "q75_salary": NaN
+    },
+    {
+      "skill_name": "Machine Learning",
+      "skill_category": "ai_ml",
+      "country_code": "GB",
+      "job_count": 231,
+      "avg_salary_midpoint": NaN,
+      "median_salary": 70401.0,
+      "q25_salary": 57551.0,
+      "q75_salary": 83593.0
+    },
+    {
+      "skill_name": "JavaScript",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "job_count": 203,
+      "avg_salary_midpoint": NaN,
+      "median_salary": NaN,
+      "q25_salary": NaN,
+      "q75_salary": NaN
+    },
+    {
+      "skill_name": "Leadership",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "job_count": 140,
+      "avg_salary_midpoint": 80357.0,
+      "median_salary": 75093.0,
+      "q25_salary": 61473.0,
+      "q75_salary": 90309.0
+    },
+    {
+      "skill_name": "HTML",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "job_count": 121,
+      "avg_salary_midpoint": NaN,
+      "median_salary": NaN,
+      "q25_salary": NaN,
+      "q75_salary": NaN
+    },
+    {
+      "skill_name": "Business Intelligence",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 119,
+      "avg_salary_midpoint": 67702.0,
+      "median_salary": 60000.0,
+      "q25_salary": 53958.0,
+      "q75_salary": 75000.0
+    },
+    {
+      "skill_name": "C#",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "job_count": 117,
+      "avg_salary_midpoint": NaN,
+      "median_salary": NaN,
+      "q25_salary": NaN,
+      "q75_salary": NaN
+    },
+    {
+      "skill_name": "CSS",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "job_count": 108,
+      "avg_salary_midpoint": NaN,
+      "median_salary": NaN,
+      "q25_salary": NaN,
+      "q75_salary": NaN
+    },
+    {
+      "skill_name": "Data Governance",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 105,
+      "avg_salary_midpoint": NaN,
+      "median_salary": 67138.0,
+      "q25_salary": 52918.0,
+      "q75_salary": 78000.0
+    },
+    {
+      "skill_name": "Python",
+      "skill_category": "technical",
+      "country_code": "GB",
+      "job_count": 74,
+      "avg_salary_midpoint": 69488.0,
+      "median_salary": 69318.0,
+      "q25_salary": 55009.0,
+      "q75_salary": 79375.0
+    },
+    {
+      "skill_name": "SQL",
+      "skill_category": "technical",
+      "country_code": "GB",
+      "job_count": 70,
+      "avg_salary_midpoint": NaN,
+      "median_salary": 70000.0,
+      "q25_salary": 55138.0,
+      "q75_salary": 84742.0
+    },
+    {
+      "skill_name": "SQL",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "job_count": 65,
+      "avg_salary_midpoint": NaN,
+      "median_salary": NaN,
+      "q25_salary": NaN,
+      "q75_salary": NaN
+    },
+    {
+      "skill_name": "Master's Degree",
+      "skill_category": "education",
+      "country_code": "PK",
+      "job_count": 64,
+      "avg_salary_midpoint": NaN,
+      "median_salary": NaN,
+      "q25_salary": NaN,
+      "q75_salary": NaN
+    },
+    {
+      "skill_name": "Bachelor's Degree",
+      "skill_category": "education",
+      "country_code": "PK",
+      "job_count": 63,
+      "avg_salary_midpoint": NaN,
+      "median_salary": NaN,
+      "q25_salary": NaN,
+      "q75_salary": NaN
+    },
+    {
+      "skill_name": "Teamwork",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "job_count": 61,
+      "avg_salary_midpoint": 71632.0,
+      "median_salary": 63285.0,
+      "q25_salary": 47980.0,
+      "q75_salary": 81022.0
+    },
+    {
+      "skill_name": "Java",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "job_count": 59,
+      "avg_salary_midpoint": NaN,
+      "median_salary": NaN,
+      "q25_salary": NaN,
+      "q75_salary": NaN
+    },
+    {
+      "skill_name": "Reporting",
+      "skill_category": "analytical",
+      "country_code": "PK",
+      "job_count": 58,
+      "avg_salary_midpoint": NaN,
+      "median_salary": NaN,
+      "q25_salary": NaN,
+      "q75_salary": NaN
+    },
+    {
+      "skill_name": "MySQL",
+      "skill_category": "tool",
+      "country_code": "PK",
+      "job_count": 57,
+      "avg_salary_midpoint": NaN,
+      "median_salary": NaN,
+      "q25_salary": NaN,
+      "q75_salary": NaN
+    },
+    {
+      "skill_name": "Excel",
+      "skill_category": "tool",
+      "country_code": "PK",
+      "job_count": 57,
+      "avg_salary_midpoint": NaN,
+      "median_salary": NaN,
+      "q25_salary": NaN,
+      "q75_salary": NaN
+    },
+    {
+      "skill_name": "Attention to Detail",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "job_count": 55,
+      "avg_salary_midpoint": 55287.0,
+      "median_salary": 51353.0,
+      "q25_salary": 32000.0,
+      "q75_salary": 70389.0
+    },
+    {
+      "skill_name": "A/B Testing",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 49,
+      "avg_salary_midpoint": 80438.0,
+      "median_salary": 70888.0,
+      "q25_salary": 56639.0,
+      "q75_salary": 105000.0
+    },
+    {
+      "skill_name": "Dashboarding",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 41,
+      "avg_salary_midpoint": 67882.0,
+      "median_salary": 55769.0,
+      "q25_salary": 52500.0,
+      "q75_salary": 80000.0
+    },
+    {
+      "skill_name": "Financial Analysis",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 41,
+      "avg_salary_midpoint": 61766.0,
+      "median_salary": 58847.0,
+      "q25_salary": 50848.0,
+      "q75_salary": 67217.0
+    },
+    {
+      "skill_name": "Databricks",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "job_count": 40,
+      "avg_salary_midpoint": 80477.0,
+      "median_salary": 70500.0,
+      "q25_salary": 66657.0,
+      "q75_salary": 84087.0
+    },
+    {
+      "skill_name": "Python",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "job_count": 39,
+      "avg_salary_midpoint": NaN,
+      "median_salary": NaN,
+      "q25_salary": 232500.0,
+      "q75_salary": NaN
+    },
+    {
+      "skill_name": "Leadership",
+      "skill_category": "business_soft",
+      "country_code": "PK",
+      "job_count": 38,
+      "avg_salary_midpoint": NaN,
+      "median_salary": NaN,
+      "q25_salary": NaN,
+      "q75_salary": NaN
+    },
+    {
+      "skill_name": "Generative AI",
+      "skill_category": "ai_ml",
+      "country_code": "GB",
+      "job_count": 38,
+      "avg_salary_midpoint": 69203.0,
+      "median_salary": 64276.0,
+      "q25_salary": 50345.0,
+      "q75_salary": 82234.0
+    },
+    {
+      "skill_name": "AWS",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "job_count": 37,
+      "avg_salary_midpoint": 77284.0,
+      "median_salary": 75000.0,
+      "q25_salary": 68832.0,
+      "q75_salary": 85000.0
+    },
+    {
+      "skill_name": "Project Management",
+      "skill_category": "business_soft",
+      "country_code": "PK",
+      "job_count": 37,
+      "avg_salary_midpoint": NaN,
+      "median_salary": NaN,
+      "q25_salary": NaN,
+      "q75_salary": NaN
+    },
+    {
+      "skill_name": "Azure",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "job_count": 36,
+      "avg_salary_midpoint": 83142.0,
+      "median_salary": 77500.0,
+      "q25_salary": 63900.0,
+      "q75_salary": 95625.0
+    },
+    {
+      "skill_name": "Snowflake",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "job_count": 33,
+      "avg_salary_midpoint": NaN,
+      "median_salary": 81992.0,
+      "q25_salary": 59830.0,
+      "q75_salary": 143000.0
+    },
+    {
+      "skill_name": "Project Management",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "job_count": 32,
+      "avg_salary_midpoint": 59812.0,
+      "median_salary": 55500.0,
+      "q25_salary": 49857.0,
+      "q75_salary": 67500.0
+    },
+    {
+      "skill_name": "Power BI",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "job_count": 30,
+      "avg_salary_midpoint": 70162.0,
+      "median_salary": 70000.0,
+      "q25_salary": 60000.0,
+      "q75_salary": 75000.0
+    },
+    {
+      "skill_name": "Business Analysis",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "job_count": 28,
+      "avg_salary_midpoint": 68947.0,
+      "median_salary": 60000.0,
+      "q25_salary": 48722.0,
+      "q75_salary": 79750.0
+    },
+    {
+      "skill_name": "Communication",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "job_count": 28,
+      "avg_salary_midpoint": 61335.0,
+      "median_salary": 63140.0,
+      "q25_salary": 51012.0,
+      "q75_salary": 69970.0
+    },
+    {
+      "skill_name": "AWS",
+      "skill_category": "tool",
+      "country_code": "PK",
+      "job_count": 27,
+      "avg_salary_midpoint": NaN,
+      "median_salary": NaN,
+      "q25_salary": NaN,
+      "q75_salary": NaN
+    },
+    {
+      "skill_name": "Attention to Detail",
+      "skill_category": "business_soft",
+      "country_code": "PK",
+      "job_count": 27,
+      "avg_salary_midpoint": NaN,
+      "median_salary": NaN,
+      "q25_salary": NaN,
+      "q75_salary": NaN
+    },
+    {
+      "skill_name": "Data Modelling",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 25,
+      "avg_salary_midpoint": 78351.0,
+      "median_salary": 70000.0,
+      "q25_salary": 62888.0,
+      "q75_salary": 81516.0
+    },
+    {
+      "skill_name": "Stakeholder Management",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "job_count": 23,
+      "avg_salary_midpoint": 87404.0,
+      "median_salary": 82333.0,
+      "q25_salary": 66250.0,
+      "q75_salary": 113500.0
+    },
+    {
+      "skill_name": "Master's Degree",
+      "skill_category": "education",
+      "country_code": "GB",
+      "job_count": 21,
+      "avg_salary_midpoint": 63346.0,
+      "median_salary": 66392.0,
+      "q25_salary": 49283.0,
+      "q75_salary": 75419.0
+    },
+    {
+      "skill_name": "Excel",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "job_count": 20,
+      "avg_salary_midpoint": 56227.0,
+      "median_salary": 55680.0,
+      "q25_salary": 31500.0,
+      "q75_salary": 63125.0
+    },
+    {
+      "skill_name": "ETL",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 18,
+      "avg_salary_midpoint": 59603.0,
+      "median_salary": 58125.0,
+      "q25_salary": 48142.0,
+      "q75_salary": 68659.0
+    },
+    {
+      "skill_name": "Problem Solving",
+      "skill_category": "business_soft",
+      "country_code": "PK",
+      "job_count": 18,
+      "avg_salary_midpoint": NaN,
+      "median_salary": NaN,
+      "q25_salary": NaN,
+      "q75_salary": NaN
+    },
+    {
+      "skill_name": "Statistics",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 18,
+      "avg_salary_midpoint": 59680.0,
+      "median_salary": 53236.0,
+      "q25_salary": 46132.0,
+      "q75_salary": 71722.0
+    },
+    {
+      "skill_name": "Market Research",
+      "skill_category": "analytical",
+      "country_code": "PK",
+      "job_count": 17,
+      "avg_salary_midpoint": NaN,
+      "median_salary": NaN,
+      "q25_salary": NaN,
+      "q75_salary": NaN
+    },
+    {
+      "skill_name": "Teamwork",
+      "skill_category": "business_soft",
+      "country_code": "PK",
+      "job_count": 17,
+      "avg_salary_midpoint": NaN,
+      "median_salary": NaN,
+      "q25_salary": NaN,
+      "q75_salary": NaN
+    },
+    {
+      "skill_name": "Business Intelligence",
+      "skill_category": "analytical",
+      "country_code": "PK",
+      "job_count": 16,
+      "avg_salary_midpoint": NaN,
+      "median_salary": NaN,
+      "q25_salary": 123125.0,
+      "q75_salary": NaN
+    },
+    {
+      "skill_name": "Tableau",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "job_count": 15,
+      "avg_salary_midpoint": 76703.0,
+      "median_salary": 56550.0,
+      "q25_salary": 55500.0,
+      "q75_salary": 89996.0
+    },
+    {
+      "skill_name": "Bachelor's Degree",
+      "skill_category": "education",
+      "country_code": "GB",
+      "job_count": 15,
+      "avg_salary_midpoint": 62098.0,
+      "median_salary": 61712.0,
+      "q25_salary": 50637.0,
+      "q75_salary": 71463.0
+    },
+    {
+      "skill_name": "LLMs",
+      "skill_category": "ai_ml",
+      "country_code": "GB",
+      "job_count": 15,
+      "avg_salary_midpoint": 69193.0,
+      "median_salary": 71623.0,
+      "q25_salary": 63214.0,
+      "q75_salary": 77177.0
+    },
+    {
+      "skill_name": "Google Cloud",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "job_count": 15,
+      "avg_salary_midpoint": 67510.0,
+      "median_salary": 64000.0,
+      "q25_salary": 44959.0,
+      "q75_salary": 77246.0
+    },
+    {
+      "skill_name": "Statistical Analysis",
+      "skill_category": "analytical",
+      "country_code": "GB",
+      "job_count": 15,
+      "avg_salary_midpoint": 69356.0,
+      "median_salary": 69318.0,
+      "q25_salary": 52969.0,
+      "q75_salary": 86543.0
+    },
+    {
+      "skill_name": "Go",
+      "skill_category": "technical",
+      "country_code": "GB",
+      "job_count": 13,
+      "avg_salary_midpoint": 66202.0,
+      "median_salary": 62109.0,
+      "q25_salary": 53546.0,
+      "q75_salary": 68832.0
+    },
+    {
+      "skill_name": "Problem Solving",
+      "skill_category": "business_soft",
+      "country_code": "GB",
+      "job_count": 13,
+      "avg_salary_midpoint": 60770.0,
+      "median_salary": 58596.0,
+      "q25_salary": 46000.0,
+      "q75_salary": 78268.0
+    },
+    {
+      "skill_name": "PhD",
+      "skill_category": "education",
+      "country_code": "GB",
+      "job_count": 12,
+      "avg_salary_midpoint": 47266.0,
+      "median_salary": 44250.0,
+      "q25_salary": 38275.0,
+      "q75_salary": 50407.0
+    },
+    {
+      "skill_name": "NLP",
+      "skill_category": "ai_ml",
+      "country_code": "GB",
+      "job_count": 12,
+      "avg_salary_midpoint": 67474.0,
+      "median_salary": 67020.0,
+      "q25_salary": 50979.0,
+      "q75_salary": 80541.0
+    },
+    {
+      "skill_name": "C++",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "job_count": 12,
+      "avg_salary_midpoint": NaN,
+      "median_salary": NaN,
+      "q25_salary": NaN,
+      "q75_salary": NaN
+    },
+    {
+      "skill_name": "Machine Learning",
+      "skill_category": "ai_ml",
+      "country_code": "PK",
+      "job_count": 11,
+      "avg_salary_midpoint": NaN,
+      "median_salary": NaN,
+      "q25_salary": NaN,
+      "q75_salary": NaN
+    },
+    {
+      "skill_name": "MongoDB",
+      "skill_category": "tool",
+      "country_code": "PK",
+      "job_count": 11,
+      "avg_salary_midpoint": NaN,
+      "median_salary": NaN,
+      "q25_salary": NaN,
+      "q75_salary": NaN
+    },
+    {
+      "skill_name": "Go",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "job_count": 11,
+      "avg_salary_midpoint": NaN,
+      "median_salary": NaN,
+      "q25_salary": NaN,
+      "q75_salary": NaN
+    },
+    {
+      "skill_name": "TypeScript",
+      "skill_category": "technical",
+      "country_code": "PK",
+      "job_count": 10,
+      "avg_salary_midpoint": NaN,
+      "median_salary": NaN,
+      "q25_salary": NaN,
+      "q75_salary": NaN
+    },
+    {
+      "skill_name": "Apache Spark",
+      "skill_category": "tool",
+      "country_code": "GB",
+      "job_count": 10,
+      "avg_salary_midpoint": 81423.0,
+      "median_salary": 77500.0,
+      "q25_salary": 77500.0,
+      "q75_salary": 87809.0
+    },
+    {
+      "skill_name": "Git",
+      "skill_category": "tool",
+      "country_code": "PK",
+      "job_count": 10,
+      "avg_salary_midpoint": NaN,
+      "median_salary": NaN,
+      "q25_salary": NaN,
+      "q75_salary": NaN
+    }
+  ],
+  "seniority": [
+    {
+      "seniority": "mid",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "total_jobs": 7,
+      "data_analyst": 0,
+      "data_scientist": 0,
+      "analytics_engineer": 1,
+      "jobs_with_salary": 7,
+      "avg_salary_midpoint": 47532.0,
+      "remote_count": 2,
+      "hybrid_count": 1,
+      "on_site_count": 4
+    },
+    {
+      "seniority": "unknown",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "total_jobs": 1237,
+      "data_analyst": 380,
+      "data_scientist": 168,
+      "analytics_engineer": 143,
+      "jobs_with_salary": 1237,
+      "avg_salary_midpoint": NaN,
+      "remote_count": 107,
+      "hybrid_count": 216,
+      "on_site_count": 914
+    },
+    {
+      "seniority": "senior",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "total_jobs": 64,
+      "data_analyst": 1,
+      "data_scientist": 1,
+      "analytics_engineer": 0,
+      "jobs_with_salary": 64,
+      "avg_salary_midpoint": NaN,
+      "remote_count": 0,
+      "hybrid_count": 0,
+      "on_site_count": 64
+    },
+    {
+      "seniority": "unknown",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "total_jobs": 95,
+      "data_analyst": 5,
+      "data_scientist": 2,
+      "analytics_engineer": 0,
+      "jobs_with_salary": 95,
+      "avg_salary_midpoint": NaN,
+      "remote_count": 0,
+      "hybrid_count": 0,
+      "on_site_count": 95
+    },
+    {
+      "seniority": "mid",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "total_jobs": 1111,
+      "data_analyst": 1,
+      "data_scientist": 1,
+      "analytics_engineer": 0,
+      "jobs_with_salary": 1111,
+      "avg_salary_midpoint": NaN,
+      "remote_count": 0,
+      "hybrid_count": 0,
+      "on_site_count": 1111
+    },
+    {
+      "seniority": "junior",
+      "country_code": "PK",
+      "dataset_period": "Historical PK (2019-2021)",
+      "total_jobs": 3941,
+      "data_analyst": 7,
+      "data_scientist": 2,
+      "analytics_engineer": 3,
+      "jobs_with_salary": 3941,
+      "avg_salary_midpoint": NaN,
+      "remote_count": 0,
+      "hybrid_count": 0,
+      "on_site_count": 3941
+    },
+    {
+      "seniority": "junior",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "total_jobs": 1,
+      "data_analyst": 1,
+      "data_scientist": 0,
+      "analytics_engineer": 0,
+      "jobs_with_salary": 1,
+      "avg_salary_midpoint": 65000.0,
+      "remote_count": 0,
+      "hybrid_count": 0,
+      "on_site_count": 1
+    },
+    {
+      "seniority": "senior",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "total_jobs": 1515,
+      "data_analyst": 284,
+      "data_scientist": 198,
+      "analytics_engineer": 123,
+      "jobs_with_salary": 1515,
+      "avg_salary_midpoint": NaN,
+      "remote_count": 64,
+      "hybrid_count": 233,
+      "on_site_count": 1218
+    },
+    {
+      "seniority": "unknown",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "total_jobs": 11,
+      "data_analyst": 6,
+      "data_scientist": 2,
+      "analytics_engineer": 1,
+      "jobs_with_salary": 11,
+      "avg_salary_midpoint": 149000.0,
+      "remote_count": 0,
+      "hybrid_count": 0,
+      "on_site_count": 11
+    },
+    {
+      "seniority": "senior",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "total_jobs": 2,
+      "data_analyst": 0,
+      "data_scientist": 1,
+      "analytics_engineer": 0,
+      "jobs_with_salary": 2,
+      "avg_salary_midpoint": 180000.0,
+      "remote_count": 0,
+      "hybrid_count": 0,
+      "on_site_count": 2
+    },
+    {
+      "seniority": "junior",
+      "country_code": "GB",
+      "dataset_period": "Recent UK (2023-2026)",
+      "total_jobs": 270,
+      "data_analyst": 74,
+      "data_scientist": 16,
+      "analytics_engineer": 22,
+      "jobs_with_salary": 270,
+      "avg_salary_midpoint": 50456.0,
+      "remote_count": 9,
+      "hybrid_count": 11,
+      "on_site_count": 250
+    },
+    {
+      "seniority": "mid",
+      "country_code": "PK",
+      "dataset_period": "Supplementary PK",
+      "total_jobs": 2,
+      "data_analyst": 0,
+      "data_scientist": 0,
+      "analytics_engineer": 0,
+      "jobs_with_salary": 2,
+      "avg_salary_midpoint": 122500.0,
+      "remote_count": 0,
+      "hybrid_count": 0,
+      "on_site_count": 2
+    }
+  ],
+  "employers": [
+    {
+      "company_name": "Harnham - Data & Analytics Recruitment",
+      "country_code": "GB",
+      "job_count": 164,
+      "pct_of_country": 5.41,
+      "distinct_roles": 8,
+      "jobs_with_salary": 164
+    },
+    {
+      "company_name": "Wise",
+      "country_code": "GB",
+      "job_count": 95,
+      "pct_of_country": 3.14,
+      "distinct_roles": 5,
+      "jobs_with_salary": 95
+    },
+    {
+      "company_name": "SoftNation Technologies",
+      "country_code": "PK",
+      "job_count": 66,
+      "pct_of_country": 1.34,
+      "distinct_roles": 1,
+      "jobs_with_salary": 66
+    },
+    {
+      "company_name": "ITOL Recruit",
+      "country_code": "GB",
+      "job_count": 49,
+      "pct_of_country": 1.62,
+      "distinct_roles": 2,
+      "jobs_with_salary": 49
+    },
+    {
+      "company_name": "Amazon",
+      "country_code": "GB",
+      "job_count": 45,
+      "pct_of_country": 1.49,
+      "distinct_roles": 6,
+      "jobs_with_salary": 45
+    },
+    {
+      "company_name": "JPMorganChase",
+      "country_code": "GB",
+      "job_count": 40,
+      "pct_of_country": 1.32,
+      "distinct_roles": 3,
+      "jobs_with_salary": 40
+    },
+    {
+      "company_name": "ibex",
+      "country_code": "PK",
+      "job_count": 36,
+      "pct_of_country": 0.73,
+      "distinct_roles": 1,
+      "jobs_with_salary": 36
+    },
+    {
+      "company_name": "London Stock Exchange Group",
+      "country_code": "GB",
+      "job_count": 28,
+      "pct_of_country": 0.92,
+      "distinct_roles": 4,
+      "jobs_with_salary": 28
+    },
+    {
+      "company_name": "Hackajob Ltd",
+      "country_code": "GB",
+      "job_count": 27,
+      "pct_of_country": 0.89,
+      "distinct_roles": 2,
+      "jobs_with_salary": 27
+    },
+    {
+      "company_name": "Tenth Revolution Group",
+      "country_code": "GB",
+      "job_count": 26,
+      "pct_of_country": 0.86,
+      "distinct_roles": 4,
+      "jobs_with_salary": 26
+    },
+    {
+      "company_name": "Monzo",
+      "country_code": "GB",
+      "job_count": 25,
+      "pct_of_country": 0.83,
+      "distinct_roles": 4,
+      "jobs_with_salary": 25
+    },
+    {
+      "company_name": "Adecco",
+      "country_code": "GB",
+      "job_count": 25,
+      "pct_of_country": 0.83,
+      "distinct_roles": 4,
+      "jobs_with_salary": 25
+    },
+    {
+      "company_name": "Hypercreate Ltd",
+      "country_code": "GB",
+      "job_count": 24,
+      "pct_of_country": 0.79,
+      "distinct_roles": 1,
+      "jobs_with_salary": 24
+    },
+    {
+      "company_name": "Relay Technologies",
+      "country_code": "GB",
+      "job_count": 22,
+      "pct_of_country": 0.73,
+      "distinct_roles": 4,
+      "jobs_with_salary": 22
+    },
+    {
+      "company_name": "Mbin",
+      "country_code": "PK",
+      "job_count": 22,
+      "pct_of_country": 0.45,
+      "distinct_roles": 1,
+      "jobs_with_salary": 22
+    },
+    {
+      "company_name": "WPP Media",
+      "country_code": "GB",
+      "job_count": 21,
+      "pct_of_country": 0.69,
+      "distinct_roles": 3,
+      "jobs_with_salary": 21
+    },
+    {
+      "company_name": "The Opportunity Hub UK",
+      "country_code": "GB",
+      "job_count": 20,
+      "pct_of_country": 0.66,
+      "distinct_roles": 3,
+      "jobs_with_salary": 20
+    },
+    {
+      "company_name": "Bloomberg",
+      "country_code": "GB",
+      "job_count": 20,
+      "pct_of_country": 0.66,
+      "distinct_roles": 3,
+      "jobs_with_salary": 20
+    },
+    {
+      "company_name": "NEWTO TRAINING LIMITED",
+      "country_code": "GB",
+      "job_count": 19,
+      "pct_of_country": 0.63,
+      "distinct_roles": 2,
+      "jobs_with_salary": 19
+    },
+    {
+      "company_name": "Mercor",
+      "country_code": "GB",
+      "job_count": 19,
+      "pct_of_country": 0.63,
+      "distinct_roles": 4,
+      "jobs_with_salary": 19
+    },
+    {
+      "company_name": "Lendable",
+      "country_code": "GB",
+      "job_count": 18,
+      "pct_of_country": 0.59,
+      "distinct_roles": 4,
+      "jobs_with_salary": 18
+    },
+    {
+      "company_name": "Google",
+      "country_code": "GB",
+      "job_count": 17,
+      "pct_of_country": 0.56,
+      "distinct_roles": 2,
+      "jobs_with_salary": 17
+    },
+    {
+      "company_name": "Checkout.com",
+      "country_code": "GB",
+      "job_count": 16,
+      "pct_of_country": 0.53,
+      "distinct_roles": 3,
+      "jobs_with_salary": 16
+    },
+    {
+      "company_name": "Anson Mccade",
+      "country_code": "GB",
+      "job_count": 16,
+      "pct_of_country": 0.53,
+      "distinct_roles": 1,
+      "jobs_with_salary": 16
+    },
+    {
+      "company_name": "G-Research",
+      "country_code": "GB",
+      "job_count": 16,
+      "pct_of_country": 0.53,
+      "distinct_roles": 4,
+      "jobs_with_salary": 16
+    },
+    {
+      "company_name": "Eka Finance",
+      "country_code": "GB",
+      "job_count": 15,
+      "pct_of_country": 0.5,
+      "distinct_roles": 2,
+      "jobs_with_salary": 15
+    },
+    {
+      "company_name": "Spartans Global",
+      "country_code": "PK",
+      "job_count": 15,
+      "pct_of_country": 0.31,
+      "distinct_roles": 1,
+      "jobs_with_salary": 15
+    },
+    {
+      "company_name": "RSM UK",
+      "country_code": "GB",
+      "job_count": 14,
+      "pct_of_country": 0.46,
+      "distinct_roles": 3,
+      "jobs_with_salary": 14
+    },
+    {
+      "company_name": "Operations PRO",
+      "country_code": "PK",
+      "job_count": 14,
+      "pct_of_country": 0.29,
+      "distinct_roles": 1,
+      "jobs_with_salary": 14
+    },
+    {
+      "company_name": "J.P. Morgan",
+      "country_code": "GB",
+      "job_count": 14,
+      "pct_of_country": 0.46,
+      "distinct_roles": 2,
+      "jobs_with_salary": 14
+    },
+    {
+      "company_name": "Morson Edge",
+      "country_code": "GB",
+      "job_count": 14,
+      "pct_of_country": 0.46,
+      "distinct_roles": 3,
+      "jobs_with_salary": 14
+    },
+    {
+      "company_name": "Genpact",
+      "country_code": "GB",
+      "job_count": 14,
+      "pct_of_country": 0.46,
+      "distinct_roles": 1,
+      "jobs_with_salary": 14
+    },
+    {
+      "company_name": "EXL",
+      "country_code": "GB",
+      "job_count": 13,
+      "pct_of_country": 0.43,
+      "distinct_roles": 3,
+      "jobs_with_salary": 13
+    },
+    {
+      "company_name": "S&P Global",
+      "country_code": "GB",
+      "job_count": 13,
+      "pct_of_country": 0.43,
+      "distinct_roles": 2,
+      "jobs_with_salary": 13
+    },
+    {
+      "company_name": "Oxford Knight",
+      "country_code": "GB",
+      "job_count": 13,
+      "pct_of_country": 0.43,
+      "distinct_roles": 3,
+      "jobs_with_salary": 13
+    },
+    {
+      "company_name": "Huxley Associates",
+      "country_code": "GB",
+      "job_count": 13,
+      "pct_of_country": 0.43,
+      "distinct_roles": 2,
+      "jobs_with_salary": 13
+    },
+    {
+      "company_name": "Capitex",
+      "country_code": "GB",
+      "job_count": 13,
+      "pct_of_country": 0.43,
+      "distinct_roles": 2,
+      "jobs_with_salary": 13
+    },
+    {
+      "company_name": "Tripadvisor",
+      "country_code": "GB",
+      "job_count": 13,
+      "pct_of_country": 0.43,
+      "distinct_roles": 3,
+      "jobs_with_salary": 13
+    },
+    {
+      "company_name": "Leadconcept",
+      "country_code": "PK",
+      "job_count": 13,
+      "pct_of_country": 0.26,
+      "distinct_roles": 1,
+      "jobs_with_salary": 13
+    },
+    {
+      "company_name": "ASK Development Pvt (Ltd)",
+      "country_code": "PK",
+      "job_count": 13,
+      "pct_of_country": 0.26,
+      "distinct_roles": 1,
+      "jobs_with_salary": 13
+    },
+    {
+      "company_name": "NTT America, Inc.",
+      "country_code": "GB",
+      "job_count": 12,
+      "pct_of_country": 0.4,
+      "distinct_roles": 4,
+      "jobs_with_salary": 12
+    },
+    {
+      "company_name": "Confidential",
+      "country_code": "PK",
+      "job_count": 12,
+      "pct_of_country": 0.24,
+      "distinct_roles": 1,
+      "jobs_with_salary": 12
+    },
+    {
+      "company_name": "Texo Poly Industries",
+      "country_code": "PK",
+      "job_count": 12,
+      "pct_of_country": 0.24,
+      "distinct_roles": 1,
+      "jobs_with_salary": 12
+    },
+    {
+      "company_name": "U Eat",
+      "country_code": "PK",
+      "job_count": 12,
+      "pct_of_country": 0.24,
+      "distinct_roles": 1,
+      "jobs_with_salary": 12
+    },
+    {
+      "company_name": "Staffing Solutions",
+      "country_code": "PK",
+      "job_count": 12,
+      "pct_of_country": 0.24,
+      "distinct_roles": 1,
+      "jobs_with_salary": 12
+    },
+    {
+      "company_name": "Capgemini",
+      "country_code": "GB",
+      "job_count": 12,
+      "pct_of_country": 0.4,
+      "distinct_roles": 4,
+      "jobs_with_salary": 12
+    },
+    {
+      "company_name": "My Own Business",
+      "country_code": "PK",
+      "job_count": 12,
+      "pct_of_country": 0.24,
+      "distinct_roles": 2,
+      "jobs_with_salary": 12
+    },
+    {
+      "company_name": "HG Markets Pvt Ltd",
+      "country_code": "PK",
+      "job_count": 11,
+      "pct_of_country": 0.22,
+      "distinct_roles": 1,
+      "jobs_with_salary": 11
+    },
+    {
+      "company_name": "Royal Cyber Inc",
+      "country_code": "PK",
+      "job_count": 11,
+      "pct_of_country": 0.22,
+      "distinct_roles": 1,
+      "jobs_with_salary": 11
+    },
+    {
+      "company_name": "Spantronics Pvt Ltd",
+      "country_code": "PK",
+      "job_count": 11,
+      "pct_of_country": 0.22,
+      "distinct_roles": 1,
+      "jobs_with_salary": 11
+    }
+  ],
+  "temporal": [
+    {
+      "month": "2019-12-01 00:00:00-08:00",
+      "country_code": "PK",
+      "source_name": "chisel_pk",
+      "job_count": 133,
+      "data_analyst_count": 1,
+      "data_scientist_count": 0,
+      "jobs_with_salary": 133,
+      "avg_salary_midpoint": NaN
+    },
+    {
+      "month": "2020-01-01 00:00:00-08:00",
+      "country_code": "PK",
+      "source_name": "chisel_pk",
+      "job_count": 332,
+      "data_analyst_count": 2,
+      "data_scientist_count": 0,
+      "jobs_with_salary": 332,
+      "avg_salary_midpoint": NaN
+    },
+    {
+      "month": "2020-02-01 00:00:00-08:00",
+      "country_code": "PK",
+      "source_name": "chisel_pk",
+      "job_count": 442,
+      "data_analyst_count": 4,
+      "data_scientist_count": 1,
+      "jobs_with_salary": 442,
+      "avg_salary_midpoint": NaN
+    },
+    {
+      "month": "2020-03-01 00:00:00-08:00",
+      "country_code": "PK",
+      "source_name": "chisel_pk",
+      "job_count": 308,
+      "data_analyst_count": 0,
+      "data_scientist_count": 0,
+      "jobs_with_salary": 308,
+      "avg_salary_midpoint": NaN
+    },
+    {
+      "month": "2020-04-01 00:00:00-07:00",
+      "country_code": "PK",
+      "source_name": "chisel_pk",
+      "job_count": 230,
+      "data_analyst_count": 0,
+      "data_scientist_count": 0,
+      "jobs_with_salary": 230,
+      "avg_salary_midpoint": NaN
+    },
+    {
+      "month": "2020-05-01 00:00:00-07:00",
+      "country_code": "PK",
+      "source_name": "chisel_pk",
+      "job_count": 209,
+      "data_analyst_count": 1,
+      "data_scientist_count": 0,
+      "jobs_with_salary": 209,
+      "avg_salary_midpoint": NaN
+    },
+    {
+      "month": "2020-06-01 00:00:00-07:00",
+      "country_code": "PK",
+      "source_name": "chisel_pk",
+      "job_count": 276,
+      "data_analyst_count": 0,
+      "data_scientist_count": 0,
+      "jobs_with_salary": 276,
+      "avg_salary_midpoint": NaN
+    },
+    {
+      "month": "2020-07-01 00:00:00-07:00",
+      "country_code": "PK",
+      "source_name": "chisel_pk",
+      "job_count": 307,
+      "data_analyst_count": 1,
+      "data_scientist_count": 0,
+      "jobs_with_salary": 307,
+      "avg_salary_midpoint": NaN
+    },
+    {
+      "month": "2020-08-01 00:00:00-07:00",
+      "country_code": "PK",
+      "source_name": "chisel_pk",
+      "job_count": 343,
+      "data_analyst_count": 0,
+      "data_scientist_count": 0,
+      "jobs_with_salary": 343,
+      "avg_salary_midpoint": NaN
+    },
+    {
+      "month": "2020-09-01 00:00:00-07:00",
+      "country_code": "PK",
+      "source_name": "chisel_pk",
+      "job_count": 399,
+      "data_analyst_count": 0,
+      "data_scientist_count": 0,
+      "jobs_with_salary": 399,
+      "avg_salary_midpoint": NaN
+    },
+    {
+      "month": "2020-10-01 00:00:00-07:00",
+      "country_code": "PK",
+      "source_name": "chisel_pk",
+      "job_count": 375,
+      "data_analyst_count": 0,
+      "data_scientist_count": 1,
+      "jobs_with_salary": 375,
+      "avg_salary_midpoint": NaN
+    },
+    {
+      "month": "2020-11-01 00:00:00-07:00",
+      "country_code": "PK",
+      "source_name": "chisel_pk",
+      "job_count": 327,
+      "data_analyst_count": 0,
+      "data_scientist_count": 1,
+      "jobs_with_salary": 327,
+      "avg_salary_midpoint": NaN
+    },
+    {
+      "month": "2020-12-01 00:00:00-08:00",
+      "country_code": "PK",
+      "source_name": "chisel_pk",
+      "job_count": 367,
+      "data_analyst_count": 1,
+      "data_scientist_count": 0,
+      "jobs_with_salary": 367,
+      "avg_salary_midpoint": NaN
+    },
+    {
+      "month": "2021-01-01 00:00:00-08:00",
+      "country_code": "PK",
+      "source_name": "chisel_pk",
+      "job_count": 467,
+      "data_analyst_count": 1,
+      "data_scientist_count": 1,
+      "jobs_with_salary": 467,
+      "avg_salary_midpoint": NaN
+    },
+    {
+      "month": "2021-02-01 00:00:00-08:00",
+      "country_code": "PK",
+      "source_name": "chisel_pk",
+      "job_count": 479,
+      "data_analyst_count": 3,
+      "data_scientist_count": 1,
+      "jobs_with_salary": 479,
+      "avg_salary_midpoint": NaN
+    },
+    {
+      "month": "2021-03-01 00:00:00-08:00",
+      "country_code": "PK",
+      "source_name": "chisel_pk",
+      "job_count": 217,
+      "data_analyst_count": 0,
+      "data_scientist_count": 1,
+      "jobs_with_salary": 217,
+      "avg_salary_midpoint": NaN
+    },
+    {
+      "month": "2023-09-01 00:00:00-07:00",
+      "country_code": "GB",
+      "source_name": "adzuna_uk",
+      "job_count": 3,
+      "data_analyst_count": 0,
+      "data_scientist_count": 0,
+      "jobs_with_salary": 3,
+      "avg_salary_midpoint": 66906.0
+    },
+    {
+      "month": "2023-12-01 00:00:00-08:00",
+      "country_code": "GB",
+      "source_name": "adzuna_uk",
+      "job_count": 4,
+      "data_analyst_count": 1,
+      "data_scientist_count": 0,
+      "jobs_with_salary": 4,
+      "avg_salary_midpoint": 54439.0
+    },
+    {
+      "month": "2024-02-01 00:00:00-08:00",
+      "country_code": "GB",
+      "source_name": "adzuna_uk",
+      "job_count": 1,
+      "data_analyst_count": 0,
+      "data_scientist_count": 0,
+      "jobs_with_salary": 1,
+      "avg_salary_midpoint": 78846.0
+    },
+    {
+      "month": "2024-03-01 00:00:00-08:00",
+      "country_code": "GB",
+      "source_name": "adzuna_uk",
+      "job_count": 1,
+      "data_analyst_count": 1,
+      "data_scientist_count": 0,
+      "jobs_with_salary": 1,
+      "avg_salary_midpoint": 66583.0
+    },
+    {
+      "month": "2024-03-01 00:00:00-08:00",
+      "country_code": "PK",
+      "source_name": "kaggle_rozee_pk",
+      "job_count": 6,
+      "data_analyst_count": 4,
+      "data_scientist_count": 1,
+      "jobs_with_salary": 6,
+      "avg_salary_midpoint": 137750.0
+    },
+    {
+      "month": "2024-04-01 00:00:00-07:00",
+      "country_code": "GB",
+      "source_name": "adzuna_uk",
+      "job_count": 6,
+      "data_analyst_count": 0,
+      "data_scientist_count": 0,
+      "jobs_with_salary": 6,
+      "avg_salary_midpoint": 48554.0
+    },
+    {
+      "month": "2024-04-01 00:00:00-07:00",
+      "country_code": "PK",
+      "source_name": "kaggle_rozee_pk",
+      "job_count": 7,
+      "data_analyst_count": 2,
+      "data_scientist_count": 1,
+      "jobs_with_salary": 7,
+      "avg_salary_midpoint": 149643.0
+    },
+    {
+      "month": "2024-05-01 00:00:00-07:00",
+      "country_code": "GB",
+      "source_name": "adzuna_uk",
+      "job_count": 1,
+      "data_analyst_count": 0,
+      "data_scientist_count": 0,
+      "jobs_with_salary": 1,
+      "avg_salary_midpoint": 55456.0
+    },
+    {
+      "month": "2024-05-01 00:00:00-07:00",
+      "country_code": "PK",
+      "source_name": "kaggle_rozee_pk",
+      "job_count": 3,
+      "data_analyst_count": 1,
+      "data_scientist_count": 1,
+      "jobs_with_salary": 3,
+      "avg_salary_midpoint": 145000.0
+    },
+    {
+      "month": "2024-07-01 00:00:00-07:00",
+      "country_code": "GB",
+      "source_name": "adzuna_uk",
+      "job_count": 7,
+      "data_analyst_count": 1,
+      "data_scientist_count": 0,
+      "jobs_with_salary": 7,
+      "avg_salary_midpoint": 48691.0
+    },
+    {
+      "month": "2024-09-01 00:00:00-07:00",
+      "country_code": "GB",
+      "source_name": "adzuna_uk",
+      "job_count": 1,
+      "data_analyst_count": 0,
+      "data_scientist_count": 1,
+      "jobs_with_salary": 1,
+      "avg_salary_midpoint": 35179.0
+    },
+    {
+      "month": "2024-10-01 00:00:00-07:00",
+      "country_code": "GB",
+      "source_name": "adzuna_uk",
+      "job_count": 1,
+      "data_analyst_count": 0,
+      "data_scientist_count": 0,
+      "jobs_with_salary": 1,
+      "avg_salary_midpoint": 67662.0
+    },
+    {
+      "month": "2024-11-01 00:00:00-07:00",
+      "country_code": "GB",
+      "source_name": "adzuna_uk",
+      "job_count": 3,
+      "data_analyst_count": 0,
+      "data_scientist_count": 0,
+      "jobs_with_salary": 3,
+      "avg_salary_midpoint": 65385.0
+    },
+    {
+      "month": "2024-12-01 00:00:00-08:00",
+      "country_code": "GB",
+      "source_name": "adzuna_uk",
+      "job_count": 1,
+      "data_analyst_count": 0,
+      "data_scientist_count": 0,
+      "jobs_with_salary": 1,
+      "avg_salary_midpoint": 54777.0
+    },
+    {
+      "month": "2025-02-01 00:00:00-08:00",
+      "country_code": "GB",
+      "source_name": "adzuna_uk",
+      "job_count": 3,
+      "data_analyst_count": 0,
+      "data_scientist_count": 0,
+      "jobs_with_salary": 3,
+      "avg_salary_midpoint": 45691.0
+    },
+    {
+      "month": "2025-03-01 00:00:00-08:00",
+      "country_code": "GB",
+      "source_name": "adzuna_uk",
+      "job_count": 9,
+      "data_analyst_count": 2,
+      "data_scientist_count": 0,
+      "jobs_with_salary": 9,
+      "avg_salary_midpoint": 72782.0
+    },
+    {
+      "month": "2025-06-01 00:00:00-07:00",
+      "country_code": "GB",
+      "source_name": "adzuna_uk",
+      "job_count": 3,
+      "data_analyst_count": 0,
+      "data_scientist_count": 0,
+      "jobs_with_salary": 3,
+      "avg_salary_midpoint": 49305.0
+    },
+    {
+      "month": "2025-07-01 00:00:00-07:00",
+      "country_code": "GB",
+      "source_name": "adzuna_uk",
+      "job_count": 7,
+      "data_analyst_count": 2,
+      "data_scientist_count": 1,
+      "jobs_with_salary": 7,
+      "avg_salary_midpoint": 60062.0
+    },
+    {
+      "month": "2025-08-01 00:00:00-07:00",
+      "country_code": "GB",
+      "source_name": "adzuna_uk",
+      "job_count": 3,
+      "data_analyst_count": 0,
+      "data_scientist_count": 1,
+      "jobs_with_salary": 3,
+      "avg_salary_midpoint": 65592.0
+    },
+    {
+      "month": "2025-09-01 00:00:00-07:00",
+      "country_code": "GB",
+      "source_name": "adzuna_uk",
+      "job_count": 5,
+      "data_analyst_count": 2,
+      "data_scientist_count": 0,
+      "jobs_with_salary": 5,
+      "avg_salary_midpoint": 65087.0
+    },
+    {
+      "month": "2025-10-01 00:00:00-07:00",
+      "country_code": "GB",
+      "source_name": "adzuna_uk",
+      "job_count": 8,
+      "data_analyst_count": 1,
+      "data_scientist_count": 1,
+      "jobs_with_salary": 8,
+      "avg_salary_midpoint": 45168.0
+    },
+    {
+      "month": "2025-11-01 00:00:00-07:00",
+      "country_code": "GB",
+      "source_name": "adzuna_uk",
+      "job_count": 16,
+      "data_analyst_count": 0,
+      "data_scientist_count": 3,
+      "jobs_with_salary": 16,
+      "avg_salary_midpoint": 57993.0
+    },
+    {
+      "month": "2025-12-01 00:00:00-08:00",
+      "country_code": "GB",
+      "source_name": "adzuna_uk",
+      "job_count": 16,
+      "data_analyst_count": 2,
+      "data_scientist_count": 2,
+      "jobs_with_salary": 16,
+      "avg_salary_midpoint": 61053.0
+    },
+    {
+      "month": "2026-01-01 00:00:00-08:00",
+      "country_code": "GB",
+      "source_name": "adzuna_uk",
+      "job_count": 34,
+      "data_analyst_count": 4,
+      "data_scientist_count": 9,
+      "jobs_with_salary": 34,
+      "avg_salary_midpoint": 68135.0
+    },
+    {
+      "month": "2026-02-01 00:00:00-08:00",
+      "country_code": "GB",
+      "source_name": "adzuna_uk",
+      "job_count": 25,
+      "data_analyst_count": 6,
+      "data_scientist_count": 6,
+      "jobs_with_salary": 25,
+      "avg_salary_midpoint": 66609.0
+    },
+    {
+      "month": "2026-03-01 00:00:00-08:00",
+      "country_code": "GB",
+      "source_name": "adzuna_uk",
+      "job_count": 45,
+      "data_analyst_count": 7,
+      "data_scientist_count": 10,
+      "jobs_with_salary": 45,
+      "avg_salary_midpoint": 64659.0
+    },
+    {
+      "month": "2026-04-01 00:00:00-07:00",
+      "country_code": "GB",
+      "source_name": "adzuna_uk",
+      "job_count": 70,
+      "data_analyst_count": 17,
+      "data_scientist_count": 4,
+      "jobs_with_salary": 70,
+      "avg_salary_midpoint": 65402.0
+    },
+    {
+      "month": "2026-05-01 00:00:00-07:00",
+      "country_code": "GB",
+      "source_name": "adzuna_uk",
+      "job_count": 153,
+      "data_analyst_count": 28,
+      "data_scientist_count": 21,
+      "jobs_with_salary": 153,
+      "avg_salary_midpoint": 66060.0
+    },
+    {
+      "month": "2026-06-01 00:00:00-07:00",
+      "country_code": "GB",
+      "source_name": "adzuna_uk",
+      "job_count": 264,
+      "data_analyst_count": 48,
+      "data_scientist_count": 54,
+      "jobs_with_salary": 264,
+      "avg_salary_midpoint": 65005.0
+    },
+    {
+      "month": "2026-07-01 00:00:00-07:00",
+      "country_code": "GB",
+      "source_name": "adzuna_uk",
+      "job_count": 795,
+      "data_analyst_count": 166,
+      "data_scientist_count": 114,
+      "jobs_with_salary": 795,
+      "avg_salary_midpoint": NaN
+    },
+    {
+      "month": "2026-08-01 00:00:00-07:00",
+      "country_code": "GB",
+      "source_name": "adzuna_uk",
+      "job_count": 1544,
+      "data_analyst_count": 450,
+      "data_scientist_count": 155,
+      "jobs_with_salary": 1544,
+      "avg_salary_midpoint": NaN
+    }
+  ],
+  "career_intel": {
+    "data_analyst_uk": [
+      {
+        "skill_name": "Reporting",
+        "job_count": 151,
+        "penetration_pct": 20.5
+      },
+      {
+        "skill_name": "Data Governance",
+        "job_count": 81,
+        "penetration_pct": 11.0
+      },
+      {
+        "skill_name": "Business Intelligence",
+        "job_count": 46,
+        "penetration_pct": 6.2
+      },
+      {
+        "skill_name": "Attention to Detail",
+        "job_count": 34,
+        "penetration_pct": 4.6
+      },
+      {
+        "skill_name": "Dashboarding",
+        "job_count": 23,
+        "penetration_pct": 3.1
+      },
+      {
+        "skill_name": "SQL",
+        "job_count": 17,
+        "penetration_pct": 2.3
+      },
+      {
+        "skill_name": "Leadership",
+        "job_count": 15,
+        "penetration_pct": 2.0
+      },
+      {
+        "skill_name": "Business Analysis",
+        "job_count": 15,
+        "penetration_pct": 2.0
+      },
+      {
+        "skill_name": "Power BI",
+        "job_count": 15,
+        "penetration_pct": 2.0
+      },
+      {
+        "skill_name": "Excel",
+        "job_count": 11,
+        "penetration_pct": 1.5
+      },
+      {
+        "skill_name": "Teamwork",
+        "job_count": 10,
+        "penetration_pct": 1.4
+      },
+      {
+        "skill_name": "Generative AI",
+        "job_count": 10,
+        "penetration_pct": 1.4
+      },
+      {
+        "skill_name": "Machine Learning",
+        "job_count": 9,
+        "penetration_pct": 1.2
+      },
+      {
+        "skill_name": "A/B Testing",
+        "job_count": 8,
+        "penetration_pct": 1.1
+      },
+      {
+        "skill_name": "Data Modelling",
+        "job_count": 8,
+        "penetration_pct": 1.1
+      }
+    ],
+    "data_analyst_pk": [
+      {
+        "skill_name": "Excel",
+        "job_count": 8,
+        "penetration_pct": 38.1
+      },
+      {
+        "skill_name": "SQL",
+        "job_count": 7,
+        "penetration_pct": 33.3
+      },
+      {
+        "skill_name": "Bachelor's Degree",
+        "job_count": 7,
+        "penetration_pct": 33.3
+      },
+      {
+        "skill_name": "Business Intelligence",
+        "job_count": 6,
+        "penetration_pct": 28.6
+      },
+      {
+        "skill_name": "Power BI",
+        "job_count": 5,
+        "penetration_pct": 23.8
+      },
+      {
+        "skill_name": "Python",
+        "job_count": 4,
+        "penetration_pct": 19.0
+      },
+      {
+        "skill_name": "Data Modelling",
+        "job_count": 3,
+        "penetration_pct": 14.3
+      },
+      {
+        "skill_name": "Business Analysis",
+        "job_count": 3,
+        "penetration_pct": 14.3
+      },
+      {
+        "skill_name": "Communication",
+        "job_count": 3,
+        "penetration_pct": 14.3
+      },
+      {
+        "skill_name": "Attention to Detail",
+        "job_count": 3,
+        "penetration_pct": 14.3
+      }
+    ],
+    "data_scientist_uk": [
+      {
+        "skill_name": "Machine Learning",
+        "job_count": 107,
+        "penetration_pct": 28.0
+      },
+      {
+        "skill_name": "A/B Testing",
+        "job_count": 16,
+        "penetration_pct": 4.2
+      },
+      {
+        "skill_name": "Generative AI",
+        "job_count": 14,
+        "penetration_pct": 3.7
+      },
+      {
+        "skill_name": "Python",
+        "job_count": 11,
+        "penetration_pct": 2.9
+      },
+      {
+        "skill_name": "Leadership",
+        "job_count": 9,
+        "penetration_pct": 2.4
+      },
+      {
+        "skill_name": "Financial Analysis",
+        "job_count": 7,
+        "penetration_pct": 1.8
+      },
+      {
+        "skill_name": "NLP",
+        "job_count": 7,
+        "penetration_pct": 1.8
+      },
+      {
+        "skill_name": "Teamwork",
+        "job_count": 6,
+        "penetration_pct": 1.6
+      },
+      {
+        "skill_name": "LLMs",
+        "job_count": 6,
+        "penetration_pct": 1.6
+      },
+      {
+        "skill_name": "Reporting",
+        "job_count": 6,
+        "penetration_pct": 1.6
+      },
+      {
+        "skill_name": "SQL",
+        "job_count": 5,
+        "penetration_pct": 1.3
+      },
+      {
+        "skill_name": "Go",
+        "job_count": 5,
+        "penetration_pct": 1.3
+      },
+      {
+        "skill_name": "Statistical Analysis",
+        "job_count": 4,
+        "penetration_pct": 1.0
+      },
+      {
+        "skill_name": "Computer Vision",
+        "job_count": 3,
+        "penetration_pct": 0.8
+      },
+      {
+        "skill_name": "Project Management",
+        "job_count": 3,
+        "penetration_pct": 0.8
+      }
+    ],
+    "analytics_engineer_uk": [
+      {
+        "skill_name": "SQL",
+        "job_count": 25,
+        "penetration_pct": 8.7
+      },
+      {
+        "skill_name": "Python",
+        "job_count": 22,
+        "penetration_pct": 7.6
+      },
+      {
+        "skill_name": "Databricks",
+        "job_count": 22,
+        "penetration_pct": 7.6
+      },
+      {
+        "skill_name": "Reporting",
+        "job_count": 21,
+        "penetration_pct": 7.3
+      },
+      {
+        "skill_name": "Azure",
+        "job_count": 17,
+        "penetration_pct": 5.9
+      },
+      {
+        "skill_name": "Snowflake",
+        "job_count": 14,
+        "penetration_pct": 4.8
+      },
+      {
+        "skill_name": "AWS",
+        "job_count": 13,
+        "penetration_pct": 4.5
+      },
+      {
+        "skill_name": "Leadership",
+        "job_count": 9,
+        "penetration_pct": 3.1
+      },
+      {
+        "skill_name": "Apache Spark",
+        "job_count": 9,
+        "penetration_pct": 3.1
+      },
+      {
+        "skill_name": "Business Intelligence",
+        "job_count": 8,
+        "penetration_pct": 2.8
+      },
+      {
+        "skill_name": "Machine Learning",
+        "job_count": 7,
+        "penetration_pct": 2.4
+      },
+      {
+        "skill_name": "Teamwork",
+        "job_count": 6,
+        "penetration_pct": 2.1
+      },
+      {
+        "skill_name": "Looker",
+        "job_count": 5,
+        "penetration_pct": 1.7
+      },
+      {
+        "skill_name": "Project Management",
+        "job_count": 5,
+        "penetration_pct": 1.7
+      },
+      {
+        "skill_name": "ETL",
+        "job_count": 5,
+        "penetration_pct": 1.7
+      }
+    ]
+  },
+  "statistics": {
+    "skill_comparison_chi2": {
+      "test": "Chi-square test for UK vs PK skill distribution",
+      "null_hypothesis": "Skill distribution is independent of country",
+      "chi2_statistic": 1477.35,
+      "p_value": 0.0,
+      "dof": 9,
+      "interpretation": "Statistically significant difference in skill distribution"
+    }
+  },
+  "validation": {
+    "total_jobs": {
+      "sql": 8256,
+      "python": 8256,
+      "match": "True"
+    },
+    "uk_jobs": {
+      "sql": 3029,
+      "python": 0,
+      "match": "False"
+    },
+    "pk_jobs": {
+      "sql": 5227,
+      "python": 0,
+      "match": "False"
+    },
+    "skill_links": {
+      "sql": 77,
+      "python": 7233,
+      "match": false
+    },
+    "salary_records": {
+      "sql": 3045,
+      "python": 3077,
+      "match": "True"
+    }
+  }
+}

@@ -1,0 +1,185 @@
+role_category,skill_name,skill_category,country_code,job_count,penetration_pct
+analytics_engineer,SQL,technical,GB,25,8.7
+analytics_engineer,Databricks,tool,GB,22,7.6
+analytics_engineer,Python,technical,GB,22,7.6
+analytics_engineer,Reporting,analytical,GB,21,7.3
+analytics_engineer,Azure,tool,GB,17,5.9
+analytics_engineer,Snowflake,tool,GB,14,4.8
+analytics_engineer,AWS,tool,GB,13,4.5
+analytics_engineer,Leadership,business_soft,GB,9,3.1
+analytics_engineer,Apache Spark,tool,GB,9,3.1
+analytics_engineer,Business Intelligence,analytical,GB,8,2.8
+analytics_engineer,Machine Learning,ai_ml,GB,7,2.4
+analytics_engineer,Teamwork,business_soft,GB,6,2.1
+analytics_engineer,Looker,tool,GB,5,1.7
+analytics_engineer,ETL,analytical,GB,5,1.7
+analytics_engineer,Project Management,business_soft,GB,5,1.7
+analytics_engineer,Data Governance,analytical,GB,4,1.4
+analytics_engineer,Scala,technical,GB,4,1.4
+analytics_engineer,A/B Testing,analytical,GB,3,1.0
+analytics_engineer,Communication,business_soft,GB,3,1.0
+analytics_engineer,Financial Analysis,analytical,GB,3,1.0
+analytics_engineer,Google Cloud,tool,GB,3,1.0
+analytics_engineer,Power BI,tool,GB,3,1.0
+bi_developer,Business Intelligence,analytical,GB,4,100.0
+data_analyst,Reporting,analytical,GB,151,20.5
+data_analyst,Data Governance,analytical,GB,81,11.0
+data_analyst,Business Intelligence,analytical,GB,46,6.2
+data_analyst,Attention to Detail,business_soft,GB,34,4.6
+data_analyst,Dashboarding,analytical,GB,23,3.1
+data_analyst,SQL,technical,GB,17,2.3
+data_analyst,Leadership,business_soft,GB,15,2.0
+data_analyst,Power BI,tool,GB,15,2.0
+data_analyst,Business Analysis,business_soft,GB,15,2.0
+data_analyst,Excel,tool,GB,11,1.5
+data_analyst,Generative AI,ai_ml,GB,10,1.4
+data_analyst,Teamwork,business_soft,GB,10,1.4
+data_analyst,Machine Learning,ai_ml,GB,9,1.2
+data_analyst,Stakeholder Management,business_soft,GB,8,1.1
+data_analyst,Excel,tool,PK,8,38.1
+data_analyst,A/B Testing,analytical,GB,8,1.1
+data_analyst,Data Modelling,analytical,GB,8,1.1
+data_analyst,Bachelor's Degree,education,PK,7,33.3
+data_analyst,SQL,technical,PK,7,33.3
+data_analyst,Communication,business_soft,GB,7,0.9
+data_analyst,Financial Analysis,analytical,GB,6,0.8
+data_analyst,Business Intelligence,analytical,PK,6,28.6
+data_analyst,Project Management,business_soft,GB,6,0.8
+data_analyst,Power BI,tool,PK,5,23.8
+data_analyst,Bachelor's Degree,education,GB,5,0.7
+data_analyst,Tableau,tool,GB,4,0.5
+data_analyst,Python,technical,PK,4,19.0
+data_analyst,Python,technical,GB,3,0.4
+data_analyst,Data Modelling,analytical,PK,3,14.3
+data_analyst,Communication,business_soft,PK,3,14.3
+data_analyst,Business Analysis,business_soft,PK,3,14.3
+data_analyst,MongoDB,tool,GB,3,0.4
+data_analyst,Attention to Detail,business_soft,PK,3,14.3
+data_analyst,ETL,analytical,GB,3,0.4
+data_analyst,Problem Solving,business_soft,GB,3,0.4
+data_analyst,Azure,tool,GB,3,0.4
+data_architect,AWS,tool,GB,6,15.4
+data_architect,Snowflake,tool,GB,5,12.8
+data_architect,Azure,tool,GB,4,10.3
+data_architect,Reporting,analytical,GB,3,7.7
+data_scientist,Machine Learning,ai_ml,GB,107,28.0
+data_scientist,A/B Testing,analytical,GB,16,4.2
+data_scientist,Generative AI,ai_ml,GB,14,3.7
+data_scientist,Python,technical,GB,11,2.9
+data_scientist,Leadership,business_soft,GB,9,2.4
+data_scientist,Financial Analysis,analytical,GB,7,1.8
+data_scientist,NLP,ai_ml,GB,7,1.8
+data_scientist,Teamwork,business_soft,GB,6,1.6
+data_scientist,Machine Learning,ai_ml,PK,6,66.7
+data_scientist,Reporting,analytical,GB,6,1.6
+data_scientist,LLMs,ai_ml,GB,6,1.6
+data_scientist,Go,technical,GB,5,1.3
+data_scientist,SQL,technical,GB,5,1.3
+data_scientist,NLP,ai_ml,PK,4,44.4
+data_scientist,Statistical Analysis,analytical,GB,4,1.0
+data_scientist,Model Deployment,ai_ml,GB,3,0.8
+data_scientist,Python,technical,PK,3,33.3
+data_scientist,Master's Degree,education,PK,3,33.3
+data_scientist,Deep Learning,ai_ml,PK,3,33.3
+data_scientist,Statistics,analytical,GB,3,0.8
+data_scientist,Computer Vision,ai_ml,GB,3,0.8
+data_scientist,Project Management,business_soft,GB,3,0.8
+financial_analyst,Reporting,analytical,GB,11,31.4
+financial_analyst,Financial Analysis,analytical,GB,3,8.6
+operations_analyst,Business Intelligence,analytical,GB,15,55.6
+operations_analyst,Reporting,analytical,GB,6,22.2
+operations_analyst,Excel,tool,GB,4,14.8
+operations_analyst,Power BI,tool,GB,4,14.8
+operations_analyst,SQL,technical,GB,4,14.8
+operations_analyst,Python,technical,GB,4,14.8
+operations_analyst,Business Analysis,business_soft,GB,4,14.8
+other,PHP,technical,PK,386,7.5
+other,Communication,business_soft,PK,261,5.0
+other,JavaScript,technical,PK,203,3.9
+other,Reporting,analytical,GB,127,8.7
+other,HTML,technical,PK,121,2.3
+other,C#,technical,PK,117,2.3
+other,CSS,technical,PK,108,2.1
+other,Leadership,business_soft,GB,105,7.2
+other,Machine Learning,ai_ml,GB,98,6.7
+other,Java,technical,PK,59,1.1
+other,Master's Degree,education,PK,59,1.1
+other,MySQL,tool,PK,57,1.1
+other,Reporting,analytical,PK,56,1.1
+other,Bachelor's Degree,education,PK,53,1.0
+other,SQL,technical,PK,53,1.0
+other,Excel,tool,PK,46,0.9
+other,Business Intelligence,analytical,GB,43,3.0
+other,Project Management,business_soft,PK,37,0.7
+other,Leadership,business_soft,PK,37,0.7
+other,Teamwork,business_soft,GB,37,2.5
+other,Python,technical,GB,34,2.3
+other,Python,technical,PK,27,0.5
+other,AWS,tool,PK,24,0.5
+other,Attention to Detail,business_soft,PK,23,0.4
+other,Financial Analysis,analytical,GB,22,1.5
+other,Master's Degree,education,GB,18,1.2
+other,Project Management,business_soft,GB,18,1.2
+other,Communication,business_soft,GB,18,1.2
+other,Attention to Detail,business_soft,GB,17,1.2
+other,A/B Testing,analytical,GB,16,1.1
+other,Teamwork,business_soft,PK,16,0.3
+other,Market Research,analytical,PK,16,0.3
+other,SQL,technical,GB,16,1.1
+other,Dashboarding,analytical,GB,16,1.1
+other,Databricks,tool,GB,16,1.1
+other,Data Governance,analytical,GB,16,1.1
+other,AWS,tool,GB,15,1.0
+other,Statistics,analytical,GB,15,1.0
+other,Stakeholder Management,business_soft,GB,15,1.0
+other,Problem Solving,business_soft,PK,14,0.3
+other,Generative AI,ai_ml,GB,13,0.9
+other,C++,technical,PK,12,0.2
+other,Snowflake,tool,GB,12,0.8
+other,Google Cloud,tool,GB,11,0.8
+other,MongoDB,tool,PK,11,0.2
+other,Go,technical,PK,11,0.2
+other,Azure,tool,GB,10,0.7
+other,TypeScript,technical,PK,10,0.2
+other,PhD,education,GB,10,0.7
+other,Git,tool,PK,10,0.2
+other,Business Intelligence,analytical,PK,10,0.2
+other,Data Modelling,analytical,GB,10,0.7
+other,Problem Solving,business_soft,GB,9,0.6
+other,Diploma,education,PK,9,0.2
+other,ETL,analytical,GB,9,0.6
+other,Time Management,business_soft,PK,8,0.2
+other,Azure,tool,PK,8,0.2
+other,LLMs,ai_ml,GB,8,0.6
+other,C#,technical,GB,8,0.6
+other,Bachelor's Degree,education,GB,8,0.6
+other,Statistical Analysis,analytical,GB,7,0.5
+other,PostgreSQL,tool,PK,7,0.1
+other,Market Research,analytical,GB,7,0.5
+other,Business Analysis,business_soft,PK,6,0.1
+other,Tableau,tool,GB,6,0.4
+other,Apache Spark,tool,PK,6,0.1
+other,Business Analysis,business_soft,GB,6,0.4
+other,Power BI,tool,GB,6,0.4
+other,Dashboarding,analytical,PK,6,0.1
+other,Java,technical,GB,5,0.3
+other,C++,technical,GB,5,0.3
+other,Model Deployment,ai_ml,GB,5,0.3
+other,Computer Vision,ai_ml,PK,5,0.1
+other,Machine Learning,ai_ml,PK,5,0.1
+other,Data Governance,analytical,PK,5,0.1
+other,Docker,tool,PK,5,0.1
+other,R,technical,GB,4,0.3
+other,Financial Analysis,analytical,PK,4,0.1
+other,Docker,tool,GB,4,0.3
+other,Llms,ai_ml,GB,4,0.3
+other,JavaScript,technical,GB,4,0.3
+other,NLP,ai_ml,GB,4,0.3
+other,VBA,technical,PK,4,0.1
+other,Data Mining,ai_ml,GB,3,0.2
+other,TypeScript,technical,GB,3,0.2
+other,Git,tool,GB,3,0.2
+other,dbt,tool,GB,3,0.2
+other,Computer Vision,ai_ml,GB,3,0.2
+product_analyst,Machine Learning,ai_ml,GB,6,18.2
+product_analyst,A/B Testing,analytical,GB,5,15.2

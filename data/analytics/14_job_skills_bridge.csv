@@ -1,0 +1,4059 @@
+job_id,skill_name,skill_category,country_code
+8798,C#,technical,PK
+8799,CSS,technical,PK
+8799,HTML,technical,PK
+8799,JavaScript,technical,PK
+8807,C#,technical,PK
+8807,SQL,technical,PK
+8808,Go,technical,PK
+8809,Communication,business_soft,PK
+8813,Go,technical,PK
+8813,Problem Solving,business_soft,PK
+8829,JavaScript,technical,PK
+8830,Leadership,business_soft,PK
+8830,Reporting,analytical,PK
+8840,Reporting,analytical,PK
+8848,Communication,business_soft,PK
+8858,Python,technical,PK
+8860,Leadership,business_soft,PK
+8866,AWS,tool,PK
+8867,AWS,tool,PK
+8868,Project Management,business_soft,PK
+8884,Project Management,business_soft,PK
+8887,AWS,tool,PK
+8892,A/B Testing,analytical,PK
+8892,Java,technical,PK
+8893,Business Analysis,business_soft,PK
+8902,Reporting,analytical,PK
+8904,Reporting,analytical,PK
+8906,Reporting,analytical,PK
+8908,Communication,business_soft,PK
+8912,Teamwork,business_soft,PK
+8919,Computer Vision,ai_ml,PK
+8920,Computer Vision,ai_ml,PK
+8921,Computer Vision,ai_ml,PK
+8937,Machine Learning,ai_ml,PK
+8938,MongoDB,tool,PK
+8947,C++,technical,PK
+8947,MySQL,tool,PK
+8949,Hadoop,tool,PK
+8970,Business Intelligence,analytical,PK
+8973,Leadership,business_soft,PK
+8981,C#,technical,PK
+8982,Communication,business_soft,PK
+8986,Reporting,analytical,PK
+8995,AWS,tool,PK
+8996,AWS,tool,PK
+8997,AWS,tool,PK
+8999,Reporting,analytical,PK
+9018,Dashboarding,analytical,PK
+9019,Dashboarding,analytical,PK
+9019,Reporting,analytical,PK
+9020,Reporting,analytical,PK
+9021,Communication,business_soft,PK
+9023,Reporting,analytical,PK
+9029,Communication,business_soft,PK
+9029,Leadership,business_soft,PK
+9031,Business Analysis,business_soft,PK
+9033,Reporting,analytical,PK
+9037,Reporting,analytical,PK
+9045,Reporting,analytical,PK
+9046,Reporting,analytical,PK
+9047,Dashboarding,analytical,PK
+9047,Reporting,analytical,PK
+9048,Reporting,analytical,PK
+9049,Reporting,analytical,PK
+9050,Communication,business_soft,PK
+9050,Financial Analysis,analytical,PK
+9050,Reporting,analytical,PK
+9052,Communication,business_soft,PK
+9054,Project Management,business_soft,PK
+9062,C#,technical,PK
+9062,Java,technical,PK
+9063,Java,technical,PK
+9064,Reporting,analytical,PK
+9068,Teamwork,business_soft,PK
+9070,Leadership,business_soft,PK
+9083,Reporting,analytical,PK
+9092,Leadership,business_soft,PK
+9093,Dashboarding,analytical,PK
+9093,Reporting,analytical,PK
+9097,Communication,business_soft,PK
+9097,Excel,tool,PK
+9097,Reporting,analytical,PK
+9098,Business Intelligence,analytical,PK
+9099,Reporting,analytical,PK
+9100,Business Analysis,business_soft,PK
+9102,Leadership,business_soft,PK
+9104,Leadership,business_soft,PK
+9105,Leadership,business_soft,PK
+9106,Leadership,business_soft,PK
+9107,Leadership,business_soft,PK
+9108,Leadership,business_soft,PK
+9119,Leadership,business_soft,PK
+9120,Leadership,business_soft,PK
+9124,A/B Testing,analytical,PK
+9125,Communication,business_soft,PK
+9128,PHP,technical,PK
+9129,Apache Spark,tool,PK
+9133,Market Research,analytical,PK
+9142,C++,technical,PK
+9143,Communication,business_soft,PK
+9143,PHP,technical,PK
+9145,C#,technical,PK
+9145,C++,technical,PK
+9145,PHP,technical,PK
+9156,MySQL,tool,PK
+9156,PHP,technical,PK
+9158,Problem Solving,business_soft,PK
+9159,Data Governance,analytical,PK
+9160,Data Governance,analytical,PK
+9189,JavaScript,technical,PK
+9191,Java,technical,PK
+9193,PHP,technical,PK
+9193,Python,technical,PK
+9194,C#,technical,PK
+9196,PHP,technical,PK
+9197,C#,technical,PK
+9198,CSS,technical,PK
+9198,HTML,technical,PK
+9198,JavaScript,technical,PK
+9198,PHP,technical,PK
+9200,PHP,technical,PK
+9207,PHP,technical,PK
+9209,PHP,technical,PK
+9210,PHP,technical,PK
+9211,Bachelor's Degree,education,PK
+9215,MySQL,tool,PK
+9215,PHP,technical,PK
+9216,Go,technical,PK
+9225,JavaScript,technical,PK
+9228,Master's Degree,education,PK
+9241,CSS,technical,PK
+9241,HTML,technical,PK
+9241,JavaScript,technical,PK
+9241,PHP,technical,PK
+9247,PHP,technical,PK
+9251,JavaScript,technical,PK
+9258,Communication,business_soft,PK
+9262,Communication,business_soft,PK
+9266,CSS,technical,PK
+9266,HTML,technical,PK
+9266,Java,technical,PK
+9266,JavaScript,technical,PK
+9267,Java,technical,PK
+9267,MySQL,tool,PK
+9267,PHP,technical,PK
+9268,CSS,technical,PK
+9268,Git,tool,PK
+9268,HTML,technical,PK
+9268,JavaScript,technical,PK
+9268,PHP,technical,PK
+9268,SQL,technical,PK
+9270,C#,technical,PK
+9270,SQL,technical,PK
+9272,JavaScript,technical,PK
+9275,JavaScript,technical,PK
+9276,PHP,technical,PK
+9277,C#,technical,PK
+9282,PHP,technical,PK
+9287,Attention to Detail,business_soft,PK
+9287,PHP,technical,PK
+9290,JavaScript,technical,PK
+9298,Bachelor's Degree,education,PK
+9299,PHP,technical,PK
+9304,JavaScript,technical,PK
+9305,C#,technical,PK
+9306,Communication,business_soft,PK
+9313,PHP,technical,PK
+9318,Bachelor's Degree,education,PK
+9319,Communication,business_soft,PK
+9323,C#,technical,PK
+9329,CSS,technical,PK
+9329,HTML,technical,PK
+9329,JavaScript,technical,PK
+9329,PHP,technical,PK
+9329,Python,technical,PK
+9337,CSS,technical,PK
+9337,HTML,technical,PK
+9337,JavaScript,technical,PK
+9337,PHP,technical,PK
+9339,PHP,technical,PK
+9343,PHP,technical,PK
+9346,Communication,business_soft,PK
+9351,Excel,tool,PK
+9357,Market Research,analytical,PK
+9359,Communication,business_soft,PK
+9360,Communication,business_soft,PK
+9364,Bachelor's Degree,education,PK
+9364,CSS,technical,PK
+9364,HTML,technical,PK
+9364,JavaScript,technical,PK
+9365,C#,technical,PK
+9370,Bachelor's Degree,education,PK
+9371,PHP,technical,PK
+9372,PHP,technical,PK
+9374,JavaScript,technical,PK
+9375,Diploma,education,PK
+9376,C++,technical,PK
+9379,MySQL,tool,PK
+9379,PHP,technical,PK
+9388,CSS,technical,PK
+9388,PHP,technical,PK
+9389,Go,technical,PK
+9390,CSS,technical,PK
+9390,HTML,technical,PK
+9390,JavaScript,technical,PK
+9390,PHP,technical,PK
+9391,CSS,technical,PK
+9402,Bachelor's Degree,education,PK
+9404,C#,technical,PK
+9404,Microsoft Certified,certification,PK
+9413,CSS,technical,PK
+9413,HTML,technical,PK
+9413,JavaScript,technical,PK
+9413,MySQL,tool,PK
+9413,PHP,technical,PK
+9414,Communication,business_soft,PK
+9415,PHP,technical,PK
+9418,C#,technical,PK
+9419,Java,technical,PK
+9421,Git,tool,PK
+9421,JavaScript,technical,PK
+9421,MongoDB,tool,PK
+9422,C#,technical,PK
+9422,JavaScript,technical,PK
+9432,JavaScript,technical,PK
+9437,C#,technical,PK
+9437,CSS,technical,PK
+9437,HTML,technical,PK
+9437,JavaScript,technical,PK
+9437,SQL,technical,PK
+9438,Communication,business_soft,PK
+9439,Communication,business_soft,PK
+9447,CSS,technical,PK
+9447,JavaScript,technical,PK
+9451,PHP,technical,PK
+9454,Bachelor's Degree,education,PK
+9454,CSS,technical,PK
+9454,HTML,technical,PK
+9454,JavaScript,technical,PK
+9457,Communication,business_soft,PK
+9458,Communication,business_soft,PK
+9462,Attention to Detail,business_soft,PK
+9462,PHP,technical,PK
+9463,Communication,business_soft,PK
+9465,JavaScript,technical,PK
+9471,JavaScript,technical,PK
+9472,JavaScript,technical,PK
+9475,Master's Degree,education,PK
+9477,PHP,technical,PK
+9478,C#,technical,PK
+9478,PHP,technical,PK
+9480,Market Research,analytical,PK
+9483,Teamwork,business_soft,PK
+9484,Market Research,analytical,PK
+9489,Communication,business_soft,PK
+9491,Communication,business_soft,PK
+9498,Market Research,analytical,PK
+9499,Communication,business_soft,PK
+9499,PHP,technical,PK
+9504,PHP,technical,PK
+9504,Project Management,business_soft,PK
+9521,Communication,business_soft,PK
+9522,Diploma,education,PK
+9530,Reporting,analytical,PK
+9537,Bachelor's Degree,education,PK
+9539,Communication,business_soft,PK
+9543,Statistical Analysis,analytical,PK
+9546,Communication,business_soft,PK
+9547,PHP,technical,PK
+9549,PHP,technical,PK
+9550,PHP,technical,PK
+9551,HTML,technical,PK
+9557,PHP,technical,PK
+9558,JavaScript,technical,PK
+9559,Diploma,education,PK
+9564,Apache Spark,tool,PK
+9576,PHP,technical,PK
+9578,Time Management,business_soft,PK
+9582,Master's Degree,education,PK
+9589,Bachelor's Degree,education,PK
+9589,PostgreSQL,tool,PK
+9590,JavaScript,technical,PK
+9590,PHP,technical,PK
+9604,Leadership,business_soft,PK
+9605,HTML,technical,PK
+9610,C#,technical,PK
+9610,CSS,technical,PK
+9610,HTML,technical,PK
+9610,Project Management,business_soft,PK
+9611,Leadership,business_soft,PK
+9622,PHP,technical,PK
+9625,C#,technical,PK
+9629,Communication,business_soft,PK
+9636,CSS,technical,PK
+9636,HTML,technical,PK
+9636,JavaScript,technical,PK
+9636,MySQL,tool,PK
+9636,PHP,technical,PK
+9641,C#,technical,PK
+9641,SQL,technical,PK
+9646,PHP,technical,PK
+9648,C#,technical,PK
+9652,JavaScript,technical,PK
+9652,MongoDB,tool,PK
+9653,Git,tool,PK
+9653,JavaScript,technical,PK
+9653,TypeScript,technical,PK
+9656,Communication,business_soft,PK
+9657,Bachelor's Degree,education,PK
+9664,PHP,technical,PK
+9672,Excel,tool,PK
+9678,MySQL,tool,PK
+9678,PHP,technical,PK
+9681,Communication,business_soft,PK
+9684,Reporting,analytical,PK
+9687,Attention to Detail,business_soft,PK
+9688,Communication,business_soft,PK
+9690,CSS,technical,PK
+9690,Git,tool,PK
+9690,HTML,technical,PK
+9690,JavaScript,technical,PK
+9690,MySQL,tool,PK
+9691,Communication,business_soft,PK
+9692,PHP,technical,PK
+9693,PHP,technical,PK
+9694,Financial Analysis,analytical,PK
+9695,Communication,business_soft,PK
+9704,JavaScript,technical,PK
+9705,JavaScript,technical,PK
+9707,JavaScript,technical,PK
+9708,MySQL,tool,PK
+9708,PHP,technical,PK
+9709,JavaScript,technical,PK
+9709,PHP,technical,PK
+9710,PHP,technical,PK
+9717,JavaScript,technical,PK
+9718,C#,technical,PK
+9718,JavaScript,technical,PK
+9719,Bachelor's Degree,education,PK
+9719,Master's Degree,education,PK
+9720,Project Management,business_soft,PK
+9724,Communication,business_soft,PK
+9726,PHP,technical,PK
+9727,PHP,technical,PK
+9743,CSS,technical,PK
+9743,HTML,technical,PK
+9744,C#,technical,PK
+9748,Docker,tool,PK
+9751,C#,technical,PK
+9755,Communication,business_soft,PK
+9758,PHP,technical,PK
+9761,PHP,technical,PK
+9769,Bachelor's Degree,education,PK
+9769,PHP,technical,PK
+9770,Communication,business_soft,PK
+9772,PHP,technical,PK
+9775,C#,technical,PK
+9775,SQL,technical,PK
+9784,PHP,technical,PK
+9785,PHP,technical,PK
+9787,AWS,tool,PK
+9787,JavaScript,technical,PK
+9787,PHP,technical,PK
+9788,MySQL,tool,PK
+9788,PHP,technical,PK
+9794,CSS,technical,PK
+9794,HTML,technical,PK
+9803,Attention to Detail,business_soft,PK
+9803,Docker,tool,PK
+9804,Excel,tool,PK
+9805,JavaScript,technical,PK
+9806,Excel,tool,PK
+9812,CSS,technical,PK
+9812,HTML,technical,PK
+9812,JavaScript,technical,PK
+9812,PHP,technical,PK
+9821,PHP,technical,PK
+9822,Communication,business_soft,PK
+9833,Attention to Detail,business_soft,PK
+9837,C#,technical,PK
+9838,JavaScript,technical,PK
+9838,PHP,technical,PK
+9840,JavaScript,technical,PK
+9840,MySQL,tool,PK
+9840,PHP,technical,PK
+9847,PHP,technical,PK
+9853,C#,technical,PK
+9853,Problem Solving,business_soft,PK
+9864,PHP,technical,PK
+9870,JavaScript,technical,PK
+9875,Java,technical,PK
+9875,PHP,technical,PK
+9884,PHP,technical,PK
+9884,SQL,technical,PK
+9885,PHP,technical,PK
+9889,CSS,technical,PK
+9889,HTML,technical,PK
+9893,PHP,technical,PK
+9896,CSS,technical,PK
+9896,HTML,technical,PK
+9896,JavaScript,technical,PK
+9896,PHP,technical,PK
+9914,AWS,tool,PK
+9914,Azure,tool,PK
+9915,CSS,technical,PK
+9915,HTML,technical,PK
+9918,Communication,business_soft,PK
+9923,Attention to Detail,business_soft,PK
+9928,JavaScript,technical,PK
+9929,PHP,technical,PK
+9933,Communication,business_soft,PK
+9935,C#,technical,PK
+9937,Azure,tool,PK
+9943,C#,technical,PK
+9963,C#,technical,PK
+9965,Communication,business_soft,PK
+9966,Reporting,analytical,PK
+9970,C#,technical,PK
+9970,SQL,technical,PK
+9974,Excel,tool,PK
+9977,Java,technical,PK
+9981,Master's Degree,education,PK
+9983,Git,tool,PK
+9983,JavaScript,technical,PK
+9985,Reporting,analytical,PK
+9986,C#,technical,PK
+9986,SQL,technical,PK
+9987,Communication,business_soft,PK
+9993,Communication,business_soft,PK
+9993,Excel,tool,PK
+9993,Time Management,business_soft,PK
+9998,Leadership,business_soft,PK
+9998,Python,technical,PK
+10000,JavaScript,technical,PK
+10002,PHP,technical,PK
+10004,PHP,technical,PK
+10004,Project Management,business_soft,PK
+10007,PHP,technical,PK
+10009,CSS,technical,PK
+10009,HTML,technical,PK
+10009,JavaScript,technical,PK
+10010,JavaScript,technical,PK
+10011,JavaScript,technical,PK
+10018,Python,technical,PK
+10019,C#,technical,PK
+10020,Leadership,business_soft,PK
+10026,C#,technical,PK
+10026,SQL,technical,PK
+10033,C#,technical,PK
+10034,Problem Solving,business_soft,PK
+10036,C#,technical,PK
+10036,Reporting,analytical,PK
+10036,SQL,technical,PK
+10045,PHP,technical,PK
+10051,Bachelor's Degree,education,PK
+10056,Communication,business_soft,PK
+10058,PHP,technical,PK
+10059,Communication,business_soft,PK
+10068,C#,technical,PK
+10068,CSS,technical,PK
+10068,HTML,technical,PK
+10068,Java,technical,PK
+10068,PHP,technical,PK
+10076,Leadership,business_soft,PK
+10077,PHP,technical,PK
+10081,Java,technical,PK
+10083,Java,technical,PK
+10084,Reporting,analytical,PK
+10086,Attention to Detail,business_soft,PK
+10095,Computer Vision,ai_ml,PK
+10112,Python,technical,PK
+10116,Reporting,analytical,PK
+10119,PHP,technical,PK
+10124,Excel,tool,PK
+10134,Project Management,business_soft,PK
+10135,PHP,technical,PK
+10136,PHP,technical,PK
+10139,PHP,technical,PK
+10146,PHP,technical,PK
+10151,C#,technical,PK
+10158,C#,technical,PK
+10158,SQL,technical,PK
+10160,Master's Degree,education,PK
+10162,Communication,business_soft,PK
+10163,Leadership,business_soft,PK
+10169,PHP,technical,PK
+10170,PHP,technical,PK
+10171,Communication,business_soft,PK
+10174,Communication,business_soft,PK
+10175,PHP,technical,PK
+10176,JavaScript,technical,PK
+10176,PHP,technical,PK
+10181,PHP,technical,PK
+10182,Excel,tool,PK
+10185,Master's Degree,education,PK
+10186,JavaScript,technical,PK
+10191,HTML,technical,PK
+10191,JavaScript,technical,PK
+10191,PHP,technical,PK
+10193,Bachelor's Degree,education,PK
+10193,Master's Degree,education,PK
+10197,PHP,technical,PK
+10198,Communication,business_soft,PK
+10202,Communication,business_soft,PK
+10207,Communication,business_soft,PK
+10209,CSS,technical,PK
+10209,HTML,technical,PK
+10209,JavaScript,technical,PK
+10214,Communication,business_soft,PK
+10214,PHP,technical,PK
+10217,Teamwork,business_soft,PK
+10218,Communication,business_soft,PK
+10221,CSS,technical,PK
+10221,HTML,technical,PK
+10221,MySQL,tool,PK
+10221,PHP,technical,PK
+10223,Attention to Detail,business_soft,PK
+10223,PHP,technical,PK
+10227,Leadership,business_soft,PK
+10232,Communication,business_soft,PK
+10235,Communication,business_soft,PK
+10238,Market Research,analytical,PK
+10249,PHP,technical,PK
+10250,C#,technical,PK
+10250,SQL,technical,PK
+10254,Azure,tool,PK
+10255,Leadership,business_soft,PK
+10258,Leadership,business_soft,PK
+10259,Leadership,business_soft,PK
+10260,JavaScript,technical,PK
+10266,Project Management,business_soft,PK
+10268,Communication,business_soft,PK
+10278,CSS,technical,PK
+10278,HTML,technical,PK
+10279,CSS,technical,PK
+10279,HTML,technical,PK
+10279,JavaScript,technical,PK
+10279,TypeScript,technical,PK
+10280,Communication,business_soft,PK
+10281,Communication,business_soft,PK
+10282,Bachelor's Degree,education,PK
+10282,Communication,business_soft,PK
+10283,Communication,business_soft,PK
+10284,C#,technical,PK
+10287,Bachelor's Degree,education,PK
+10288,PHP,technical,PK
+10293,Teamwork,business_soft,PK
+10295,PHP,technical,PK
+10299,Java,technical,PK
+10301,C#,technical,PK
+10306,PHP,technical,PK
+10311,C#,technical,PK
+10313,HTML,technical,PK
+10316,CSS,technical,PK
+10316,HTML,technical,PK
+10316,Java,technical,PK
+10316,JavaScript,technical,PK
+10316,MongoDB,tool,PK
+10316,MySQL,tool,PK
+10316,PHP,technical,PK
+10316,SQL,technical,PK
+10317,Problem Solving,business_soft,PK
+10320,CSS,technical,PK
+10320,HTML,technical,PK
+10320,JavaScript,technical,PK
+10327,JavaScript,technical,PK
+10328,JavaScript,technical,PK
+10337,C#,technical,PK
+10337,C++,technical,PK
+10338,Communication,business_soft,PK
+10338,PHP,technical,PK
+10341,PHP,technical,PK
+10342,Communication,business_soft,PK
+10347,CSS,technical,PK
+10347,HTML,technical,PK
+10347,JavaScript,technical,PK
+10353,C#,technical,PK
+10353,MySQL,tool,PK
+10353,SQL,technical,PK
+10354,JavaScript,technical,PK
+10355,PHP,technical,PK
+10355,Project Management,business_soft,PK
+10362,CSS,technical,PK
+10362,MySQL,tool,PK
+10362,PHP,technical,PK
+10371,PHP,technical,PK
+10372,Communication,business_soft,PK
+10375,Excel,tool,PK
+10382,Diploma,education,PK
+10383,Attention to Detail,business_soft,PK
+10386,R,technical,PK
+10390,Java,technical,PK
+10392,PHP,technical,PK
+10393,PHP,technical,PK
+10396,Communication,business_soft,PK
+10396,SAS,technical,PK
+10399,JavaScript,technical,PK
+10401,PHP,technical,PK
+10402,Attention to Detail,business_soft,PK
+10404,Market Research,analytical,PK
+10405,Excel,tool,PK
+10407,Teamwork,business_soft,PK
+10408,JavaScript,technical,PK
+10412,PHP,technical,PK
+10421,Project Management,business_soft,PK
+10422,Communication,business_soft,PK
+10423,PHP,technical,PK
+10427,MySQL,tool,PK
+10427,PHP,technical,PK
+10430,Market Research,analytical,PK
+10435,PHP,technical,PK
+10442,NLP,ai_ml,PK
+10442,Python,technical,PK
+10443,Git,tool,PK
+10443,PHP,technical,PK
+10443,Python,technical,PK
+10444,JavaScript,technical,PK
+10444,MongoDB,tool,PK
+10444,Problem Solving,business_soft,PK
+10452,CSS,technical,PK
+10452,HTML,technical,PK
+10452,JavaScript,technical,PK
+10455,Communication,business_soft,PK
+10457,Communication,business_soft,PK
+10457,PHP,technical,PK
+10467,PHP,technical,PK
+10468,PHP,technical,PK
+10469,Bachelor's Degree,education,PK
+10469,Diploma,education,PK
+10474,PHP,technical,PK
+10478,Master's Degree,education,PK
+10483,Communication,business_soft,PK
+10484,PHP,technical,PK
+10484,SQL,technical,PK
+10486,Communication,business_soft,PK
+10488,Communication,business_soft,PK
+10490,Communication,business_soft,PK
+10498,CSS,technical,PK
+10498,HTML,technical,PK
+10498,JavaScript,technical,PK
+10501,JavaScript,technical,PK
+10501,TypeScript,technical,PK
+10502,JavaScript,technical,PK
+10507,C#,technical,PK
+10507,SQL,technical,PK
+10516,Master's Degree,education,PK
+10519,CSS,technical,PK
+10519,HTML,technical,PK
+10519,JavaScript,technical,PK
+10522,Communication,business_soft,PK
+10526,JavaScript,technical,PK
+10528,JavaScript,technical,PK
+10529,Azure,tool,PK
+10531,CSS,technical,PK
+10531,HTML,technical,PK
+10531,JavaScript,technical,PK
+10533,Reporting,analytical,PK
+10534,Reporting,analytical,PK
+10536,CSS,technical,PK
+10536,JavaScript,technical,PK
+10536,PHP,technical,PK
+10540,C#,technical,PK
+10541,PHP,technical,PK
+10544,Excel,tool,PK
+10545,PHP,technical,PK
+10547,C#,technical,PK
+10549,PHP,technical,PK
+10552,JavaScript,technical,PK
+10556,Bachelor's Degree,education,PK
+10562,Communication,business_soft,PK
+10563,Azure,tool,PK
+10565,Bachelor's Degree,education,PK
+10579,C#,technical,PK
+10581,Exploratory Data Analysis,analytical,PK
+10581,Machine Learning,ai_ml,PK
+10581,NLP,ai_ml,PK
+10583,Communication,business_soft,PK
+10588,C#,technical,PK
+10598,Master's Degree,education,PK
+10607,PHP,technical,PK
+10608,PHP,technical,PK
+10612,Communication,business_soft,PK
+10614,AWS,tool,PK
+10614,Java,technical,PK
+10616,CSS,technical,PK
+10616,HTML,technical,PK
+10616,JavaScript,technical,PK
+10616,PHP,technical,PK
+10616,SQL,technical,PK
+10617,Master's Degree,education,PK
+10641,PHP,technical,PK
+10642,Communication,business_soft,PK
+10642,JavaScript,technical,PK
+10642,TypeScript,technical,PK
+10645,Time Management,business_soft,PK
+10646,Reporting,analytical,PK
+10648,Excel,tool,PK
+10648,Java,technical,PK
+10655,Attention to Detail,business_soft,PK
+10655,Communication,business_soft,PK
+10656,Attention to Detail,business_soft,PK
+10664,Communication,business_soft,PK
+10665,Python,technical,PK
+10668,Attention to Detail,business_soft,PK
+10673,PHP,technical,PK
+10673,Time Management,business_soft,PK
+10675,JavaScript,technical,PK
+10678,CSS,technical,PK
+10678,JavaScript,technical,PK
+10678,MySQL,tool,PK
+10678,PHP,technical,PK
+10683,Java,technical,PK
+10684,Communication,business_soft,PK
+10690,PHP,technical,PK
+10693,C#,technical,PK
+10694,Communication,business_soft,PK
+10694,JavaScript,technical,PK
+10697,Communication,business_soft,PK
+10698,Communication,business_soft,PK
+10701,Communication,business_soft,PK
+10704,Master's Degree,education,PK
+10710,PHP,technical,PK
+10713,Reporting,analytical,PK
+10723,Market Research,analytical,PK
+10724,Market Research,analytical,PK
+10725,CSS,technical,PK
+10725,HTML,technical,PK
+10725,PHP,technical,PK
+10727,Go,technical,PK
+10727,PHP,technical,PK
+10729,PHP,technical,PK
+10738,JavaScript,technical,PK
+10742,Attention to Detail,business_soft,PK
+10751,Communication,business_soft,PK
+10754,Problem Solving,business_soft,PK
+10757,PHP,technical,PK
+10767,Communication,business_soft,PK
+10772,Business Intelligence,analytical,PK
+10772,ETL,analytical,PK
+10773,Azure,tool,PK
+10773,C#,technical,PK
+10775,CSS,technical,PK
+10775,HTML,technical,PK
+10775,Java,technical,PK
+10775,PHP,technical,PK
+10775,SQL,technical,PK
+10776,Master's Degree,education,PK
+10779,C#,technical,PK
+10787,CSS,technical,PK
+10787,HTML,technical,PK
+10789,JavaScript,technical,PK
+10794,Leadership,business_soft,PK
+10796,C#,technical,PK
+10796,MySQL,tool,PK
+10796,PHP,technical,PK
+10796,Python,technical,PK
+10797,CSS,technical,PK
+10797,HTML,technical,PK
+10797,PHP,technical,PK
+10806,Leadership,business_soft,PK
+10807,Machine Learning,ai_ml,PK
+10808,PHP,technical,PK
+10810,JavaScript,technical,PK
+10810,PHP,technical,PK
+10815,Apache Spark,tool,PK
+10818,Communication,business_soft,PK
+10818,JavaScript,technical,PK
+10819,Communication,business_soft,PK
+10823,CSS,technical,PK
+10823,HTML,technical,PK
+10824,PHP,technical,PK
+10840,C#,technical,PK
+10840,CSS,technical,PK
+10840,HTML,technical,PK
+10840,JavaScript,technical,PK
+10840,SQL,technical,PK
+10847,Communication,business_soft,PK
+10851,CSS,technical,PK
+10851,HTML,technical,PK
+10854,PHP,technical,PK
+10855,Communication,business_soft,PK
+10858,MySQL,tool,PK
+10858,PHP,technical,PK
+10860,PHP,technical,PK
+10866,PHP,technical,PK
+10867,PHP,technical,PK
+10868,Bachelor's Degree,education,PK
+10868,Communication,business_soft,PK
+10870,PHP,technical,PK
+10874,Project Management,business_soft,PK
+10878,Bachelor's Degree,education,PK
+10880,Communication,business_soft,PK
+10884,Master's Degree,education,PK
+10885,HTML,technical,PK
+10885,JavaScript,technical,PK
+10885,PHP,technical,PK
+10886,PHP,technical,PK
+10895,PHP,technical,PK
+10898,PHP,technical,PK
+10901,Bachelor's Degree,education,PK
+10909,HTML,technical,PK
+10911,PHP,technical,PK
+10921,Bachelor's Degree,education,PK
+10929,Communication,business_soft,PK
+10930,Excel,tool,PK
+10932,JavaScript,technical,PK
+10933,Communication,business_soft,PK
+10936,JavaScript,technical,PK
+10937,PHP,technical,PK
+10944,CSS,technical,PK
+10944,HTML,technical,PK
+10944,PHP,technical,PK
+10948,PHP,technical,PK
+10949,Leadership,business_soft,PK
+10952,HTML,technical,PK
+10961,JavaScript,technical,PK
+10966,Business Intelligence,analytical,PK
+10968,PHP,technical,PK
+10971,Business Analysis,business_soft,PK
+10973,C#,technical,PK
+10974,Communication,business_soft,PK
+10977,Python,technical,PK
+10978,SQL,technical,PK
+10979,PHP,technical,PK
+10980,Bachelor's Degree,education,PK
+10984,Master's Degree,education,PK
+10985,C#,technical,PK
+10985,SQL,technical,PK
+10988,Git,tool,PK
+10988,MySQL,tool,PK
+10988,PostgreSQL,tool,PK
+10988,Python,technical,PK
+10992,Communication,business_soft,PK
+10993,Communication,business_soft,PK
+10999,Bachelor's Degree,education,PK
+11000,Communication,business_soft,PK
+11016,C#,technical,PK
+11017,Master's Degree,education,PK
+11031,MySQL,tool,PK
+11043,Communication,business_soft,PK
+11044,Communication,business_soft,PK
+11044,Project Management,business_soft,PK
+11044,SQL,technical,PK
+11047,PHP,technical,PK
+11049,Java,technical,PK
+11049,JavaScript,technical,PK
+11049,MongoDB,tool,PK
+11049,SQL,technical,PK
+11057,PHP,technical,PK
+11061,PHP,technical,PK
+11068,Attention to Detail,business_soft,PK
+11068,Business Intelligence,analytical,PK
+11068,Data Governance,analytical,PK
+11068,ETL,analytical,PK
+11068,SQL,technical,PK
+11070,Communication,business_soft,PK
+11074,Communication,business_soft,PK
+11074,PHP,technical,PK
+11075,Bachelor's Degree,education,PK
+11076,Master's Degree,education,PK
+11082,Communication,business_soft,PK
+11082,Reporting,analytical,PK
+11083,JavaScript,technical,PK
+11083,MySQL,tool,PK
+11083,PHP,technical,PK
+11085,MySQL,tool,PK
+11085,PHP,technical,PK
+11087,C#,technical,PK
+11088,Apache Spark,tool,PK
+11094,Python,technical,PK
+11096,Bachelor's Degree,education,PK
+11096,Excel,tool,PK
+11097,Master's Degree,education,PK
+11098,JavaScript,technical,PK
+11099,JavaScript,technical,PK
+11100,Go,technical,PK
+11100,JavaScript,technical,PK
+11101,AWS,tool,PK
+11101,JavaScript,technical,PK
+11101,MongoDB,tool,PK
+11102,Communication,business_soft,PK
+11103,C#,technical,PK
+11106,PHP,technical,PK
+11108,Communication,business_soft,PK
+11113,PHP,technical,PK
+11114,Communication,business_soft,PK
+11114,PHP,technical,PK
+11116,Master's Degree,education,PK
+11117,Bachelor's Degree,education,PK
+11117,Communication,business_soft,PK
+11119,PHP,technical,PK
+11122,Master's Degree,education,PK
+11125,Excel,tool,PK
+11127,JavaScript,technical,PK
+11135,C#,technical,PK
+11137,PHP,technical,PK
+11144,PHP,technical,PK
+11151,Java,technical,PK
+11153,Time Management,business_soft,PK
+11154,Business Intelligence,analytical,PK
+11154,Time Management,business_soft,PK
+11159,PHP,technical,PK
+11160,SQL,technical,PK
+11161,Bachelor's Degree,education,PK
+11162,PHP,technical,PK
+11165,Excel,tool,PK
+11169,PHP,technical,PK
+11170,PHP,technical,PK
+11171,Reporting,analytical,PK
+11172,PHP,technical,PK
+11172,SQL,technical,PK
+11182,Excel,tool,PK
+11183,AWS,tool,PK
+11183,Java,technical,PK
+11184,AWS,tool,PK
+11184,Java,technical,PK
+11195,Communication,business_soft,PK
+11203,Python,technical,PK
+11216,CSS,technical,PK
+11216,HTML,technical,PK
+11216,JavaScript,technical,PK
+11218,Communication,business_soft,PK
+11221,Attention to Detail,business_soft,PK
+11242,JavaScript,technical,PK
+11245,Financial Analysis,analytical,PK
+11254,Business Intelligence,analytical,PK
+11255,CSS,technical,PK
+11255,PHP,technical,PK
+11264,Communication,business_soft,PK
+11266,PHP,technical,PK
+11268,CSS,technical,PK
+11268,HTML,technical,PK
+11268,JavaScript,technical,PK
+11268,PHP,technical,PK
+11269,PHP,technical,PK
+11281,Excel,tool,PK
+11285,Communication,business_soft,PK
+11289,PHP,technical,PK
+11296,Communication,business_soft,PK
+11296,PHP,technical,PK
+11298,JavaScript,technical,PK
+11300,JavaScript,technical,PK
+11304,Communication,business_soft,PK
+11306,Communication,business_soft,PK
+11306,JavaScript,technical,PK
+11309,PHP,technical,PK
+11313,Go,technical,PK
+11315,C#,technical,PK
+11317,PHP,technical,PK
+11321,JavaScript,technical,PK
+11321,PHP,technical,PK
+11325,PHP,technical,PK
+11326,Problem Solving,business_soft,PK
+11333,CSS,technical,PK
+11333,HTML,technical,PK
+11333,JavaScript,technical,PK
+11340,PHP,technical,PK
+11340,SQL,technical,PK
+11346,Teamwork,business_soft,PK
+11347,JavaScript,technical,PK
+11347,Teamwork,business_soft,PK
+11348,C#,technical,PK
+11353,CSS,technical,PK
+11353,JavaScript,technical,PK
+11353,MySQL,tool,PK
+11353,PHP,technical,PK
+11366,Communication,business_soft,PK
+11376,Communication,business_soft,PK
+11380,PHP,technical,PK
+11390,Communication,business_soft,PK
+11394,PHP,technical,PK
+11395,PHP,technical,PK
+11396,PHP,technical,PK
+11398,HTML,technical,PK
+11398,JavaScript,technical,PK
+11400,JavaScript,technical,PK
+11400,PHP,technical,PK
+11401,CSS,technical,PK
+11401,HTML,technical,PK
+11401,JavaScript,technical,PK
+11402,Bachelor's Degree,education,PK
+11403,Communication,business_soft,PK
+11410,Master's Degree,education,PK
+11412,PHP,technical,PK
+11413,Communication,business_soft,PK
+11414,Attention to Detail,business_soft,PK
+11432,Excel,tool,PK
+11438,SQL,technical,PK
+11439,Communication,business_soft,PK
+11441,Reporting,analytical,PK
+11442,CSS,technical,PK
+11442,HTML,technical,PK
+11442,JavaScript,technical,PK
+11442,PHP,technical,PK
+11444,PHP,technical,PK
+11450,Java,technical,PK
+11452,Excel,tool,PK
+11454,PHP,technical,PK
+11458,Project Management,business_soft,PK
+11458,Reporting,analytical,PK
+11459,PHP,technical,PK
+11460,Communication,business_soft,PK
+11484,PHP,technical,PK
+11485,Apache Spark,tool,PK
+11490,Bachelor's Degree,education,PK
+11507,Python,technical,PK
+11512,Reporting,analytical,PK
+11518,CSS,technical,PK
+11518,HTML,technical,PK
+11518,JavaScript,technical,PK
+11518,MySQL,tool,PK
+11518,PHP,technical,PK
+11522,C#,technical,PK
+11532,Communication,business_soft,PK
+11534,MySQL,tool,PK
+11534,PHP,technical,PK
+11539,Communication,business_soft,PK
+11540,Dashboarding,analytical,PK
+11545,Master's Degree,education,PK
+11546,Excel,tool,PK
+11546,Master's Degree,education,PK
+11547,Master's Degree,education,PK
+11548,Master's Degree,education,PK
+11549,Communication,business_soft,PK
+11549,Master's Degree,education,PK
+11550,Master's Degree,education,PK
+11551,Master's Degree,education,PK
+11552,Master's Degree,education,PK
+11553,Master's Degree,education,PK
+11554,Master's Degree,education,PK
+11555,Communication,business_soft,PK
+11556,Communication,business_soft,PK
+11561,C#,technical,PK
+11561,PHP,technical,PK
+11570,PHP,technical,PK
+11577,Market Research,analytical,PK
+11579,Communication,business_soft,PK
+11579,Excel,tool,PK
+11580,CSS,technical,PK
+11580,Communication,business_soft,PK
+11580,HTML,technical,PK
+11580,JavaScript,technical,PK
+11581,Bachelor's Degree,education,PK
+11582,PHP,technical,PK
+11586,C#,technical,PK
+11586,Java,technical,PK
+11588,Communication,business_soft,PK
+11597,C#,technical,PK
+11597,SQL,technical,PK
+11598,PHP,technical,PK
+11599,Excel,tool,PK
+11606,Communication,business_soft,PK
+11607,Master's Degree,education,PK
+11608,Computer Vision,ai_ml,PK
+11612,Excel,tool,PK
+11613,PHP,technical,PK
+11616,C#,technical,PK
+11617,Project Management,business_soft,PK
+11620,PHP,technical,PK
+11621,Bachelor's Degree,education,PK
+11621,Communication,business_soft,PK
+11621,Master's Degree,education,PK
+11622,Communication,business_soft,PK
+11623,Master's Degree,education,PK
+11629,AWS,tool,PK
+11629,Azure,tool,PK
+11629,Java,technical,PK
+11636,Teamwork,business_soft,PK
+11639,Git,tool,PK
+11639,PHP,technical,PK
+11639,SQL,technical,PK
+11640,CSS,technical,PK
+11640,HTML,technical,PK
+11640,PHP,technical,PK
+11641,C#,technical,PK
+11654,Communication,business_soft,PK
+11655,Communication,business_soft,PK
+11664,Excel,tool,PK
+11665,JavaScript,technical,PK
+11666,Communication,business_soft,PK
+11667,HTML,technical,PK
+11667,JavaScript,technical,PK
+11667,PHP,technical,PK
+11670,CSS,technical,PK
+11670,HTML,technical,PK
+11671,MySQL,tool,PK
+11671,PHP,technical,PK
+11672,Master's Degree,education,PK
+11674,Communication,business_soft,PK
+11676,PHP,technical,PK
+11679,Leadership,business_soft,PK
+11691,Communication,business_soft,PK
+11699,Bachelor's Degree,education,PK
+11712,Communication,business_soft,PK
+11721,Reporting,analytical,PK
+11722,Master's Degree,education,PK
+11732,Bachelor's Degree,education,PK
+11739,Bachelor's Degree,education,PK
+11743,Time Management,business_soft,PK
+11747,HTML,technical,PK
+11754,JavaScript,technical,PK
+11755,Problem Solving,business_soft,PK
+11757,Communication,business_soft,PK
+11758,Master's Degree,education,PK
+11759,C#,technical,PK
+11759,Communication,business_soft,PK
+11769,PHP,technical,PK
+11773,Communication,business_soft,PK
+11781,PHP,technical,PK
+11792,C#,technical,PK
+11795,C#,technical,PK
+11795,SQL,technical,PK
+11796,Bachelor's Degree,education,PK
+11796,PHP,technical,PK
+11798,CSS,technical,PK
+11798,HTML,technical,PK
+11811,CSS,technical,PK
+11811,HTML,technical,PK
+11811,MySQL,tool,PK
+11811,PHP,technical,PK
+11811,Problem Solving,business_soft,PK
+11812,PHP,technical,PK
+11816,Communication,business_soft,PK
+11823,PHP,technical,PK
+11824,JavaScript,technical,PK
+11824,PHP,technical,PK
+11824,Python,technical,PK
+11826,CSS,technical,PK
+11826,HTML,technical,PK
+11826,JavaScript,technical,PK
+11829,CSS,technical,PK
+11829,HTML,technical,PK
+11829,JavaScript,technical,PK
+11835,Reporting,analytical,PK
+11840,PHP,technical,PK
+11842,Python,technical,PK
+11844,Attention to Detail,business_soft,PK
+11860,Java,technical,PK
+11860,SQL,technical,PK
+11862,C++,technical,PK
+11862,Python,technical,PK
+11863,CSS,technical,PK
+11863,HTML,technical,PK
+11871,Master's Degree,education,PK
+11871,Reporting,analytical,PK
+11873,PHP,technical,PK
+11874,Master's Degree,education,PK
+11875,PHP,technical,PK
+11876,PHP,technical,PK
+11882,Diploma,education,PK
+11886,Excel,tool,PK
+11893,Communication,business_soft,PK
+11895,PHP,technical,PK
+11895,Teamwork,business_soft,PK
+11897,Communication,business_soft,PK
+11900,C++,technical,PK
+11903,Teamwork,business_soft,PK
+11907,Communication,business_soft,PK
+11910,Communication,business_soft,PK
+11911,JavaScript,technical,PK
+11911,Teamwork,business_soft,PK
+11913,PHP,technical,PK
+11914,CSS,technical,PK
+11914,HTML,technical,PK
+11914,JavaScript,technical,PK
+11915,HTML,technical,PK
+11915,JavaScript,technical,PK
+11917,Attention to Detail,business_soft,PK
+11918,Reporting,analytical,PK
+11919,Bachelor's Degree,education,PK
+11921,Project Management,business_soft,PK
+11922,PHP,technical,PK
+11924,Market Research,analytical,PK
+11927,Reporting,analytical,PK
+11930,PHP,technical,PK
+11932,Communication,business_soft,PK
+11936,JavaScript,technical,PK
+11936,PHP,technical,PK
+11940,PHP,technical,PK
+11944,Communication,business_soft,PK
+11965,Communication,business_soft,PK
+11968,AWS,tool,PK
+11978,JavaScript,technical,PK
+11981,Communication,business_soft,PK
+11987,Leadership,business_soft,PK
+11988,PHP,technical,PK
+11988,Project Management,business_soft,PK
+11991,MySQL,tool,PK
+11991,PHP,technical,PK
+11992,Go,technical,PK
+11997,PHP,technical,PK
+11998,Communication,business_soft,PK
+12000,Communication,business_soft,PK
+12006,MySQL,tool,PK
+12006,PHP,technical,PK
+12006,SQL,technical,PK
+12007,Go,technical,PK
+12018,JavaScript,technical,PK
+12021,Communication,business_soft,PK
+12021,MySQL,tool,PK
+12021,PHP,technical,PK
+12023,PHP,technical,PK
+12025,CSS,technical,PK
+12025,HTML,technical,PK
+12025,JavaScript,technical,PK
+12025,PHP,technical,PK
+12026,PHP,technical,PK
+12030,Communication,business_soft,PK
+12030,Project Management,business_soft,PK
+12030,Python,technical,PK
+12032,C#,technical,PK
+12032,CSS,technical,PK
+12032,HTML,technical,PK
+12032,JavaScript,technical,PK
+12035,Reporting,analytical,PK
+12038,PHP,technical,PK
+12043,PHP,technical,PK
+12043,Project Management,business_soft,PK
+12044,Data Governance,analytical,PK
+12046,CSS,technical,PK
+12046,HTML,technical,PK
+12046,JavaScript,technical,PK
+12048,PHP,technical,PK
+12048,Project Management,business_soft,PK
+12050,Attention to Detail,business_soft,PK
+12051,Machine Learning,ai_ml,PK
+12052,C#,technical,PK
+12052,JavaScript,technical,PK
+12052,TypeScript,technical,PK
+12053,Java,technical,PK
+12055,JavaScript,technical,PK
+12056,Communication,business_soft,PK
+12065,Java,technical,PK
+12067,Communication,business_soft,PK
+12075,Problem Solving,business_soft,PK
+12076,Excel,tool,PK
+12083,JavaScript,technical,PK
+12086,JavaScript,technical,PK
+12086,MySQL,tool,PK
+12086,PHP,technical,PK
+12087,PHP,technical,PK
+12092,Business Analysis,business_soft,PK
+12093,Java,technical,PK
+12093,Teamwork,business_soft,PK
+12095,CSS,technical,PK
+12095,HTML,technical,PK
+12096,Communication,business_soft,PK
+12097,Communication,business_soft,PK
+12098,Bachelor's Degree,education,PK
+12113,CSS,technical,PK
+12113,HTML,technical,PK
+12113,PHP,technical,PK
+12120,Communication,business_soft,PK
+12126,PHP,technical,PK
+12132,C#,technical,PK
+12132,SQL,technical,PK
+12137,Java,technical,PK
+12143,HTML,technical,PK
+12145,C#,technical,PK
+12149,PHP,technical,PK
+12150,PHP,technical,PK
+12152,C#,technical,PK
+12156,MySQL,tool,PK
+12156,PHP,technical,PK
+12161,CSS,technical,PK
+12164,Bachelor's Degree,education,PK
+12164,Leadership,business_soft,PK
+12165,Master's Degree,education,PK
+12175,PHP,technical,PK
+12180,JavaScript,technical,PK
+12188,C#,technical,PK
+12192,Business Intelligence,analytical,PK
+12199,PHP,technical,PK
+12201,C++,technical,PK
+12203,PHP,technical,PK
+12203,Project Management,business_soft,PK
+12208,PHP,technical,PK
+12211,Diploma,education,PK
+12213,SQL,technical,PK
+12218,Communication,business_soft,PK
+12226,C#,technical,PK
+12226,Project Management,business_soft,PK
+12226,Reporting,analytical,PK
+12232,Communication,business_soft,PK
+12232,Leadership,business_soft,PK
+12247,PHP,technical,PK
+12250,PHP,technical,PK
+12251,JavaScript,technical,PK
+12253,C#,technical,PK
+12257,Communication,business_soft,PK
+12257,PHP,technical,PK
+12259,JavaScript,technical,PK
+12259,PHP,technical,PK
+12260,Communication,business_soft,PK
+12263,Bachelor's Degree,education,PK
+12263,CSS,technical,PK
+12263,HTML,technical,PK
+12263,JavaScript,technical,PK
+12263,PHP,technical,PK
+12266,HTML,technical,PK
+12269,C#,technical,PK
+12269,Communication,business_soft,PK
+12269,SQL,technical,PK
+12277,Master's Degree,education,PK
+12282,CSS,technical,PK
+12282,HTML,technical,PK
+12283,SQL,technical,PK
+12287,MySQL,tool,PK
+12287,PHP,technical,PK
+12288,Java,technical,PK
+12289,PHP,technical,PK
+12300,HTML,technical,PK
+12305,JavaScript,technical,PK
+12305,PHP,technical,PK
+12306,JavaScript,technical,PK
+12311,Excel,tool,PK
+12313,PHP,technical,PK
+12320,Business Analysis,business_soft,PK
+12321,Docker,tool,PK
+12323,SQL,technical,PK
+12324,Python,technical,PK
+12325,PHP,technical,PK
+12330,Project Management,business_soft,PK
+12332,Attention to Detail,business_soft,PK
+12333,Master's Degree,education,PK
+12336,CSS,technical,PK
+12336,HTML,technical,PK
+12336,JavaScript,technical,PK
+12336,PHP,technical,PK
+12337,HTML,technical,PK
+12337,PHP,technical,PK
+12345,MySQL,tool,PK
+12345,PHP,technical,PK
+12348,C#,technical,PK
+12354,Communication,business_soft,PK
+12357,PHP,technical,PK
+12363,Project Management,business_soft,PK
+12376,Communication,business_soft,PK
+12377,Reporting,analytical,PK
+12382,CSS,technical,PK
+12382,HTML,technical,PK
+12382,MySQL,tool,PK
+12382,PHP,technical,PK
+12390,CSS,technical,PK
+12390,HTML,technical,PK
+12390,JavaScript,technical,PK
+12390,PHP,technical,PK
+12391,Communication,business_soft,PK
+12407,TypeScript,technical,PK
+12410,Communication,business_soft,PK
+12419,Master's Degree,education,PK
+12423,Communication,business_soft,PK
+12426,CSS,technical,PK
+12426,HTML,technical,PK
+12430,C#,technical,PK
+12430,JavaScript,technical,PK
+12430,SQL,technical,PK
+12433,Leadership,business_soft,PK
+12446,Master's Degree,education,PK
+12448,PHP,technical,PK
+12456,JavaScript,technical,PK
+12458,PHP,technical,PK
+12462,Communication,business_soft,PK
+12463,JavaScript,technical,PK
+12464,Communication,business_soft,PK
+12471,PHP,technical,PK
+12475,C#,technical,PK
+12477,Communication,business_soft,PK
+12477,Reporting,analytical,PK
+12481,JavaScript,technical,PK
+12484,JavaScript,technical,PK
+12486,AWS,tool,PK
+12486,Java,technical,PK
+12487,CSS,technical,PK
+12487,HTML,technical,PK
+12487,JavaScript,technical,PK
+12487,PHP,technical,PK
+12488,CSS,technical,PK
+12488,HTML,technical,PK
+12488,JavaScript,technical,PK
+12490,Communication,business_soft,PK
+12493,C#,technical,PK
+12493,SQL,technical,PK
+12500,Java,technical,PK
+12505,Master's Degree,education,PK
+12506,PHP,technical,PK
+12511,Reporting,analytical,PK
+12513,Communication,business_soft,PK
+12514,PHP,technical,PK
+12515,PHP,technical,PK
+12523,Communication,business_soft,PK
+12523,JavaScript,technical,PK
+12523,PHP,technical,PK
+12524,Excel,tool,PK
+12531,PHP,technical,PK
+12539,C#,technical,PK
+12539,Project Management,business_soft,PK
+12549,Go,technical,PK
+12551,C#,technical,PK
+12556,JavaScript,technical,PK
+12572,CSS,technical,PK
+12572,HTML,technical,PK
+12572,JavaScript,technical,PK
+12578,Business Analysis,business_soft,PK
+12578,Business Intelligence,analytical,PK
+12580,Bachelor's Degree,education,PK
+12585,Leadership,business_soft,PK
+12586,Communication,business_soft,PK
+12589,Communication,business_soft,PK
+12600,Project Management,business_soft,PK
+12604,C#,technical,PK
+12604,JavaScript,technical,PK
+12605,C#,technical,PK
+12605,PHP,technical,PK
+12608,Project Management,business_soft,PK
+12610,MySQL,tool,PK
+12610,PHP,technical,PK
+12612,CSS,technical,PK
+12612,Git,tool,PK
+12612,HTML,technical,PK
+12616,Communication,business_soft,PK
+12618,Excel,tool,PK
+12618,VBA,technical,PK
+12619,VBA,technical,PK
+12622,Communication,business_soft,PK
+12624,C#,technical,PK
+12624,SQL,technical,PK
+12629,CSS,technical,PK
+12629,HTML,technical,PK
+12629,JavaScript,technical,PK
+12629,PHP,technical,PK
+12633,Master's Degree,education,PK
+12636,Communication,business_soft,PK
+12640,JavaScript,technical,PK
+12640,Teamwork,business_soft,PK
+12641,Bachelor's Degree,education,PK
+12643,Time Management,business_soft,PK
+12645,C#,technical,PK
+12646,Bachelor's Degree,education,PK
+12646,C#,technical,PK
+12647,Communication,business_soft,PK
+12650,PostgreSQL,tool,PK
+12651,PostgreSQL,tool,PK
+12652,PostgreSQL,tool,PK
+12653,PostgreSQL,tool,PK
+12654,PHP,technical,PK
+12655,JavaScript,technical,PK
+12655,Problem Solving,business_soft,PK
+12656,PHP,technical,PK
+12666,PHP,technical,PK
+12675,Teamwork,business_soft,PK
+12683,CSS,technical,PK
+12683,HTML,technical,PK
+12683,JavaScript,technical,PK
+12690,CSS,technical,PK
+12690,HTML,technical,PK
+12690,JavaScript,technical,PK
+12690,PHP,technical,PK
+12696,AWS,tool,PK
+12700,PHP,technical,PK
+12701,JavaScript,technical,PK
+12708,Communication,business_soft,PK
+12711,Excel,tool,PK
+12711,MongoDB,tool,PK
+12715,PHP,technical,PK
+12717,JavaScript,technical,PK
+12721,Financial Analysis,analytical,PK
+12722,Communication,business_soft,PK
+12731,CSS,technical,PK
+12731,HTML,technical,PK
+12732,C#,technical,PK
+12732,JavaScript,technical,PK
+12734,Communication,business_soft,PK
+12735,PHP,technical,PK
+12740,PHP,technical,PK
+12751,JavaScript,technical,PK
+12751,TypeScript,technical,PK
+12752,JavaScript,technical,PK
+12761,Communication,business_soft,PK
+12769,Communication,business_soft,PK
+12771,Dashboarding,analytical,PK
+12778,Java,technical,PK
+12778,MySQL,tool,PK
+12778,PHP,technical,PK
+12780,PHP,technical,PK
+12784,PHP,technical,PK
+12795,Communication,business_soft,PK
+12796,JavaScript,technical,PK
+12796,PHP,technical,PK
+12799,JavaScript,technical,PK
+12800,Communication,business_soft,PK
+12800,JavaScript,technical,PK
+12806,CSS,technical,PK
+12806,HTML,technical,PK
+12806,JavaScript,technical,PK
+12806,PHP,technical,PK
+12807,Communication,business_soft,PK
+12810,Azure,tool,PK
+12819,Communication,business_soft,PK
+12820,CSS,technical,PK
+12820,HTML,technical,PK
+12820,JavaScript,technical,PK
+12820,MySQL,tool,PK
+12820,PHP,technical,PK
+12828,PHP,technical,PK
+12828,SQL,technical,PK
+12830,PHP,technical,PK
+12834,Communication,business_soft,PK
+12837,PHP,technical,PK
+12839,PHP,technical,PK
+12840,Communication,business_soft,PK
+12847,CSS,technical,PK
+12847,HTML,technical,PK
+12847,JavaScript,technical,PK
+12847,PHP,technical,PK
+12858,AWS,tool,PK
+12858,C#,technical,PK
+12858,Git,tool,PK
+12858,SQL,technical,PK
+12859,JavaScript,technical,PK
+12860,PHP,technical,PK
+12864,Java,technical,PK
+12866,Bachelor's Degree,education,PK
+12868,C#,technical,PK
+12868,C++,technical,PK
+12875,MySQL,tool,PK
+12875,PHP,technical,PK
+12877,Bachelor's Degree,education,PK
+12877,Communication,business_soft,PK
+12879,Java,technical,PK
+12880,CSS,technical,PK
+12880,HTML,technical,PK
+12880,JavaScript,technical,PK
+12882,Communication,business_soft,PK
+12888,Python,technical,PK
+12892,Java,technical,PK
+12894,Java,technical,PK
+12902,Java,technical,PK
+12903,Java,technical,PK
+12906,PHP,technical,PK
+12908,PHP,technical,PK
+12908,Problem Solving,business_soft,PK
+12909,Bachelor's Degree,education,PK
+12910,C#,technical,PK
+12921,Leadership,business_soft,PK
+12924,Project Management,business_soft,PK
+12925,PHP,technical,PK
+12927,CSS,technical,PK
+12927,HTML,technical,PK
+12928,Excel,tool,PK
+12928,Master's Degree,education,PK
+12938,PHP,technical,PK
+12940,PHP,technical,PK
+12942,JavaScript,technical,PK
+12943,Python,technical,PK
+12960,C++,technical,PK
+12960,Java,technical,PK
+12965,Diploma,education,PK
+12969,JavaScript,technical,PK
+12969,PHP,technical,PK
+12970,Bachelor's Degree,education,PK
+12970,PHP,technical,PK
+12970,SQL,technical,PK
+12979,Communication,business_soft,PK
+12981,JavaScript,technical,PK
+12981,PHP,technical,PK
+12983,Master's Degree,education,PK
+12984,PHP,technical,PK
+12985,Reporting,analytical,PK
+12991,PHP,technical,PK
+12995,Communication,business_soft,PK
+12996,CSS,technical,PK
+12996,HTML,technical,PK
+12996,JavaScript,technical,PK
+13001,PHP,technical,PK
+13002,Communication,business_soft,PK
+13005,PHP,technical,PK
+13006,AWS,tool,PK
+13006,CSS,technical,PK
+13006,HTML,technical,PK
+13006,Java,technical,PK
+13006,JavaScript,technical,PK
+13006,MySQL,tool,PK
+13006,PHP,technical,PK
+13009,Communication,business_soft,PK
+13017,Communication,business_soft,PK
+13018,Apache Spark,tool,PK
+13018,JavaScript,technical,PK
+13019,JavaScript,technical,PK
+13030,Communication,business_soft,PK
+13031,Master's Degree,education,PK
+13033,Reporting,analytical,PK
+13045,JavaScript,technical,PK
+13045,MySQL,tool,PK
+13045,PHP,technical,PK
+13048,HTML,technical,PK
+13050,C#,technical,PK
+13054,Python,technical,PK
+13059,Bachelor's Degree,education,PK
+13065,Master's Degree,education,PK
+13066,Master's Degree,education,PK
+13080,C#,technical,PK
+13080,Communication,business_soft,PK
+13083,Excel,tool,PK
+13089,C#,technical,PK
+13090,PHP,technical,PK
+13092,Master's Degree,education,PK
+13094,HTML,technical,PK
+13104,Communication,business_soft,PK
+13106,C#,technical,PK
+13106,Leadership,business_soft,PK
+13107,Communication,business_soft,PK
+13108,JavaScript,technical,PK
+13109,C++,technical,PK
+13109,JavaScript,technical,PK
+13111,Communication,business_soft,PK
+13124,Excel,tool,PK
+13130,Master's Degree,education,PK
+13136,PHP,technical,PK
+13145,PHP,technical,PK
+13146,Communication,business_soft,PK
+13148,Communication,business_soft,PK
+13151,C#,technical,PK
+13154,Communication,business_soft,PK
+13155,Communication,business_soft,PK
+13156,Communication,business_soft,PK
+13158,C#,technical,PK
+13158,Java,technical,PK
+13158,SQL,technical,PK
+13168,HTML,technical,PK
+13170,Data Governance,analytical,PK
+13170,Reporting,analytical,PK
+13176,Communication,business_soft,PK
+13176,Go,technical,PK
+13181,Communication,business_soft,PK
+13182,Excel,tool,PK
+13186,Diploma,education,PK
+13188,Business Intelligence,analytical,PK
+13191,JavaScript,technical,PK
+13191,MySQL,tool,PK
+13191,PHP,technical,PK
+13192,JavaScript,technical,PK
+13195,MySQL,tool,PK
+13195,PHP,technical,PK
+13196,JavaScript,technical,PK
+13196,TypeScript,technical,PK
+13203,MySQL,tool,PK
+13203,PHP,technical,PK
+13205,Communication,business_soft,PK
+13206,Excel,tool,PK
+13206,Reporting,analytical,PK
+13213,JavaScript,technical,PK
+13216,C#,technical,PK
+13216,CSS,technical,PK
+13216,HTML,technical,PK
+13216,JavaScript,technical,PK
+13216,SQL,technical,PK
+13219,PHP,technical,PK
+13220,Java,technical,PK
+13228,PHP,technical,PK
+13240,Communication,business_soft,PK
+13249,JavaScript,technical,PK
+13249,PHP,technical,PK
+13250,Excel,tool,PK
+13253,Communication,business_soft,PK
+13254,Java,technical,PK
+13254,PHP,technical,PK
+13256,Python,technical,PK
+13259,Communication,business_soft,PK
+13261,JavaScript,technical,PK
+13261,MongoDB,tool,PK
+13261,PHP,technical,PK
+13266,C#,technical,PK
+13267,Problem Solving,business_soft,PK
+13279,Communication,business_soft,PK
+13283,Leadership,business_soft,PK
+13285,PHP,technical,PK
+13293,Master's Degree,education,PK
+13294,Attention to Detail,business_soft,PK
+13302,Communication,business_soft,PK
+13303,TypeScript,technical,PK
+13304,TypeScript,technical,PK
+13310,Communication,business_soft,PK
+13312,Communication,business_soft,PK
+13314,Communication,business_soft,PK
+13318,Communication,business_soft,PK
+13320,Communication,business_soft,PK
+13322,PHP,technical,PK
+13331,Communication,business_soft,PK
+13333,Communication,business_soft,PK
+13335,C#,technical,PK
+13336,JavaScript,technical,PK
+13341,PHP,technical,PK
+13344,Java,technical,PK
+13353,CSS,technical,PK
+13353,HTML,technical,PK
+13354,PHP,technical,PK
+13355,PHP,technical,PK
+13356,Excel,tool,PK
+13358,Communication,business_soft,PK
+13358,PHP,technical,PK
+13360,CSS,technical,PK
+13360,HTML,technical,PK
+13360,MySQL,tool,PK
+13360,PHP,technical,PK
+13364,Machine Learning,ai_ml,PK
+13365,Machine Learning,ai_ml,PK
+13366,Java,technical,PK
+13367,Java,technical,PK
+13376,AWS,tool,PK
+13376,Communication,business_soft,PK
+13376,Java,technical,PK
+13380,C#,technical,PK
+13381,PHP,technical,PK
+13396,JavaScript,technical,PK
+13398,Communication,business_soft,PK
+13399,Project Management,business_soft,PK
+13402,Communication,business_soft,PK
+13405,CSS,technical,PK
+13405,HTML,technical,PK
+13405,Java,technical,PK
+13405,PHP,technical,PK
+13406,Excel,tool,PK
+13406,HTML,technical,PK
+13408,MySQL,tool,PK
+13408,PHP,technical,PK
+13412,PHP,technical,PK
+13413,Master's Degree,education,PK
+13415,Communication,business_soft,PK
+13425,Communication,business_soft,PK
+13425,JavaScript,technical,PK
+13427,AWS,tool,PK
+13432,PHP,technical,PK
+13436,Excel,tool,PK
+13437,Leadership,business_soft,PK
+13440,PHP,technical,PK
+13447,PHP,technical,PK
+13448,PHP,technical,PK
+13450,PHP,technical,PK
+13462,C++,technical,PK
+13462,Machine Learning,ai_ml,PK
+13462,Reporting,analytical,PK
+13464,PHP,technical,PK
+13465,Communication,business_soft,PK
+13468,PHP,technical,PK
+13484,PHP,technical,PK
+13492,C#,technical,PK
+13498,Bachelor's Degree,education,PK
+13499,JavaScript,technical,PK
+13499,PHP,technical,PK
+13500,C#,technical,PK
+13503,Excel,tool,PK
+13508,CSS,technical,PK
+13508,HTML,technical,PK
+13508,JavaScript,technical,PK
+13508,MySQL,tool,PK
+13508,PHP,technical,PK
+13518,Communication,business_soft,PK
+13523,Teamwork,business_soft,PK
+13524,Communication,business_soft,PK
+13526,Market Research,analytical,PK
+13530,Communication,business_soft,PK
+13532,PHP,technical,PK
+13533,Communication,business_soft,PK
+13534,Master's Degree,education,PK
+13543,Communication,business_soft,PK
+13545,PHP,technical,PK
+13552,HTML,technical,PK
+13553,C#,technical,PK
+13553,Communication,business_soft,PK
+13563,CSS,technical,PK
+13563,HTML,technical,PK
+13563,Java,technical,PK
+13563,PHP,technical,PK
+13567,C#,technical,PK
+13570,PHP,technical,PK
+13574,PHP,technical,PK
+13578,C#,technical,PK
+13593,Market Research,analytical,PK
+13596,CSS,technical,PK
+13596,HTML,technical,PK
+13596,PHP,technical,PK
+13598,Java,technical,PK
+13602,JavaScript,technical,PK
+13603,Project Management,business_soft,PK
+13605,Java,technical,PK
+13611,PHP,technical,PK
+13617,Excel,tool,PK
+13621,Communication,business_soft,PK
+13623,PHP,technical,PK
+13624,MongoDB,tool,PK
+13629,Communication,business_soft,PK
+13630,Communication,business_soft,PK
+13634,PHP,technical,PK
+13637,CSS,technical,PK
+13637,HTML,technical,PK
+13638,AWS,tool,PK
+13638,AWS Certified,certification,PK
+13638,Docker,tool,PK
+13638,MongoDB,tool,PK
+13641,MySQL,tool,PK
+13641,PHP,technical,PK
+13643,PHP,technical,PK
+13645,PHP,technical,PK
+13648,JavaScript,technical,PK
+13652,Communication,business_soft,PK
+13658,PHP,technical,PK
+13661,Communication,business_soft,PK
+13666,C#,technical,PK
+13668,Excel,tool,PK
+13668,VBA,technical,PK
+13669,SQL,technical,PK
+13669,VBA,technical,PK
+13679,Bachelor's Degree,education,PK
+13682,Communication,business_soft,PK
+13684,PHP,technical,PK
+13692,Communication,business_soft,PK
+13696,Project Management,business_soft,PK
+13700,Java,technical,PK
+13701,Communication,business_soft,PK
+13702,Python,technical,PK
+13703,Communication,business_soft,PK
+13704,PHP,technical,PK
+13710,Communication,business_soft,PK
+13722,PHP,technical,PK
+13724,Communication,business_soft,PK
+13730,Communication,business_soft,PK
+13736,C#,technical,PK
+13736,SQL,technical,PK
+13746,C#,technical,PK
+13746,JavaScript,technical,PK
+13746,SQL,technical,PK
+13749,PHP,technical,PK
+13752,Business Analysis,business_soft,PK
+13752,Project Management,business_soft,PK
+13757,Communication,business_soft,PK
+13774,PHP,technical,PK
+13775,Communication,business_soft,PK
+13775,PHP,technical,PK
+13782,PHP,technical,PK
+13783,PHP,technical,PK
+13784,AWS,tool,PK
+13784,Machine Learning,ai_ml,PK
+13785,AWS,tool,PK
+13795,PHP,technical,PK
+13796,C#,technical,PK
+13798,Communication,business_soft,PK
+13800,Communication,business_soft,PK
+13801,JavaScript,technical,PK
+13802,Market Research,analytical,PK
+13804,Communication,business_soft,PK
+13809,PHP,technical,PK
+13809,Project Management,business_soft,PK
+13810,PHP,technical,PK
+13813,Attention to Detail,business_soft,PK
+13817,MySQL,tool,PK
+13817,PHP,technical,PK
+13817,SQL,technical,PK
+13818,CSS,technical,PK
+13818,HTML,technical,PK
+13818,JavaScript,technical,PK
+13818,PHP,technical,PK
+13822,JavaScript,technical,PK
+13827,Reporting,analytical,PK
+13835,Statistics,analytical,PK
+13840,Excel,tool,PK
+13842,HTML,technical,PK
+13847,PHP,technical,PK
+13851,C#,technical,PK
+13856,CSS,technical,PK
+13856,HTML,technical,PK
+13857,PHP,technical,PK
+13860,C#,technical,PK
+13862,Data Governance,analytical,PK
+13865,Project Management,business_soft,PK
+13869,HTML,technical,PK
+13869,Java,technical,PK
+13869,MySQL,tool,PK
+13869,PHP,technical,PK
+13876,Attention to Detail,business_soft,PK
+13876,Java,technical,PK
+13879,CSS,technical,PK
+13879,HTML,technical,PK
+13879,Python,technical,PK
+13879,SQL,technical,PK
+13881,PHP,technical,PK
+13882,CSS,technical,PK
+13882,HTML,technical,PK
+13882,JavaScript,technical,PK
+13882,MySQL,tool,PK
+13882,PHP,technical,PK
+13889,MySQL,tool,PK
+13889,PHP,technical,PK
+13890,Communication,business_soft,PK
+13891,Business Intelligence,analytical,PK
+13894,CSS,technical,PK
+13894,HTML,technical,PK
+13894,JavaScript,technical,PK
+13894,PHP,technical,PK
+13895,CSS,technical,PK
+13895,HTML,technical,PK
+13896,Communication,business_soft,PK
+13904,PHP,technical,PK
+13905,Master's Degree,education,PK
+13908,Communication,business_soft,PK
+13908,Leadership,business_soft,PK
+13911,PHP,technical,PK
+13913,MySQL,tool,PK
+13913,PHP,technical,PK
+13918,Excel,tool,PK
+13926,Communication,business_soft,PK
+13941,JavaScript,technical,PK
+13945,Market Research,analytical,PK
+13955,Excel,tool,PK
+13959,PHP,technical,PK
+13959,Python,technical,PK
+13962,Communication,business_soft,PK
+13973,JavaScript,technical,PK
+13973,MySQL,tool,PK
+13973,PHP,technical,PK
+13974,AWS,tool,PK
+13977,Reporting,analytical,PK
+13982,Java,technical,PK
+13982,Project Management,business_soft,PK
+13983,Communication,business_soft,PK
+13983,Java,technical,PK
+13986,CSS,technical,PK
+13986,HTML,technical,PK
+13988,PHP,technical,PK
+13994,Bachelor's Degree,education,PK
+13994,Master's Degree,education,PK
+13994,Project Management,business_soft,PK
+13994,Scrum Master,certification,PK
+13996,PHP,technical,PK
+13997,Project Management,business_soft,PK
+24435,Attention to Detail,business_soft,GB
+24436,Reporting,analytical,GB
+24441,Reporting,analytical,GB
+24456,Business Intelligence,analytical,GB
+24456,Dashboarding,analytical,GB
+24456,Reporting,analytical,GB
+24456,Stakeholder Management,business_soft,GB
+24456,Tableau,tool,GB
+24459,Business Analysis,business_soft,GB
+24459,Business Intelligence,analytical,GB
+24459,Power BI,tool,GB
+24460,Excel,tool,GB
+24460,Python,technical,GB
+24460,R,technical,GB
+24461,Reporting,analytical,GB
+24466,Financial Analysis,analytical,GB
+24467,Leadership,business_soft,GB
+24468,Teamwork,business_soft,GB
+24470,Business Intelligence,analytical,GB
+24470,Reporting,analytical,GB
+24473,Reporting,analytical,GB
+24475,Data Modelling,analytical,GB
+24475,Excel,tool,GB
+24475,Power BI,tool,GB
+24475,SQL,technical,GB
+24476,Attention to Detail,business_soft,GB
+24477,Attention to Detail,business_soft,GB
+24478,Attention to Detail,business_soft,GB
+24479,Attention to Detail,business_soft,GB
+24480,Attention to Detail,business_soft,GB
+24481,Attention to Detail,business_soft,GB
+24483,Dashboarding,analytical,GB
+24483,Reporting,analytical,GB
+24487,Data Governance,analytical,GB
+24487,Reporting,analytical,GB
+24489,Dashboarding,analytical,GB
+24489,Reporting,analytical,GB
+24490,Dashboarding,analytical,GB
+24490,Reporting,analytical,GB
+24493,Leadership,business_soft,GB
+24497,Attention to Detail,business_soft,GB
+24499,Reporting,analytical,GB
+24500,Excel,tool,GB
+24503,Reporting,analytical,GB
+24504,SQL,technical,GB
+24505,Reporting,analytical,GB
+24511,Business Intelligence,analytical,GB
+24511,Data Governance,analytical,GB
+24511,Data Modelling,analytical,GB
+24511,Power BI,tool,GB
+24511,Reporting,analytical,GB
+24511,SQL,technical,GB
+24516,Reporting,analytical,GB
+24519,Python,technical,GB
+24519,R,technical,GB
+24522,Reporting,analytical,GB
+24523,Reporting,analytical,GB
+24524,Business Intelligence,analytical,GB
+24524,Dashboarding,analytical,GB
+24524,Data Modelling,analytical,GB
+24524,Power BI,tool,GB
+24524,Reporting,analytical,GB
+24528,Dashboarding,analytical,GB
+24528,Problem Solving,business_soft,GB
+24528,SQL,technical,GB
+24530,Business Intelligence,analytical,GB
+24530,Reporting,analytical,GB
+24533,Azure,tool,GB
+24533,Business Intelligence,analytical,GB
+24533,Communication,business_soft,GB
+24533,Data Governance,analytical,GB
+24533,Power BI,tool,GB
+24533,Reporting,analytical,GB
+24533,SQL,technical,GB
+24533,Stakeholder Management,business_soft,GB
+24536,Reporting,analytical,GB
+24538,Generative AI,ai_ml,GB
+24546,Reporting,analytical,GB
+24547,Business Intelligence,analytical,GB
+24547,Reporting,analytical,GB
+24562,Reporting,analytical,GB
+24563,Data Governance,analytical,GB
+24565,Business Intelligence,analytical,GB
+24565,Data Governance,analytical,GB
+24571,MongoDB,tool,GB
+24571,SQL,technical,GB
+24572,Reporting,analytical,GB
+24573,Reporting,analytical,GB
+24574,Python,technical,GB
+24574,SQL,technical,GB
+24576,Teamwork,business_soft,GB
+24577,Teamwork,business_soft,GB
+24578,Bachelor's Degree,education,GB
+24580,Attention to Detail,business_soft,GB
+24580,Business Analysis,business_soft,GB
+24580,Business Intelligence,analytical,GB
+24580,Dashboarding,analytical,GB
+24580,Excel,tool,GB
+24580,Power BI,tool,GB
+24580,Tableau,tool,GB
+24590,Attention to Detail,business_soft,GB
+24590,Statistical Analysis,analytical,GB
+24591,Attention to Detail,business_soft,GB
+24591,Statistical Analysis,analytical,GB
+24593,AWS,tool,GB
+24593,Generative AI,ai_ml,GB
+24597,Machine Learning,ai_ml,GB
+24602,Business Intelligence,analytical,GB
+24602,Dashboarding,analytical,GB
+24602,Data Governance,analytical,GB
+24602,Reporting,analytical,GB
+24602,SQL,technical,GB
+24606,Business Analysis,business_soft,GB
+24606,Google Cloud,tool,GB
+24606,HTML,technical,GB
+24606,Java,technical,GB
+24606,JavaScript,technical,GB
+24612,Generative AI,ai_ml,GB
+24613,Business Analysis,business_soft,GB
+24613,Reporting,analytical,GB
+24615,Data Governance,analytical,GB
+24616,Teamwork,business_soft,GB
+24626,Teamwork,business_soft,GB
+24632,Reporting,analytical,GB
+24634,Reporting,analytical,GB
+24638,Business Analysis,business_soft,GB
+24641,Attention to Detail,business_soft,GB
+24642,Data Governance,analytical,GB
+24643,Excel,tool,GB
+24643,Reporting,analytical,GB
+24643,SQL,technical,GB
+24645,Financial Analysis,analytical,GB
+24645,Reporting,analytical,GB
+24646,Data Governance,analytical,GB
+24647,Machine Learning,ai_ml,GB
+24648,Reporting,analytical,GB
+24651,Attention to Detail,business_soft,GB
+24651,Data Governance,analytical,GB
+24651,Reporting,analytical,GB
+24652,Attention to Detail,business_soft,GB
+24652,Data Governance,analytical,GB
+24652,Reporting,analytical,GB
+24653,Reporting,analytical,GB
+24653,SQL,technical,GB
+24654,Leadership,business_soft,GB
+24655,Reporting,analytical,GB
+24655,SQL,technical,GB
+24658,Market Research,analytical,GB
+24661,Attention to Detail,business_soft,GB
+24662,Reporting,analytical,GB
+24676,Reporting,analytical,GB
+24677,A/B Testing,analytical,GB
+24678,Problem Solving,business_soft,GB
+24682,Reporting,analytical,GB
+24683,A/B Testing,analytical,GB
+24685,Dashboarding,analytical,GB
+24685,Data Modelling,analytical,GB
+24686,Data Governance,analytical,GB
+24687,Project Management,business_soft,GB
+24688,Data Governance,analytical,GB
+24689,ETL,analytical,GB
+24690,Business Analysis,business_soft,GB
+24690,Data Governance,analytical,GB
+24690,Project Management,business_soft,GB
+24690,Reporting,analytical,GB
+24691,Data Governance,analytical,GB
+24692,Data Governance,analytical,GB
+24692,Reporting,analytical,GB
+24696,Data Governance,analytical,GB
+24699,Azure,tool,GB
+24702,Data Governance,analytical,GB
+24704,Reporting,analytical,GB
+24705,Data Governance,analytical,GB
+24707,Python,technical,GB
+24708,Data Governance,analytical,GB
+24713,Data Governance,analytical,GB
+24714,Data Governance,analytical,GB
+24715,Business Analysis,business_soft,GB
+24717,Data Governance,analytical,GB
+24720,Data Governance,analytical,GB
+24722,Data Governance,analytical,GB
+24725,Attention to Detail,business_soft,GB
+24725,Data Governance,analytical,GB
+24726,Dashboarding,analytical,GB
+24726,Reporting,analytical,GB
+24727,Data Governance,analytical,GB
+24727,Stakeholder Management,business_soft,GB
+24731,Teamwork,business_soft,GB
+24735,Leadership,business_soft,GB
+24735,Reporting,analytical,GB
+24736,Attention to Detail,business_soft,GB
+24736,Data Governance,analytical,GB
+24737,Reporting,analytical,GB
+24738,Project Management,business_soft,GB
+24739,Data Governance,analytical,GB
+24752,Data Governance,analytical,GB
+24753,Data Governance,analytical,GB
+24753,Leadership,business_soft,GB
+24757,Data Governance,analytical,GB
+24758,Communication,business_soft,GB
+24758,Project Management,business_soft,GB
+24758,Stakeholder Management,business_soft,GB
+24764,Data Governance,analytical,GB
+24768,Data Governance,analytical,GB
+24770,Reporting,analytical,GB
+24771,Data Governance,analytical,GB
+24773,Data Governance,analytical,GB
+24775,Data Governance,analytical,GB
+24775,Reporting,analytical,GB
+24777,Teamwork,business_soft,GB
+24785,Teamwork,business_soft,GB
+24786,Teamwork,business_soft,GB
+24790,Data Governance,analytical,GB
+24791,Communication,business_soft,GB
+24794,SQL,technical,GB
+24795,Business Intelligence,analytical,GB
+24795,ETL,analytical,GB
+24795,Reporting,analytical,GB
+24796,AWS,tool,GB
+24796,Airflow,tool,GB
+24796,SQL,technical,GB
+24796,Snowflake,tool,GB
+24797,Go,technical,GB
+24798,Data Governance,analytical,GB
+24799,Data Governance,analytical,GB
+24800,Reporting,analytical,GB
+24802,Business Intelligence,analytical,GB
+24802,Generative AI,ai_ml,GB
+24803,Data Governance,analytical,GB
+24804,Azure,tool,GB
+24805,Communication,business_soft,GB
+24806,Data Governance,analytical,GB
+24806,Leadership,business_soft,GB
+24806,Reporting,analytical,GB
+24809,Data Governance,analytical,GB
+24811,Communication,business_soft,GB
+24812,Business Intelligence,analytical,GB
+24812,Power BI,tool,GB
+24812,Reporting,analytical,GB
+24813,Data Modelling,analytical,GB
+24813,Reporting,analytical,GB
+24814,Data Governance,analytical,GB
+24814,Reporting,analytical,GB
+24815,Machine Learning,ai_ml,GB
+24815,Python,technical,GB
+24815,SQL,technical,GB
+24817,ETL,analytical,GB
+24821,Reporting,analytical,GB
+24826,Data Governance,analytical,GB
+24827,Machine Learning,ai_ml,GB
+24829,SQL,technical,GB
+24831,Leadership,business_soft,GB
+24833,Data Governance,analytical,GB
+24835,Data Governance,analytical,GB
+24835,Leadership,business_soft,GB
+24835,Reporting,analytical,GB
+24836,Apache Spark,tool,GB
+24836,Azure,tool,GB
+24836,Databricks,tool,GB
+24836,Python,technical,GB
+24836,SQL,technical,GB
+24836,Teamwork,business_soft,GB
+24839,Data Modelling,analytical,GB
+24843,Business Intelligence,analytical,GB
+24844,Business Intelligence,analytical,GB
+24844,Machine Learning,ai_ml,GB
+24845,Financial Analysis,analytical,GB
+24847,Business Intelligence,analytical,GB
+24847,Power BI,tool,GB
+24847,Reporting,analytical,GB
+24848,Business Analysis,business_soft,GB
+24849,Leadership,business_soft,GB
+24851,Teamwork,business_soft,GB
+24852,Leadership,business_soft,GB
+24852,Reporting,analytical,GB
+24854,Business Intelligence,analytical,GB
+24856,Leadership,business_soft,GB
+24857,Leadership,business_soft,GB
+24860,Project Management,business_soft,GB
+24862,Data Governance,analytical,GB
+24862,Data Modelling,analytical,GB
+24862,Master's Degree,education,GB
+24863,Master's Degree,education,GB
+24864,Apache Spark,tool,GB
+24864,Azure,tool,GB
+24864,Databricks,tool,GB
+24864,Leadership,business_soft,GB
+24864,Python,technical,GB
+24864,SQL,technical,GB
+24870,Business Intelligence,analytical,GB
+24870,Leadership,business_soft,GB
+24871,Google Cloud,tool,GB
+24880,AWS,tool,GB
+24880,Bachelor's Degree,education,GB
+24880,Python,technical,GB
+24885,AWS,tool,GB
+24897,Reporting,analytical,GB
+24900,Master's Degree,education,GB
+24900,Project Management,business_soft,GB
+24900,Scrum Master,certification,GB
+24902,Machine Learning,ai_ml,GB
+24903,Attention to Detail,business_soft,GB
+24903,Reporting,analytical,GB
+24904,Google Cloud,tool,GB
+24904,Machine Learning,ai_ml,GB
+24906,Communication,business_soft,GB
+24906,Generative AI,ai_ml,GB
+24910,Reporting,analytical,GB
+24920,Databricks,tool,GB
+24924,Financial Analysis,analytical,GB
+24924,Forecasting,analytical,GB
+24925,Data Governance,analytical,GB
+24928,ETL,analytical,GB
+24928,Project Management,business_soft,GB
+24928,Reporting,analytical,GB
+24929,Leadership,business_soft,GB
+24944,Google Cloud,tool,GB
+24945,Google Cloud,tool,GB
+24946,Data Governance,analytical,GB
+24948,A/B Testing,analytical,GB
+24949,Machine Learning,ai_ml,GB
+24950,Data Modelling,analytical,GB
+24953,Data Modelling,analytical,GB
+24953,Leadership,business_soft,GB
+24954,Databricks,tool,GB
+24959,Leadership,business_soft,GB
+24962,Teamwork,business_soft,GB
+24965,Machine Learning,ai_ml,GB
+24966,SQL,technical,GB
+24966,Snowflake,tool,GB
+24979,Apache Spark,tool,GB
+24979,Azure,tool,GB
+24979,Databricks,tool,GB
+24979,Python,technical,GB
+24979,SQL,technical,GB
+24979,Scala,technical,GB
+24980,Business Intelligence,analytical,GB
+24986,Bachelor's Degree,education,GB
+24988,Stakeholder Management,business_soft,GB
+24989,Machine Learning,ai_ml,GB
+24997,Azure,tool,GB
+24997,C#,technical,GB
+24998,Machine Learning,ai_ml,GB
+24998,Python,technical,GB
+24999,Business Analysis,business_soft,GB
+25000,Machine Learning,ai_ml,GB
+25003,Leadership,business_soft,GB
+25003,Machine Learning,ai_ml,GB
+25006,Go,technical,GB
+25007,Machine Learning,ai_ml,GB
+25009,Leadership,business_soft,GB
+25011,Machine Learning,ai_ml,GB
+25014,Leadership,business_soft,GB
+25014,Snowflake,tool,GB
+25016,Machine Learning,ai_ml,GB
+25017,Business Intelligence,analytical,GB
+25017,Power BI,tool,GB
+25017,Reporting,analytical,GB
+25017,SQL,technical,GB
+25018,Teamwork,business_soft,GB
+25019,Teamwork,business_soft,GB
+25020,Teamwork,business_soft,GB
+25023,Reporting,analytical,GB
+25025,Leadership,business_soft,GB
+25025,Reporting,analytical,GB
+25028,Financial Analysis,analytical,GB
+25030,A/B Testing,analytical,GB
+25030,Machine Learning,ai_ml,GB
+25031,Data Governance,analytical,GB
+25033,Business Intelligence,analytical,GB
+25033,Power BI,tool,GB
+25033,Reporting,analytical,GB
+25034,AWS,tool,GB
+25034,Data Governance,analytical,GB
+25034,Data Modelling,analytical,GB
+25036,Financial Analysis,analytical,GB
+25037,ETL,analytical,GB
+25045,AWS,tool,GB
+25045,Reporting,analytical,GB
+25045,Snowflake,tool,GB
+25045,dbt,tool,GB
+25047,Financial Analysis,analytical,GB
+25047,Python,technical,GB
+25050,Excel,tool,GB
+25059,Leadership,business_soft,GB
+25059,Master's Degree,education,GB
+25059,Python,technical,GB
+25059,R,technical,GB
+25059,SQL,technical,GB
+25059,Statistical Analysis,analytical,GB
+25059,Statistics,analytical,GB
+25060,Data Governance,analytical,GB
+25062,Dashboarding,analytical,GB
+25064,Snowflake,tool,GB
+25065,ETL,analytical,GB
+25067,Snowflake,tool,GB
+25070,Leadership,business_soft,GB
+25072,ETL,analytical,GB
+25073,Data Governance,analytical,GB
+25079,Machine Learning,ai_ml,GB
+25080,Machine Learning,ai_ml,GB
+25080,Reporting,analytical,GB
+25083,AWS,tool,GB
+25083,Databricks,tool,GB
+25086,Snowflake,tool,GB
+25089,AWS,tool,GB
+25091,Reporting,analytical,GB
+25093,Snowflake,tool,GB
+25097,Leadership,business_soft,GB
+25097,Teamwork,business_soft,GB
+25104,C++,technical,GB
+25104,Java,technical,GB
+25104,Python,technical,GB
+25105,Statistical Analysis,analytical,GB
+25111,Financial Analysis,analytical,GB
+25116,Business Intelligence,analytical,GB
+25117,Business Intelligence,analytical,GB
+25117,Reporting,analytical,GB
+25122,AWS,tool,GB
+25122,Azure,tool,GB
+25122,BigQuery,tool,GB
+25122,Google Cloud,tool,GB
+25123,Reporting,analytical,GB
+25128,Reporting,analytical,GB
+25136,Go,technical,GB
+25136,Machine Learning,ai_ml,GB
+25143,AWS,tool,GB
+25143,Attention to Detail,business_soft,GB
+25143,ETL,analytical,GB
+25145,Leadership,business_soft,GB
+25146,Leadership,business_soft,GB
+25148,Business Analysis,business_soft,GB
+25151,Master's Degree,education,GB
+25151,Statistics,analytical,GB
+25152,Master's Degree,education,GB
+25153,AWS,tool,GB
+25154,AWS,tool,GB
+25154,Attention to Detail,business_soft,GB
+25154,ETL,analytical,GB
+25159,Reporting,analytical,GB
+25160,Reporting,analytical,GB
+25163,Data Governance,analytical,GB
+25163,Master's Degree,education,GB
+25164,AWS,tool,GB
+25164,Data Modelling,analytical,GB
+25165,Business Analysis,business_soft,GB
+25165,Business Intelligence,analytical,GB
+25165,Excel,tool,GB
+25165,Power BI,tool,GB
+25165,Python,technical,GB
+25165,Reporting,analytical,GB
+25165,SQL,technical,GB
+25172,ETL,analytical,GB
+25173,Leadership,business_soft,GB
+25174,Python,technical,GB
+25175,C#,technical,GB
+25179,Time Management,business_soft,GB
+25181,Financial Analysis,analytical,GB
+25182,Financial Analysis,analytical,GB
+25183,Reporting,analytical,GB
+25184,Business Intelligence,analytical,GB
+25185,Business Intelligence,analytical,GB
+25185,Tableau,tool,GB
+25186,Business Intelligence,analytical,GB
+25186,Machine Learning,ai_ml,GB
+25187,Business Intelligence,analytical,GB
+25188,Business Intelligence,analytical,GB
+25189,Business Intelligence,analytical,GB
+25190,Business Intelligence,analytical,GB
+25190,Machine Learning,ai_ml,GB
+25191,Business Intelligence,analytical,GB
+25192,Business Analysis,business_soft,GB
+25192,Business Intelligence,analytical,GB
+25192,Excel,tool,GB
+25192,Power BI,tool,GB
+25192,Python,technical,GB
+25192,Reporting,analytical,GB
+25192,SQL,technical,GB
+25193,Business Intelligence,analytical,GB
+25193,Data Governance,analytical,GB
+25194,Business Intelligence,analytical,GB
+25195,Business Intelligence,analytical,GB
+25195,Reporting,analytical,GB
+25195,Tableau,tool,GB
+25200,Dashboarding,analytical,GB
+25200,Reporting,analytical,GB
+25201,Business Intelligence,analytical,GB
+25201,Reporting,analytical,GB
+25203,Business Intelligence,analytical,GB
+25207,Business Intelligence,analytical,GB
+25207,Generative AI,ai_ml,GB
+25211,Business Intelligence,analytical,GB
+25212,Generative AI,ai_ml,GB
+25215,Business Intelligence,analytical,GB
+25216,Business Intelligence,analytical,GB
+25217,Business Intelligence,analytical,GB
+25217,Dashboarding,analytical,GB
+25217,Reporting,analytical,GB
+25217,Tableau,tool,GB
+25218,Business Intelligence,analytical,GB
+25219,Business Intelligence,analytical,GB
+25219,Generative AI,ai_ml,GB
+25220,Business Intelligence,analytical,GB
+25220,Reporting,analytical,GB
+25220,Tableau,tool,GB
+25221,Business Intelligence,analytical,GB
+25221,Power BI,tool,GB
+25222,Business Intelligence,analytical,GB
+25222,Data Modelling,analytical,GB
+25222,SQL,technical,GB
+25222,Tableau,tool,GB
+25223,Business Intelligence,analytical,GB
+25224,Business Intelligence,analytical,GB
+25224,Power BI,tool,GB
+25224,Reporting,analytical,GB
+25225,Business Intelligence,analytical,GB
+25225,Data Modelling,analytical,GB
+25225,SQL,technical,GB
+25225,Tableau,tool,GB
+25226,Business Analysis,business_soft,GB
+25226,Business Intelligence,analytical,GB
+25226,Excel,tool,GB
+25226,Power BI,tool,GB
+25226,Python,technical,GB
+25226,Reporting,analytical,GB
+25226,SQL,technical,GB
+25230,Reporting,analytical,GB
+25231,Business Intelligence,analytical,GB
+25232,Business Intelligence,analytical,GB
+25232,Machine Learning,ai_ml,GB
+25234,Business Intelligence,analytical,GB
+25234,Reporting,analytical,GB
+25235,ETL,analytical,GB
+25236,Communication,business_soft,GB
+25237,Reporting,analytical,GB
+25238,Reporting,analytical,GB
+25239,Reporting,analytical,GB
+25240,Azure,tool,GB
+25240,Snowflake,tool,GB
+25241,Business Intelligence,analytical,GB
+25241,Dashboarding,analytical,GB
+25241,Data Modelling,analytical,GB
+25241,Power BI,tool,GB
+25241,Reporting,analytical,GB
+25247,Reporting,analytical,GB
+25248,Reporting,analytical,GB
+25249,Reporting,analytical,GB
+25250,Project Management,business_soft,GB
+25251,Generative AI,ai_ml,GB
+25252,Reporting,analytical,GB
+25253,Reporting,analytical,GB
+25254,Reporting,analytical,GB
+25257,Business Intelligence,analytical,GB
+25263,MongoDB,tool,GB
+25263,SQL,technical,GB
+25264,Business Intelligence,analytical,GB
+25264,Power BI,tool,GB
+25264,Reporting,analytical,GB
+25266,Azure,tool,GB
+25266,Snowflake,tool,GB
+25267,Business Intelligence,analytical,GB
+25270,Business Intelligence,analytical,GB
+25272,Go,technical,GB
+25273,Business Intelligence,analytical,GB
+25273,Data Governance,analytical,GB
+25279,Reporting,analytical,GB
+25280,Reporting,analytical,GB
+25281,Reporting,analytical,GB
+25282,Reporting,analytical,GB
+25283,Reporting,analytical,GB
+25284,Reporting,analytical,GB
+25285,Reporting,analytical,GB
+25286,Reporting,analytical,GB
+25287,Reporting,analytical,GB
+25288,Reporting,analytical,GB
+25289,Reporting,analytical,GB
+25290,Reporting,analytical,GB
+25291,Communication,business_soft,GB
+25291,Reporting,analytical,GB
+25292,Reporting,analytical,GB
+25293,Reporting,analytical,GB
+25294,Reporting,analytical,GB
+25295,Reporting,analytical,GB
+25295,Teamwork,business_soft,GB
+25296,Financial Analysis,analytical,GB
+25296,Reporting,analytical,GB
+25297,Reporting,analytical,GB
+25298,Reporting,analytical,GB
+25299,Reporting,analytical,GB
+25300,Reporting,analytical,GB
+25301,Reporting,analytical,GB
+25302,Dashboarding,analytical,GB
+25302,Reporting,analytical,GB
+25303,Reporting,analytical,GB
+25304,Reporting,analytical,GB
+25305,Reporting,analytical,GB
+25307,Reporting,analytical,GB
+25308,Reporting,analytical,GB
+25309,Reporting,analytical,GB
+25310,Reporting,analytical,GB
+25311,Reporting,analytical,GB
+25312,Reporting,analytical,GB
+25313,Reporting,analytical,GB
+25314,Reporting,analytical,GB
+25315,Reporting,analytical,GB
+25316,Reporting,analytical,GB
+25317,Reporting,analytical,GB
+25318,Reporting,analytical,GB
+25319,Reporting,analytical,GB
+25320,Reporting,analytical,GB
+25321,Financial Analysis,analytical,GB
+25321,Go,technical,GB
+25321,Reporting,analytical,GB
+25322,Bachelor's Degree,education,GB
+25322,Go,technical,GB
+25322,Reporting,analytical,GB
+25323,Leadership,business_soft,GB
+25324,Dashboarding,analytical,GB
+25324,Reporting,analytical,GB
+25325,Bachelor's Degree,education,GB
+25329,Financial Analysis,analytical,GB
+25329,Reporting,analytical,GB
+25331,MongoDB,tool,GB
+25331,SQL,technical,GB
+25336,Leadership,business_soft,GB
+25337,Business Intelligence,analytical,GB
+25337,Power BI,tool,GB
+25337,Reporting,analytical,GB
+25342,Reporting,analytical,GB
+25343,Teamwork,business_soft,GB
+25345,Reporting,analytical,GB
+25349,Communication,business_soft,GB
+25352,Reporting,analytical,GB
+25353,Business Analysis,business_soft,GB
+25353,Reporting,analytical,GB
+25357,Go,technical,GB
+25360,Reporting,analytical,GB
+25361,Project Management,business_soft,GB
+25362,Reporting,analytical,GB
+25363,Reporting,analytical,GB
+25365,Attention to Detail,business_soft,GB
+25365,Data Governance,analytical,GB
+25365,Reporting,analytical,GB
+25366,Leadership,business_soft,GB
+25366,Reporting,analytical,GB
+25367,Reporting,analytical,GB
+25371,Bachelor's Degree,education,GB
+25371,Reporting,analytical,GB
+25373,Reporting,analytical,GB
+25375,Leadership,business_soft,GB
+25376,Bachelor's Degree,education,GB
+25376,Reporting,analytical,GB
+25377,Bachelor's Degree,education,GB
+25377,Reporting,analytical,GB
+25378,Reporting,analytical,GB
+25379,Reporting,analytical,GB
+25383,Reporting,analytical,GB
+25386,Reporting,analytical,GB
+25388,Reporting,analytical,GB
+25391,AWS,tool,GB
+25393,Attention to Detail,business_soft,GB
+25393,Data Governance,analytical,GB
+25393,Reporting,analytical,GB
+25394,Attention to Detail,business_soft,GB
+25394,Data Governance,analytical,GB
+25394,Reporting,analytical,GB
+25397,Reporting,analytical,GB
+25398,Reporting,analytical,GB
+25407,Financial Analysis,analytical,GB
+25408,Reporting,analytical,GB
+25409,Financial Analysis,analytical,GB
+25411,Project Management,business_soft,GB
+25412,Reporting,analytical,GB
+25417,Teamwork,business_soft,GB
+25418,AWS,tool,GB
+25420,Teamwork,business_soft,GB
+25427,Reporting,analytical,GB
+25429,Project Management,business_soft,GB
+25436,Leadership,business_soft,GB
+25436,Reporting,analytical,GB
+25438,Leadership,business_soft,GB
+25438,Reporting,analytical,GB
+25439,Business Analysis,business_soft,GB
+25439,Business Intelligence,analytical,GB
+25439,Excel,tool,GB
+25439,Power BI,tool,GB
+25439,Python,technical,GB
+25439,Reporting,analytical,GB
+25439,SQL,technical,GB
+25440,Time Management,business_soft,GB
+25444,Leadership,business_soft,GB
+25445,Reporting,analytical,GB
+25449,Azure,tool,GB
+25449,Data Governance,analytical,GB
+25449,Data Modelling,analytical,GB
+25449,Databricks,tool,GB
+25454,Reporting,analytical,GB
+25457,Reporting,analytical,GB
+25461,Leadership,business_soft,GB
+25465,Project Management,business_soft,GB
+25471,Reporting,analytical,GB
+25472,Python,technical,GB
+25472,Reporting,analytical,GB
+25473,Business Intelligence,analytical,GB
+25474,Snowflake,tool,GB
+25475,Leadership,business_soft,GB
+25478,Machine Learning,ai_ml,GB
+25479,Machine Learning,ai_ml,GB
+25481,Reporting,analytical,GB
+25491,PhD,education,GB
+25491,Problem Solving,business_soft,GB
+25496,Reporting,analytical,GB
+25499,Data Governance,analytical,GB
+25501,Problem Solving,business_soft,GB
+25504,Business Intelligence,analytical,GB
+25504,Power BI,tool,GB
+25504,Reporting,analytical,GB
+25504,SQL,technical,GB
+25507,Problem Solving,business_soft,GB
+25508,Business Intelligence,analytical,GB
+25508,Dashboarding,analytical,GB
+25508,Reporting,analytical,GB
+25508,Stakeholder Management,business_soft,GB
+25508,Tableau,tool,GB
+25518,Excel,tool,GB
+25519,Excel,tool,GB
+25520,Excel,tool,GB
+25523,Excel,tool,GB
+25524,Excel,tool,GB
+25525,Excel,tool,GB
+25526,Attention to Detail,business_soft,GB
+25526,Excel,tool,GB
+25529,Attention to Detail,business_soft,GB
+25532,Financial Analysis,analytical,GB
+25532,Reporting,analytical,GB
+25533,Leadership,business_soft,GB
+25535,Azure,tool,GB
+25539,Financial Analysis,analytical,GB
+25540,Leadership,business_soft,GB
+25542,Problem Solving,business_soft,GB
+25544,Problem Solving,business_soft,GB
+25547,Attention to Detail,business_soft,GB
+25547,Problem Solving,business_soft,GB
+25548,Reporting,analytical,GB
+25549,Data Governance,analytical,GB
+25551,Reporting,analytical,GB
+25553,Communication,business_soft,GB
+25553,Leadership,business_soft,GB
+25553,Stakeholder Management,business_soft,GB
+25554,A/B Testing,analytical,GB
+25558,Attention to Detail,business_soft,GB
+25559,Attention to Detail,business_soft,GB
+25560,Attention to Detail,business_soft,GB
+25561,Attention to Detail,business_soft,GB
+25562,Attention to Detail,business_soft,GB
+25563,Attention to Detail,business_soft,GB
+25564,Financial Analysis,analytical,GB
+25564,Teamwork,business_soft,GB
+25565,Data Governance,analytical,GB
+25566,Reporting,analytical,GB
+25567,A/B Testing,analytical,GB
+25576,Business Intelligence,analytical,GB
+25576,Machine Learning,ai_ml,GB
+25581,Reporting,analytical,GB
+25582,Go,technical,GB
+25584,Communication,business_soft,GB
+25585,Reporting,analytical,GB
+25586,Data Governance,analytical,GB
+25586,Reporting,analytical,GB
+25587,Dashboarding,analytical,GB
+25587,Reporting,analytical,GB
+25599,Attention to Detail,business_soft,GB
+25599,Data Governance,analytical,GB
+25599,Reporting,analytical,GB
+25600,Attention to Detail,business_soft,GB
+25600,Data Governance,analytical,GB
+25600,Reporting,analytical,GB
+25601,Financial Analysis,analytical,GB
+25603,Business Intelligence,analytical,GB
+25611,Reporting,analytical,GB
+25612,Reporting,analytical,GB
+25616,Financial Analysis,analytical,GB
+25619,Reporting,analytical,GB
+25620,Data Governance,analytical,GB
+25627,Master's Degree,education,GB
+25629,Apache Spark,tool,GB
+25629,Azure,tool,GB
+25629,Databricks,tool,GB
+25629,Python,technical,GB
+25629,SQL,technical,GB
+25629,Scala,technical,GB
+25630,Machine Learning,ai_ml,GB
+25634,Reporting,analytical,GB
+25638,Business Analysis,business_soft,GB
+25644,Machine Learning,ai_ml,GB
+25654,Machine Learning,ai_ml,GB
+25663,Reporting,analytical,GB
+25664,Reporting,analytical,GB
+25693,Business Intelligence,analytical,GB
+25693,Generative AI,ai_ml,GB
+25699,Problem Solving,business_soft,GB
+25703,Reporting,analytical,GB
+25705,Leadership,business_soft,GB
+25706,Looker,tool,GB
+25706,SQL,technical,GB
+25706,Snowflake,tool,GB
+25707,BigQuery,tool,GB
+25707,Google Cloud,tool,GB
+25707,Machine Learning,ai_ml,GB
+25707,Snowflake,tool,GB
+25708,Project Management,business_soft,GB
+25709,Leadership,business_soft,GB
+25711,Teamwork,business_soft,GB
+25715,Leadership,business_soft,GB
+25715,Reporting,analytical,GB
+25716,Leadership,business_soft,GB
+25717,SQL,technical,GB
+25720,ETL,analytical,GB
+25721,Leadership,business_soft,GB
+25722,Reporting,analytical,GB
+25723,Business Intelligence,analytical,GB
+25723,ETL,analytical,GB
+25728,Databricks,tool,GB
+25729,Databricks,tool,GB
+25730,Teamwork,business_soft,GB
+25734,Project Management,business_soft,GB
+25734,Stakeholder Management,business_soft,GB
+25735,Communication,business_soft,GB
+25737,Communication,business_soft,GB
+25739,Leadership,business_soft,GB
+25742,Data Modelling,analytical,GB
+25747,Project Management,business_soft,GB
+25747,Stakeholder Management,business_soft,GB
+25749,Teamwork,business_soft,GB
+25760,Business Intelligence,analytical,GB
+25763,Market Research,analytical,GB
+25765,Stakeholder Management,business_soft,GB
+25767,Python,technical,GB
+25768,A/B Testing,analytical,GB
+25768,Generative AI,ai_ml,GB
+25769,Attention to Detail,business_soft,GB
+25769,Business Intelligence,analytical,GB
+25769,Leadership,business_soft,GB
+25770,Attention to Detail,business_soft,GB
+25770,Business Intelligence,analytical,GB
+25770,Leadership,business_soft,GB
+25773,Reporting,analytical,GB
+25774,Bachelor's Degree,education,GB
+25780,Machine Learning,ai_ml,GB
+25780,Teamwork,business_soft,GB
+25781,Data Modelling,analytical,GB
+25784,Leadership,business_soft,GB
+25786,Leadership,business_soft,GB
+25787,Databricks,tool,GB
+25789,Machine Learning,ai_ml,GB
+25790,Teamwork,business_soft,GB
+25791,Business Intelligence,analytical,GB
+25791,Tableau,tool,GB
+25794,Leadership,business_soft,GB
+25795,Business Intelligence,analytical,GB
+25795,Reporting,analytical,GB
+25795,Tableau,tool,GB
+25796,Reporting,analytical,GB
+25799,Leadership,business_soft,GB
+25800,Reporting,analytical,GB
+25801,Azure,tool,GB
+25801,Databricks,tool,GB
+25801,SQL,technical,GB
+25802,A/B Testing,analytical,GB
+25804,Data Governance,analytical,GB
+25808,Google Cloud,tool,GB
+25809,Data Modelling,analytical,GB
+25809,Machine Learning,ai_ml,GB
+25811,Business Intelligence,analytical,GB
+25811,Dashboarding,analytical,GB
+25811,Reporting,analytical,GB
+25811,Tableau,tool,GB
+25814,Teamwork,business_soft,GB
+25815,Leadership,business_soft,GB
+25816,Machine Learning,ai_ml,GB
+25817,Teamwork,business_soft,GB
+25823,Reporting,analytical,GB
+25824,Business Analysis,business_soft,GB
+25827,A/B Testing,analytical,GB
+25827,Generative AI,ai_ml,GB
+25828,Leadership,business_soft,GB
+25832,Business Intelligence,analytical,GB
+25832,Leadership,business_soft,GB
+25837,Machine Learning,ai_ml,GB
+25838,Azure,tool,GB
+25841,Machine Learning,ai_ml,GB
+25843,Leadership,business_soft,GB
+25846,A/B Testing,analytical,GB
+25846,Leadership,business_soft,GB
+25847,Machine Learning,ai_ml,GB
+25851,Machine Learning,ai_ml,GB
+25855,A/B Testing,analytical,GB
+25856,Leadership,business_soft,GB
+25856,Reporting,analytical,GB
+25860,A/B Testing,analytical,GB
+25861,A/B Testing,analytical,GB
+25864,Leadership,business_soft,GB
+25866,Generative AI,ai_ml,GB
+25866,Machine Learning,ai_ml,GB
+25867,A/B Testing,analytical,GB
+25868,A/B Testing,analytical,GB
+25868,Generative AI,ai_ml,GB
+25868,Machine Learning,ai_ml,GB
+25868,NLP,ai_ml,GB
+25870,Leadership,business_soft,GB
+25870,Teamwork,business_soft,GB
+25872,Leadership,business_soft,GB
+25872,Reporting,analytical,GB
+25874,Machine Learning,ai_ml,GB
+25875,Data Modelling,analytical,GB
+25878,Leadership,business_soft,GB
+25882,A/B Testing,analytical,GB
+25884,Dashboarding,analytical,GB
+25884,Leadership,business_soft,GB
+25885,Excel,tool,GB
+25885,Reporting,analytical,GB
+25888,Financial Analysis,analytical,GB
+25889,Attention to Detail,business_soft,GB
+25889,Reporting,analytical,GB
+25891,Machine Learning,ai_ml,GB
+25892,Teamwork,business_soft,GB
+25895,A/B Testing,analytical,GB
+25897,Data Governance,analytical,GB
+25899,Git,tool,GB
+25901,Business Intelligence,analytical,GB
+25902,Leadership,business_soft,GB
+25903,Leadership,business_soft,GB
+25903,Teamwork,business_soft,GB
+25907,Attention to Detail,business_soft,GB
+25907,Business Analysis,business_soft,GB
+25907,Business Intelligence,analytical,GB
+25907,Project Management,business_soft,GB
+25907,Reporting,analytical,GB
+25907,Stakeholder Management,business_soft,GB
+25909,Reporting,analytical,GB
+25910,Machine Learning,ai_ml,GB
+25910,Statistical Analysis,analytical,GB
+25915,Business Intelligence,analytical,GB
+25915,Reporting,analytical,GB
+25915,SQL,technical,GB
+25918,Market Research,analytical,GB
+25920,Attention to Detail,business_soft,GB
+25922,Reporting,analytical,GB
+25923,Communication,business_soft,GB
+25924,Communication,business_soft,GB
+25925,Communication,business_soft,GB
+25930,Data Governance,analytical,GB
+25930,Reporting,analytical,GB
+25934,Reporting,analytical,GB
+25935,Reporting,analytical,GB
+25936,Leadership,business_soft,GB
+25937,Excel,tool,GB
+25937,Leadership,business_soft,GB
+25938,Leadership,business_soft,GB
+25938,Machine Learning,ai_ml,GB
+25938,Market Research,analytical,GB
+25940,Communication,business_soft,GB
+25940,Python,technical,GB
+25940,R,technical,GB
+25942,Computer Vision,ai_ml,GB
+25942,Machine Learning,ai_ml,GB
+25943,SAS,technical,GB
+25945,Communication,business_soft,GB
+25946,Reporting,analytical,GB
+25947,Attention to Detail,business_soft,GB
+25948,C#,technical,GB
+25949,Leadership,business_soft,GB
+25949,Reporting,analytical,GB
+25949,Stakeholder Management,business_soft,GB
+25954,Business Intelligence,analytical,GB
+25954,Reporting,analytical,GB
+25955,C++,technical,GB
+25955,Python,technical,GB
+25956,C++,technical,GB
+25957,Business Analysis,business_soft,GB
+25957,Reporting,analytical,GB
+25959,Azure,tool,GB
+25959,C#,technical,GB
+25959,CSS,technical,GB
+25959,HTML,technical,GB
+25959,Project Management,business_soft,GB
+25960,Financial Analysis,analytical,GB
+25960,Reporting,analytical,GB
+25961,Azure,tool,GB
+25964,Machine Learning,ai_ml,GB
+25968,Azure,tool,GB
+25968,C#,technical,GB
+25968,CSS,technical,GB
+25968,HTML,technical,GB
+25968,Project Management,business_soft,GB
+25969,Reporting,analytical,GB
+25974,Databricks,tool,GB
+25977,Teamwork,business_soft,GB
+25979,Reporting,analytical,GB
+25980,Reporting,analytical,GB
+25981,Reporting,analytical,GB
+25982,Business Intelligence,analytical,GB
+25982,Reporting,analytical,GB
+25983,Python,technical,GB
+25992,Reporting,analytical,GB
+25993,Reporting,analytical,GB
+25995,Dashboarding,analytical,GB
+25995,Reporting,analytical,GB
+25996,Databricks,tool,GB
+25996,Python,technical,GB
+25996,SQL,technical,GB
+25997,Leadership,business_soft,GB
+26000,dbt,tool,GB
+26002,Machine Learning,ai_ml,GB
+26002,Project Management,business_soft,GB
+26002,Teamwork,business_soft,GB
+26005,Business Intelligence,analytical,GB
+26005,Machine Learning,ai_ml,GB
+26006,Reporting,analytical,GB
+26008,Leadership,business_soft,GB
+26008,Stakeholder Management,business_soft,GB
+26009,Communication,business_soft,GB
+26009,Reporting,analytical,GB
+26011,Dashboarding,analytical,GB
+26011,Data Governance,analytical,GB
+26011,Reporting,analytical,GB
+26013,Master's Degree,education,GB
+26015,Attention to Detail,business_soft,GB
+26015,Data Governance,analytical,GB
+26015,Reporting,analytical,GB
+26016,Business Analysis,business_soft,GB
+26017,Business Intelligence,analytical,GB
+26017,Dashboarding,analytical,GB
+26017,Power BI,tool,GB
+26022,Machine Learning,ai_ml,GB
+26023,Leadership,business_soft,GB
+26023,Stakeholder Management,business_soft,GB
+26024,Databricks,tool,GB
+26028,Business Intelligence,analytical,GB
+26031,Reporting,analytical,GB
+26035,Leadership,business_soft,GB
+26035,Reporting,analytical,GB
+26036,Machine Learning,ai_ml,GB
+26038,Reporting,analytical,GB
+26039,Teamwork,business_soft,GB
+26040,Teamwork,business_soft,GB
+26043,Business Analysis,business_soft,GB
+26043,Leadership,business_soft,GB
+26043,Project Management,business_soft,GB
+26051,Project Management,business_soft,GB
+26052,Databricks,tool,GB
+26052,Machine Learning,ai_ml,GB
+26053,Databricks,tool,GB
+26060,Communication,business_soft,GB
+26060,Stakeholder Management,business_soft,GB
+26061,Market Research,analytical,GB
+26062,Databricks,tool,GB
+26064,AWS,tool,GB
+26064,Go,technical,GB
+26072,Leadership,business_soft,GB
+26073,Machine Learning,ai_ml,GB
+26074,Problem Solving,business_soft,GB
+26078,Business Analysis,business_soft,GB
+26082,Azure,tool,GB
+26084,Reporting,analytical,GB
+26086,AWS,tool,GB
+26087,Attention to Detail,business_soft,GB
+26093,Azure,tool,GB
+26093,C#,technical,GB
+26093,Docker,tool,GB
+26093,Git,tool,GB
+26093,JavaScript,technical,GB
+26093,SQL,technical,GB
+26093,TypeScript,technical,GB
+26094,Azure,tool,GB
+26094,C#,technical,GB
+26094,Docker,tool,GB
+26094,Git,tool,GB
+26094,JavaScript,technical,GB
+26094,SQL,technical,GB
+26094,TypeScript,technical,GB
+26096,Reporting,analytical,GB
+26099,Apache Spark,tool,GB
+26099,Azure,tool,GB
+26100,Reporting,analytical,GB
+26101,Reporting,analytical,GB
+26102,Data Modelling,analytical,GB
+26102,ETL,analytical,GB
+26102,Reporting,analytical,GB
+26103,Reporting,analytical,GB
+26106,Business Intelligence,analytical,GB
+26107,Data Governance,analytical,GB
+26107,Machine Learning,ai_ml,GB
+26111,AWS,tool,GB
+26115,Leadership,business_soft,GB
+26115,Reporting,analytical,GB
+26117,Business Intelligence,analytical,GB
+26119,LLMs,ai_ml,GB
+26119,Machine Learning,ai_ml,GB
+26123,Reporting,analytical,GB
+26124,AWS,tool,GB
+26124,Azure,tool,GB
+26124,Google Cloud,tool,GB
+26124,PostgreSQL,tool,GB
+26124,SQL,technical,GB
+26126,Teamwork,business_soft,GB
+26129,Machine Learning,ai_ml,GB
+26129,Master's Degree,education,GB
+26129,PhD,education,GB
+26129,Statistics,analytical,GB
+26131,Data Governance,analytical,GB
+26131,Financial Analysis,analytical,GB
+26131,Leadership,business_soft,GB
+26131,Reporting,analytical,GB
+26132,Business Intelligence,analytical,GB
+26132,Data Governance,analytical,GB
+26132,Leadership,business_soft,GB
+26133,Project Management,business_soft,GB
+26134,Reporting,analytical,GB
+26135,SQL,technical,GB
+26137,Reporting,analytical,GB
+26138,C++,technical,GB
+26138,Python,technical,GB
+26142,Reporting,analytical,GB
+26143,Reporting,analytical,GB
+26144,Reporting,analytical,GB
+26145,AWS,tool,GB
+26146,Reporting,analytical,GB
+26147,Project Management,business_soft,GB
+26149,Leadership,business_soft,GB
+26152,Business Analysis,business_soft,GB
+26152,Reporting,analytical,GB
+26154,Generative AI,ai_ml,GB
+26154,Leadership,business_soft,GB
+26154,Machine Learning,ai_ml,GB
+26157,Azure,tool,GB
+26157,C#,technical,GB
+26157,Docker,tool,GB
+26157,Git,tool,GB
+26157,JavaScript,technical,GB
+26157,SQL,technical,GB
+26157,TypeScript,technical,GB
+26158,LLMs,ai_ml,GB
+26158,Machine Learning,ai_ml,GB
+26158,NLP,ai_ml,GB
+26159,Attention to Detail,business_soft,GB
+26160,Attention to Detail,business_soft,GB
+26161,Attention to Detail,business_soft,GB
+26162,Attention to Detail,business_soft,GB
+26163,Attention to Detail,business_soft,GB
+26164,Attention to Detail,business_soft,GB
+26169,Business Intelligence,analytical,GB
+26169,Leadership,business_soft,GB
+26171,AWS,tool,GB
+26171,Python,technical,GB
+26171,Snowflake,tool,GB
+26174,AWS,tool,GB
+26178,Data Governance,analytical,GB
+26179,Data Governance,analytical,GB
+26181,Financial Analysis,analytical,GB
+26182,Databricks,tool,GB
+26182,LLMs,ai_ml,GB
+26182,Machine Learning,ai_ml,GB
+26182,Master's Degree,education,GB
+26183,Databricks,tool,GB
+26184,ETL,analytical,GB
+26184,Project Management,business_soft,GB
+26185,Machine Learning,ai_ml,GB
+26185,Master's Degree,education,GB
+26185,PhD,education,GB
+26185,Statistics,analytical,GB
+26188,Reporting,analytical,GB
+26192,Reporting,analytical,GB
+26193,Project Management,business_soft,GB
+26195,AWS,tool,GB
+26195,Machine Learning,ai_ml,GB
+26196,Machine Learning,ai_ml,GB
+26199,Reporting,analytical,GB
+26203,Business Intelligence,analytical,GB
+26203,Reporting,analytical,GB
+26203,Snowflake,tool,GB
+26206,Problem Solving,business_soft,GB
+26206,Python,technical,GB
+26207,A/B Testing,analytical,GB
+26207,Databricks,tool,GB
+26211,Leadership,business_soft,GB
+26211,Machine Learning,ai_ml,GB
+26213,Data Governance,analytical,GB
+26213,Reporting,analytical,GB
+26216,AWS,tool,GB
+26218,Reporting,analytical,GB
+26223,Teamwork,business_soft,GB
+26224,Reporting,analytical,GB
+26225,Teamwork,business_soft,GB
+26227,Reporting,analytical,GB
+26228,Leadership,business_soft,GB
+26232,Google Cloud,tool,GB
+26232,Teamwork,business_soft,GB
+26233,Reporting,analytical,GB
+26234,Stakeholder Management,business_soft,GB
+26238,A/B Testing,analytical,GB
+26238,Machine Learning,ai_ml,GB
+26242,Snowflake,tool,GB
+26245,Python,technical,GB
+26246,Data Governance,analytical,GB
+26246,Reporting,analytical,GB
+26247,Reporting,analytical,GB
+26250,Business Intelligence,analytical,GB
+26250,Dashboarding,analytical,GB
+26250,Data Modelling,analytical,GB
+26250,ETL,analytical,GB
+26250,Reporting,analytical,GB
+26251,AWS,tool,GB
+26251,Generative AI,ai_ml,GB
+26255,Leadership,business_soft,GB
+26260,Leadership,business_soft,GB
+26261,Business Intelligence,analytical,GB
+26262,AWS,tool,GB
+26263,Reporting,analytical,GB
+26263,SQL,technical,GB
+26263,Tableau,tool,GB
+26265,Dashboarding,analytical,GB
+26266,Bachelor's Degree,education,GB
+26266,Docker,tool,GB
+26266,Google Cloud,tool,GB
+26268,Machine Learning,ai_ml,GB
+26268,Statistical Analysis,analytical,GB
+26273,Leadership,business_soft,GB
+26274,Machine Learning,ai_ml,GB
+26277,Reporting,analytical,GB
+26278,Java,technical,GB
+26278,Python,technical,GB
+26278,Reporting,analytical,GB
+26281,Teamwork,business_soft,GB
+26282,Leadership,business_soft,GB
+26282,Reporting,analytical,GB
+26284,Teamwork,business_soft,GB
+26286,SQL,technical,GB
+26286,Snowflake,tool,GB
+26296,Business Intelligence,analytical,GB
+26296,Dashboarding,analytical,GB
+26296,Data Modelling,analytical,GB
+26296,Power BI,tool,GB
+26296,Reporting,analytical,GB
+26297,Reporting,analytical,GB
+26300,Leadership,business_soft,GB
+26301,Azure,tool,GB
+26305,LLMs,ai_ml,GB
+26305,Machine Learning,ai_ml,GB
+26305,NLP,ai_ml,GB
+26313,Reporting,analytical,GB
+26317,Data Governance,analytical,GB
+26317,Machine Learning,ai_ml,GB
+26318,Reporting,analytical,GB
+26321,Python,technical,GB
+26321,Statistical Analysis,analytical,GB
+26321,Statistics,analytical,GB
+26322,Dashboarding,analytical,GB
+26322,Reporting,analytical,GB
+26323,Data Governance,analytical,GB
+26323,Python,technical,GB
+26324,Data Governance,analytical,GB
+26327,Financial Analysis,analytical,GB
+26328,Financial Analysis,analytical,GB
+26333,Leadership,business_soft,GB
+26335,Communication,business_soft,GB
+26337,Market Research,analytical,GB
+26345,Reporting,analytical,GB
+26346,Reporting,analytical,GB
+26349,Leadership,business_soft,GB
+26350,Reporting,analytical,GB
+26359,Machine Learning,ai_ml,GB
+26361,Business Intelligence,analytical,GB
+26361,Power BI,tool,GB
+26364,Leadership,business_soft,GB
+26365,Dashboarding,analytical,GB
+26366,Machine Learning,ai_ml,GB
+26367,Business Intelligence,analytical,GB
+26367,Power BI,tool,GB
+26367,Reporting,analytical,GB
+26368,Bachelor's Degree,education,GB
+26369,Communication,business_soft,GB
+26372,Hadoop,tool,GB
+26372,Java,technical,GB
+26372,Python,technical,GB
+26372,Scala,technical,GB
+26373,Leadership,business_soft,GB
+26373,Reporting,analytical,GB
+26374,Reporting,analytical,GB
+26376,Leadership,business_soft,GB
+26377,AWS,tool,GB
+26377,Java,technical,GB
+26377,Python,technical,GB
+26377,SQL,technical,GB
+26377,Snowflake,tool,GB
+26378,SQL,technical,GB
+26378,Snowflake,tool,GB
+26380,Generative AI,ai_ml,GB
+26381,Reporting,analytical,GB
+26384,AWS,tool,GB
+26392,Reporting,analytical,GB
+26397,Business Intelligence,analytical,GB
+26397,Machine Learning,ai_ml,GB
+26399,Leadership,business_soft,GB
+26399,Stakeholder Management,business_soft,GB
+26402,Leadership,business_soft,GB
+26403,Business Intelligence,analytical,GB
+26403,Reporting,analytical,GB
+26404,Reporting,analytical,GB
+26406,Bachelor's Degree,education,GB
+26406,Business Analysis,business_soft,GB
+26406,Project Management,business_soft,GB
+26406,Reporting,analytical,GB
+26414,Data Governance,analytical,GB
+26414,Master's Degree,education,GB
+26418,Data Governance,analytical,GB
+26419,A/B Testing,analytical,GB
+26419,Reporting,analytical,GB
+26421,Teamwork,business_soft,GB
+26422,AWS,tool,GB
+26422,Machine Learning,ai_ml,GB
+26422,Python,technical,GB
+26424,AWS,tool,GB
+26424,Business Intelligence,analytical,GB
+26424,Redshift,tool,GB
+26426,Reporting,analytical,GB
+26432,Teamwork,business_soft,GB
+26433,Teamwork,business_soft,GB
+26439,Leadership,business_soft,GB
+26443,Leadership,business_soft,GB
+26444,Project Management,business_soft,GB
+26448,Business Intelligence,analytical,GB
+26448,Data Governance,analytical,GB
+26449,Azure,tool,GB
+26454,Teamwork,business_soft,GB
+26471,Machine Learning,ai_ml,GB
+26474,Financial Analysis,analytical,GB
+26479,Data Governance,analytical,GB
+26480,Business Intelligence,analytical,GB
+26480,Dashboarding,analytical,GB
+26480,Reporting,analytical,GB
+26480,Stakeholder Management,business_soft,GB
+26480,Tableau,tool,GB
+26482,Business Analysis,business_soft,GB
+26482,Business Intelligence,analytical,GB
+26482,Power BI,tool,GB
+26483,Financial Analysis,analytical,GB
+26484,Leadership,business_soft,GB
+26486,SQL,technical,GB
+26487,Reporting,analytical,GB
+26489,Business Intelligence,analytical,GB
+26489,Data Governance,analytical,GB
+26489,Data Modelling,analytical,GB
+26489,Power BI,tool,GB
+26489,Reporting,analytical,GB
+26489,SQL,technical,GB
+26491,Business Intelligence,analytical,GB
+26491,Dashboarding,analytical,GB
+26491,Data Modelling,analytical,GB
+26491,Power BI,tool,GB
+26491,Reporting,analytical,GB
+26492,Reporting,analytical,GB
+26494,Azure,tool,GB
+26494,Business Intelligence,analytical,GB
+26494,Communication,business_soft,GB
+26494,Data Governance,analytical,GB
+26494,Power BI,tool,GB
+26494,Reporting,analytical,GB
+26494,SQL,technical,GB
+26494,Stakeholder Management,business_soft,GB
+26496,Dashboarding,analytical,GB
+26496,Problem Solving,business_soft,GB
+26496,SQL,technical,GB
+26497,Generative AI,ai_ml,GB
+26505,Reporting,analytical,GB
+26507,Bachelor's Degree,education,GB
+26518,Reporting,analytical,GB
+26519,Reporting,analytical,GB
+26525,Financial Analysis,analytical,GB
+26525,Reporting,analytical,GB
+26526,Reporting,analytical,GB
+26531,Reporting,analytical,GB
+26533,Data Governance,analytical,GB
+26535,Reporting,analytical,GB
+26537,Business Analysis,business_soft,GB
+26540,Data Governance,analytical,GB
+26543,Machine Learning,ai_ml,GB
+26545,Data Governance,analytical,GB
+26548,Teamwork,business_soft,GB
+26558,Data Governance,analytical,GB
+26561,Data Governance,analytical,GB
+26563,Dashboarding,analytical,GB
+26563,Reporting,analytical,GB
+26566,Data Governance,analytical,GB
+26566,Leadership,business_soft,GB
+26567,Data Governance,analytical,GB
+26568,A/B Testing,analytical,GB
+26569,A/B Testing,analytical,GB
+26571,Data Governance,analytical,GB
+26573,Data Governance,analytical,GB
+26574,Data Governance,analytical,GB
+26575,Reporting,analytical,GB
+26576,Data Governance,analytical,GB
+26577,Business Intelligence,analytical,GB
+26577,Generative AI,ai_ml,GB
+26582,Leadership,business_soft,GB
+26582,Reporting,analytical,GB
+26583,Teamwork,business_soft,GB
+26585,Apache Spark,tool,GB
+26585,Azure,tool,GB
+26585,Databricks,tool,GB
+26585,Python,technical,GB
+26585,SQL,technical,GB
+26585,Scala,technical,GB
+26586,Machine Learning,ai_ml,GB
+26591,Machine Learning,ai_ml,GB
+26591,Reporting,analytical,GB
+26598,Reporting,analytical,GB
+26603,A/B Testing,analytical,GB
+26603,Machine Learning,ai_ml,GB
+26611,Machine Learning,ai_ml,GB
+26612,Machine Learning,ai_ml,GB
+26613,Python,technical,GB
+26621,Machine Learning,ai_ml,GB
+26622,Machine Learning,ai_ml,GB
+26623,Machine Learning,ai_ml,GB
+26623,NLP,ai_ml,GB
+26624,Machine Learning,ai_ml,GB
+26624,Teamwork,business_soft,GB
+26627,Generative AI,ai_ml,GB
+26628,A/B Testing,analytical,GB
+26628,Machine Learning,ai_ml,GB
+26629,Machine Learning,ai_ml,GB
+26631,Data Mining,ai_ml,GB
+26631,Machine Learning,ai_ml,GB
+26632,Machine Learning,ai_ml,GB
+26638,Machine Learning,ai_ml,GB
+26641,Machine Learning,ai_ml,GB
+26641,Python,technical,GB
+26641,SQL,technical,GB
+26643,Machine Learning,ai_ml,GB
+26645,Machine Learning,ai_ml,GB
+26645,Python,technical,GB
+26645,SQL,technical,GB
+26646,Machine Learning,ai_ml,GB
+26646,Python,technical,GB
+26646,SQL,technical,GB
+26650,Machine Learning,ai_ml,GB
+26651,Java,technical,GB
+26651,JavaScript,technical,GB
+26651,Python,technical,GB
+26652,Machine Learning,ai_ml,GB
+26653,Exploratory Data Analysis,analytical,GB
+26653,Machine Learning,ai_ml,GB
+26662,A/B Testing,analytical,GB
+26672,Reporting,analytical,GB
+26674,Data Modelling,analytical,GB
+26674,Machine Learning,ai_ml,GB
+26678,Machine Learning,ai_ml,GB
+26681,Machine Learning,ai_ml,GB
+26681,NLP,ai_ml,GB
+26682,Machine Learning,ai_ml,GB
+26685,Generative AI,ai_ml,GB
+26685,Machine Learning,ai_ml,GB
+26686,Project Management,business_soft,GB
+26687,LLMs,ai_ml,GB
+26687,Machine Learning,ai_ml,GB
+26689,Machine Learning,ai_ml,GB
+26690,Teamwork,business_soft,GB
+26691,Machine Learning,ai_ml,GB
+26693,Machine Learning,ai_ml,GB
+26695,Machine Learning,ai_ml,GB
+26697,Business Intelligence,analytical,GB
+26697,Reporting,analytical,GB
+26698,Business Intelligence,analytical,GB
+26698,Reporting,analytical,GB
+26702,Machine Learning,ai_ml,GB
+26702,Stakeholder Management,business_soft,GB
+26702,Statistical Analysis,analytical,GB
+26703,Machine Learning,ai_ml,GB
+26704,Machine Learning,ai_ml,GB
+26706,A/B Testing,analytical,GB
+26706,Financial Analysis,analytical,GB
+26707,Teamwork,business_soft,GB
+26708,A/B Testing,analytical,GB
+26709,Machine Learning,ai_ml,GB
+26709,NLP,ai_ml,GB
+26710,Financial Analysis,analytical,GB
+26710,LLMs,ai_ml,GB
+26710,Machine Learning,ai_ml,GB
+26711,Machine Learning,ai_ml,GB
+26713,A/B Testing,analytical,GB
+26713,Machine Learning,ai_ml,GB
+26714,Leadership,business_soft,GB
+26716,Machine Learning,ai_ml,GB
+26719,Machine Learning,ai_ml,GB
+26729,Machine Learning,ai_ml,GB
+26730,Machine Learning,ai_ml,GB
+26735,ETL,analytical,GB
+26735,Financial Analysis,analytical,GB
+26735,Generative AI,ai_ml,GB
+26735,Reporting,analytical,GB
+26738,Generative AI,ai_ml,GB
+26738,Machine Learning,ai_ml,GB
+26738,NLP,ai_ml,GB
+26739,Machine Learning,ai_ml,GB
+26739,Python,technical,GB
+26739,SQL,technical,GB
+26742,Generative AI,ai_ml,GB
+26744,Attention to Detail,business_soft,GB
+26747,Attention to Detail,business_soft,GB
+26750,Leadership,business_soft,GB
+26756,Financial Analysis,analytical,GB
+26757,Machine Learning,ai_ml,GB
+26759,Generative AI,ai_ml,GB
+26763,Leadership,business_soft,GB
+26763,Teamwork,business_soft,GB
+26775,Python,technical,GB
+26782,Leadership,business_soft,GB
+26782,Master's Degree,education,GB
+26782,Python,technical,GB
+26782,R,technical,GB
+26782,SQL,technical,GB
+26782,Statistical Analysis,analytical,GB
+26782,Statistics,analytical,GB
+26782,Time Management,business_soft,GB
+26787,Leadership,business_soft,GB
+26788,Machine Learning,ai_ml,GB
+26791,A/B Testing,analytical,GB
+26791,Machine Learning,ai_ml,GB
+26797,Machine Learning,ai_ml,GB
+26798,Leadership,business_soft,GB
+26798,Project Management,business_soft,GB
+26799,Data Mining,ai_ml,GB
+26801,Communication,business_soft,GB
+26801,Machine Learning,ai_ml,GB
+26801,Stakeholder Management,business_soft,GB
+26804,Machine Learning,ai_ml,GB
+26805,A/B Testing,analytical,GB
+26807,Master's Degree,education,GB
+26807,Statistics,analytical,GB
+26808,Leadership,business_soft,GB
+26809,Generative AI,ai_ml,GB
+26811,Statistical Analysis,analytical,GB
+26812,A/B Testing,analytical,GB
+26813,SAS,technical,GB
+26814,Data Mining,ai_ml,GB
+26814,Generative AI,ai_ml,GB
+26814,Machine Learning,ai_ml,GB
+26814,NLP,ai_ml,GB
+26815,Machine Learning,ai_ml,GB
+26823,Teamwork,business_soft,GB
+26830,Machine Learning,ai_ml,GB
+26834,Machine Learning,ai_ml,GB
+26834,Reporting,analytical,GB
+26838,A/B Testing,analytical,GB
+26838,Time Management,business_soft,GB
+26841,A/B Testing,analytical,GB
+26841,Time Management,business_soft,GB
+26847,Project Management,business_soft,GB
+26850,Git,tool,GB
+26853,Data Mining,ai_ml,GB
+26860,Dashboarding,analytical,GB
+26861,Dashboarding,analytical,GB
+26864,PhD,education,GB
+26867,Machine Learning,ai_ml,GB
+26868,Generative AI,ai_ml,GB
+26868,LLMs,ai_ml,GB
+26868,Machine Learning,ai_ml,GB
+26869,A/B Testing,analytical,GB
+26869,Machine Learning,ai_ml,GB
+26870,A/B Testing,analytical,GB
+26870,Machine Learning,ai_ml,GB
+26871,Leadership,business_soft,GB
+26871,Machine Learning,ai_ml,GB
+26872,Go,technical,GB
+26885,Leadership,business_soft,GB
+26885,Machine Learning,ai_ml,GB
+26886,Generative AI,ai_ml,GB
+26888,Generative AI,ai_ml,GB
+26888,Leadership,business_soft,GB
+26891,Go,technical,GB
+26891,Machine Learning,ai_ml,GB
+26894,PhD,education,GB
+26895,Machine Learning,ai_ml,GB
+26895,Statistics,analytical,GB
+26896,A/B Testing,analytical,GB
+26897,Teamwork,business_soft,GB
+26898,A/B Testing,analytical,GB
+26906,PhD,education,GB
+26911,Machine Learning,ai_ml,GB
+26912,A/B Testing,analytical,GB
+26914,A/B Testing,analytical,GB
+26915,Data Governance,analytical,GB
+26918,Financial Analysis,analytical,GB
+26919,Financial Analysis,analytical,GB
+26919,Master's Degree,education,GB
+26919,Python,technical,GB
+26919,R,technical,GB
+26919,SQL,technical,GB
+26919,Statistical Analysis,analytical,GB
+26919,Statistics,analytical,GB
+26923,A/B Testing,analytical,GB
+26927,Machine Learning,ai_ml,GB
+26930,Machine Learning,ai_ml,GB
+26931,Machine Learning,ai_ml,GB
+26932,Leadership,business_soft,GB
+26932,Master's Degree,education,GB
+26932,Statistics,analytical,GB
+26933,Machine Learning,ai_ml,GB
+26936,Machine Learning,ai_ml,GB
+26936,Statistical Analysis,analytical,GB
+26944,Machine Learning,ai_ml,GB
+26944,PhD,education,GB
+26945,Machine Learning,ai_ml,GB
+26946,Machine Learning,ai_ml,GB
+26947,Deep Learning,ai_ml,GB
+26947,Generative AI,ai_ml,GB
+26947,LLMs,ai_ml,GB
+26947,Machine Learning,ai_ml,GB
+26948,Leadership,business_soft,GB
+26950,Machine Learning,ai_ml,GB
+26952,Machine Learning,ai_ml,GB
+26953,A/B Testing,analytical,GB
+26954,Leadership,business_soft,GB
+26956,Teamwork,business_soft,GB
+26959,Go,technical,GB
+26959,Llms,ai_ml,GB
+26959,NLP,ai_ml,GB
+26959,Python,technical,GB
+26961,A/B Testing,analytical,GB
+26961,Generative AI,ai_ml,GB
+26961,Machine Learning,ai_ml,GB
+26962,Generative AI,ai_ml,GB
+26963,Leadership,business_soft,GB
+26965,Data Governance,analytical,GB
+26968,Llms,ai_ml,GB
+26970,Machine Learning,ai_ml,GB
+26971,Machine Learning,ai_ml,GB
+26972,Machine Learning,ai_ml,GB
+26973,Machine Learning,ai_ml,GB
+26975,Leadership,business_soft,GB
+26977,Leadership,business_soft,GB
+26981,Excel,tool,GB
+26983,Leadership,business_soft,GB
+26984,Computer Vision,ai_ml,GB
+26984,Machine Learning,ai_ml,GB
+26992,Leadership,business_soft,GB
+26992,Reporting,analytical,GB
+26994,Python,technical,GB
+26995,Statistics,analytical,GB
+26996,Python,technical,GB
+26996,Statistical Analysis,analytical,GB
+26996,Statistics,analytical,GB
+26997,NLP,ai_ml,GB
+26999,Machine Learning,ai_ml,GB
+27000,Master's Degree,education,GB
+27000,PhD,education,GB
+27000,Python,technical,GB
+27000,Statistics,analytical,GB
+27002,Stakeholder Management,business_soft,GB
+27003,C++,technical,GB
+27003,Python,technical,GB
+27004,Reporting,analytical,GB
+27006,Machine Learning,ai_ml,GB
+27006,Statistics,analytical,GB
+27007,PhD,education,GB
+27007,Statistics,analytical,GB
+27009,Machine Learning,ai_ml,GB
+27012,Leadership,business_soft,GB
+27012,Machine Learning,ai_ml,GB
+27012,Model Deployment,ai_ml,GB
+27019,Feature Engineering,ai_ml,GB
+27019,Machine Learning,ai_ml,GB
+27019,Model Deployment,ai_ml,GB
+27020,Machine Learning,ai_ml,GB
+27021,Machine Learning,ai_ml,GB
+27021,Model Deployment,ai_ml,GB
+27022,Machine Learning,ai_ml,GB
+27022,Model Deployment,ai_ml,GB
+27024,AWS,tool,GB
+27024,Bachelor's Degree,education,GB
+27024,Python,technical,GB
+27025,Python,technical,GB
+27026,AWS,tool,GB
+27027,Leadership,business_soft,GB
+27029,Reporting,analytical,GB
+27030,Python,technical,GB
+27031,Communication,business_soft,GB
+27033,Python,technical,GB
+27034,Azure,tool,GB
+27034,Machine Learning,ai_ml,GB
+27036,Databricks,tool,GB
+27036,LLMs,ai_ml,GB
+27036,Machine Learning,ai_ml,GB
+27037,C++,technical,GB
+27038,Machine Learning,ai_ml,GB
+27041,Machine Learning,ai_ml,GB
+27041,Model Deployment,ai_ml,GB
+27042,Machine Learning,ai_ml,GB
+27043,Communication,business_soft,GB
+27044,Teamwork,business_soft,GB
+27045,Machine Learning,ai_ml,GB
+27046,AWS,tool,GB
+27046,Databricks,tool,GB
+27046,Snowflake,tool,GB
+27047,Dashboarding,analytical,GB
+27047,Reporting,analytical,GB
+27048,Machine Learning,ai_ml,GB
+27051,Machine Learning,ai_ml,GB
+27054,Machine Learning,ai_ml,GB
+27054,Python,technical,GB
+27054,SQL,technical,GB
+27055,Bachelor's Degree,education,GB
+27055,PhD,education,GB
+27055,Statistics,analytical,GB
+27057,Python,technical,GB
+27062,Machine Learning,ai_ml,GB
+27064,Machine Learning,ai_ml,GB
+27064,Python,technical,GB
+27070,Business Intelligence,analytical,GB
+27073,Teamwork,business_soft,GB
+27074,Machine Learning,ai_ml,GB
+27074,Problem Solving,business_soft,GB
+27076,Machine Learning,ai_ml,GB
+27077,Databricks,tool,GB
+27079,Apache Spark,tool,GB
+27079,Azure,tool,GB
+27079,Databricks,tool,GB
+27079,Python,technical,GB
+27079,SQL,technical,GB
+27079,Teamwork,business_soft,GB
+27080,Data Governance,analytical,GB
+27080,Machine Learning,ai_ml,GB
+27083,Machine Learning,ai_ml,GB
+27084,Machine Learning,ai_ml,GB
+27087,Business Intelligence,analytical,GB
+27087,Reporting,analytical,GB
+27090,Computer Vision,ai_ml,GB
+27093,Databricks,tool,GB
+27093,Python,technical,GB
+27093,SQL,technical,GB
+27094,Machine Learning,ai_ml,GB
+27098,Machine Learning,ai_ml,GB
+27101,Master's Degree,education,GB
+27102,Machine Learning,ai_ml,GB
+27103,Statistics,analytical,GB
+27108,Machine Learning,ai_ml,GB
+27109,LLMs,ai_ml,GB
+27109,Machine Learning,ai_ml,GB
+27113,Machine Learning,ai_ml,GB
+27114,Leadership,business_soft,GB
+27114,Master's Degree,education,GB
+27114,Python,technical,GB
+27114,R,technical,GB
+27114,SQL,technical,GB
+27114,Statistical Analysis,analytical,GB
+27114,Statistics,analytical,GB
+27117,NLP,ai_ml,GB
+27119,NLP,ai_ml,GB
+27120,Leadership,business_soft,GB
+27121,Generative AI,ai_ml,GB
+27121,Python,technical,GB
+27122,Machine Learning,ai_ml,GB
+27123,A/B Testing,analytical,GB
+27123,Machine Learning,ai_ml,GB
+27124,Machine Learning,ai_ml,GB
+27126,Machine Learning,ai_ml,GB
+27132,Financial Analysis,analytical,GB
+27132,Reporting,analytical,GB
+27134,Llms,ai_ml,GB
+27135,A/B Testing,analytical,GB
+27138,Snowflake,tool,GB
+27139,Machine Learning,ai_ml,GB
+27140,Azure,tool,GB
+27140,Machine Learning,ai_ml,GB
+27140,Model Deployment,ai_ml,GB
+27142,Teamwork,business_soft,GB
+27144,Leadership,business_soft,GB
+27147,Generative AI,ai_ml,GB
+27147,Machine Learning,ai_ml,GB
+27152,Financial Analysis,analytical,GB
+27156,Leadership,business_soft,GB
+27156,Machine Learning,ai_ml,GB
+27158,Leadership,business_soft,GB
+27164,Machine Learning,ai_ml,GB
+27168,LLMs,ai_ml,GB
+27168,Prompt Engineering,ai_ml,GB
+27170,Financial Analysis,analytical,GB
+27171,Leadership,business_soft,GB
+27176,Statistical Analysis,analytical,GB
+27179,Data Governance,analytical,GB
+27179,Leadership,business_soft,GB
+27182,Python,technical,GB
+27182,SQL,technical,GB
+27182,Snowflake,tool,GB
+27187,Data Governance,analytical,GB
+27187,Machine Learning,ai_ml,GB
+27188,Machine Learning,ai_ml,GB
+27195,Leadership,business_soft,GB
+27196,Business Intelligence,analytical,GB
+27196,Dashboarding,analytical,GB
+27196,Power BI,tool,GB
+27201,Financial Analysis,analytical,GB
+27201,Forecasting,analytical,GB
+27201,Machine Learning,ai_ml,GB
+27202,Databricks,tool,GB
+27202,LLMs,ai_ml,GB
+27202,Machine Learning,ai_ml,GB
+27203,Databricks,tool,GB
+27203,Machine Learning,ai_ml,GB
+27204,Databricks,tool,GB
+27206,Financial Analysis,analytical,GB
+27206,Machine Learning,ai_ml,GB
+27207,Machine Learning,ai_ml,GB
+27208,Machine Learning,ai_ml,GB
+27209,Attention to Detail,business_soft,GB
+27210,Machine Learning,ai_ml,GB
+27211,Business Analysis,business_soft,GB
+27211,Machine Learning,ai_ml,GB
+27214,Attention to Detail,business_soft,GB
+27214,Project Management,business_soft,GB
+27218,Snowflake,tool,GB
+27220,Machine Learning,ai_ml,GB
+27223,Teamwork,business_soft,GB
+27226,Machine Learning,ai_ml,GB
+27229,Leadership,business_soft,GB
+27229,Machine Learning,ai_ml,GB
+27232,Azure,tool,GB
+27232,Databricks,tool,GB
+27233,Llms,ai_ml,GB
+27233,Machine Learning,ai_ml,GB
+27234,AWS,tool,GB
+27234,Machine Learning,ai_ml,GB
+27234,Python,technical,GB
+27235,Machine Learning,ai_ml,GB
+27236,AWS,tool,GB
+27236,Machine Learning,ai_ml,GB
+27236,Python,technical,GB
+27240,Machine Learning,ai_ml,GB
+27240,Model Deployment,ai_ml,GB
+27241,Machine Learning,ai_ml,GB
+27242,Apache Spark,tool,GB
+27242,Azure,tool,GB
+27242,Databricks,tool,GB
+27242,Python,technical,GB
+27242,SQL,technical,GB
+27242,Scala,technical,GB
+27244,AWS,tool,GB
+27249,Reporting,analytical,GB
+27250,Machine Learning,ai_ml,GB
+27251,Apache Spark,tool,GB
+27251,Azure,tool,GB
+27251,Databricks,tool,GB
+27251,Leadership,business_soft,GB
+27251,Python,technical,GB
+27251,SQL,technical,GB
+27254,Reporting,analytical,GB
+27258,Snowflake,tool,GB
+27260,Generative AI,ai_ml,GB
+27260,Machine Learning,ai_ml,GB
+27261,A/B Testing,analytical,GB
+27262,Machine Learning,ai_ml,GB
+27265,Machine Learning,ai_ml,GB
+27267,Leadership,business_soft,GB
+27277,Data Mining,ai_ml,GB
+27283,Machine Learning,ai_ml,GB
+27285,Reporting,analytical,GB
+27286,LLMs,ai_ml,GB
+27286,PhD,education,GB
+27287,LLMs,ai_ml,GB
+27292,Attention to Detail,business_soft,GB
+27293,Leadership,business_soft,GB
+27293,Reporting,analytical,GB
+27294,Computer Vision,ai_ml,GB
+27295,C#,technical,GB
+27295,Machine Learning,ai_ml,GB
+27297,Computer Vision,ai_ml,GB
+27297,Machine Learning,ai_ml,GB
+27298,Apache Spark,tool,GB
+27298,Google Cloud,tool,GB
+27298,Java,technical,GB
+27298,Machine Learning,ai_ml,GB
+27298,Python,technical,GB
+27298,Scala,technical,GB
+27298,dbt,tool,GB
+27299,C++,technical,GB
+27299,Machine Learning,ai_ml,GB
+27299,Python,technical,GB
+27302,Computer Vision,ai_ml,GB
+27302,Machine Learning,ai_ml,GB
+27302,Neural Networks,ai_ml,GB
+27302,PhD,education,GB
+27302,Python,technical,GB
+27304,Leadership,business_soft,GB
+27305,A/B Testing,analytical,GB
+27309,Machine Learning,ai_ml,GB
+27312,Generative AI,ai_ml,GB
+27312,Llms,ai_ml,GB
+27312,Machine Learning,ai_ml,GB
+27312,Model Deployment,ai_ml,GB
+27312,Prompt Engineering,ai_ml,GB
+27314,Teamwork,business_soft,GB
+27321,Machine Learning,ai_ml,GB
+27321,Reporting,analytical,GB
+27322,Market Research,analytical,GB
+27323,Market Research,analytical,GB
+27326,Leadership,business_soft,GB
+27327,Databricks,tool,GB
+27329,Google Cloud,tool,GB
+27334,Generative AI,ai_ml,GB
+27334,Machine Learning,ai_ml,GB
+27336,Azure,tool,GB
+27336,Databricks,tool,GB
+27337,Machine Learning,ai_ml,GB
+27338,Snowflake,tool,GB
+27339,Snowflake,tool,GB
+27343,SQL,technical,GB
+27344,Databricks,tool,GB
+27344,JavaScript,technical,GB
+27344,Python,technical,GB
+27344,SQL,technical,GB
+27345,A/B Testing,analytical,GB
+27345,Leadership,business_soft,GB
+27345,Machine Learning,ai_ml,GB
+27345,Python,technical,GB
+27348,Python,technical,GB
+27349,Reporting,analytical,GB
+27350,Databricks,tool,GB
+27350,LLMs,ai_ml,GB
+27350,Machine Learning,ai_ml,GB
+27350,Master's Degree,education,GB
+27351,Databricks,tool,GB
+27352,Teamwork,business_soft,GB
+27353,Machine Learning,ai_ml,GB
+27354,Machine Learning,ai_ml,GB
+27356,A/B Testing,analytical,GB
+27358,Machine Learning,ai_ml,GB
+27362,Java,technical,GB
+27363,Looker,tool,GB
+27363,SQL,technical,GB
+27363,Snowflake,tool,GB
+27368,Python,technical,GB
+27375,BigQuery,tool,GB
+27375,Dashboarding,analytical,GB
+27375,Google Cloud,tool,GB
+27375,Looker,tool,GB
+27379,Communication,business_soft,GB
+27381,Attention to Detail,business_soft,GB
+27381,Reporting,analytical,GB
+27401,Go,technical,GB
+27404,Communication,business_soft,GB
+27406,Python,technical,GB
+27409,Azure,tool,GB
+27409,SQL,technical,GB
+27414,Project Management,business_soft,GB
+27416,Databricks,tool,GB
+27417,Databricks,tool,GB
+27418,Google Cloud,tool,GB
+27420,Business Intelligence,analytical,GB
+27420,Reporting,analytical,GB
+27420,SQL,technical,GB
+27423,AWS,tool,GB
+27423,Looker,tool,GB
+27423,Reporting,analytical,GB
+27423,Snowflake,tool,GB
+27424,Looker,tool,GB
+27424,Reporting,analytical,GB
+27424,SQL,technical,GB
+27424,Snowflake,tool,GB
+27427,Business Intelligence,analytical,GB
+27427,Dashboarding,analytical,GB
+27427,ETL,analytical,GB
+27427,Financial Analysis,analytical,GB
+27427,Reporting,analytical,GB
+27430,Leadership,business_soft,GB
+27430,Snowflake,tool,GB
+27438,Dashboarding,analytical,GB
+27438,Tableau,tool,GB
+27440,Attention to Detail,business_soft,GB
+27440,Business Analysis,business_soft,GB
+27440,Business Intelligence,analytical,GB
+27440,Dashboarding,analytical,GB
+27440,Leadership,business_soft,GB
+27440,Reporting,analytical,GB
+27442,Snowflake,tool,GB
+27445,Business Intelligence,analytical,GB
+27447,SQL,technical,GB
+27447,Snowflake,tool,GB
+27449,Dashboarding,analytical,GB
+27449,Reporting,analytical,GB
+27451,Business Intelligence,analytical,GB
+27451,Power BI,tool,GB
+27451,Snowflake,tool,GB
+27451,dbt,tool,GB
+27452,Business Intelligence,analytical,GB
+27452,Leadership,business_soft,GB
+27453,Business Intelligence,analytical,GB
+27453,Leadership,business_soft,GB
+27454,Business Intelligence,analytical,GB
+27454,Leadership,business_soft,GB
+27456,Leadership,business_soft,GB
+27456,Stakeholder Management,business_soft,GB
+27457,A/B Testing,analytical,GB
+27460,dbt,tool,GB
+32674,Attention to Detail,business_soft,PK
+32674,Bachelor's Degree,education,PK
+32674,Business Intelligence,analytical,PK
+32674,Communication,business_soft,PK
+32674,Excel,tool,PK
+32674,Power BI,tool,PK
+32674,Python,technical,PK
+32674,SQL,technical,PK
+32675,AWS,tool,PK
+32675,Deep Learning,ai_ml,PK
+32675,Docker,tool,PK
+32675,Machine Learning,ai_ml,PK
+32675,Master's Degree,education,PK
+32675,NLP,ai_ml,PK
+32675,Python,technical,PK
+32675,Statistics,analytical,PK
+32676,Bachelor's Degree,education,PK
+32676,Business Intelligence,analytical,PK
+32676,Dashboarding,analytical,PK
+32676,Data Modelling,analytical,PK
+32676,ETL,analytical,PK
+32676,Excel,tool,PK
+32676,Power BI,tool,PK
+32676,Problem Solving,business_soft,PK
+32676,SQL,technical,PK
+32676,Stakeholder Management,business_soft,PK
+32676,Tableau,tool,PK
+32677,Bachelor's Degree,education,PK
+32677,Communication,business_soft,PK
+32677,Excel,tool,PK
+32677,Python,technical,PK
+32677,SQL,technical,PK
+32677,Statistics,analytical,PK
+32677,Teamwork,business_soft,PK
+32678,AWS,tool,PK
+32678,Airflow,tool,PK
+32678,Apache Spark,tool,PK
+32678,Bachelor's Degree,education,PK
+32678,Docker,tool,PK
+32678,ETL,analytical,PK
+32678,Problem Solving,business_soft,PK
+32678,Python,technical,PK
+32678,SQL,technical,PK
+32679,AWS,tool,PK
+32679,Deep Learning,ai_ml,PK
+32679,Docker,tool,PK
+32679,Machine Learning,ai_ml,PK
+32679,Master's Degree,education,PK
+32679,NLP,ai_ml,PK
+32679,Python,technical,PK
+32680,A/B Testing,analytical,PK
+32680,Bachelor's Degree,education,PK
+32680,Communication,business_soft,PK
+32680,Excel,tool,PK
+32680,Market Research,analytical,PK
+32680,Python,technical,PK
+32680,SQL,technical,PK
+32681,Attention to Detail,business_soft,PK
+32681,Bachelor's Degree,education,PK
+32681,Business Intelligence,analytical,PK
+32681,Data Modelling,analytical,PK
+32681,Excel,tool,PK
+32681,Financial Analysis,analytical,PK
+32681,Power BI,tool,PK
+32681,Reporting,analytical,PK
+32681,SQL,technical,PK
+32681,VBA,technical,PK
+32682,Bachelor's Degree,education,PK
+32682,Business Intelligence,analytical,PK
+32682,Excel,tool,PK
+32682,Power BI,tool,PK
+32682,Problem Solving,business_soft,PK
+32682,Python,technical,PK
+32682,SQL,technical,PK
+32683,Deep Learning,ai_ml,PK
+32683,Generative AI,ai_ml,PK
+32683,LLMs,ai_ml,PK
+32683,Machine Learning,ai_ml,PK
+32683,Master's Degree,education,PK
+32683,NLP,ai_ml,PK
+32683,Prompt Engineering,ai_ml,PK
+32683,Python,technical,PK
+32684,Attention to Detail,business_soft,PK
+32684,Excel,tool,PK
+32684,Financial Analysis,analytical,PK
+32684,Master's Degree,education,PK
+32684,Python,technical,PK
+32684,SQL,technical,PK
+32685,Bachelor's Degree,education,PK
+32685,Docker,tool,PK
+32685,MySQL,tool,PK
+32685,PostgreSQL,tool,PK
+32685,SQL,technical,PK
+32686,Bachelor's Degree,education,PK
+32686,Excel,tool,PK
+32686,Problem Solving,business_soft,PK
+32686,Python,technical,PK
+32686,SQL,technical,PK
+32687,Master's Degree,education,PK
+32687,Python,technical,PK
+32687,R,technical,PK
+32687,Reporting,analytical,PK
+32687,SQL,technical,PK
+32687,Statistics,analytical,PK
+32688,Bachelor's Degree,education,PK
+32688,Business Intelligence,analytical,PK
+32688,Communication,business_soft,PK
+32688,Data Cleaning,analytical,PK
+32688,Data Modelling,analytical,PK
+32688,Excel,tool,PK
+32688,Power BI,tool,PK
+32688,Python,technical,PK
+32688,SQL,technical,PK
+32689,Bachelor's Degree,education,PK
+32689,Business Analysis,business_soft,PK
+32689,Excel,tool,PK
+32689,SQL,technical,PK
+32689,Stakeholder Management,business_soft,PK

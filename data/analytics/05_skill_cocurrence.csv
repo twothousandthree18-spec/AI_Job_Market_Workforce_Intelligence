@@ -1,0 +1,134 @@
+skill_a,skill_b,country_code,co_occurrence_count,co_occurrence_pct
+CSS,HTML,PK,99,1.9
+JavaScript,HTML,PK,66,1.3
+JavaScript,CSS,PK,65,1.2
+JavaScript,PHP,PK,61,1.2
+MySQL,PHP,PK,51,1.0
+PHP,CSS,PK,50,1.0
+Reporting,Business Intelligence,GB,50,1.7
+PHP,HTML,PK,49,0.9
+Business Intelligence,Power BI,GB,29,1.0
+SQL,Python,GB,28,0.9
+SQL,C#,PK,27,0.5
+Reporting,Dashboarding,GB,27,0.9
+Reporting,Data Governance,GB,26,0.9
+Reporting,Power BI,GB,21,0.7
+Leadership,Reporting,GB,21,0.7
+SQL,Reporting,GB,18,0.6
+MySQL,JavaScript,PK,17,0.3
+Dashboarding,Business Intelligence,GB,16,0.5
+MySQL,CSS,PK,16,0.3
+SQL,Azure,GB,16,0.5
+SQL,Business Intelligence,GB,15,0.5
+Machine Learning,Python,GB,15,0.5
+MySQL,HTML,PK,14,0.3
+Communication,PHP,PK,13,0.2
+Machine Learning,Generative AI,GB,13,0.4
+SQL,PHP,PK,13,0.2
+Business Intelligence,Tableau,GB,13,0.4
+Reporting,Attention to Detail,GB,13,0.4
+Reporting,Business Analysis,GB,12,0.4
+Machine Learning,LLMs,GB,12,0.4
+Azure,Databricks,GB,12,0.4
+Bachelor's Degree,SQL,PK,12,0.2
+SQL,Databricks,GB,12,0.4
+Machine Learning,A/B Testing,GB,12,0.4
+SQL,Power BI,GB,11,0.4
+Python,Databricks,GB,11,0.4
+C#,JavaScript,PK,11,0.2
+PHP,Java,PK,11,0.2
+Reporting,Financial Analysis,GB,11,0.4
+Statistics,Master's Degree,GB,10,0.3
+SQL,Snowflake,GB,10,0.3
+Leadership,Machine Learning,GB,10,0.3
+Attention to Detail,Data Governance,GB,10,0.3
+Leadership,Business Intelligence,GB,10,0.3
+SQL,Excel,PK,10,0.2
+Business Intelligence,Data Governance,GB,10,0.3
+Bachelor's Degree,Excel,PK,10,0.2
+SQL,Python,PK,10,0.2
+Reporting,Tableau,GB,9,0.3
+Business Intelligence,Data Modelling,GB,9,0.3
+Reporting,Data Modelling,GB,9,0.3
+SQL,JavaScript,PK,9,0.2
+Business Analysis,Business Intelligence,GB,9,0.3
+Python,Apache Spark,GB,9,0.3
+Bachelor's Degree,Communication,PK,9,0.2
+Azure,Apache Spark,GB,9,0.3
+SQL,HTML,PK,8,0.2
+Apache Spark,Databricks,GB,8,0.3
+Azure,Python,GB,8,0.3
+Communication,JavaScript,PK,8,0.2
+HTML,Java,PK,8,0.2
+Machine Learning,Model Deployment,GB,8,0.3
+Machine Learning,NLP,GB,8,0.3
+Project Management,PHP,PK,8,0.2
+SQL,Apache Spark,GB,8,0.3
+SQL,CSS,PK,8,0.2
+Python,R,GB,7,0.2
+Python,Excel,PK,7,0.1
+Leadership,Data Governance,GB,7,0.2
+MongoDB,JavaScript,PK,7,0.1
+JavaScript,TypeScript,PK,7,0.1
+Machine Learning,Business Intelligence,GB,7,0.2
+Bachelor's Degree,Python,PK,7,0.1
+AWS,Java,PK,7,0.1
+AWS,Python,GB,7,0.2
+Business Analysis,Power BI,GB,7,0.2
+Statistics,Python,GB,7,0.2
+Reporting,Stakeholder Management,GB,7,0.2
+Data Modelling,Power BI,GB,7,0.2
+CSS,Java,PK,7,0.1
+Communication,Excel,PK,7,0.1
+Dashboarding,Power BI,GB,7,0.2
+Dashboarding,Tableau,GB,7,0.2
+Leadership,Python,GB,6,0.2
+Excel,Power BI,GB,6,0.2
+Python,Java,GB,6,0.2
+Python,PHP,PK,6,0.1
+Python,Statistical Analysis,GB,6,0.2
+Dashboarding,Data Modelling,GB,6,0.2
+Communication,Stakeholder Management,GB,6,0.2
+Reporting,ETL,GB,6,0.2
+Reporting,Excel,GB,6,0.2
+C#,PHP,PK,6,0.1
+C#,HTML,PK,6,0.1
+Reporting,Python,GB,6,0.2
+C#,CSS,PK,6,0.1
+C#,Azure,GB,6,0.2
+Business Intelligence,Stakeholder Management,GB,6,0.2
+SQL,Business Intelligence,PK,6,0.1
+Statistics,Statistical Analysis,GB,6,0.2
+SQL,Communication,PK,6,0.1
+SQL,Excel,GB,6,0.2
+SQL,Machine Learning,GB,6,0.2
+AWS,Snowflake,GB,6,0.2
+Leadership,Stakeholder Management,GB,6,0.2
+Machine Learning,Databricks,GB,6,0.2
+Scala,Python,GB,6,0.2
+Bachelor's Degree,Business Intelligence,PK,5,0.1
+Business Intelligence,Power BI,PK,5,0.1
+Attention to Detail,Business Intelligence,GB,5,0.2
+Git,JavaScript,PK,5,0.1
+SQL,Data Governance,GB,5,0.2
+Python,Master's Degree,GB,5,0.2
+Python,Master's Degree,PK,5,0.1
+SQL,Data Modelling,GB,5,0.2
+Python,Excel,GB,5,0.2
+Business Intelligence,Generative AI,GB,5,0.2
+Python,C++,GB,5,0.2
+Scala,Apache Spark,GB,5,0.2
+MySQL,SQL,PK,5,0.1
+Communication,Python,PK,5,0.1
+Data Governance,Data Modelling,GB,5,0.2
+Statistics,PhD,GB,5,0.2
+Excel,Power BI,PK,5,0.1
+SQL,Java,PK,5,0.1
+Business Analysis,Excel,GB,5,0.2
+Leadership,SQL,GB,5,0.2
+Bachelor's Degree,Reporting,GB,5,0.2
+Excel,Business Intelligence,GB,5,0.2
+MySQL,Java,PK,5,0.1
+Excel,Business Intelligence,PK,5,0.1
+SQL,Power BI,PK,5,0.1
+Bachelor's Degree,Power BI,PK,5,0.1

@@ -1,0 +1,101 @@
+company_name,country_code,source_name,job_count,pct_of_country,distinct_roles,jobs_with_salary
+Harnham - Data & Analytics Recruitment,GB,adzuna_uk,164,5.41,8,164
+Wise,GB,adzuna_uk,95,3.14,5,95
+SoftNation Technologies,PK,chisel_pk,66,1.34,1,66
+ITOL Recruit,GB,adzuna_uk,49,1.62,2,49
+Amazon,GB,adzuna_uk,45,1.49,6,45
+JPMorganChase,GB,adzuna_uk,40,1.32,3,40
+ibex,PK,chisel_pk,36,0.73,1,36
+London Stock Exchange Group,GB,adzuna_uk,28,0.92,4,28
+Hackajob Ltd,GB,adzuna_uk,27,0.89,2,27
+Tenth Revolution Group,GB,adzuna_uk,26,0.86,4,26
+Monzo,GB,adzuna_uk,25,0.83,4,25
+Adecco,GB,adzuna_uk,25,0.83,4,25
+Hypercreate Ltd,GB,adzuna_uk,24,0.79,1,24
+Mbin,PK,chisel_pk,22,0.45,1,22
+Relay Technologies,GB,adzuna_uk,22,0.73,4,22
+WPP Media,GB,adzuna_uk,21,0.69,3,21
+The Opportunity Hub UK,GB,adzuna_uk,20,0.66,3,20
+Bloomberg,GB,adzuna_uk,20,0.66,3,20
+Mercor,GB,adzuna_uk,19,0.63,4,19
+NEWTO TRAINING LIMITED,GB,adzuna_uk,19,0.63,2,19
+Lendable,GB,adzuna_uk,18,0.59,4,18
+Google,GB,adzuna_uk,17,0.56,2,17
+Checkout.com,GB,adzuna_uk,16,0.53,3,16
+G-Research,GB,adzuna_uk,16,0.53,4,16
+Anson Mccade,GB,adzuna_uk,16,0.53,1,16
+Spartans Global,PK,chisel_pk,15,0.31,1,15
+Eka Finance,GB,adzuna_uk,15,0.5,2,15
+RSM UK,GB,adzuna_uk,14,0.46,3,14
+Morson Edge,GB,adzuna_uk,14,0.46,3,14
+Genpact,GB,adzuna_uk,14,0.46,1,14
+Operations PRO,PK,chisel_pk,14,0.29,1,14
+J.P. Morgan,GB,adzuna_uk,14,0.46,2,14
+EXL,GB,adzuna_uk,13,0.43,3,13
+Tripadvisor,GB,adzuna_uk,13,0.43,3,13
+Huxley Associates,GB,adzuna_uk,13,0.43,2,13
+Capitex,GB,adzuna_uk,13,0.43,2,13
+ASK Development Pvt (Ltd),PK,chisel_pk,13,0.26,1,13
+S&P Global,GB,adzuna_uk,13,0.43,2,13
+Leadconcept,PK,chisel_pk,13,0.26,1,13
+Oxford Knight,GB,adzuna_uk,13,0.43,3,13
+Capgemini,GB,adzuna_uk,12,0.4,4,12
+U Eat,PK,chisel_pk,12,0.24,1,12
+Texo Poly Industries,PK,chisel_pk,12,0.24,1,12
+Staffing Solutions,PK,chisel_pk,12,0.24,1,12
+"NTT America, Inc.",GB,adzuna_uk,12,0.4,4,12
+Confidential,PK,chisel_pk,12,0.24,1,12
+My Own Business,PK,chisel_pk,12,0.24,2,12
+Lampro Mellon,PK,chisel_pk,11,0.22,1,11
+Universal Music,GB,adzuna_uk,11,0.36,2,11
+G MASS,GB,adzuna_uk,11,0.36,4,11
+Databricks,GB,adzuna_uk,11,0.36,1,11
+Spantronics Pvt Ltd,PK,chisel_pk,11,0.22,1,11
+Royal Cyber Inc,PK,chisel_pk,11,0.22,1,11
+HG Markets Pvt Ltd,PK,chisel_pk,11,0.22,1,11
+PlayStation,GB,adzuna_uk,11,0.36,3,11
+Star Marketing (Pvt.) Ltd.,PK,chisel_pk,11,0.22,1,11
+Reed,GB,adzuna_uk,11,0.36,5,11
+Lorien,GB,adzuna_uk,10,0.33,4,10
+Careerwise UK,GB,adzuna_uk,10,0.33,5,10
+Rack Master Engineering Works,PK,chisel_pk,10,0.2,1,10
+Ekimetrics,GB,adzuna_uk,10,0.33,2,10
+Global Link Pvt Ltd,PK,chisel_pk,10,0.2,1,10
+Jagah Online,PK,chisel_pk,10,0.2,2,10
+Five River Solutions,PK,chisel_pk,10,0.2,1,10
+IT Career Switch,GB,adzuna_uk,10,0.33,1,10
+RSM,GB,adzuna_uk,10,0.33,4,10
+Sanderson Government and Defence,GB,adzuna_uk,10,0.33,3,10
+Q3Logics,PK,chisel_pk,10,0.2,1,10
+Kaaf Engineers,PK,chisel_pk,10,0.2,1,10
+Deliveroo,GB,adzuna_uk,10,0.33,4,10
+Castleton Commodities International,GB,adzuna_uk,9,0.3,2,9
+N Consulting Ltd,GB,adzuna_uk,9,0.3,4,9
+Veolia,GB,adzuna_uk,9,0.3,2,9
+IBM,GB,adzuna_uk,9,0.3,3,9
+Syntax Bpo,PK,chisel_pk,9,0.18,1,9
+Velocity Talent,GB,adzuna_uk,9,0.3,2,9
+Experis UK,GB,adzuna_uk,9,0.3,3,9
+CDP Global,GB,adzuna_uk,9,0.3,2,9
+Seo Factors,PK,chisel_pk,9,0.18,1,9
+Integral UK Ltd,GB,adzuna_uk,9,0.3,2,9
+Signal,GB,adzuna_uk,9,0.3,2,9
+Peek International,PK,chisel_pk,9,0.18,1,9
+Solirius Reply,GB,adzuna_uk,9,0.3,3,9
+Compare the Market,GB,adzuna_uk,9,0.3,4,9
+Catkin Engineering Sale & Services (Pvt) Ltd,PK,chisel_pk,9,0.18,1,9
+Datatech Analytics,GB,adzuna_uk,8,0.26,4,8
+iProov,GB,adzuna_uk,8,0.26,1,8
+RELX INC,GB,adzuna_uk,8,0.26,2,8
+Umer Engineering Company,PK,chisel_pk,8,0.16,1,8
+Mushawar UK Ltd,PK,chisel_pk,8,0.16,2,8
+Systems Junction,PK,chisel_pk,8,0.16,1,8
+ICM JAPAN,PK,chisel_pk,8,0.16,1,8
+9fin,GB,adzuna_uk,8,0.26,3,8
+IT Online Learning,GB,adzuna_uk,8,0.26,3,8
+Sainsbury's,GB,adzuna_uk,8,0.26,3,8
+Star Marketing,PK,chisel_pk,8,0.16,1,8
+AECOM,GB,adzuna_uk,8,0.26,2,8
+Experis,GB,adzuna_uk,8,0.26,3,8
+iwoca,GB,adzuna_uk,8,0.26,3,8
+Nayel Solutions,PK,chisel_pk,8,0.16,1,8

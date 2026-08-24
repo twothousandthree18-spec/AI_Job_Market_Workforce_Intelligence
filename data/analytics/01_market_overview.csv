@@ -1,0 +1,4 @@
+country_code,source_name,dataset_period,total_jobs,jobs_with_salary,salary_coverage_pct,remote_jobs,hybrid_jobs,on_site_jobs,unique_companies,unique_cities,avg_dq_score
+GB,adzuna_uk,Recent UK (2023-2026),3029,3029,100.0,182,461,2386,999,107,100.0
+PK,chisel_pk,Historical PK (2019-2021),5211,5211,100.0,0,0,5211,2874,86,97.5
+PK,kaggle_rozee_pk,Supplementary PK,16,16,100.0,0,0,16,16,3,100.0

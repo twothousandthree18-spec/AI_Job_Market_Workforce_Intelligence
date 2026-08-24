@@ -1,0 +1,78 @@
+skill_name,skill_category,uk_job_count,uk_penetration_pct,pk_job_count,pk_penetration_pct,penetration_diff,emphasis
+Reporting,analytical,329,10.9,58,1.1,9.8,UK-emphasized
+Machine Learning,ai_ml,231,7.6,11,0.2,7.4,UK-emphasized
+PHP,unknown,0,0.0,386,7.4,-7.4,Equal
+Communication,business_soft,28,0.9,265,5.1,-4.2,PK-emphasized
+Leadership,business_soft,140,4.6,38,0.7,3.9,UK-emphasized
+Business Intelligence,analytical,119,3.9,16,0.3,3.6,UK-emphasized
+JavaScript,technical,6,0.2,203,3.9,-3.7,PK-emphasized
+Data Governance,analytical,105,3.5,6,0.1,3.4,UK-emphasized
+SQL,technical,70,2.3,65,1.2,1.1,UK-emphasized
+Python,technical,74,2.4,39,0.7,1.7,UK-emphasized
+C#,technical,9,0.3,117,2.2,-1.9,PK-emphasized
+HTML,technical,3,0.1,121,2.3,-2.2,PK-emphasized
+Teamwork,business_soft,61,2.0,17,0.3,1.7,UK-emphasized
+Attention to Detail,business_soft,55,1.8,27,0.5,1.3,UK-emphasized
+CSS,technical,2,0.1,108,2.1,-2.0,PK-emphasized
+Master's Degree,education,21,0.7,64,1.2,-0.5,PK-emphasized
+Excel,tool,20,0.7,57,1.1,-0.4,PK-emphasized
+Project Management,business_soft,32,1.1,37,0.7,0.4,UK-emphasized
+A/B Testing,analytical,49,1.6,3,0.1,1.5,UK-emphasized
+Bachelor's Degree,education,15,0.5,63,1.2,-0.7,PK-emphasized
+AWS,tool,37,1.2,27,0.5,0.7,UK-emphasized
+Financial Analysis,analytical,41,1.4,6,0.1,1.3,UK-emphasized
+Dashboarding,analytical,41,1.4,7,0.1,1.3,UK-emphasized
+Java,technical,8,0.3,59,1.1,-0.8,PK-emphasized
+Azure,tool,36,1.2,8,0.2,1.0,UK-emphasized
+Generative AI,ai_ml,38,1.3,1,0.0,1.3,UK-emphasized
+Databricks,tool,40,1.3,0,0.0,1.3,Equal
+MySQL,unknown,0,0.0,57,1.1,-1.1,Equal
+Snowflake,tool,33,1.1,0,0.0,1.1,Equal
+Power BI,tool,30,1.0,5,0.1,0.9,UK-emphasized
+Business Analysis,business_soft,28,0.9,9,0.2,0.7,UK-emphasized
+Data Modelling,analytical,25,0.8,3,0.1,0.7,UK-emphasized
+Stakeholder Management,business_soft,23,0.8,2,0.0,0.8,UK-emphasized
+ETL,analytical,18,0.6,4,0.1,0.5,UK-emphasized
+Statistics,analytical,18,0.6,4,0.1,0.5,UK-emphasized
+Problem Solving,business_soft,13,0.4,18,0.3,0.1,UK-emphasized
+Market Research,analytical,8,0.3,17,0.3,0.0,Equal
+Go,technical,13,0.4,11,0.2,0.2,UK-emphasized
+NLP,ai_ml,12,0.4,5,0.1,0.3,UK-emphasized
+LLMs,ai_ml,15,0.5,1,0.0,0.5,UK-emphasized
+Statistical Analysis,analytical,15,0.5,1,0.0,0.5,UK-emphasized
+Google Cloud,tool,15,0.5,0,0.0,0.5,Equal
+Tableau,tool,15,0.5,1,0.0,0.5,UK-emphasized
+C++,technical,7,0.2,12,0.2,0.0,Equal
+Git,tool,5,0.2,10,0.2,0.0,Equal
+Apache Spark,tool,10,0.3,7,0.1,0.2,UK-emphasized
+PhD,education,12,0.4,0,0.0,0.4,Equal
+Time Management,business_soft,5,0.2,8,0.2,0.0,Equal
+MongoDB,tool,3,0.1,11,0.2,-0.1,PK-emphasized
+Model Deployment,ai_ml,8,0.3,0,0.0,0.3,Equal
+Computer Vision,ai_ml,6,0.2,5,0.1,0.1,UK-emphasized
+Docker,tool,4,0.1,8,0.2,-0.1,PK-emphasized
+TypeScript,technical,3,0.1,10,0.2,-0.1,PK-emphasized
+Data Mining,ai_ml,5,0.2,0,0.0,0.2,Equal
+Llms,ai_ml,5,0.2,0,0.0,0.2,Equal
+Looker,tool,5,0.2,0,0.0,0.2,Equal
+Diploma,unknown,0,0.0,9,0.2,-0.2,Equal
+R,technical,7,0.2,2,0.0,0.2,UK-emphasized
+Scala,technical,6,0.2,0,0.0,0.2,Equal
+dbt,tool,5,0.2,0,0.0,0.2,Equal
+VBA,unknown,0,0.0,5,0.1,-0.1,Equal
+SAS,technical,2,0.1,1,0.0,0.1,UK-emphasized
+Forecasting,analytical,2,0.1,0,0.0,0.1,Equal
+Deep Learning,ai_ml,1,0.0,3,0.1,-0.1,PK-emphasized
+BigQuery,tool,3,0.1,0,0.0,0.1,Equal
+Prompt Engineering,ai_ml,2,0.1,1,0.0,0.1,UK-emphasized
+PostgreSQL,tool,1,0.0,7,0.1,-0.1,PK-emphasized
+AWS Certified,unknown,0,0.0,1,0.0,0.0,Equal
+Microsoft Certified,unknown,0,0.0,1,0.0,0.0,Equal
+Data Cleaning,unknown,0,0.0,1,0.0,0.0,Equal
+Feature Engineering,ai_ml,1,0.0,0,0.0,0.0,Equal
+Redshift,tool,1,0.0,0,0.0,0.0,Equal
+Airflow,tool,1,0.0,1,0.0,0.0,Equal
+Scrum Master,certification,1,0.0,1,0.0,0.0,Equal
+Exploratory Data Analysis,analytical,1,0.0,1,0.0,0.0,Equal
+Neural Networks,ai_ml,1,0.0,0,0.0,0.0,Equal
+Hadoop,tool,1,0.0,1,0.0,0.0,Equal

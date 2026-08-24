@@ -1,0 +1,66 @@
+skill_name,skill_category,country_code,job_count,avg_salary_midpoint,median_salary,q25_salary,q75_salary
+A/B Testing,analytical,GB,49,80438.0,70888.0,56639.0,105000.0
+AWS,tool,GB,37,77284.0,75000.0,68832.0,85000.0
+AWS,tool,PK,27,,,,
+Apache Spark,tool,GB,10,81423.0,77500.0,77500.0,87809.0
+Attention to Detail,business_soft,GB,55,55287.0,51353.0,32000.0,70389.0
+Attention to Detail,business_soft,PK,27,,,,
+Azure,tool,GB,36,83142.0,77500.0,63900.0,95625.0
+Bachelor's Degree,education,GB,15,62098.0,61712.0,50637.0,71463.0
+Bachelor's Degree,education,PK,63,,,,
+Business Analysis,business_soft,GB,28,68947.0,60000.0,48722.0,79750.0
+Business Intelligence,analytical,GB,119,67702.0,60000.0,53958.0,75000.0
+Business Intelligence,analytical,PK,16,,,123125.0,
+C#,technical,PK,117,,,,
+C++,technical,PK,12,,,,
+CSS,technical,PK,108,,,,
+Communication,business_soft,GB,28,61335.0,63140.0,51012.0,69970.0
+Communication,business_soft,PK,265,,,,
+Dashboarding,analytical,GB,41,67882.0,55769.0,52500.0,80000.0
+Data Governance,analytical,GB,105,,67138.0,52918.0,78000.0
+Data Modelling,analytical,GB,25,78351.0,70000.0,62888.0,81516.0
+Databricks,tool,GB,40,80477.0,70500.0,66657.0,84087.0
+ETL,analytical,GB,18,59603.0,58125.0,48142.0,68659.0
+Excel,tool,GB,20,56227.0,55680.0,31500.0,63125.0
+Excel,tool,PK,57,,,,
+Financial Analysis,analytical,GB,41,61766.0,58847.0,50848.0,67217.0
+Generative AI,ai_ml,GB,38,69203.0,64276.0,50345.0,82234.0
+Git,tool,PK,10,,,,
+Go,technical,GB,13,66202.0,62109.0,53546.0,68832.0
+Go,technical,PK,11,,,,
+Google Cloud,tool,GB,15,67510.0,64000.0,44959.0,77246.0
+HTML,technical,PK,121,,,,
+Java,technical,PK,59,,,,
+JavaScript,technical,PK,203,,,,
+LLMs,ai_ml,GB,15,69193.0,71623.0,63214.0,77177.0
+Leadership,business_soft,GB,140,80357.0,75093.0,61473.0,90309.0
+Leadership,business_soft,PK,38,,,,
+Machine Learning,ai_ml,GB,231,,70401.0,57551.0,83593.0
+Machine Learning,ai_ml,PK,11,,,,
+Market Research,analytical,PK,17,,,,
+Master's Degree,education,GB,21,63346.0,66392.0,49283.0,75419.0
+Master's Degree,education,PK,64,,,,
+MongoDB,tool,PK,11,,,,
+MySQL,tool,PK,57,,,,
+NLP,ai_ml,GB,12,67474.0,67020.0,50979.0,80541.0
+PHP,technical,PK,386,,,,
+PhD,education,GB,12,47266.0,44250.0,38275.0,50407.0
+Power BI,tool,GB,30,70162.0,70000.0,60000.0,75000.0
+Problem Solving,business_soft,GB,13,60770.0,58596.0,46000.0,78268.0
+Problem Solving,business_soft,PK,18,,,,
+Project Management,business_soft,GB,32,59812.0,55500.0,49857.0,67500.0
+Project Management,business_soft,PK,37,,,,
+Python,technical,GB,74,69488.0,69318.0,55009.0,79375.0
+Python,technical,PK,39,,,232500.0,
+Reporting,analytical,GB,329,,63394.0,51690.0,83803.0
+Reporting,analytical,PK,58,,,,
+SQL,technical,GB,70,,70000.0,55138.0,84742.0
+SQL,technical,PK,65,,,,
+Snowflake,tool,GB,33,,81992.0,59830.0,143000.0
+Stakeholder Management,business_soft,GB,23,87404.0,82333.0,66250.0,113500.0
+Statistical Analysis,analytical,GB,15,69356.0,69318.0,52969.0,86543.0
+Statistics,analytical,GB,18,59680.0,53236.0,46132.0,71722.0
+Tableau,tool,GB,15,76703.0,56550.0,55500.0,89996.0
+Teamwork,business_soft,GB,61,71632.0,63285.0,47980.0,81022.0
+Teamwork,business_soft,PK,17,,,,
+TypeScript,technical,PK,10,,,,

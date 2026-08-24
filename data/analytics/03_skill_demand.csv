@@ -1,0 +1,160 @@
+skill_name,skill_category,country_code,dataset_period,job_count,penetration_pct
+A/B Testing,analytical,GB,Recent UK (2023-2026),49,1.6
+A/B Testing,analytical,PK,Historical PK (2019-2021),2,0.0
+A/B Testing,analytical,PK,Supplementary PK,1,0.0
+AWS,tool,GB,Recent UK (2023-2026),37,1.2
+AWS,tool,PK,Historical PK (2019-2021),24,0.5
+AWS,tool,PK,Supplementary PK,3,0.1
+AWS Certified,certification,PK,Historical PK (2019-2021),1,0.0
+Airflow,tool,GB,Recent UK (2023-2026),1,0.0
+Airflow,tool,PK,Supplementary PK,1,0.0
+Apache Spark,tool,GB,Recent UK (2023-2026),10,0.3
+Apache Spark,tool,PK,Historical PK (2019-2021),6,0.1
+Apache Spark,tool,PK,Supplementary PK,1,0.0
+Attention to Detail,business_soft,GB,Recent UK (2023-2026),55,1.8
+Attention to Detail,business_soft,PK,Historical PK (2019-2021),24,0.5
+Attention to Detail,business_soft,PK,Supplementary PK,3,0.1
+Azure,tool,GB,Recent UK (2023-2026),36,1.2
+Azure,tool,PK,Historical PK (2019-2021),8,0.2
+Bachelor's Degree,education,GB,Recent UK (2023-2026),15,0.5
+Bachelor's Degree,education,PK,Historical PK (2019-2021),52,1.0
+Bachelor's Degree,education,PK,Supplementary PK,11,0.2
+BigQuery,tool,GB,Recent UK (2023-2026),3,0.1
+Business Analysis,business_soft,GB,Recent UK (2023-2026),28,0.9
+Business Analysis,business_soft,PK,Historical PK (2019-2021),8,0.2
+Business Analysis,business_soft,PK,Supplementary PK,1,0.0
+Business Intelligence,analytical,GB,Recent UK (2023-2026),119,3.9
+Business Intelligence,analytical,PK,Historical PK (2019-2021),11,0.2
+Business Intelligence,analytical,PK,Supplementary PK,5,0.1
+C#,technical,GB,Recent UK (2023-2026),9,0.3
+C#,technical,PK,Historical PK (2019-2021),117,2.2
+C++,technical,GB,Recent UK (2023-2026),7,0.2
+C++,technical,PK,Historical PK (2019-2021),12,0.2
+CSS,technical,GB,Recent UK (2023-2026),2,0.1
+CSS,technical,PK,Historical PK (2019-2021),108,2.1
+Communication,business_soft,GB,Recent UK (2023-2026),28,0.9
+Communication,business_soft,PK,Historical PK (2019-2021),261,5.0
+Communication,business_soft,PK,Supplementary PK,4,0.1
+Computer Vision,ai_ml,GB,Recent UK (2023-2026),6,0.2
+Computer Vision,ai_ml,PK,Historical PK (2019-2021),5,0.1
+Dashboarding,analytical,GB,Recent UK (2023-2026),41,1.4
+Dashboarding,analytical,PK,Historical PK (2019-2021),6,0.1
+Dashboarding,analytical,PK,Supplementary PK,1,0.0
+Data Cleaning,analytical,PK,Supplementary PK,1,0.0
+Data Governance,analytical,GB,Recent UK (2023-2026),105,3.5
+Data Governance,analytical,PK,Historical PK (2019-2021),6,0.1
+Data Mining,ai_ml,GB,Recent UK (2023-2026),5,0.2
+Data Modelling,analytical,GB,Recent UK (2023-2026),25,0.8
+Data Modelling,analytical,PK,Supplementary PK,3,0.1
+Databricks,tool,GB,Recent UK (2023-2026),40,1.3
+Deep Learning,ai_ml,GB,Recent UK (2023-2026),1,0.0
+Deep Learning,ai_ml,PK,Supplementary PK,3,0.1
+Diploma,education,PK,Historical PK (2019-2021),9,0.2
+Docker,tool,GB,Recent UK (2023-2026),4,0.1
+Docker,tool,PK,Historical PK (2019-2021),4,0.1
+Docker,tool,PK,Supplementary PK,4,0.1
+ETL,analytical,GB,Recent UK (2023-2026),18,0.6
+ETL,analytical,PK,Historical PK (2019-2021),2,0.0
+ETL,analytical,PK,Supplementary PK,2,0.0
+Excel,tool,GB,Recent UK (2023-2026),20,0.7
+Excel,tool,PK,Historical PK (2019-2021),47,0.9
+Excel,tool,PK,Supplementary PK,10,0.2
+Exploratory Data Analysis,analytical,GB,Recent UK (2023-2026),1,0.0
+Exploratory Data Analysis,analytical,PK,Historical PK (2019-2021),1,0.0
+Feature Engineering,ai_ml,GB,Recent UK (2023-2026),1,0.0
+Financial Analysis,analytical,GB,Recent UK (2023-2026),41,1.4
+Financial Analysis,analytical,PK,Historical PK (2019-2021),4,0.1
+Financial Analysis,analytical,PK,Supplementary PK,2,0.0
+Forecasting,analytical,GB,Recent UK (2023-2026),2,0.1
+Generative AI,ai_ml,GB,Recent UK (2023-2026),38,1.3
+Generative AI,ai_ml,PK,Supplementary PK,1,0.0
+Git,tool,GB,Recent UK (2023-2026),5,0.2
+Git,tool,PK,Historical PK (2019-2021),10,0.2
+Go,technical,GB,Recent UK (2023-2026),13,0.4
+Go,technical,PK,Historical PK (2019-2021),11,0.2
+Google Cloud,tool,GB,Recent UK (2023-2026),15,0.5
+HTML,technical,GB,Recent UK (2023-2026),3,0.1
+HTML,technical,PK,Historical PK (2019-2021),121,2.3
+Hadoop,tool,GB,Recent UK (2023-2026),1,0.0
+Hadoop,tool,PK,Historical PK (2019-2021),1,0.0
+Java,technical,GB,Recent UK (2023-2026),8,0.3
+Java,technical,PK,Historical PK (2019-2021),59,1.1
+JavaScript,technical,GB,Recent UK (2023-2026),6,0.2
+JavaScript,technical,PK,Historical PK (2019-2021),203,3.9
+LLMs,ai_ml,GB,Recent UK (2023-2026),15,0.5
+LLMs,ai_ml,PK,Supplementary PK,1,0.0
+Leadership,business_soft,GB,Recent UK (2023-2026),140,4.6
+Leadership,business_soft,PK,Historical PK (2019-2021),38,0.7
+Llms,ai_ml,GB,Recent UK (2023-2026),5,0.2
+Looker,tool,GB,Recent UK (2023-2026),5,0.2
+Machine Learning,ai_ml,GB,Recent UK (2023-2026),231,7.6
+Machine Learning,ai_ml,PK,Historical PK (2019-2021),8,0.2
+Machine Learning,ai_ml,PK,Supplementary PK,3,0.1
+Market Research,analytical,GB,Recent UK (2023-2026),8,0.3
+Market Research,analytical,PK,Historical PK (2019-2021),16,0.3
+Market Research,analytical,PK,Supplementary PK,1,0.0
+Master's Degree,education,GB,Recent UK (2023-2026),21,0.7
+Master's Degree,education,PK,Historical PK (2019-2021),59,1.1
+Master's Degree,education,PK,Supplementary PK,5,0.1
+Microsoft Certified,certification,PK,Historical PK (2019-2021),1,0.0
+Model Deployment,ai_ml,GB,Recent UK (2023-2026),8,0.3
+MongoDB,tool,GB,Recent UK (2023-2026),3,0.1
+MongoDB,tool,PK,Historical PK (2019-2021),11,0.2
+MySQL,tool,PK,Historical PK (2019-2021),56,1.1
+MySQL,tool,PK,Supplementary PK,1,0.0
+NLP,ai_ml,GB,Recent UK (2023-2026),12,0.4
+NLP,ai_ml,PK,Historical PK (2019-2021),2,0.0
+NLP,ai_ml,PK,Supplementary PK,3,0.1
+Neural Networks,ai_ml,GB,Recent UK (2023-2026),1,0.0
+PHP,technical,PK,Historical PK (2019-2021),386,7.4
+PhD,education,GB,Recent UK (2023-2026),12,0.4
+PostgreSQL,tool,GB,Recent UK (2023-2026),1,0.0
+PostgreSQL,tool,PK,Historical PK (2019-2021),6,0.1
+PostgreSQL,tool,PK,Supplementary PK,1,0.0
+Power BI,tool,GB,Recent UK (2023-2026),30,1.0
+Power BI,tool,PK,Supplementary PK,5,0.1
+Problem Solving,business_soft,GB,Recent UK (2023-2026),13,0.4
+Problem Solving,business_soft,PK,Historical PK (2019-2021),14,0.3
+Problem Solving,business_soft,PK,Supplementary PK,4,0.1
+Project Management,business_soft,GB,Recent UK (2023-2026),32,1.1
+Project Management,business_soft,PK,Historical PK (2019-2021),37,0.7
+Prompt Engineering,ai_ml,GB,Recent UK (2023-2026),2,0.1
+Prompt Engineering,ai_ml,PK,Supplementary PK,1,0.0
+Python,technical,GB,Recent UK (2023-2026),74,2.4
+Python,technical,PK,Historical PK (2019-2021),27,0.5
+Python,technical,PK,Supplementary PK,12,0.2
+R,technical,GB,Recent UK (2023-2026),7,0.2
+R,technical,PK,Historical PK (2019-2021),1,0.0
+R,technical,PK,Supplementary PK,1,0.0
+Redshift,tool,GB,Recent UK (2023-2026),1,0.0
+Reporting,analytical,GB,Recent UK (2023-2026),329,10.9
+Reporting,analytical,PK,Historical PK (2019-2021),56,1.1
+Reporting,analytical,PK,Supplementary PK,2,0.0
+SAS,technical,GB,Recent UK (2023-2026),2,0.1
+SAS,technical,PK,Historical PK (2019-2021),1,0.0
+SQL,technical,GB,Recent UK (2023-2026),70,2.3
+SQL,technical,PK,Historical PK (2019-2021),52,1.0
+SQL,technical,PK,Supplementary PK,13,0.2
+Scala,technical,GB,Recent UK (2023-2026),6,0.2
+Scrum Master,certification,GB,Recent UK (2023-2026),1,0.0
+Scrum Master,certification,PK,Historical PK (2019-2021),1,0.0
+Snowflake,tool,GB,Recent UK (2023-2026),33,1.1
+Stakeholder Management,business_soft,GB,Recent UK (2023-2026),23,0.8
+Stakeholder Management,business_soft,PK,Supplementary PK,2,0.0
+Statistical Analysis,analytical,GB,Recent UK (2023-2026),15,0.5
+Statistical Analysis,analytical,PK,Historical PK (2019-2021),1,0.0
+Statistics,analytical,GB,Recent UK (2023-2026),18,0.6
+Statistics,analytical,PK,Historical PK (2019-2021),1,0.0
+Statistics,analytical,PK,Supplementary PK,3,0.1
+Tableau,tool,GB,Recent UK (2023-2026),15,0.5
+Tableau,tool,PK,Supplementary PK,1,0.0
+Teamwork,business_soft,GB,Recent UK (2023-2026),61,2.0
+Teamwork,business_soft,PK,Historical PK (2019-2021),16,0.3
+Teamwork,business_soft,PK,Supplementary PK,1,0.0
+Time Management,business_soft,GB,Recent UK (2023-2026),5,0.2
+Time Management,business_soft,PK,Historical PK (2019-2021),8,0.2
+TypeScript,technical,GB,Recent UK (2023-2026),3,0.1
+TypeScript,technical,PK,Historical PK (2019-2021),10,0.2
+VBA,technical,PK,Historical PK (2019-2021),4,0.1
+VBA,technical,PK,Supplementary PK,1,0.0
+dbt,tool,GB,Recent UK (2023-2026),5,0.2

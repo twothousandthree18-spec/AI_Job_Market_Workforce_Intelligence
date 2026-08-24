@@ -1,0 +1,13 @@
+seniority,country_code,dataset_period,total_jobs,data_analyst,data_scientist,analytics_engineer,jobs_with_salary,avg_salary_midpoint,remote_count,hybrid_count,on_site_count
+mid,GB,Recent UK (2023-2026),7,0,0,1,7,47532.0,2,1,4
+unknown,GB,Recent UK (2023-2026),1237,380,168,143,1237,,107,216,914
+senior,PK,Historical PK (2019-2021),64,1,1,0,64,,0,0,64
+unknown,PK,Historical PK (2019-2021),95,5,2,0,95,,0,0,95
+mid,PK,Historical PK (2019-2021),1111,1,1,0,1111,,0,0,1111
+junior,PK,Historical PK (2019-2021),3941,7,2,3,3941,,0,0,3941
+junior,PK,Supplementary PK,1,1,0,0,1,65000.0,0,0,1
+senior,GB,Recent UK (2023-2026),1515,284,198,123,1515,,64,233,1218
+unknown,PK,Supplementary PK,11,6,2,1,11,149000.0,0,0,11
+senior,PK,Supplementary PK,2,0,1,0,2,180000.0,0,0,2
+junior,GB,Recent UK (2023-2026),270,74,16,22,270,50456.0,9,11,250
+mid,PK,Supplementary PK,2,0,0,0,2,122500.0,0,0,2

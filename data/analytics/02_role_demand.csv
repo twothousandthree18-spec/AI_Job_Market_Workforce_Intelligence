@@ -1,0 +1,29 @@
+role_category,country_code,dataset_period,job_count,pct_within_country,junior_count,mid_count,senior_count,unknown_seniority,jobs_with_salary,avg_salary_midpoint
+data_scientist,GB,Recent UK (2023-2026),382,12.6,16,0,198,168,382,
+analytics_engineer,GB,Recent UK (2023-2026),289,9.5,22,1,123,143,289,
+bi_developer,GB,Recent UK (2023-2026),4,0.1,0,0,1,3,4,83763.0
+product_analyst,GB,Recent UK (2023-2026),33,1.1,0,0,26,7,33,65562.0
+financial_analyst,GB,Recent UK (2023-2026),35,1.2,4,0,9,22,35,
+statistician,GB,Recent UK (2023-2026),17,0.6,1,0,0,16,17,67874.0
+marketing_analyst,GB,Recent UK (2023-2026),11,0.4,0,0,7,4,11,75746.0
+data_architect,GB,Recent UK (2023-2026),39,1.3,3,0,9,27,39,110299.0
+operations_analyst,GB,Recent UK (2023-2026),27,0.9,0,0,7,20,27,57771.0
+other,GB,Recent UK (2023-2026),1454,48.0,150,6,851,447,1454,
+data_analyst,GB,Recent UK (2023-2026),738,24.4,74,0,284,380,738,
+statistician,PK,Supplementary PK,1,0.0,0,0,0,1,1,155000.0
+other,PK,Supplementary PK,1,0.0,0,0,1,0,1,145000.0
+analytics_engineer,PK,Supplementary PK,1,0.0,0,0,0,1,1,175000.0
+marketing_analyst,PK,Historical PK (2019-2021),3,0.1,0,3,0,0,3,
+financial_analyst,PK,Historical PK (2019-2021),4,0.1,1,2,0,1,4,
+product_analyst,PK,Historical PK (2019-2021),2,0.0,0,0,0,2,2,
+analytics_engineer,PK,Historical PK (2019-2021),3,0.1,3,0,0,0,3,
+data_scientist,PK,Supplementary PK,3,0.1,0,0,1,2,3,250000.0
+data_analyst,PK,Supplementary PK,7,0.1,1,0,0,6,7,107714.0
+statistician,PK,Historical PK (2019-2021),1,0.0,0,1,0,0,1,
+data_scientist,PK,Historical PK (2019-2021),6,0.1,2,1,1,2,6,
+other,PK,Historical PK (2019-2021),5176,99.0,3927,1103,62,84,5176,
+data_architect,PK,Historical PK (2019-2021),2,0.0,1,0,0,1,2,
+financial_analyst,PK,Supplementary PK,1,0.0,0,1,0,0,1,135000.0
+operations_analyst,PK,Supplementary PK,1,0.0,0,0,0,1,1,85000.0
+marketing_analyst,PK,Supplementary PK,1,0.0,0,1,0,0,1,110000.0
+data_analyst,PK,Historical PK (2019-2021),14,0.3,7,1,1,5,14,
