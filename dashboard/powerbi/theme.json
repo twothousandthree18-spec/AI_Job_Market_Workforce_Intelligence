@@ -1,0 +1,81 @@
+{
+  "name": "Workforce Intelligence — Gold & Charcoal",
+  "dataColors": [
+    "#B8952B",
+    "#3A3A3A",
+    "#D4AF37",
+    "#8A8578",
+    "#7A6520",
+    "#CDC7B8",
+    "#5C4E1A",
+    "#B0AA9C"
+  ],
+  "good": "#6B8F5A",
+  "neutral": "#8A8578",
+  "bad": "#9C4A38",
+  "maximum": "#7A6520",
+  "center": "#D4AF37",
+  "minimum": "#EDE9DD",
+  "foreground": "#1A1A1A",
+  "background": "#FFFFFF",
+  "foregroundSecondary": "#4A463C",
+  "backgroundSecondary": "#F5F1E8",
+  "tableAccent": "#B8952B",
+  "textClasses": {
+    "title": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 18,
+      "color": "#1A1A1A"
+    },
+    "header": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 12,
+      "color": "#4A463C"
+    },
+    "label": {
+      "fontFace": "Segoe UI",
+      "fontSize": 10,
+      "color": "#4A463C"
+    },
+    "callout": {
+      "fontFace": "Segoe UI Light",
+      "fontSize": 30,
+      "color": "#1A1A1A"
+    }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [{ "color": { "solid": { "color": "#FFFFFF" } }, "transparency": 0 }],
+        "border": [{ "color": { "solid": { "color": "#DDD8CA" } }, "show": true, "radius": 6 }],
+        "title": [
+          {
+            "show": true,
+            "fontColor": { "solid": { "color": "#1A1A1A" } },
+            "background": { "solid": { "color": "#FFFFFF" } },
+            "alignment": "left",
+            "fontSize": 11,
+            "fontFamily": "Segoe UI Semibold"
+          }
+        ],
+        "dropShadow": [{ "show": false }]
+      }
+    },
+    "page": {
+      "*": {
+        "background": [
+          { "color": { "solid": { "color": "#F5F1E8" } }, "transparency": 0 }
+        ],
+        "outspace": [{ "color": { "solid": { "color": "#EDE9DD" } }, "transparency": 0 }]
+      }
+    },
+    "card": {
+      "*": {
+        "labels": [
+          { "color": { "solid": { "color": "#B8952B" } }, "fontSize": 28 }
+        ],
+        "categoryLabels": [{ "color": { "solid": { "color": "#4A463C" } }, "fontSize": 10 }]
+      }
+    }
+  }
+}

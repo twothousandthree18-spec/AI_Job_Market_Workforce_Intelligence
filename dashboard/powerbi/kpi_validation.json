@@ -1,0 +1,211 @@
+{
+  "generated_by": "scripts/powerbi_qa.py",
+  "database": "job_market_analytics (PostgreSQL)",
+  "all_checks_pass": true,
+  "checks": [
+    {
+      "check": "csv files 01-14 present",
+      "expected": [
+        "01_",
+        "02_",
+        "03_",
+        "04_",
+        "05_",
+        "06_",
+        "07_",
+        "08_",
+        "09_",
+        "10_",
+        "11_",
+        "12_",
+        "13_",
+        "14_"
+      ],
+      "actual": [
+        "01_",
+        "02_",
+        "03_",
+        "04_",
+        "05_",
+        "06_",
+        "07_",
+        "08_",
+        "09_",
+        "10_",
+        "11_",
+        "12_",
+        "13_",
+        "14_"
+      ],
+      "pass": true
+    },
+    {
+      "check": "Jobs rows",
+      "expected": 8256,
+      "actual": 8256,
+      "pass": true
+    },
+    {
+      "check": "JobSkills bridge rows",
+      "expected": 4058,
+      "actual": 4058,
+      "pass": true
+    },
+    {
+      "check": "UK jobs",
+      "expected": 3029,
+      "actual": 3029,
+      "pass": true
+    },
+    {
+      "check": "Pakistan total",
+      "expected": 5227,
+      "actual": 5227,
+      "pass": true
+    },
+    {
+      "check": "dataset_period labels on UK rows",
+      "expected": [
+        "Recent UK (2023-2026)"
+      ],
+      "actual": [
+        "Recent UK (2023-2026)"
+      ],
+      "pass": true
+    },
+    {
+      "check": "dataset_period labels on historical PK rows",
+      "expected": [
+        "Historical PK (2019-2021)"
+      ],
+      "actual": [
+        "Historical PK (2019-2021)"
+      ],
+      "pass": true
+    },
+    {
+      "check": "Unique companies (CSV vs DB)",
+      "expected": 3889,
+      "actual": 3886,
+      "pass": true
+    },
+    {
+      "check": "Distinct skills used",
+      "expected": 77,
+      "actual": 77,
+      "pass": true
+    },
+    {
+      "check": "London groups match DB",
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    },
+    {
+      "check": "London groups sum to UK total",
+      "expected": 3029,
+      "actual": 3029,
+      "pass": true
+    },
+    {
+      "check": "Role demand CSV sums to total jobs",
+      "expected": 8256,
+      "actual": 8256,
+      "pass": true
+    },
+    {
+      "check": "Seniority analysis matches DB",
+      "expected": 8,
+      "actual": 8,
+      "pass": true
+    },
+    {
+      "check": "Skill penetration uses country denominator",
+      "expected": 0,
+      "actual": 0,
+      "pass": true
+    },
+    {
+      "check": "Usable salaries \u2014 chisel_pk",
+      "expected": 0,
+      "actual": 0,
+      "pass": true
+    },
+    {
+      "check": "Phase 5 naive coverage overstates reality (documented)",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "check": "Skill-salary view: PK medians are all unusable (excluded in PQ)",
+      "expected": 28,
+      "actual": 28,
+      "pass": true
+    },
+    {
+      "check": "Skill-salary GB rows have valid medians",
+      "expected": 0,
+      "actual": 0,
+      "pass": true
+    }
+  ],
+  "kpi_reference_values": {
+    "total_jobs": 8256,
+    "job_skill_links": 4058,
+    "salary_observations": 3033,
+    "uk_jobs": 3029,
+    "pk_historical": 5211,
+    "pk_supplementary": 16,
+    "unique_companies": 3889,
+    "unique_locations_master": 193,
+    "unique_locations_in_postings": 193,
+    "unique_skills": 77,
+    "london": 2312,
+    "greater_london": 513,
+    "uk_other": 204,
+    "senior_uk": 1515,
+    "junior_uk": 270,
+    "usable_salaries_adzuna_uk": 3017,
+    "usable_salaries_chisel_pk": 0,
+    "usable_salaries_kaggle_rozee_pk": 16,
+    "phase5_naive_salary_coverage": [
+      {
+        "source_name": "adzuna_uk",
+        "salary_coverage_pct": 100.0
+      },
+      {
+        "source_name": "chisel_pk",
+        "salary_coverage_pct": 100.0
+      },
+      {
+        "source_name": "kaggle_rozee_pk",
+        "salary_coverage_pct": 100.0
+      }
+    ],
+    "gb_salary": {
+      "n": 3017.0,
+      "avg_sal": 67942.0,
+      "med_sal": 63394.0,
+      "q25": 50108.0,
+      "q75": 77727.0
+    },
+    "temporal_ranges": [
+      {
+        "source": "adzuna_uk",
+        "min": "2023-09-06",
+        "max": "2026-08-21"
+      },
+      {
+        "source": "chisel_pk",
+        "min": "2019-12-18",
+        "max": "2021-03-15"
+      },
+      {
+        "source": "kaggle_rozee_pk",
+        "min": "2024-03-15",
+        "max": "2024-05-15"
+      }
+    ]
+  }
+}

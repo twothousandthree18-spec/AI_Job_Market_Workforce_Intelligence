@@ -1,0 +1,275 @@
+// =============================================================================
+// Workforce Intelligence Dashboard - DAX Measure Library
+// =============================================================================
+// Target model : dashboard/powerbi/model_specification.md
+// Import order : paste into a dedicated empty table `_Measures`
+//                (Home > Enter Data > create table "_Measures" with any column,
+//                then delete the column; home for all measures below).
+//
+// DESIGN RULES
+// 1. PostgreSQL exports contain float8 'NaN' values (not NULL) in salary
+//    columns. Every salary measure MUST guard with NOT ISNAN(...).
+// 2. Salary analysis is GBP/UK-led. Pakistan CHISEL salaries are unusable
+//    (all NaN). NEVER report PK salary averages from CHISEL rows.
+// 3. Skill metrics are JOB-LEVEL penetration: each job counts once per skill
+//    (guaranteed by the JobSkills bridge grain).
+// 4. UK (2023-2026) and PK (2019-2021) datasets are NOT temporally
+//    equivalent; comparison measures must be labeled, never normalised into
+//    a single "current market" number.
+// =============================================================================
+
+// -----------------------------------------------------------------------------
+// 01. BASE COUNTS
+// -----------------------------------------------------------------------------
+
+Total Jobs = COUNTROWS ( Jobs )
+
+Unique Companies =
+CALCULATE (
+    DISTINCTCOUNT ( Jobs[company_name] ),
+    NOT ISBLANK ( Jobs[company_name] ),
+    Jobs[company_name] <> ""
+)
+
+Unique Locations =
+CALCULATE (
+    DISTINCTCOUNT ( Jobs[city] ),
+    NOT ISBLANK ( Jobs[city] ),
+    Jobs[city] <> ""
+)
+
+Unique Countries = DISTINCTCOUNT ( Jobs[country_code] )
+
+Unique Skills =
+CALCULATE (
+    DISTINCTCOUNT ( JobSkills[skill_name] ),
+    NOT ISBLANK ( JobSkills[skill_name] )
+)
+
+Skill Links = COUNTROWS ( JobSkills )
+
+// -----------------------------------------------------------------------------
+// 02. COUNTRY / SOURCE COMPOSITION
+// -----------------------------------------------------------------------------
+
+UK Job Count =
+CALCULATE ( [Total Jobs], Jobs[country_code] = "GB" )
+
+Pakistan Job Count =
+CALCULATE ( [Total Jobs], Jobs[country_code] = "PK" )
+
+UK Jobs % =
+DIVIDE ( [UK Job Count], [Total Jobs] )
+
+Historical PK Jobs =
+CALCULATE (
+    [Total Jobs],
+    Jobs[dataset_period] = "Historical PK (2019-2021)"
+)
+
+Supplementary PK Jobs =
+CALCULATE (
+    [Total Jobs],
+    Jobs[dataset_period] = "Supplementary PK"
+)
+
+London Jobs =
+CALCULATE (
+    [Total Jobs],
+    Jobs[location_group] = "London"
+)
+
+Greater London Jobs =
+CALCULATE (
+    [Total Jobs],
+    Jobs[location_group] = "Greater London"
+)
+
+UK Other Jobs =
+CALCULATE (
+    [Total Jobs],
+    Jobs[location_group] = "UK Other"
+)
+
+London Share of UK % =
+DIVIDE ( [London Jobs] + [Greater London Jobs], [UK Job Count] )
+
+// -----------------------------------------------------------------------------
+// 03. SENIORITY
+// -----------------------------------------------------------------------------
+
+Senior Job Count =
+CALCULATE ( [Total Jobs], Jobs[seniority] = "senior" )
+
+Mid Job Count =
+CALCULATE ( [Total Jobs], Jobs[seniority] = "mid" )
+
+Junior Job Count =
+CALCULATE ( [Total Jobs], Jobs[seniority] = "junior" )
+
+Unknown Seniority Count =
+CALCULATE ( [Total Jobs], Jobs[seniority] = "unknown" )
+
+Senior Share % =
+DIVIDE ( [Senior Job Count], [Total Jobs] )
+
+Junior Share % =
+DIVIDE ( [Junior Job Count], [Total Jobs] )
+
+Seniority Unknown % =
+DIVIDE ( [Unknown Seniority Count], [Total Jobs] )
+
+// -----------------------------------------------------------------------------
+// 04. SALARY (usable observations only - see design rule 1)
+// -----------------------------------------------------------------------------
+
+Salary Observations =
+CALCULATE (
+    COUNTROWS ( Jobs ),
+    NOT ISBLANK ( Jobs[salary_midpoint] ),
+    NOT ISNAN ( Jobs[salary_midpoint] )
+)
+
+Salary Coverage % =
+DIVIDE ( [Salary Observations], [Total Jobs] )
+
+Average Salary =
+CALCULATE (
+    AVERAGE ( Jobs[salary_midpoint] ),
+    NOT ISBLANK ( Jobs[salary_midpoint] ),
+    NOT ISNAN ( Jobs[salary_midpoint] )
+)
+
+Median Salary =
+CALCULATE (
+    MEDIAN ( Jobs[salary_midpoint] ),
+    NOT ISBLANK ( Jobs[salary_midpoint] ),
+    NOT ISNAN ( Jobs[salary_midpoint] )
+)
+
+Minimum Salary =
+CALCULATE (
+    MIN ( Jobs[salary_midpoint] ),
+    NOT ISBLANK ( Jobs[salary_midpoint] ),
+    NOT ISNAN ( Jobs[salary_midpoint] )
+)
+
+Maximum Salary =
+CALCULATE (
+    MAX ( Jobs[salary_midpoint] ),
+    NOT ISBLANK ( Jobs[salary_midpoint] ),
+    NOT ISNAN ( Jobs[salary_midpoint] )
+)
+
+Salary Q25 =
+CALCULATE (
+    PERCENTILEX.INC ( Jobs, Jobs[salary_midpoint], 0.25 ),
+    NOT ISBLANK ( Jobs[salary_midpoint] ),
+    NOT ISNAN ( Jobs[salary_midpoint] )
+)
+
+Salary Q75 =
+CALCULATE (
+    PERCENTILEX.INC ( Jobs, Jobs[salary_midpoint], 0.75 ),
+    NOT ISBLANK ( Jobs[salary_midpoint] ),
+    NOT ISNAN ( Jobs[salary_midpoint] )
+)
+
+// Salary range labels carry an explicit sample-size suffix so no bar or card
+// can be read without knowing how many observations support it.
+Median Salary (n) =
+VAR _n = [Salary Observations]
+RETURN IF ( _n > 0, FORMAT ( [Median Salary], "#,0" ) & "  (n=" & _n & ")" )
+
+// -----------------------------------------------------------------------------
+// 05. SKILLS (job-level penetration via JobSkills bridge)
+// -----------------------------------------------------------------------------
+
+Skill Job Count =
+-- Distinct jobs linked to the current skill(s) in context.
+CALCULATE (
+    DISTINCTCOUNT ( JobSkills[job_id] ),
+    NOT ISBLANK ( JobSkills[skill_name] )
+)
+
+Skill Penetration % =
+-- Denominator: jobs in the CURRENT filter context (role/seniority/country/
+-- date filters flow from Jobs -> JobSkills). This makes penetration honest
+-- under any slice rather than hard-coding a country total.
+VAR _jobsInContext =
+    CALCULATE ( [Total Jobs], REMOVEFILTERS ( ) )
+VAR _denominator =
+    -- Replace the line above with the following to keep external filters
+    -- except skill slicers: [Total Jobs]
+    _jobsInContext
+RETURN
+    DIVIDE ( [Skill Job Count], _denominator )
+
+Skill Rank =
+IF (
+    NOT ISBLANK ( [Skill Job Count] ),
+    RANKX ( ALLSELECTED ( DimSkill[skill_name] ), [Skill Job Count], , DESC )
+)
+
+// -----------------------------------------------------------------------------
+// 06. JOBS-WITH-SKILL BRIDGE MEASURES
+//     (count Jobs whose postings reference the selected skill(s))
+// -----------------------------------------------------------------------------
+
+Jobs Requiring Selected Skills =
+VAR _skillJobs =
+    SUMMARIZE ( JobSkills, Jobs[job_id] )
+RETURN
+    CALCULATE ( [Total Jobs], _skillJobs )
+
+// -----------------------------------------------------------------------------
+// 07. TEMPORAL
+// -----------------------------------------------------------------------------
+
+Posting Months =
+CALCULATE (
+    DISTINCTCOUNT ( DimDate[YearMonthKey] ),
+    NOT ISBLANK ( Jobs[posting_date] )
+)
+
+Avg Jobs Per Active Month =
+AVERAGEX ( VALUES ( DimDate[YearMonthKey] ), CALCULATE ( [Total Jobs] ) )
+
+// -----------------------------------------------------------------------------
+// 08. DATA QUALITY / METHODOLOGY HELPERS
+// -----------------------------------------------------------------------------
+
+Role Classified % =
+VAR _classified =
+    CALCULATE ( [Total Jobs], Jobs[role_category] <> "other" )
+RETURN
+    DIVIDE ( _classified, [Total Jobs] )
+
+Work Mode Known % =
+CALCULATE (
+    DIVIDE (
+        CALCULATE ( [Total Jobs], NOT ISBLANK ( Jobs[work_mode] ) ),
+        [Total Jobs]
+    )
+)
+
+DQ Score Average = AVERAGE ( Jobs[dq_score] )
+
+// -----------------------------------------------------------------------------
+// 09. DYNAMIC TITLES
+// -----------------------------------------------------------------------------
+
+Title Market Context =
+VAR _periods =
+    CONCATENATEX (
+        VALUES ( Jobs[dataset_period] ),
+        Jobs[dataset_period],
+        ", ",
+        Jobs[dataset_period], ASC
+    )
+RETURN
+    IF (
+        ISFILTERED ( Jobs[dataset_period] ),
+        "Context: " & _periods,
+        "Context: All periods (see methodology)"
+    )
