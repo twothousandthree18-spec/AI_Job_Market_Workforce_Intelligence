@@ -693,6 +693,282 @@ def chart_pk_career_da() -> None:
     _save(fig, "17_pk_career_data_analyst.png")
 
 
+BI_DARK = "#0D0D0D"
+BI_GOLD = "#B8860B"
+BI_IVORY = "#F5F1E8"
+BI_CARD = "#1A1A1A"
+BI_BORDER = "#2A2A2A"
+BI_TEXT = "#F5F1E8"
+BI_SECONDARY = "#7A7A7A"
+
+
+def _bi_kpi_card(ax, x, y, value, label, w=0.18, h=0.28):
+    ax.add_patch(plt.Rectangle((x, y), w, h, transform=ax.transAxes,
+                               facecolor=BI_CARD, edgecolor=BI_BORDER, linewidth=1,
+                               clip_on=False, zorder=2))
+    ax.text(x + w / 2, y + h * 0.62, value, transform=ax.transAxes,
+            ha="center", va="center", fontsize=14, fontweight="bold",
+            color=BI_GOLD, fontfamily="sans-serif", zorder=3)
+    ax.text(x + w / 2, y + h * 0.28, label, transform=ax.transAxes,
+            ha="center", va="center", fontsize=7, color=BI_SECONDARY,
+            fontfamily="sans-serif", zorder=3)
+
+
+def _bi_bar(ax, labels, values, colors, title, max_val=None):
+    ax.set_facecolor(BI_CARD)
+    ax.set_title(title, fontsize=9, fontweight="bold", color=BI_TEXT, pad=6)
+    y_pos = np.arange(len(labels))
+    if max_val is None:
+        max_val = max(values) * 1.15 if values else 1
+    for i, (_lbl, val, c) in enumerate(zip(labels, values, colors, strict=True)):
+        ax.barh(i, val, color=c, edgecolor="none", height=0.6)
+        ax.text(val + max_val * 0.02, i, f"{val:,.0f}", va="center",
+                fontsize=7, color=BI_TEXT)
+    ax.set_yticks(y_pos)
+    ax.set_yticklabels(labels, fontsize=7, color=BI_TEXT)
+    ax.set_xlim(0, max_val)
+    ax.spines[:].set_visible(False)
+    ax.tick_params(left=False, bottom=False, labelbottom=False)
+    ax.invert_yaxis()
+
+
+def chart_bi_executive_overview():
+    fig, ax = plt.subplots(figsize=(14, 7))
+    fig.patch.set_facecolor(BI_DARK)
+    ax.set_facecolor(BI_DARK)
+    ax.axis("off")
+    ax.text(0.5, 0.96, "Executive Workforce Overview", transform=ax.transAxes,
+            ha="center", va="top", fontsize=16, fontweight="bold", color=BI_GOLD)
+    ax.text(0.5, 0.91, "UK (2023\u20132026) + Pakistan (2019\u20132021)  \u2022  8,256 Total Jobs",
+            transform=ax.transAxes, ha="center", va="top", fontsize=9, color=BI_SECONDARY)
+    _bi_kpi_card(ax, 0.04, 0.56, "8,256", "Total Jobs", 0.18, 0.28)
+    _bi_kpi_card(ax, 0.25, 0.56, "3,029", "UK Postings", 0.18, 0.28)
+    _bi_kpi_card(ax, 0.46, 0.56, "5,227", "PK Postings", 0.18, 0.28)
+    _bi_kpi_card(ax, 0.67, 0.56, "77", "Unique Skills", 0.18, 0.28)
+    _bi_kpi_card(ax, 0.04, 0.20, "3,886", "Companies", 0.18, 0.28)
+    _bi_kpi_card(ax, 0.25, 0.20, "193", "Cities", 0.18, 0.28)
+    _bi_kpi_card(ax, 0.46, 0.20, "\u00a363,393", "UK Median Salary", 0.18, 0.28)
+    _bi_kpi_card(ax, 0.67, 0.20, "99.6%", "UK Salary Coverage", 0.18, 0.28)
+    ax.text(
+        0.5, 0.14, "\u2500" * 80, transform=ax.transAxes,
+        ha="center", color=BI_BORDER, fontsize=6,
+    )
+    footer = (
+        "Interactive dashboard with slicers for Country, Role,"
+        " Seniority, Location  \u2022  DAX: 50+ measures"
+        "  \u2022  Star schema model"
+    )
+    ax.text(
+        0.5, 0.08, footer, transform=ax.transAxes,
+        ha="center", fontsize=7, color=BI_SECONDARY,
+    )
+    _save(fig, "bi_01_executive_overview.png")
+
+
+def chart_bi_uk_market():
+    fig, axes = plt.subplots(2, 2, figsize=(14, 9))
+    fig.patch.set_facecolor(BI_DARK)
+    fig.suptitle("UK Job Market", fontsize=14, fontweight="bold", color=BI_GOLD, y=0.98)
+    fig.text(0.5, 0.945, "Adzuna API  \u2022  2023\u20132026  \u2022  3,029 Postings",
+             ha="center", fontsize=8, color=BI_SECONDARY)
+    for row in axes:
+        for a in row:
+            a.set_facecolor(BI_CARD)
+    ax = axes[0, 0]
+    _bi_kpi_card(ax, 0.0, 0.3, "3,029", "UK Jobs", 0.4, 0.55)
+    _bi_kpi_card(ax, 0.5, 0.3, "999", "Employers", 0.4, 0.55)
+    ax.axis("off")
+    ax.set_title("", pad=0)
+    ax = axes[0, 1]
+    roles = ["Data Analyst", "Other Data-Adjacent", "Data Scientist", "Analytics Engineer", "Other"]
+    role_vals = [738, 1454, 382, 289, 166]
+    _bi_bar(ax, roles, role_vals, [BI_GOLD]*5, "Role Distribution")
+    ax = axes[1, 0]
+    skills = ["Reporting", "Machine Learning", "Leadership", "Python", "SQL"]
+    skill_vals = [330, 230, 139, 133, 106]
+    _bi_bar(ax, skills, skill_vals, [BI_GOLD]*5, "Top 5 Skills (Penetration %)")
+    for i, v in enumerate([10.9, 7.6, 4.6, 4.4, 3.5]):
+        ax.text(skill_vals[i] + 5, i, f"{v}%", va="center", fontsize=7, color=BI_GOLD)
+    ax = axes[1, 1]
+    sen = ["Junior", "Senior", "Unknown", "Mid"]
+    sen_vals = [1509, 482, 657, 381]
+    _bi_bar(ax, sen, sen_vals, [BI_GOLD]*4, "Seniority")
+    fig.tight_layout(rect=[0, 0.04, 1, 0.93])
+    ax_last = fig.add_axes([0.0, 0.01, 1.0, 0.03])
+    ax_last.set_facecolor(BI_DARK)
+    ax_last.axis("off")
+    ax_last.text(
+        0.5, 0.5,
+        "Slicers: Role Category \u2022 Seniority"
+        " \u2022 Location Group \u2022 Work Mode",
+        ha="center", va="center", fontsize=7, color=BI_SECONDARY,
+    )
+    _save(fig, "bi_02_uk_market.png")
+
+
+def chart_bi_pk_market():
+    fig, axes = plt.subplots(2, 2, figsize=(14, 9))
+    fig.patch.set_facecolor(BI_DARK)
+    fig.suptitle("Pakistan Job Market", fontsize=14, fontweight="bold", color=BI_GOLD, y=0.98)
+    fig.text(0.5, 0.945, "CHISEL/LUMS  \u2022  Dec 2019 \u2013 Mar 2021  \u2022  5,227 Postings",
+             ha="center", fontsize=8, color=BI_SECONDARY)
+    for row in axes:
+        for a in row:
+            a.set_facecolor(BI_CARD)
+    ax = axes[0, 0]
+    _bi_kpi_card(ax, 0.0, 0.3, "5,227", "PK Jobs", 0.4, 0.55)
+    _bi_kpi_card(ax, 0.5, 0.3, "2,890", "Employers", 0.4, 0.55)
+    ax.axis("off")
+    ax.set_title("", pad=0)
+    ax = axes[0, 1]
+    cities = ["Lahore", "Islamabad", "Karachi", "Rawalpindi", "Faisalabad"]
+    city_vals = [1662, 1487, 1323, 157, 98]
+    _bi_bar(ax, cities, city_vals, [BI_GOLD]*5, "Top 5 Cities")
+    ax = axes[1, 0]
+    skills = ["PHP", "Communication", "JavaScript", "HTML", "C#"]
+    skill_vals = [386, 261, 203, 121, 117]
+    _bi_bar(ax, skills, skill_vals, [BI_GOLD]*5, "Top 5 Skills")
+    for i, v in enumerate([7.4, 5.0, 3.9, 2.3, 2.2]):
+        ax.text(skill_vals[i] + 5, i, f"{v}%", va="center", fontsize=7, color=BI_GOLD)
+    ax = axes[1, 1]
+    sen = ["Junior", "Mid", "Senior", "Unknown"]
+    sen_vals = [3942, 1113, 66, 106]
+    _bi_bar(ax, sen, sen_vals, [BI_GOLD]*4, "Seniority")
+    fig.tight_layout(rect=[0, 0.04, 1, 0.93])
+    ax_last = fig.add_axes([0.0, 0.01, 1.0, 0.03])
+    ax_last.set_facecolor(BI_DARK)
+    ax_last.axis("off")
+    ax_last.text(0.5, 0.5, "Slicers: City \u2022 Seniority \u2022 Skill Category",
+                 ha="center", va="center", fontsize=7, color=BI_SECONDARY)
+    _save(fig, "bi_03_pk_market.png")
+
+
+def chart_bi_comparison():
+    fig, axes = plt.subplots(1, 2, figsize=(14, 6))
+    fig.patch.set_facecolor(BI_DARK)
+    fig.suptitle("UK vs Pakistan Comparison", fontsize=14, fontweight="bold", color=BI_GOLD, y=0.99)
+    fig.text(
+        0.5, 0.94,
+        "Dataset-based comparison  \u2022"
+        "  UK (2023\u20132026) vs PK (2019\u20132021)",
+        ha="center", fontsize=8, color=BI_SECONDARY,
+    )
+    for a in axes:
+        a.set_facecolor(BI_CARD)
+    ax = axes[0]
+    labels = ["UK", "Pakistan"]
+    vals = [3029, 5227]
+    bars = ax.bar(labels, vals, color=[BI_GOLD, BI_SECONDARY], edgecolor="none", width=0.5)
+    for b, v in zip(bars, vals, strict=True):
+        ax.text(b.get_x() + b.get_width() / 2, v + 80, f"{v:,}", ha="center",
+                fontsize=11, fontweight="bold", color=BI_TEXT)
+    ax.set_title("Total Jobs by Market", fontsize=10, fontweight="bold", color=BI_TEXT, pad=8)
+    ax.spines[:].set_visible(False)
+    ax.tick_params(left=False, bottom=False, labelbottom=False, labelleft=False)
+    ax.set_ylim(0, 6500)
+    ax = axes[1]
+    cats = ["Technical", "Business-Soft", "AI/ML", "Tool", "Analytical"]
+    uk_c = [2180, 386, 195, 166, 75]
+    pk_c = [1139, 421, 27, 200, 0]
+    y = np.arange(len(cats))
+    h = 0.35
+    ax.barh(y + h/2, uk_c, h, color=BI_GOLD, label="UK")
+    ax.barh(y - h/2, pk_c, h, color=BI_SECONDARY, label="PK")
+    ax.set_yticks(y)
+    ax.set_yticklabels(cats, fontsize=8, color=BI_TEXT)
+    ax.set_title("Skill Category Comparison", fontsize=10, fontweight="bold", color=BI_TEXT, pad=8)
+    ax.legend(frameon=False, fontsize=8, labelcolor=BI_TEXT, loc="lower right")
+    ax.spines[:].set_visible(False)
+    ax.tick_params(left=False, bottom=False, labelbottom=False)
+    fig.tight_layout(rect=[0, 0.04, 1, 0.91])
+    ax_last = fig.add_axes([0.0, 0.01, 1.0, 0.03])
+    ax_last.set_facecolor(BI_DARK)
+    ax_last.axis("off")
+    ax_last.text(
+        0.5, 0.5,
+        "Slicers: Country \u2022 Role Category"
+        " \u2022 Skill Category \u2022 Seniority",
+        ha="center", va="center", fontsize=7, color=BI_SECONDARY,
+    )
+    _save(fig, "bi_04_comparison.png")
+
+
+def chart_bi_london():
+    fig, axes = plt.subplots(2, 2, figsize=(14, 9))
+    fig.patch.set_facecolor(BI_DARK)
+    fig.suptitle("London Deep Dive", fontsize=14, fontweight="bold", color=BI_GOLD, y=0.98)
+    fig.text(
+        0.5, 0.945,
+        "UK Geographic Sub-Analysis  \u2022"
+        "  London vs Greater London vs UK Other",
+        ha="center", fontsize=8, color=BI_SECONDARY,
+    )
+    for row in axes:
+        for a in row:
+            a.set_facecolor(BI_CARD)
+    ax = axes[0, 0]
+    _bi_kpi_card(ax, 0.0, 0.3, "2,312", "London Jobs", 0.4, 0.55)
+    _bi_kpi_card(ax, 0.5, 0.3, "76.3%", "UK Share", 0.4, 0.55)
+    ax.axis("off")
+    ax.set_title("", pad=0)
+    ax = axes[0, 1]
+    locs = ["London", "Greater London", "UK Other"]
+    loc_vals = [2312, 513, 204]
+    _bi_bar(ax, locs, loc_vals, [BI_GOLD, "#4A4A4A", "#7A7A7A"], "Jobs by Location")
+    ax = axes[1, 0]
+    roles = ["Data Analyst", "Data Scientist", "Analytics Engineer", "Other"]
+    role_vals = [576, 308, 237, 1191]
+    _bi_bar(ax, roles, role_vals, [BI_GOLD]*4, "Data Roles (London)")
+    ax = axes[1, 1]
+    modes = ["Remote", "Hybrid", "On-Site"]
+    mode_vals = [1541, 632, 139]
+    _bi_bar(ax, modes, mode_vals, [BI_GOLD, "#4A4A4A", "#7A7A7A"], "Work Mode")
+    fig.tight_layout(rect=[0, 0.04, 1, 0.93])
+    ax_last = fig.add_axes([0.0, 0.01, 1.0, 0.03])
+    ax_last.set_facecolor(BI_DARK)
+    ax_last.axis("off")
+    ax_last.text(
+        0.5, 0.5,
+        "Slicers: Location Group \u2022 Role Category"
+        "  \u2022  Drill-down: London \u2192 boroughs",
+        ha="center", va="center", fontsize=7, color=BI_SECONDARY,
+    )
+    _save(fig, "bi_05_london.png")
+
+
+def chart_bi_career():
+    fig, axes = plt.subplots(1, 3, figsize=(16, 6))
+    fig.patch.set_facecolor(BI_DARK)
+    fig.suptitle("Career Intelligence", fontsize=14, fontweight="bold", color=BI_GOLD, y=0.99)
+    fig.text(0.5, 0.94, "Market-derived skill profiles  \u2022  Select role and market to explore",
+             ha="center", fontsize=8, color=BI_SECONDARY)
+    roles_data = [
+        ("Data Analyst", ["SQL", "Python", "Reporting", "Excel", "Tableau"],
+         [34.5, 29.0, 23.1, 19.6, 15.6]),
+        ("Analytics Engineer", ["SQL", "Python", "dbt", "Airflow", "Data Modeling"],
+         [45.7, 36.3, 17.3, 14.2, 12.8]),
+        ("Data Scientist", ["Python", "Machine Learning", "SQL", "TensorFlow", "Deep Learning"],
+         [48.2, 41.9, 25.7, 14.7, 12.6]),
+    ]
+    for ax, (role, skills, vals) in zip(axes, roles_data, strict=True):
+        ax.set_facecolor(BI_CARD)
+        _bi_bar(ax, skills, vals, [BI_GOLD]*5, role)
+        for i, v in enumerate(vals):
+            ax.text(vals[i] + 1.5, i, f"{v}%", va="center", fontsize=7, color=BI_GOLD)
+    fig.tight_layout(rect=[0, 0.06, 1, 0.91])
+    ax_last = fig.add_axes([0.0, 0.01, 1.0, 0.04])
+    ax_last.set_facecolor(BI_DARK)
+    ax_last.axis("off")
+    ax_last.text(
+        0.5, 0.5,
+        "Slicers: Target Role \u2022 Country (UK/PK)"
+        " \u2022 Seniority  \u2022  Explore:"
+        " Skills \u2192 Salary \u2192 Demand",
+        ha="center", va="center", fontsize=7, color=BI_SECONDARY,
+    )
+    _save(fig, "bi_06_career.png")
+
+
 ALL_CHARTS = [
     ("Skill Comparison (Top 20)", chart_skill_comparison),
     ("Role Distribution", chart_role_distribution),
@@ -711,6 +987,12 @@ ALL_CHARTS = [
     ("PK Skill Categories", chart_pk_skill_categories),
     ("PK Co-occurrence", chart_pk_cooccurrence),
     ("PK Data Analyst Career", chart_pk_career_da),
+    ("BI: Executive Overview", chart_bi_executive_overview),
+    ("BI: UK Market", chart_bi_uk_market),
+    ("BI: Pakistan Market", chart_bi_pk_market),
+    ("BI: Comparison", chart_bi_comparison),
+    ("BI: London", chart_bi_london),
+    ("BI: Career Intelligence", chart_bi_career),
 ]
 
 

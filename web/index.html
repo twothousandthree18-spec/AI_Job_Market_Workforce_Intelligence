@@ -131,6 +131,11 @@
     <h2 class="section-title reveal">UK Job Market</h2>
     <p class="section-desc reveal">Recent UK job-posting data (2023&ndash;2026) from the Adzuna API, covering data and analytics roles across 107 cities with comprehensive salary information.</p>
 
+    <div class="tool-label reveal">
+      <span class="tool-icon">&#128202;</span>
+      <span>Python Analytical Visualization &mdash; Matplotlib</span>
+    </div>
+
     <div class="temporal-warning reveal">
       <strong>Dataset:</strong> UK data is recent (September 2023 &ndash; August 2026). This represents current UK data-role demand patterns on the Adzuna job board.
     </div>
@@ -232,6 +237,11 @@
     <h2 class="section-title reveal">Pakistan Job Market</h2>
     <p class="section-desc reveal">Historical Pakistan job-posting data (2019&ndash;2021) from the CHISEL/LUMS academic dataset, with 16 supplementary Rozee.pk postings. The dataset provides a snapshot of Pakistan&rsquo;s data and tech workforce demand during this period.</p>
 
+    <div class="tool-label reveal">
+      <span class="tool-icon">&#128202;</span>
+      <span>Python Analytical Visualization &mdash; Matplotlib</span>
+    </div>
+
     <div class="temporal-warning reveal">
       <strong>Dataset:</strong> Pakistan data is historical (December 2019 &ndash; March 2021 for CHISEL; March &ndash; May 2024 for Rozee). This represents Pakistan&rsquo;s tech-sector job market during the CHISEL collection period, not current 2026 conditions.
     </div>
@@ -330,16 +340,6 @@
     </div>
 
     <div class="chart-figure reveal">
-      <img src="images/15_pk_skill_categories.png" alt="Pakistan skill mentions by category showing technical, business-soft, tool, and other categories" loading="eager">
-      <figcaption>Pakistan Skill Categories: Technical skills (1,139 mentions) dominate, followed by business-soft skills (421) and tools (200). AI/ML skills are minimal (27 mentions).</figcaption>
-    </div>
-
-    <div class="chart-figure reveal">
-      <img src="images/14_pk_seniority.png" alt="Pakistan seniority distribution showing junior, mid, and senior breakdown" loading="eager">
-      <figcaption>Pakistan Seniority: 75.4% of postings are junior-level, reflecting the CHISEL dataset&rsquo;s emphasis on entry-level tech roles. Only 1.3% are senior positions.</figcaption>
-    </div>
-
-    <div class="chart-figure reveal">
       <img src="images/11_pk_employers_top15.png" alt="Top 15 Pakistan employers by job posting volume" loading="eager">
       <figcaption>Pakistan Top Employers: SoftNation Technologies leads with 66 postings, followed by ibex (36) and Mbin (22). Employer concentration is lower than UK.</figcaption>
     </div>
@@ -347,11 +347,6 @@
     <div class="chart-figure reveal">
       <img src="images/16_pk_cooccurrence_top10.png" alt="Top 10 Pakistan skill co-occurrence pairs" loading="eager">
       <figcaption>Pakistan Skill Co-occurrences: Web technology clusters dominate. CSS+HTML (99), JavaScript+HTML (66), JavaScript+PHP (61), and MySQL+PHP (51) are the most frequent skill combinations.</figcaption>
-    </div>
-
-    <div class="chart-figure reveal">
-      <img src="images/17_pk_career_data_analyst.png" alt="Pakistan Data Analyst skill profile showing penetration percentages" loading="eager">
-      <figcaption>Pakistan Data Analyst Profile (n=21 postings): Excel (38.1%), SQL (33.3%), and Business Intelligence (28.6%) are the top skills. Note: small sample size.</figcaption>
     </div>
   </div>
 </section>
@@ -362,6 +357,11 @@
     <div class="section-label reveal">Comparative Analysis</div>
     <h2 class="section-title reveal">UK vs Pakistan</h2>
     <p class="section-desc reveal">A dataset-based comparison of two fundamentally different job markets. The UK data is recent (2023&ndash;2026); the Pakistan data is historical (2019&ndash;2021). Differences reflect both real market structures and different collection periods.</p>
+
+    <div class="tool-label reveal">
+      <span class="tool-icon">&#128202;</span>
+      <span>Python Analytical Visualization &mdash; Matplotlib</span>
+    </div>
 
     <div class="temporal-warning reveal">
       <strong>Important:</strong> The UK dataset contains recent postings (2023&ndash;2026). The Pakistan dataset is historical (2019&ndash;2021). Direct comparison should therefore be interpreted as a dataset-based comparison, not a current real-time comparison of both labor markets.
@@ -403,6 +403,13 @@
     <div class="chart-figure reveal">
       <img src="images/05_skill_categories.png" alt="Skill mentions by category showing the distribution across both markets" loading="eager">
       <figcaption>Skill mentions by category across both markets. Technical skills dominate in both, but UK has stronger AI/ML and analytical categories. Pakistan has a larger business-soft skill share.</figcaption>
+    </div>
+
+    <h3 class="reveal" style="margin:24px 0 16px">Skill Co-occurrence Patterns</h3>
+    <p class="reveal" style="margin-bottom:16px">Which skills tend to appear together in the same job posting? Co-occurrence patterns reveal the underlying skill clusters that define each market.</p>
+    <div class="chart-figure reveal">
+      <img src="images/06_cooccurrence_top15.png" alt="Top 15 UK skill co-occurrence pairs" loading="eager">
+      <figcaption>UK Skill Co-occurrences: Reporting+Python (37), Reporting+SQL (36), and Machine Learning+Python (33) dominate. These reflect the UK&rsquo;s analytics-reporting skill cluster.</figcaption>
     </div>
 
     <h3 class="reveal" style="margin:24px 0 16px">Geographic Concentration</h3>
@@ -473,6 +480,11 @@
     <h2 class="section-title reveal">Skill Demand &amp; Categories</h2>
     <p class="section-desc reveal">77 normalized skills extracted across both markets, organized into technical, analytical, AI/ML, tool, and business-soft categories.</p>
 
+    <div class="tool-label reveal">
+      <span class="tool-icon">&#128202;</span>
+      <span>Python Analytical Visualization &mdash; Matplotlib</span>
+    </div>
+
     <div class="chart-figure reveal">
       <img src="images/08_career_progression.png" alt="UK career progression showing top 10 skills for Data Analyst, Analytics Engineer, and Data Scientist" loading="eager">
       <figcaption>UK Career Intelligence: top skills by role progression from Data Analyst through Analytics Engineer to Data Scientist.</figcaption>
@@ -491,6 +503,11 @@
     <div class="section-label reveal">Compensation Analysis</div>
     <h2 class="section-title reveal">Salary Intelligence</h2>
     <p class="section-desc reveal">Salary analysis is available for UK postings only. The Pakistan CHISEL dataset does not contain comparable salary information. A small Rozee.pk sample (16 records) provides limited PKR data.</p>
+
+    <div class="tool-label reveal">
+      <span class="tool-icon">&#128202;</span>
+      <span>Python Analytical Visualization &mdash; Matplotlib</span>
+    </div>
 
     <h3 class="reveal" style="margin:0 0 16px">UK Salary (3,017 records with data)</h3>
     <div class="stats-row reveal">
@@ -535,40 +552,58 @@
   <div class="container">
     <div class="section-label reveal">Business Intelligence</div>
     <h2 class="section-title reveal">Interactive Power BI Dashboard</h2>
-    <p class="section-desc reveal">A 10-page Power BI dashboard specification with 50+ DAX measures, star schema model, and complete design system. Balanced coverage of both UK and Pakistan markets.</p>
+    <p class="section-desc reveal">A 10-page Power BI dashboard specification with 50+ DAX measures, star schema model, and complete design system. Each page provides interactive filtering, drill-downs, and cross-market exploration.</p>
 
-    <div class="card-grid card-grid-3" style="margin-bottom:32px">
+    <div class="tool-label reveal">
+      <span class="tool-icon">&#9881;</span>
+      <span>Interactive Business Intelligence &mdash; Power BI</span>
+    </div>
+
+    <div class="card-grid card-grid-2" style="margin-bottom:24px">
       <div class="card reveal">
-        <h4>Executive Overview</h4>
-        <p>High-level metrics for both markets: job volume, skill count, employer count, and cross-market comparison highlights.</p>
+        <h4>What Power BI Provides</h4>
+        <p>Interactive slicers for Country, Role, Seniority, Location. Cross-filtering between visuals. Drill-down from market overview to individual job postings. KPI monitoring with 50+ DAX measures. Decision-oriented layout for recruiters and analysts.</p>
       </div>
       <div class="card reveal reveal-delay-1">
-        <h4>UK Job Market</h4>
-        <p>UK-specific analysis: role distribution, skills, seniority, salary, employers, and temporal trends.</p>
-      </div>
-      <div class="card reveal reveal-delay-2">
-        <h4>Pakistan Job Market</h4>
-        <p>Pakistan-specific analysis: role distribution, skills, seniority, employers, city distribution, and temporal trends.</p>
+        <h4>How It Differs from Matplotlib</h4>
+        <p>Matplotlib answers &ldquo;What does the data tell us?&rdquo; through static analytical charts. Power BI answers &ldquo;What can you interactively explore?&rdquo; through filtering, cross-highlighting, and drill-through. Each tool serves a distinct purpose.</p>
       </div>
     </div>
 
-    <div class="card-grid card-grid-3">
-      <div class="card reveal">
-        <h4>UK vs Pakistan</h4>
-        <p>Side-by-side comparison: skills, roles, seniority, geographic concentration, and skill categories.</p>
-      </div>
-      <div class="card reveal reveal-delay-1">
-        <h4>London Deep Dive</h4>
-        <p>UK geographic sub-analysis: London vs Greater London vs UK Other across roles, salary, and work mode.</p>
-      </div>
-      <div class="card reveal reveal-delay-2">
-        <h4>Skills Intelligence</h4>
-        <p>Cross-market skill analysis, co-occurrence patterns, and career progression insights.</p>
-      </div>
+    <h3 class="reveal" style="margin:32px 0 16px">Dashboard Previews</h3>
+
+    <div class="chart-figure reveal">
+      <img src="images/bi_01_executive_overview.png" alt="Power BI Executive Overview dashboard preview with KPI cards" loading="lazy">
+      <figcaption><strong>Page 1: Executive Overview.</strong> High-level KPI cards for both markets. Slicers for Country, Source, Role. Provides the &ldquo;what happened&rdquo; at a glance for recruiters and stakeholders.</figcaption>
+    </div>
+
+    <div class="chart-figure reveal">
+      <img src="images/bi_02_uk_market.png" alt="Power BI UK Market dashboard preview" loading="lazy">
+      <figcaption><strong>Page 2: UK Market.</strong> Interactive UK analysis: role distribution, skills, seniority, employers. Slicers for Role Category, Seniority, Location Group, Work Mode. Drill-down from overview to individual roles.</figcaption>
+    </div>
+
+    <div class="chart-figure reveal">
+      <img src="images/bi_03_pk_market.png" alt="Power BI Pakistan Market dashboard preview" loading="lazy">
+      <figcaption><strong>Page 3: Pakistan Market.</strong> Interactive Pakistan analysis: cities, skills, seniority, employers. Slicers for City, Seniority, Skill Category. Temporal trend exploration.</figcaption>
+    </div>
+
+    <div class="chart-figure reveal">
+      <img src="images/bi_04_comparison.png" alt="Power BI UK vs Pakistan comparison dashboard preview" loading="lazy">
+      <figcaption><strong>Page 4: UK vs Pakistan.</strong> Side-by-side comparison with cross-filtering. Skill categories, volume comparison, geographic patterns. Slicers for Country, Role, Skill Category.</figcaption>
+    </div>
+
+    <div class="chart-figure reveal">
+      <img src="images/bi_05_london.png" alt="Power BI London Deep Dive dashboard preview" loading="lazy">
+      <figcaption><strong>Page 5: London Deep Dive.</strong> Geographic sub-analysis: London vs Greater London vs UK Other. Roles, work mode, salary. Drill-down from UK overview.</figcaption>
+    </div>
+
+    <div class="chart-figure reveal">
+      <img src="images/bi_06_career.png" alt="Power BI Career Intelligence dashboard preview" loading="lazy">
+      <figcaption><strong>Page 6: Career Intelligence.</strong> Select target role and market to explore required skills, seniority expectations, and salary ranges. Interactive role comparison across UK and Pakistan.</figcaption>
     </div>
 
     <div style="margin-top:32px" class="reveal">
-      <a href="https://github.com/twothousandthree18-spec/AI_Job_Market_Workforce_Intelligence/tree/main/docs" class="btn btn-outline btn-sm" target="_blank" rel="noopener">View Power BI Documentation &rarr;</a>
+      <a href="https://github.com/twothousandthree18-spec/AI_Job_Market_Workforce_Intelligence/tree/main/docs" class="btn btn-outline btn-sm" target="_blank" rel="noopener">View Full Power BI Documentation &rarr;</a>
     </div>
   </div>
 </section>

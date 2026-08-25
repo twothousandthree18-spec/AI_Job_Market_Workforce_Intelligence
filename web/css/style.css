@@ -39,6 +39,8 @@ h4{font-size:1.05rem}
 .section-label{display:inline-block;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;font-weight:600}
 .section-title{margin-bottom:20px;color:var(--ivory)}
 .section-desc{color:var(--muted);max-width:680px;margin-bottom:40px;font-size:1.05rem}
+.tool-label{display:inline-flex;align-items:center;gap:8px;background:var(--ink);border:1px solid var(--charcoal);border-radius:6px;padding:8px 16px;margin-bottom:24px;font-size:.82rem;color:var(--muted);font-family:var(--mono);letter-spacing:.03em}
+.tool-label .tool-icon{font-size:1rem;opacity:.7}
 
 /* ---- Layout ---- */
 .container{max-width:var(--max-w);margin:0 auto;padding:0 24px}
