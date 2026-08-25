@@ -78,9 +78,9 @@ Full-width text box with:
 
 ---
 
-## Page 3: London Intelligence
+## Page 4: London Deep Dive
 
-**Purpose:** London-specific market analysis
+**Purpose:** UK geographic deep-dive (London-specific market analysis)
 **Audience:** London-targeting job seekers
 **Layout:** 4 KPI cards, 4 charts, comparison section
 
@@ -107,35 +107,38 @@ Full-width text box with:
 
 ---
 
-## Page 4: Pakistan Historical Market
+## Page 3: Pakistan Job Market
 
-**Purpose:** Historical Pakistan job market context
-**Audience:** Market comparison, historical analysis
-**Layout:** Prominent HISTORICAL label, KPIs, charts
+**Purpose:** Historical Pakistan job market analysis
+**Audience:** Market comparison, historical analysis, Pakistan-focused analysts
+**Layout:** Prominent HISTORICAL label, KPIs, charts, skill/city/seniority analysis
 
 ### Prominent Label
-> **HISTORICAL DATA — 2019-2021**
+> **HISTORICAL DATA — December 2019 to March 2021 (CHISEL)**
 > This page shows historical Pakistan job postings from the CHISEL/LUMS dataset. These are NOT current 2026 conditions.
 
 ### KPI Cards
 | Card | Measure |
 |------|---------|
-| PK Jobs | [Pakistan Jobs] |
-| PK Companies | [PK Companies] |
-| PK Cities | CALCULATE(DISTINCTCOUNT(fact_jobs[city]), country_code="PK") |
-| PK Skills | CALCULATE(DISTINCTCOUNT(agg_skill_demand[skill_name]), country_code="PK") |
+| PK Jobs | [Pakistan Jobs] (5,227) |
+| PK Companies | [PK Companies] (2,890) |
+| PK Cities | CALCULATE(DISTINCTCOUNT(fact_jobs[city]), country_code="PK") (86) |
+| PK Unique Skills | CALCULATE(DISTINCTCOUNT(agg_skill_demand[skill_name]), country_code="PK") |
 
 ### Charts
 | Visual | Type | Data Source | Config |
 |--------|------|-------------|--------|
-| Jobs by City | Horizontal bar | fact_jobs WHERE country_code=PK, by city | Sorted desc |
-| Top 15 PK Skills | Horizontal bar | agg_skill_demand WHERE country_code=PK | Top 15 |
-| Seniority | Donut | fact_jobs WHERE country_code=PK, by seniority | |
-| Role Classification | Text box | Explain 99% "other" is due to CHISEL taxonomy, not absence of data roles |
+| Jobs by City (Top 10) | Horizontal bar | fact_jobs WHERE country_code=PK, by city | Top 10 sorted desc |
+| Top 15 PK Skills | Horizontal bar | agg_skill_demand WHERE country_code=PK | Top 15 by penetration_pct |
+| PK Skill Categories | Horizontal bar | agg_skill_demand WHERE country_code=PK, by skill_category | Sum of job_count |
+| Seniority Distribution | Donut | fact_jobs WHERE country_code=PK, by seniority | 4 segments (junior/mid/senior/unknown) |
+| PK Top 15 Employers | Horizontal bar | agg_employer WHERE country_code=PK | Top 15 by job_count |
+| Temporal Trend (PK) | Line | agg_temporal WHERE country_code=PK | Monthly job_count, Dec 2019 - Mar 2021 |
 
 ### Slicers
 - City (dropdown)
 - Seniority (dropdown)
+- Skill Category (dropdown)
 
 ---
 
@@ -245,36 +248,46 @@ Full-width text box with:
 
 ## Page 9: Career Intelligence
 
-**Purpose:** Career progression intelligence
-**Audience:** Data Analyst job seekers
-**Layout:** 3-column progression layout
+**Purpose:** Career progression intelligence for both UK and Pakistan markets
+**Audience:** Data Analyst job seekers, cross-market career planners
+**Layout:** 3-column progression layout per market, UK and PK side by side
 
 ### Structure
-Three columns showing progression:
+**UK Career Intelligence (3 columns):**
 
-**Column 1: Data Analyst**
-- Top 10 skills (bar)
+**Column 1: Data Analyst (UK)**
+- Top 10 UK DA skills (bar)
 - Skill categories (donut)
+- UK demand: [Data Analyst Count] (738)
 - Salary range
-- UK demand: [Data Analyst Count]
 
-**Column 2: Analytics Engineer**
-- Top 10 skills (bar)
+**Column 2: Analytics Engineer (UK)**
+- Top 10 UK AE skills (bar)
 - Skill categories (donut)
-- Salary range
-- UK demand: [Analytics Engineer Count]
+- UK demand: [Analytics Engineer Count] (289)
 
-**Column 3: Data Scientist**
-- Top 10 skills (bar)
+**Column 3: Data Scientist (UK)**
+- Top 10 UK DS skills (bar)
 - Skill categories (donut)
-- Salary range
-- UK demand: [Data Scientist Count]
+- UK demand: [Data Scientist Count] (382)
+
+**Pakistan Career Intelligence:**
+
+**Data Analyst (PK)**
+- Top 10 PK DA skills (bar) — Excel 38.1%, SQL 33.3%, BI 28.6%
+- PK demand: 21 postings (0.4%)
+- Note: small sample size
+
+**Data Scientist (PK)**
+- Top PK DS skills (bar) — ML 66.7%, NLP 44.4%, Python 33.3%
+- PK demand: 9 postings (0.2%)
+- Note: insufficient for robust profile
 
 ### Data Source
-agg_role_skills for each role, filtered to country_code=GB
+agg_role_skills for each role, filtered by country_code
 
 ### Note
-> Market intelligence from job postings. Not a personal skill assessment.
+> Market intelligence from collected job postings. Not a personal skill assessment. PK career intelligence is based on small sample sizes (21 DA, 9 DS, 4 AE).
 
 ---
 

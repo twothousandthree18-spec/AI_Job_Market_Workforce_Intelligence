@@ -485,6 +485,214 @@ def chart_employers() -> None:
     _save(fig, "10_employers_top15.png")
 
 
+def chart_pk_employers() -> None:
+    emp = _load("11_employer_analysis.csv")
+    pk_emp = emp[emp["country_code"] == "PK"].nlargest(15, "job_count")
+
+    fig, ax = plt.subplots(figsize=(10, 7))
+    pk_emp = pk_emp.iloc[::-1]
+    ax.barh(
+        pk_emp["company_name"], pk_emp["job_count"],
+        color=COLORS["pk"], edgecolor="white",
+    )
+    for i, (_, r) in enumerate(pk_emp.iterrows()):
+        ax.text(
+            r["job_count"] + 1, i, str(int(r["job_count"])),
+            va="center", fontsize=9,
+        )
+
+    ax.set_title(
+        "Top 15 Pakistan Employers (Data Roles)",
+        fontsize=13, fontweight="bold", color=COLORS["text"], pad=15,
+    )
+    ax.set_xlabel("Job Count", fontsize=10, color=COLORS["text"])
+    ax.spines[["top", "right"]].set_visible(False)
+    ax.set_facecolor(COLORS["bg"])
+    fig.patch.set_facecolor("white")
+    _save(fig, "11_pk_employers_top15.png")
+
+
+def chart_pk_cities() -> None:
+    jobs = _load("13_analytical_jobs.csv")
+    pk = jobs[jobs["country_code"] == "PK"]
+    city_counts = pk["city"].value_counts().head(10)
+
+    fig, ax = plt.subplots(figsize=(10, 6))
+    bars = ax.barh(
+        city_counts.index[::-1], city_counts.values[::-1],
+        color=COLORS["pk"], edgecolor="white",
+    )
+    for bar_item, val in zip(bars, city_counts.values[::-1], strict=True):
+        ax.text(
+            val + 20, bar_item.get_y() + bar_item.get_height() / 2,
+            f"{val:,}", va="center", fontsize=9,
+        )
+
+    ax.set_title(
+        "Pakistan: Top 10 Cities by Job Postings",
+        fontsize=13, fontweight="bold", color=COLORS["text"], pad=15,
+    )
+    ax.set_xlabel("Job Count", fontsize=10, color=COLORS["text"])
+    ax.spines[["top", "right"]].set_visible(False)
+    ax.set_facecolor(COLORS["bg"])
+    fig.patch.set_facecolor("white")
+    _save(fig, "12_pk_cities_top10.png")
+
+
+def chart_pk_skills() -> None:
+    demand = _load("03_skill_demand.csv")
+    pk_skills = (
+        demand[demand["country_code"] == "PK"]
+        .nlargest(20, "job_count")
+        .iloc[::-1]
+    )
+
+    fig, ax = plt.subplots(figsize=(10, 8))
+    ax.barh(
+        pk_skills["skill_name"], pk_skills["job_count"],
+        color=COLORS["pk"], edgecolor="white",
+    )
+    for i, (_, r) in enumerate(pk_skills.iterrows()):
+        ax.text(
+            r["job_count"] + 5, i,
+            f'{r["job_count"]} ({r["penetration_pct"]:.1f}%)',
+            va="center", fontsize=8,
+        )
+
+    ax.set_title(
+        "Pakistan: Top 20 Skills by Job Count",
+        fontsize=13, fontweight="bold", color=COLORS["text"], pad=15,
+    )
+    ax.set_xlabel("Job Count", fontsize=10, color=COLORS["text"])
+    ax.spines[["top", "right"]].set_visible(False)
+    ax.set_facecolor(COLORS["bg"])
+    fig.patch.set_facecolor("white")
+    _save(fig, "13_pk_skills_top20.png")
+
+
+def chart_pk_seniority() -> None:
+    sen = _load("10_seniority_analysis.csv")
+    pk_sen = sen[sen["country_code"] == "PK"].copy()
+    pk_sen = pk_sen[pk_sen["seniority"] != "unknown"]
+
+    fig, ax = plt.subplots(figsize=(8, 5))
+    colors_sen = {
+        "junior": COLORS["uk"],
+        "mid": COLORS["accent"],
+        "senior": COLORS["pk"],
+    }
+    bars = ax.bar(
+        pk_sen["seniority"], pk_sen["total_jobs"],
+        color=[colors_sen.get(s, "#999") for s in pk_sen["seniority"]],
+        edgecolor="white",
+    )
+    for bar_item, (_, r) in zip(bars, pk_sen.iterrows(), strict=True):
+        pct = r["pct_within_country"] if "pct_within_country" in r.index else 0
+        ax.text(
+            bar_item.get_x() + bar_item.get_width() / 2,
+            r["total_jobs"] + 50,
+            f'{int(r["total_jobs"]):,}\n({pct:.1f}%)',
+            ha="center", fontsize=9,
+        )
+
+    ax.set_title(
+        "Pakistan: Seniority Distribution",
+        fontsize=13, fontweight="bold", color=COLORS["text"], pad=15,
+    )
+    ax.set_ylabel("Job Count", fontsize=10, color=COLORS["text"])
+    ax.spines[["top", "right"]].set_visible(False)
+    ax.set_facecolor(COLORS["bg"])
+    fig.patch.set_facecolor("white")
+    _save(fig, "14_pk_seniority.png")
+
+
+def chart_pk_skill_categories() -> None:
+    demand = _load("03_skill_demand.csv")
+    pk_cat = (
+        demand[demand["country_code"] == "PK"]
+        .groupby("skill_category")["job_count"]
+        .sum()
+        .sort_values(ascending=True)
+    )
+
+    fig, ax = plt.subplots(figsize=(10, 5))
+    cat_colors = [SKILL_CATEGORIES.get(c, "#999") for c in pk_cat.index]
+    bars = ax.barh(pk_cat.index, pk_cat.values, color=cat_colors, edgecolor="white")
+    for bar_item, val in zip(bars, pk_cat.values, strict=True):
+        ax.text(
+            val + 10, bar_item.get_y() + bar_item.get_height() / 2,
+            f"{val:,}", va="center", fontsize=9,
+        )
+
+    ax.set_title(
+        "Pakistan: Skill Mentions by Category",
+        fontsize=13, fontweight="bold", color=COLORS["text"], pad=15,
+    )
+    ax.set_xlabel("Total Job Mentions", fontsize=10, color=COLORS["text"])
+    ax.spines[["top", "right"]].set_visible(False)
+    ax.set_facecolor(COLORS["bg"])
+    fig.patch.set_facecolor("white")
+    _save(fig, "15_pk_skill_categories.png")
+
+
+def chart_pk_cooccurrence() -> None:
+    pairs = _load("05_skill_cocurrence.csv")
+    pk_pairs = pairs[pairs["country_code"] == "PK"].nlargest(10, "co_occurrence_count")
+    pk_pairs = pk_pairs.iloc[::-1]
+
+    fig, ax = plt.subplots(figsize=(10, 6))
+    pair_labels = [
+        f"{r.skill_a} + {r.skill_b}" for _, r in pk_pairs.iterrows()
+    ]
+    vals = pk_pairs["co_occurrence_count"].tolist()
+
+    ax.barh(pair_labels, vals, color=COLORS["pk"], edgecolor="white")
+    for idx, val in enumerate(vals):
+        ax.text(val + 1, idx, str(val), va="center", fontsize=9)
+
+    ax.set_title(
+        "Pakistan: Top 10 Skill Co-occurrences",
+        fontsize=13, fontweight="bold", color=COLORS["text"], pad=15,
+    )
+    ax.set_xlabel("Number of Jobs", fontsize=10, color=COLORS["text"])
+    ax.spines[["top", "right"]].set_visible(False)
+    ax.set_facecolor(COLORS["bg"])
+    fig.patch.set_facecolor("white")
+    _save(fig, "16_pk_cooccurrence_top10.png")
+
+
+def chart_pk_career_da() -> None:
+    rs = _load("06_role_skills.csv")
+    pk_rs = rs[(rs["country_code"] == "PK") & (rs["role_category"] == "data_analyst")]
+    pk_da = pk_rs.nlargest(10, "penetration_pct").iloc[::-1]
+
+    if pk_da.empty:
+        print("    SKIPPED: No PK Data Analyst role-skill data")
+        return
+
+    fig, ax = plt.subplots(figsize=(9, 5))
+    ax.barh(
+        pk_da["skill_name"], pk_da["penetration_pct"],
+        color=COLORS["pk"], edgecolor="white",
+    )
+    for i, (_, r) in enumerate(pk_da.iterrows()):
+        ax.text(
+            r["penetration_pct"] + 0.5, i,
+            f'{r["penetration_pct"]:.1f}%',
+            va="center", fontsize=9,
+        )
+
+    ax.set_title(
+        "Pakistan: Data Analyst Skill Profile",
+        fontsize=13, fontweight="bold", color=COLORS["text"], pad=15,
+    )
+    ax.set_xlabel("Penetration %", fontsize=10, color=COLORS["text"])
+    ax.spines[["top", "right"]].set_visible(False)
+    ax.set_facecolor(COLORS["bg"])
+    fig.patch.set_facecolor("white")
+    _save(fig, "17_pk_career_data_analyst.png")
+
+
 ALL_CHARTS = [
     ("Skill Comparison (Top 20)", chart_skill_comparison),
     ("Role Distribution", chart_role_distribution),
@@ -495,7 +703,14 @@ ALL_CHARTS = [
     ("Temporal Trends", chart_temporal),
     ("Career Progression", chart_career_progression),
     ("Skill-Salary", chart_skill_salary),
-    ("Employer Concentration", chart_employers),
+    ("UK Employers", chart_employers),
+    ("PK Employers", chart_pk_employers),
+    ("PK Cities", chart_pk_cities),
+    ("PK Skills", chart_pk_skills),
+    ("PK Seniority", chart_pk_seniority),
+    ("PK Skill Categories", chart_pk_skill_categories),
+    ("PK Co-occurrence", chart_pk_cooccurrence),
+    ("PK Data Analyst Career", chart_pk_career_da),
 ]
 
 
