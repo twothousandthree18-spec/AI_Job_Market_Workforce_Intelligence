@@ -161,6 +161,24 @@ nav.scrolled{box-shadow:0 2px 20px rgba(0,0,0,.5)}
 .data-table td{padding:10px 14px;border-bottom:1px solid rgba(255,255,255,.04);color:var(--muted)}
 .data-table tr:hover td{color:var(--ivory);background:rgba(255,255,255,.02)}
 
+/* ---- Code Evidence ---- */
+.tech-badge{display:inline-block;background:var(--gold-dim);border:1px solid var(--gold-border);border-radius:20px;padding:6px 16px;font-size:.78rem;color:var(--gold);letter-spacing:.06em;font-weight:600}
+.code-block{background:var(--ink);border:1px solid rgba(255,255,255,.08);border-top:2px solid var(--gold);border-radius:10px;overflow:hidden;margin:24px 0}
+.code-header{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;background:rgba(255,255,255,.03);border-bottom:1px solid rgba(255,255,255,.06)}
+.code-lang{font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.12em;color:var(--gold);background:var(--gold-dim);padding:4px 10px;border-radius:4px}
+.code-filename{font-size:.78rem;color:var(--muted);font-family:var(--mono)}
+.code-content{padding:24px;overflow-x:auto;font-size:.85rem;line-height:1.8;color:var(--ivory-dark);margin:0}
+.code-content code{font-family:var(--mono);white-space:pre}
+.kw{color:#C49B24;font-weight:600}
+.fn{color:var(--ivory)}
+.tp{color:var(--muted)}
+.st{color:#6AAF6A}
+.cm{color:var(--steel);font-style:italic}
+.code-explanation{margin-top:20px;padding:20px 24px;background:rgba(255,255,255,.02);border-left:3px solid var(--gold-border);border-radius:0 8px 8px 0;font-size:.9rem;color:var(--muted);line-height:1.7}
+.code-explanation strong{color:var(--ivory)}
+.code-explanation ol{margin:12px 0;padding-left:20px}
+.code-explanation li{margin-bottom:8px}
+
 /* ---- Footer ---- */
 footer{padding:48px 0;border-top:1px solid rgba(255,255,255,.06);text-align:center;color:var(--muted);font-size:.85rem}
 footer a{color:var(--gold)}
@@ -192,6 +210,7 @@ footer a{color:var(--gold)}
   .card-grid-3,.card-grid-4{grid-template-columns:1fr}
   .finding-grid{grid-template-columns:1fr}
   .tech-grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr))}
+  .code-content{font-size:.78rem;padding:16px}
 }
 @media(max-width:480px){
   .hero-metrics{flex-direction:column;gap:16px}

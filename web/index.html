@@ -30,6 +30,7 @@
       <li><a href="#powerbi">Power BI</a></li>
       <li><a href="#career">Career Intel</a></li>
       <li><a href="#methodology">Methodology</a></li>
+      <li><a href="#code-evidence">Code</a></li>
     </ul>
   </div>
 </nav>
@@ -846,6 +847,62 @@
       <div class="tech-item reveal reveal-delay-2"><div class="tech-name">Git</div><div class="tech-role">Version control</div></div>
       <div class="tech-item reveal"><div class="tech-name">Adzuna API</div><div class="tech-role">UK job data source</div></div>
       <div class="tech-item reveal reveal-delay-1"><div class="tech-name">Regex / NLP</div><div class="tech-role">Skill extraction</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CODE EVIDENCE ========== -->
+<section id="code-evidence">
+  <div class="container">
+    <div class="section-label reveal">Implementation Proof</div>
+    <h2 class="section-title reveal">Code Evidence</h2>
+    <p class="section-desc reveal">Real Python implementation used to extract and validate job-market skills.</p>
+
+    <div class="reveal" style="margin-bottom:24px">
+      <span class="tech-badge">Python &bull; NLP &bull; Regex &bull; Contextual Validation</span>
+    </div>
+
+    <div class="code-block reveal">
+      <div class="code-header">
+        <span class="code-lang">Python</span>
+        <span class="code-filename">src/nlp/skill_extractor.py</span>
+      </div>
+      <pre class="code-content"><code><span class="kw">    def</span> <span class="fn">_is_false_positive</span>(<span class="tp">self</span>, canonical: <span class="tp">str</span>, text: <span class="tp">str</span>, match: <span class="tp">re.Match</span>) -> <span class="tp">bool</span>:
+        <span class="kw">if</span> canonical <span class="kw">in</span> <span class="tp">self</span>._neg_patterns:
+            <span class="kw">for</span> neg <span class="kw">in</span> <span class="tp">self</span>._neg_patterns[canonical]:
+                <span class="kw">if</span> neg.search(text):
+                    <span class="kw">return</span> <span class="kw">True</span>
+        <span class="kw">if</span> canonical <span class="kw">in</span> <span class="tp">self</span>._require_context:
+            has_positive = <span class="kw">False</span>
+            <span class="kw">for</span> pos <span class="kw">in</span> <span class="tp">self</span>._pos_patterns.get(canonical, []):
+                <span class="kw">if</span> pos.search(text):
+                    has_positive = <span class="kw">True</span>
+                    <span class="kw">break</span>
+            <span class="kw">if not</span> has_positive:
+                <span class="kw">return</span> <span class="kw">True</span>
+        <span class="kw">return</span> <span class="kw">False</span>
+
+<span class="kw">    def</span> <span class="fn">_calc_confidence</span>(<span class="tp">self</span>, canonical: <span class="tp">str</span>, text: <span class="tp">str</span>, method: <span class="tp">str</span>) -> <span class="tp">str</span>:
+        <span class="kw">if</span> canonical <span class="kw">in</span> <span class="tp">self</span>._pos_patterns:
+            <span class="kw">for</span> pos <span class="kw">in</span> <span class="tp">self</span>._pos_patterns[canonical]:
+                <span class="kw">if</span> pos.search(text):
+                    <span class="kw">return</span> <span class="st">"high"</span>
+            <span class="kw">if</span> canonical <span class="kw">in</span> <span class="tp">self</span>._neg_patterns <span class="kw">and</span> <span class="tp">self</span>._neg_patterns[canonical]:
+                <span class="kw">return</span> <span class="st">"medium"</span>
+        <span class="kw">if</span> method == <span class="st">"lexicon"</span>:
+            <span class="kw">return</span> <span class="st">"high"</span>
+        <span class="kw">if</span> len(canonical) <= 2:
+            <span class="kw">return</span> <span class="st">"low"</span>
+        <span class="kw">return</span> <span class="st">"medium"</span></code></pre>
+    </div>
+
+    <div class="code-explanation reveal">
+      <p>This method is the core of the false-positive prevention system. When a potential skill match is found, it checks two layers of defense:</p>
+      <ol>
+        <li><strong>Negative pattern matching</strong> &mdash; if the skill appears in a known non-skill context (e.g. &ldquo;R and D&rdquo;, &ldquo;go to&rdquo;, &ldquo;scalable&rdquo;), the match is rejected.</li>
+        <li><strong>Positive context requirement</strong> &mdash; for highly ambiguous skills like &ldquo;R&rdquo;, a match is only accepted if positive signals are present (e.g. &ldquo;experience in R&rdquo;, &ldquo;R programming&rdquo;).</li>
+      </ol>
+      <p>This two-layer approach reduced false-positive skill mentions by <strong>75%</strong> across 8,256 job postings.</p>
     </div>
   </div>
 </section>
